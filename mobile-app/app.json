@@ -15,7 +15,12 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.odoo.mobile",
-      "buildNumber": "1"
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Take photos to attach to records",
+        "NSPhotoLibraryUsageDescription": "Choose photos to attach to records",
+        "NSFaceIDUsageDescription": "Use Face ID to secure your session"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +29,15 @@
       },
       "package": "com.odoo.mobile",
       "versionCode": 1,
-      "permissions": []
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -33,7 +46,25 @@
     },
     "plugins": [
       "expo-router",
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-local-authentication",
+        { "faceIDPermission": "Use Face ID to secure your Odoo session" }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Odoo to access your photos",
+          "cameraPermission": "Allow Odoo to use the camera"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#71639e"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
