@@ -87,3 +87,47 @@ $o-bubble-color-size-xl: $o-font-size-base * 1.36;
     --o-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.40);
     --o-shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.55);
 }
+
+
+// =============================================================================
+// Sprint 4 - Dark mode: additional component token overrides
+// =============================================================================
+
+[data-bs-theme=dark] {
+    // Input fields
+    --bs-body-bg:         #0f0f1a;
+    --bs-body-color:      #e8e8f0;
+    --bs-border-color:    #2e2e40;
+
+    // Modals
+    --bs-modal-bg:        #1a1a2e;
+    --bs-modal-header-border-color: #252535;
+    --bs-modal-footer-border-color: #252535;
+
+    // Dropdowns
+    --bs-dropdown-bg:             #1e1e2e;
+    --bs-dropdown-border-color:   #252535;
+    --bs-dropdown-link-hover-bg:  #252535;
+    --bs-dropdown-link-color:     #e8e8f0;
+
+    // Cards
+    --bs-card-bg:             #1a1a2e;
+    --bs-card-border-color:   #252535;
+
+    // Popovers / tooltips
+    --bs-popover-bg:          #1e1e2e;
+    --bs-popover-border-color: #2e2e40;
+
+    // Form controls
+    --bs-form-control-bg:         #1e1e2e;
+    --bs-form-control-border-color: #2e2e40;
+    --bs-form-control-color:       #e8e8f0;
+
+    // Navbar dark variant
+    --o-navbar-background: #0f0f1a;
+    --o-navbar-border-color: #1e1e2e;
+
+    // List/Kanban surfaces
+    --o-list-row-hover-bg:  #1e1e2e;
+    --o-kanban-column-bg:   #111120;
+}

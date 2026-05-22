@@ -56,8 +56,8 @@ $enable-negative-margins: true !default;
 // Enable CSS Grid classes
 $enable-cssgrid: true !default;
 
-// Disable BS5's dark mode until we actually use it for our own dark mode implementation
-$enable-dark-mode: false !default;
+// Sprint 4: Enable Bootstrap 5.3 dark mode — our [data-bs-theme="dark"] tokens are complete
+$enable-dark-mode: true !default;
 
 // Spacing
 $spacer: $o-spacer !default;

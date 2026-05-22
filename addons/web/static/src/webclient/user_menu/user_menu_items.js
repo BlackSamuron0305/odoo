@@ -7,6 +7,39 @@ import { session } from "@web/session";
 import { browser } from "../../core/browser/browser";
 import { registry } from "../../core/registry";
 
+// Dark mode toggle — persists in localStorage, respects prefers-color-scheme
+const DARK_MODE_KEY = "odoo_dark_mode";
+
+function getDarkModePreference() {
+    const stored = browser.localStorage.getItem(DARK_MODE_KEY);
+    if (stored !== null) return stored === "dark";
+    return browser.matchMedia?.("(prefers-color-scheme: dark)").matches ?? false;
+}
+
+function applyDarkMode(isDark) {
+    document.documentElement.setAttribute("data-bs-theme", isDark ? "dark" : "light");
+    browser.localStorage.setItem(DARK_MODE_KEY, isDark ? "dark" : "light");
+    // Set color_scheme cookie so Chart.js detects the theme on next render
+    document.cookie = `color_scheme=${isDark ? "dark" : "light"}; path=/; SameSite=Lax`;
+}
+
+// Apply saved/system preference immediately on load
+applyDarkMode(getDarkModePreference());
+
+function darkModeItem(env) {
+    const isDark = getDarkModePreference();
+    return {
+        type: "item",
+        id: "dark_mode",
+        description: isDark ? _t("Light Mode") : _t("Dark Mode"),
+        callback: () => {
+            const currentlyDark = document.documentElement.getAttribute("data-bs-theme") === "dark";
+            applyDarkMode(!currentlyDark);
+        },
+        sequence: 45,
+    };
+}
+
 function supportItem(env) {
     const url = session.support_url;
     return {
@@ -140,6 +173,7 @@ registry
     .add("shortcuts", shortCutsItem)
     .add("separator", separator)
     .add("preferences", preferencesItem)
+    .add("dark_mode", darkModeItem)
     .add("odoo_account", odooAccountItem)
     .add("install_pwa", installPWAItem)
     .add("log_out", logOutItem);

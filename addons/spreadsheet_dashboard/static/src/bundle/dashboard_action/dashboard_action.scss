@@ -119,3 +119,46 @@
         }
     }
 }
+
+
+// =============================================================================
+// Sprint 4 - Dashboard tile modernization
+// =============================================================================
+
+.o_spreadsheet_dashboard_action {
+    // Dashboard grid: more spacious
+    .o_dashboard_container {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    // KPI tile: larger number, trend indicator
+    .o_dashboard_tile,
+    .o_spreadsheet_figure {
+        border-radius: 12px;
+        box-shadow: var(--o-shadow-sm, 0 1px 2px rgba(0,0,0,0.06));
+        border: 1px solid var(--o-gray-200, #e9ecef);
+        background: var(--o-view-background-color, white);
+        padding: 20px 24px;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: box-shadow var(--o-transition-base, 150ms) ease;
+        }
+
+        &:hover {
+            box-shadow: var(--o-shadow-md, 0 2px 8px rgba(0,0,0,0.10));
+        }
+
+        // Large KPI number
+        .o_kpi_value, .o_spreadsheet_figure_value {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--o-gray-900, #212529);
+        }
+
+        // Trend indicator
+        .o_trend_up   { color: #28a745; }
+        .o_trend_down { color: #dc3545; }
+    }
+}
