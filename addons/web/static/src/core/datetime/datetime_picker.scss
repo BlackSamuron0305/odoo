@@ -90,3 +90,53 @@
         font-variant: tabular-nums;
     }
 }
+
+
+// =============================================================================
+// Sprint 2b - DateTime picker modernization
+// =============================================================================
+
+.o_datetime_picker {
+    border-radius: 8px;
+    box-shadow: var(--o-shadow-lg, 0 8px 24px rgba(0,0,0,0.12));
+    overflow: hidden;
+
+    .o_date_item_cell {
+        border-radius: 50% !important;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2px auto;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease;
+        }
+
+        &:hover:not([disabled]):not(.o_selected) {
+            background-color: var(--o-gray-100, #f8f9fa);
+        }
+
+        &.o_selected, &.o_highlighted {
+            background-color: var(--o-brand-primary, #71639e);
+            color: white;
+            border-radius: 50% !important;
+
+            &::before {
+                border-color: transparent !important;
+            }
+        }
+
+        &.o_today:not(.o_selected) {
+            background-color: var(--o-component-active-bg, rgba(113,99,158,0.1));
+            color: var(--o-brand-primary, #71639e);
+            font-weight: 600;
+        }
+    }
+
+    .o_datetime_picker_header {
+        font-weight: 600;
+        font-size: 14px;
+    }
+}

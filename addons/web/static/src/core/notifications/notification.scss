@@ -29,3 +29,28 @@
     left: 0;
     height: 3px;
 }
+
+
+// =============================================================================
+// Sprint 2b - Notification / Toast modernization
+// =============================================================================
+
+.o_notification {
+    border-left: 4px solid transparent;
+    border-radius: 12px;
+    box-shadow: var(--o-shadow-md, 0 4px 12px rgba(0,0,0,0.12));
+
+    @media (prefers-reduced-motion: no-preference) {
+        animation: o-notif-slide-in 200ms ease;
+    }
+
+    &.o_notification_type_success { border-left-color: #28a745; }
+    &.o_notification_type_warning { border-left-color: #ffc107; }
+    &.o_notification_type_danger  { border-left-color: #dc3545; }
+    &.o_notification_type_info    { border-left-color: #17a2b8; }
+}
+
+@keyframes o-notif-slide-in {
+    from { transform: translateX(40px); opacity: 0; }
+    to   { transform: translateX(0);    opacity: 1; }
+}

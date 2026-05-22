@@ -61,3 +61,88 @@
         padding: 4px;
     }
 }
+
+
+// =============================================================================
+// Sprint 2b - Chatter composer modernization
+// =============================================================================
+
+.o_Composer, .o-mail-Composer {
+    .o_Composer_inputContainer, .o-mail-Composer-coreMain {
+        border-radius: 9999px;
+        border: 1px solid var(--o-gray-300, #dee2e6);
+        min-height: 40px;
+        padding: 0 8px 0 16px;
+        display: flex;
+        align-items: center;
+        background: var(--o-view-background-color, white);
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: border-color var(--o-transition-base, 150ms) ease,
+                        box-shadow var(--o-transition-base, 150ms) ease;
+        }
+
+        &:focus-within {
+            border-color: var(--o-brand-primary, #71639e);
+            box-shadow: 0 0 0 3px rgba(113, 99, 158, 0.12);
+            border-radius: 8px; // expand to box when focused/typing
+        }
+    }
+
+    // Send button integrated into the bar
+    .o_Composer_sendButton, .o-mail-Composer-send {
+        border-radius: 9999px;
+        padding: 6px 16px;
+        background: var(--o-brand-primary, #71639e);
+        color: white;
+        border: none;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: opacity var(--o-transition-fast, 100ms) ease;
+        }
+
+        &:disabled {
+            opacity: 0.4;
+        }
+    }
+
+    // Attachments chips
+    .o_Composer_attachments .o_attachment,
+    .o-mail-Composer-attachments .o-mail-AttachmentCard {
+        border-radius: 8px;
+        border: 1px solid var(--o-gray-200, #e9ecef);
+        padding: 4px 8px;
+        font-size: 12px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
+// Message / Log note mode tabs
+.o_Chatter_topbar .o-mail-Composer-modeSwitch,
+.o-mail-Chatter .o-mail-Composer-modeSwitch {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 6px;
+
+    button {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 12px;
+        border-radius: 6px;
+        border: none;
+        background: transparent;
+        color: var(--o-gray-600, #6c757d);
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease,
+                        color var(--o-transition-fast, 100ms) ease;
+        }
+
+        &.active, &:focus {
+            background: var(--o-component-active-bg, rgba(113,99,158,0.1));
+            color: var(--o-brand-primary, #71639e);
+        }
+    }
+}

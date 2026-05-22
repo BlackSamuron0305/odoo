@@ -758,3 +758,57 @@
         background-image: repeating-linear-gradient(-45deg, transparent, var(--fc-neutral-bg-color) 25px, transparent 50px);
     }
 }
+
+
+// =============================================================================
+// Sprint 2b - Calendar view modernization
+// =============================================================================
+
+.o_calendar_renderer {
+    .fc-event {
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        border: none;
+        padding: 1px 4px;
+        overflow: hidden;
+    }
+
+    .fc-daygrid-day:not(.fc-day-disabled):hover {
+        background-color: var(--o-gray-100, #f8f9fa);
+    }
+
+    .fc-day-today {
+        background-color: rgba(113, 99, 158, 0.06) !important;
+
+        .fc-daygrid-day-number {
+            background: var(--o-brand-primary, #71639e);
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+    }
+
+    .fc-daygrid-more-link {
+        border-radius: 9999px;
+        padding: 2px 6px;
+        font-size: 11px;
+        font-weight: 600;
+        background: var(--o-gray-200, #e9ecef);
+        color: var(--o-gray-700, #495057);
+    }
+
+    .fc-timegrid-slot {
+        border-color: var(--o-gray-100, #f8f9fa);
+    }
+
+    .fc-timegrid-slot-label {
+        font-size: 11px;
+        color: var(--o-gray-500, #adb5bd);
+    }
+}

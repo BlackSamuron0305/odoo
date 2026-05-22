@@ -127,3 +127,53 @@
     position: static;
     max-height: calc(var(--sheet-max-height) - #{$spacer} / 4);
 }
+
+
+// =============================================================================
+// Sprint 2b - Dropdown modernization
+// =============================================================================
+
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: var(--o-shadow-lg, 0 8px 24px rgba(0,0,0,0.12));
+    border: 1px solid var(--o-gray-200, #e9ecef);
+    padding: 4px;
+    min-width: 160px;
+
+    @media (prefers-reduced-motion: no-preference) {
+        animation: o-dropdown-appear 100ms ease;
+    }
+
+    .dropdown-item {
+        height: 36px;
+        padding: 0 12px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease;
+        }
+
+        &:hover, &:focus {
+            background-color: var(--o-gray-100, #f8f9fa);
+            color: inherit;
+        }
+
+        &.active, &:active {
+            background-color: var(--o-component-active-bg, rgba(113,99,158,0.1));
+            color: var(--o-brand-primary, #71639e);
+        }
+    }
+
+    .dropdown-divider {
+        margin: 4px 8px;
+        border-color: var(--o-gray-200, #e9ecef);
+    }
+}
+
+@keyframes o-dropdown-appear {
+    from { transform: scale(0.96) translateY(-4px); opacity: 0; }
+    to   { transform: scale(1)    translateY(0);    opacity: 1; }
+}

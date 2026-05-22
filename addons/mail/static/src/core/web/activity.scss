@@ -19,3 +19,37 @@
 .o-mail-Activity-avatar {
     --Avatar-size: #{$o-mail-Avatar-size};
 }
+
+
+// =============================================================================
+// Sprint 2b - Activity widget (core/web/activity.scss)
+// =============================================================================
+
+.o-mail-Activity {
+    border-radius: 8px;
+    border: 1px solid var(--o-gray-200, #e9ecef);
+    padding: 8px 12px;
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: box-shadow var(--o-transition-base, 150ms) ease;
+    }
+
+    &:hover {
+        box-shadow: var(--o-shadow-sm, 0 1px 4px rgba(0,0,0,0.08));
+    }
+
+    &.o_activity_overdue {
+        border-left: 3px solid #dc3545;
+        background: rgba(220, 53, 69, 0.03);
+    }
+
+    &.o_activity_today {
+        border-left: 3px solid #ffc107;
+        background: rgba(255, 193, 7, 0.03);
+    }
+
+    &.o_activity_future {
+        border-left: 3px solid #28a745;
+        background: rgba(40, 167, 69, 0.03);
+    }
+}

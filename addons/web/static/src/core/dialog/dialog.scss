@@ -80,3 +80,80 @@
         }
     }
 }
+
+
+// =============================================================================
+// Sprint 2b — Dialog / Modal modernization
+// =============================================================================
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+}
+
+.modal-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--o-gray-200, #e9ecef);
+
+    .modal-title {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .btn-close {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        opacity: 0.6;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease,
+                        opacity var(--o-transition-fast, 100ms) ease;
+        }
+
+        &:hover {
+            background-color: var(--o-gray-200, #e9ecef);
+            opacity: 1;
+        }
+    }
+}
+
+.modal-footer {
+    border-top: 1px solid var(--o-gray-200, #e9ecef);
+    padding: 12px 20px;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+@include media-breakpoint-down(sm) {
+    .modal:not(.o_modal_full) {
+        .modal-dialog {
+            margin: 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            max-width: 100%;
+        }
+
+        .modal-content {
+            border-radius: 12px 12px 0 0;
+
+            @media (prefers-reduced-motion: no-preference) {
+                animation: o-dialog-slide-up 220ms ease;
+            }
+        }
+    }
+}
+
+@keyframes o-dialog-slide-up {
+    from { transform: translateY(40px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+}

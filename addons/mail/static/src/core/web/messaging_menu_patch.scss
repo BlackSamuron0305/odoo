@@ -10,3 +10,65 @@
 .o_web_client:has(.o-mail-systrayFullscreenDropdownMenu) .o_main_navbar {
     background-color: $o-navbar-background !important;
 }
+
+
+// =============================================================================
+// Sprint 2b - Messaging menu (systray bell) modernization
+// =============================================================================
+
+.o-mail-MessagingMenu {
+    .o-mail-MessagingMenu-dropdown {
+        width: 360px;
+        border-radius: 12px;
+        box-shadow: var(--o-shadow-lg, 0 8px 24px rgba(0,0,0,0.12));
+        border: 1px solid var(--o-gray-200, #e9ecef);
+    }
+
+    .o-mail-NotificationItem {
+        padding: 10px 16px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease;
+        }
+
+        &:hover { background: var(--o-gray-100, #f8f9fa); }
+
+        .o-mail-NotificationItem-sender {
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .o-mail-NotificationItem-preview {
+            font-size: 12px;
+            color: var(--o-gray-600, #6c757d);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+        }
+
+        .o-mail-NotificationItem-time {
+            font-size: 11px;
+            color: var(--o-gray-500, #adb5bd);
+            white-space: nowrap;
+        }
+    }
+
+    // Unread dot badge
+    .o-mail-MessagingMenu-badge {
+        background: var(--o-brand-primary, #71639e);
+        border-radius: 9999px;
+        min-width: 18px;
+        height: 18px;
+        font-size: 10px;
+        font-weight: 700;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4px;
+    }
+}

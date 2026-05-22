@@ -78,3 +78,32 @@
         --#{$prefix}list-group-bg: transparent;
     }
 }
+
+
+// =============================================================================
+// Sprint 2b - Search panel modernization
+// =============================================================================
+
+.o_search_panel_section {
+    .o_search_panel_section_header {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--o-gray-500, #adb5bd);
+        padding: 10px 16px 4px;
+    }
+
+    & + .o_search_panel_section {
+        border-top: 1px solid var(--o-gray-200, #e9ecef);
+        margin-top: 4px;
+    }
+
+    // Branded filter checkboxes
+    .o_search_panel_filter_value {
+        .form-check-input:checked {
+            background-color: var(--o-brand-primary, #71639e);
+            border-color: var(--o-brand-primary, #71639e);
+        }
+    }
+}

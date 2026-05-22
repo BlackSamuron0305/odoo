@@ -48,3 +48,36 @@
         }
     }
 }
+
+
+// =============================================================================
+// Sprint 2b - Search bar modernization
+// =============================================================================
+
+.o_searchview {
+    border-radius: 9999px;
+    border: 1px solid var(--o-gray-300, #dee2e6);
+    padding: 0 12px;
+    background: var(--o-view-background-color, white);
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: border-color var(--o-transition-base, 150ms) ease,
+                    box-shadow var(--o-transition-base, 150ms) ease;
+    }
+
+    &:focus-within {
+        border-color: var(--o-brand-primary, #71639e);
+        box-shadow: 0 0 0 3px rgba(113, 99, 158, 0.12);
+    }
+
+    .o_searchview_facet {
+        border-radius: 9999px;
+        padding: 1px 8px;
+        background: var(--o-component-active-bg, rgba(113,99,158,0.1));
+        color: var(--o-brand-primary, #71639e);
+        font-size: 12px;
+        font-weight: 500;
+
+        .o_searchview_facet_label { font-weight: 600; }
+    }
+}

@@ -12,3 +12,37 @@
 .o-mail-ActivityMenu-empty {
     min-height: inherit;
 }
+
+
+// =============================================================================
+// Sprint 2b - Activity menu modernization
+// =============================================================================
+
+.o-mail-ActivityMenu {
+    width: 360px;
+    border-radius: 12px;
+    box-shadow: var(--o-shadow-lg, 0 8px 24px rgba(0,0,0,0.12));
+
+    .o-mail-ActivityMenu-item {
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease;
+        }
+
+        &:hover {
+            background: var(--o-gray-100, #f8f9fa);
+        }
+
+        .o-mail-ActivityMenu-badge {
+            border-radius: 9999px;
+            font-size: 11px;
+            padding: 2px 6px;
+            background: var(--o-brand-primary, #71639e);
+            color: white;
+        }
+    }
+}

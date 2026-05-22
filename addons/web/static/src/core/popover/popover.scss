@@ -27,3 +27,33 @@
 		transform: translateX(-100%);
 	}
 }
+
+
+// =============================================================================
+// Sprint 2b - Popover / Tooltip modernization
+// =============================================================================
+
+.popover {
+    border-radius: 8px;
+    box-shadow: var(--o-shadow-lg, 0 8px 24px rgba(0,0,0,0.12));
+    border: 1px solid var(--o-gray-200, #e9ecef);
+
+    .popover-header {
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 8px 8px 0 0;
+        padding: 10px 12px;
+    }
+
+    .popover-body {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
+
+.tooltip .tooltip-inner {
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 4px 8px;
+    max-width: 250px;
+}

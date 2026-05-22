@@ -5,3 +5,36 @@
 .o-mail-MentionList-suggestionList:has(.o-open) {
     border: $border-width solid $border-color;
 }
+
+
+// =============================================================================
+// Sprint 2b - Mention list modernization
+// =============================================================================
+
+.o-mail-MentionList {
+    border-radius: 8px;
+    box-shadow: var(--o-shadow-lg, 0 8px 24px rgba(0,0,0,0.12));
+    overflow: hidden;
+
+    .o-open {
+        background-color: var(--o-component-active-bg, rgba(113,99,158,0.1));
+        color: var(--o-brand-primary, #71639e);
+    }
+
+    .o-mail-MentionList-item {
+        padding: 6px 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .o-mail-MentionList-itemName {
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .o-mail-MentionList-itemEmail {
+            font-size: 11px;
+            color: var(--o-gray-500, #adb5bd);
+        }
+    }
+}

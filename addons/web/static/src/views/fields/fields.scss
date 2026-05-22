@@ -364,3 +364,104 @@ button.o_field_float_toggle {
 select.o_field_widget.o_input {
     padding: 1px;  // Other inputs get a 1px padding automatically added by the browsers but selects do not
 }
+
+
+// =============================================================================
+// Sprint 2b - Field widgets modernization
+// =============================================================================
+
+// Status badge fields
+.o_field_badge .badge,
+.o_field_label_selection .badge,
+.o_tag {
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    letter-spacing: 0.02em;
+}
+
+// Many2many tag chips
+.o_field_many2many_tags .o_tag,
+.o_field_many2one_tags .o_tag {
+    border-radius: 9999px;
+    padding: 3px 8px;
+    gap: 4px;
+    display: inline-flex;
+    align-items: center;
+
+    .o_delete {
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.6;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease,
+                        opacity var(--o-transition-fast, 100ms) ease;
+        }
+
+        &:hover {
+            background: rgba(0,0,0,0.15);
+            opacity: 1;
+        }
+    }
+}
+
+// Image / Binary upload zone
+.o_field_image, .o_field_binary, .o_field_signature {
+    .o_form_editable & .o_select_file_button,
+    .o_form_editable & .o_upload_media_button {
+        border: 2px dashed var(--o-gray-300, #dee2e6);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 24px;
+        cursor: pointer;
+        color: var(--o-gray-500, #adb5bd);
+        width: 100%;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: border-color var(--o-transition-base, 150ms) ease,
+                        background var(--o-transition-base, 150ms) ease;
+        }
+
+        &:hover {
+            border-color: var(--o-brand-primary, #71639e);
+            background: rgba(113, 99, 158, 0.04);
+            color: var(--o-brand-primary, #71639e);
+        }
+    }
+}
+
+// Boolean toggle smooth transition
+.o_field_boolean_toggle .form-check-input {
+    @media (prefers-reduced-motion: no-preference) {
+        transition: background-color var(--o-transition-base, 150ms) ease,
+                    border-color var(--o-transition-base, 150ms) ease;
+    }
+
+    &:checked {
+        background-color: var(--o-brand-primary, #71639e);
+        border-color: var(--o-brand-primary, #71639e);
+    }
+}
+
+// Priority star animation
+.o_priority .o_priority_star {
+    @media (prefers-reduced-motion: no-preference) {
+        transition: color var(--o-transition-fast, 100ms) ease,
+                    transform 120ms ease;
+    }
+
+    &:hover, &.fa-star {
+        color: var(--o-main-favorite-color, #f6b900);
+        transform: scale(1.15);
+    }
+}

@@ -1,3 +1,26 @@
 .o_calendar_renderer .o_calendar_widget .o_calendar_disabled {
     background-color: $gray-300;
 }
+
+
+// =============================================================================
+// Sprint 2b - Calendar dark mode: replace hardcoded colors with CSS vars
+// =============================================================================
+
+[data-bs-theme=dark] .o_calendar_renderer {
+    .fc-day-today {
+        background-color: rgba(113,99,158, 0.12) !important;
+    }
+
+    .fc-daygrid-day:not(.fc-day-disabled):hover {
+        background-color: var(--o-gray-800, #343a40);
+    }
+
+    .o_calendar_disabled {
+        background-color: var(--o-gray-700, #495057);
+    }
+
+    .fc-timegrid-slot {
+        border-color: var(--o-gray-700, #495057);
+    }
+}

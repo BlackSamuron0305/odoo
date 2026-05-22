@@ -138,3 +138,32 @@
         min-height: 6em;
     }
 }
+
+
+// =============================================================================
+// Sprint 2b - Activity widget modernization (mail_activity.scss)
+// =============================================================================
+
+.o_activity_type {
+    .o_activity_pill {
+        border-radius: 9999px;
+        padding: 3px 10px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    &.o_activity_overdue .o_activity_pill {
+        background: rgba(220, 53, 69, 0.12);
+        color: #dc3545;
+    }
+
+    &.o_activity_today .o_activity_pill {
+        background: rgba(255, 193, 7, 0.15);
+        color: #856404;
+    }
+
+    &.o_activity_future .o_activity_pill {
+        background: rgba(40, 167, 69, 0.12);
+        color: #28a745;
+    }
+}
