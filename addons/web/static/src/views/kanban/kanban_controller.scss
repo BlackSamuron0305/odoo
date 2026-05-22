@@ -392,3 +392,53 @@
         @include o-sample-data-disabled;
     }
 }
+
+
+// =============================================================================
+// Sprint 3 - Kanban controller / column modernization
+// =============================================================================
+
+.o_kanban_view {
+    // Column header redesign
+    .o_kanban_group > .o_kanban_header {
+        .o_kanban_header_title {
+            font-weight: 600;
+        }
+
+        // Pill-shaped count badge
+        .o_kanban_counter_progress,
+        .o_column_progress {
+            .progress-bar, .o_progress_block {
+                border-radius: 9999px;
+                height: 8px; // up from 6px
+                overflow: hidden;
+
+                @media (prefers-reduced-motion: no-preference) {
+                    transition: width var(--o-transition-base, 150ms) ease;
+                }
+            }
+        }
+
+        // Count badge pill
+        .o_kanban_counter_side,
+        .o_kanban_group_count {
+            border-radius: 9999px;
+            padding: 2px 8px;
+            font-size: 11px;
+            font-weight: 700;
+            background: var(--o-gray-200, #e9ecef);
+            color: var(--o-gray-700, #495057);
+        }
+
+        // Fold/unfold button more visible
+        .o_kanban_toggle_fold {
+            opacity: 0.7;
+
+            @media (prefers-reduced-motion: no-preference) {
+                transition: opacity var(--o-transition-fast, 100ms) ease;
+            }
+
+            &:hover { opacity: 1; }
+        }
+    }
+}

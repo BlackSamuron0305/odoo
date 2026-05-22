@@ -215,3 +215,45 @@
         --KanbanRecord-border-width: #{$border-width} 0;
     }
 }
+
+
+// =============================================================================
+// Sprint 3 - Kanban card elevation modernization
+// =============================================================================
+
+.o_kanban_view .o_kanban_record:not(.o_kanban_ghost):not(.o_kanban_quick_create) {
+    border-radius: 8px;
+    box-shadow: var(--o-shadow-sm, 0 1px 2px rgba(0,0,0,0.06));
+    border: 1px solid var(--o-gray-200, #e9ecef);
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: box-shadow var(--o-transition-base, 150ms) ease,
+                    transform var(--o-transition-base, 150ms) ease;
+    }
+
+    &:hover {
+        box-shadow: var(--o-shadow-md, 0 2px 8px rgba(0,0,0,0.10));
+        transform: translateY(-1px);
+        text-decoration: none;
+    }
+}
+
+// Drag ghost feedback
+.o_kanban_view .o_kanban_record.o_kanban_dragged,
+.o_kanban_view .o_kanban_record.o_record_draggable:active {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+    opacity: 0.9;
+}
+
+// Color ribbon modernization (softer, rounder)
+.o_kanban_view .o_kanban_record .o_ribbon_wrapper {
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.o_kanban_view .o_kanban_record .o_ribbon {
+    border-radius: 0 0 4px 0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
