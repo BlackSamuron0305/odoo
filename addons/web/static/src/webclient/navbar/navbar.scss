@@ -250,3 +250,125 @@ body.o_is_superuser .o_menu_systray {
     border-image: repeating-linear-gradient(135deg, #d9b904, #d9b904 10px, #373435 10px, #373435 20px) 2;
     border-image-width: map-get($border-widths, 2);
 }
+
+
+// =============================================================================
+// Sprint 1 — Navbar Modernization
+// =============================================================================
+
+// ── Frosted-glass effect on scroll ──────────────────────────────────────────
+// JS adds .o_navbar_scrolled to .o_main_navbar when window.scrollY > 0
+.o_main_navbar.o_navbar_scrolled {
+    background: rgba($o-brand-odoo, 0.88) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom-color: rgba($o-brand-odoo, 0.3) !important;
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: background var(--o-transition-slow) ease,
+                    backdrop-filter var(--o-transition-slow) ease;
+    }
+}
+
+// ── Active section indicator animation ──────────────────────────────────────
+// Sliding underline on the active nav section entry
+.o_main_navbar .o_menu_sections {
+    .o_nav_entry, .dropdown-toggle {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: rgba($o-white, 0.85);
+            border-radius: var(--o-border-radius-full);
+            transform: translateX(-50%);
+
+            @media (prefers-reduced-motion: no-preference) {
+                transition: width var(--o-transition-base) var(--o-easing-enter);
+            }
+        }
+
+        &.active, &.o_nav_entry_active, &:focus-visible {
+            &::after {
+                width: calc(100% - 1rem);
+            }
+        }
+    }
+}
+
+// ── Systray icon spacing & hit targets ──────────────────────────────────────
+.o_main_navbar .o_menu_systray {
+    --NavBar-entry-padding-left: 6px;
+    --NavBar-entry-padding-right: 6px;
+
+    > .o_nav_entry,
+    > div > .o_nav_entry {
+        min-width: 32px;
+        justify-content: center;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast) ease;
+        }
+    }
+}
+
+// ── Breadcrumb refinements ───────────────────────────────────────────────────
+.o_navbar_breadcrumbs {
+    .o_breadcrumb_item {
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: $o-font-weight-medium;
+    }
+
+    .o_breadcrumb_item + .o_breadcrumb_item::before {
+        content: '/';
+        opacity: .5;
+        margin: 0 .25rem;
+        font-weight: $o-font-weight-normal;
+    }
+}
+
+// ── Mobile burger menu — smoother slide-in animation ────────────────────────
+// The app menu sidebar slides in via CSS transform instead of JS width change
+.o_menu_toggle_sidebar {
+    @media (prefers-reduced-motion: no-preference) {
+        &.o_sidebar_closed {
+            transform: translateX(-100%);
+            transition: transform var(--o-transition-slow) var(--o-easing-exit);
+        }
+
+        &.o_sidebar_open {
+            transform: translateX(0);
+            transition: transform var(--o-transition-slow) var(--o-easing-enter);
+        }
+    }
+}
+
+// Backdrop blur overlay for mobile sidebar
+.o_sidebar_backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: calc(var(--o-zindex-sidebar) - 1);
+    opacity: 0;
+
+    &.o_sidebar_open {
+        opacity: 1;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: opacity var(--o-transition-slow) ease;
+        }
+    }
+
+    @supports (backdrop-filter: blur(4px)) {
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        background: rgba(0, 0, 0, 0.25);
+    }
+}

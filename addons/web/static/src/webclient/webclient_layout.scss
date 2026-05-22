@@ -98,6 +98,28 @@
     }
 }
 
+// =============================================================================
+// Sprint 1 — WebClient layout wrapper for AppRailSidebar
+// =============================================================================
+
+// The layout wrapper sits between the navbar and action container.
+// On desktop (≥ lg), the app rail sidebar is a flex sibling of the content area.
+.o_web_client_layout {
+    flex: 1 1 auto;
+    height: 0; // fills available space in flex column parent
+
+    .o_web_client_content {
+        height: 100%;
+        overflow: hidden;
+
+        // Ensure the action manager children still get 100% height
+        > .o_action_manager {
+            height: 100%;
+        }
+    }
+}
+
+
 //------------------------------------------------------------------------------
 // Print Layout
 //------------------------------------------------------------------------------

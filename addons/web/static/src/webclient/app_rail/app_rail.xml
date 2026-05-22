@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+  <!--
+    Sprint 1 — App Rail Sidebar (desktop ≥ lg)
+    Shows all Odoo apps as an icon-rail, expands on hover/click.
+    Only rendered on desktop — hidden on mobile via CSS.
+  -->
+  <t t-name="web.AppRailSidebar">
+    <aside
+      class="o_app_rail"
+      t-att-class="{
+        'o_app_rail_expanded': state.expanded
+      }"
+      role="navigation"
+      aria-label="App navigation"
+    >
+      <!-- Toggle button (collapse / expand) -->
+      <button
+        class="o_app_rail_toggle"
+        type="button"
+        t-on-click="toggleExpanded"
+        aria-label="Toggle app navigation"
+        t-att-aria-expanded="state.expanded"
+      >
+        <i class="fa fa-th" aria-hidden="true"/>
+      </button>
+
+      <!-- App list -->
+      <ul class="o_app_rail_list" role="list">
+        <t t-foreach="apps" t-as="app" t-key="app.id">
+          <li
+            class="o_app_rail_item"
+            t-att-class="{
+              'o_app_rail_item_active': currentApp and currentApp.id === app.id
+            }"
+            role="listitem"
+          >
+            <a
+              class="o_app_rail_link"
+              t-att-href="'#menu_id=' + app.id"
+              t-on-click.prevent="() => this.selectApp(app)"
+              t-att-title="app.name"
+              t-att-aria-label="app.name"
+              t-att-aria-current="currentApp and currentApp.id === app.id ? 'page' : false"
+            >
+              <span class="o_app_rail_icon" aria-hidden="true">
+                <!-- App icon: use webIconData if available, else first letter -->
+                <t t-if="app.webIconData">
+                  <img
+                    t-att-src="app.webIconData"
+                    t-att-alt="app.name"
+                    class="o_app_rail_icon_img"
+                  />
+                </t>
+                <t t-else="">
+                  <span class="o_app_rail_icon_letter" t-esc="app.name[0]"/>
+                </t>
+              </span>
+              <span class="o_app_rail_label" aria-hidden="true" t-esc="app.name"/>
+            </a>
+          </li>
+        </t>
+      </ul>
+    </aside>
+  </t>
+
+</templates>

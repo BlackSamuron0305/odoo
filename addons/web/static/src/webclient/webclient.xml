@@ -5,7 +5,13 @@
         <t t-if="!state.fullscreen">
             <NavBar/>
         </t>
-        <ActionContainer/>
+        <!-- Sprint 1: Desktop icon-rail sidebar (hidden on mobile via CSS) -->
+        <div class="o_web_client_layout d-flex">
+            <AppRailSidebar t-if="!state.fullscreen"/>
+            <div class="o_web_client_content flex-grow-1 min-w-0">
+                <ActionContainer/>
+            </div>
+        </div>
         <MainComponentsContainer/>
     </t>
 

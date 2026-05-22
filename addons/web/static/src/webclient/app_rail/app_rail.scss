@@ -1,0 +1,186 @@
+// =============================================================================
+// Sprint 1 — App Rail Sidebar
+// Desktop icon-rail: 56px collapsed, 240px expanded.
+// Only visible on ≥ lg breakpoint.
+// =============================================================================
+
+$o-app-rail-width-collapsed:  56px;
+$o-app-rail-width-expanded:   240px;
+$o-app-rail-icon-size:        24px;
+$o-app-rail-item-height:      44px;
+
+.o_app_rail {
+    display: none; // hidden on mobile by default
+
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: $o-app-rail-width-collapsed;
+        height: calc(100vh - var(--o-navbar-height));
+        position: sticky;
+        top: var(--o-navbar-height);
+        background: var(--o-view-background-color, white);
+        border-right: 1px solid var(--o-gray-200, #e9ecef);
+        overflow: hidden;
+        z-index: var(--o-zindex-sidebar, 1010);
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: width var(--o-transition-slow, 200ms) var(--o-easing-enter, ease);
+        }
+
+        &.o_app_rail_expanded {
+            width: $o-app-rail-width-expanded;
+        }
+    }
+}
+
+// ── Toggle button ─────────────────────────────────────────────────────────
+.o_app_rail_toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: $o-app-rail-width-collapsed;
+    height: $o-app-rail-item-height;
+    border: none;
+    background: transparent;
+    color: var(--o-gray-600, #6c757d);
+    cursor: pointer;
+    margin: 4px 0;
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: color var(--o-transition-fast, 100ms) ease,
+                    background var(--o-transition-fast, 100ms) ease;
+    }
+
+    &:hover, &:focus-visible {
+        color: var(--o-brand-primary, #71639e);
+        background: var(--o-component-active-bg, #e2ddef);
+        outline: none;
+        border-radius: var(--o-border-radius-lg, 6px);
+    }
+
+    .fa {
+        font-size: 18px;
+    }
+}
+
+// ── App list ──────────────────────────────────────────────────────────────
+.o_app_rail_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+
+    // Custom scrollbar styling
+    &::-webkit-scrollbar { width: 4px; }
+    &::-webkit-scrollbar-track { background: transparent; }
+    &::-webkit-scrollbar-thumb {
+        background: var(--o-gray-300, #dee2e6);
+        border-radius: var(--o-border-radius-full, 9999px);
+    }
+}
+
+// ── App item ──────────────────────────────────────────────────────────────
+.o_app_rail_item {
+    position: relative;
+
+    &.o_app_rail_item_active > .o_app_rail_link {
+        background: var(--o-component-active-bg, #e2ddef);
+        color: var(--o-brand-primary, #71639e);
+        font-weight: $o-font-weight-medium;
+
+        // Left 3px brand accent border
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3px;
+            height: 60%;
+            background: var(--o-brand-primary, #71639e);
+            border-radius: 0 var(--o-border-radius-sm, 3px) var(--o-border-radius-sm, 3px) 0;
+        }
+    }
+}
+
+// ── App link ──────────────────────────────────────────────────────────────
+.o_app_rail_link {
+    display: flex;
+    align-items: center;
+    height: $o-app-rail-item-height;
+    padding: 0 0 0 calc(($o-app-rail-width-collapsed - $o-app-rail-icon-size) * 0.5);
+    text-decoration: none;
+    color: var(--o-gray-700, #495057);
+    white-space: nowrap;
+    position: relative;
+    border-radius: 0;
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: background var(--o-transition-fast, 100ms) ease,
+                    color var(--o-transition-fast, 100ms) ease;
+    }
+
+    &:hover {
+        background: var(--o-gray-100, #f8f9fa);
+        color: var(--o-gray-900, #212529);
+        text-decoration: none;
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--o-brand-primary, #71639e);
+        outline-offset: -2px;
+    }
+}
+
+// ── Icon ──────────────────────────────────────────────────────────────────
+.o_app_rail_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: $o-app-rail-icon-size;
+    height: $o-app-rail-icon-size;
+}
+
+.o_app_rail_icon_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--o-border-radius-sm, 3px);
+}
+
+.o_app_rail_icon_letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: var(--o-brand-primary, #71639e);
+    color: white;
+    font-size: 12px;
+    font-weight: $o-font-weight-bold;
+    border-radius: var(--o-border-radius-sm, 3px);
+    text-transform: uppercase;
+}
+
+// ── Label (only visible when expanded) ───────────────────────────────────
+.o_app_rail_label {
+    padding-left: 12px;
+    font-size: var(--o-font-size-base, 14px);
+    font-weight: inherit;
+    opacity: 0;
+    pointer-events: none;
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: opacity var(--o-transition-base, 150ms) ease;
+    }
+
+    .o_app_rail_expanded & {
+        opacity: 1;
+    }
+}
