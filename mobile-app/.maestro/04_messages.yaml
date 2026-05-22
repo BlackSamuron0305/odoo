@@ -1,0 +1,13 @@
+appId: com.odoo.mobile
+---
+# Maestro E2E — Messages
+- launchApp
+- waitForAnimationToEnd
+- tapOn: "Messages"
+- waitForAnimationToEnd
+- assertVisible:
+    anyOf:
+      - "No messages"
+      - "Your inbox is empty"
+      - "Write a reply..."
+      - "h ago"

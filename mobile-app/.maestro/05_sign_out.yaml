@@ -1,0 +1,12 @@
+appId: com.odoo.mobile
+---
+# Maestro E2E — Sign Out
+- launchApp
+- waitForAnimationToEnd
+- tapOn: "⋯"
+- waitForAnimationToEnd
+- assertVisible: "Sign Out"
+- tapOn: "Sign Out"
+- tapOn: "Cancel"
+  # Should still be authenticated
+- assertVisible: "⋯"

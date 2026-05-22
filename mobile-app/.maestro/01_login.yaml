@@ -1,0 +1,29 @@
+appId: com.odoo.mobile
+---
+# Maestro E2E — Login flow
+- launchApp
+- assertVisible: "Connect to Odoo"
+- tapOn: "https://"
+- clearText
+- inputText: "https://demo.odoo.com"
+- tapOn: "Connect"
+- waitForAnimationToEnd
+- assertVisible: "Select Database"
+- tapOn:
+    text: "demo"
+    optional: true
+- tapOn: "Continue"
+- assertVisible: "Sign In"
+- tapOn:
+    id: ".*emailAddress.*"
+    optional: true
+- inputText: "admin"
+- tapOn:
+    id: ".*password.*"
+    optional: true
+- inputText: "admin"
+- tapOn: "Sign In"
+- waitForAnimationToEnd
+- assertVisible: "Good"
+  # Verify home screen loaded
+- assertVisible: "Home"

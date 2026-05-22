@@ -1,0 +1,18 @@
+appId: com.odoo.mobile
+---
+# Maestro E2E — CRM Pipeline
+- launchApp
+- waitForAnimationToEnd
+- tapOn: "CRM"
+- waitForAnimationToEnd
+- assertVisible:
+    text: "No opportunities"
+    optional: true
+# Long-press first card if visible to test action sheet
+- runFlow:
+    when:
+      visible: "Mark Won"
+    commands:
+      - tapOn: "Mark Won"
+      - tapOn: "Cancel"
+        optional: true

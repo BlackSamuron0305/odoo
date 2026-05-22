@@ -1,0 +1,15 @@
+appId: com.odoo.mobile
+---
+# Maestro E2E — Contacts
+- launchApp
+- waitForAnimationToEnd
+- tapOn: "Contacts"
+- waitForAnimationToEnd
+- assertVisible: "Search contacts..."
+- tapOn: "Search contacts..."
+- inputText: "Mitchell"
+- waitForAnimationToEnd
+- clearText
+- tapOn:
+    text: "✕"
+    optional: true
