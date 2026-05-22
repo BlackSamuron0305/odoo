@@ -19,55 +19,20 @@ export default function AppLayout() {
           height: 60,
           paddingBottom: 8,
         },
-        tabBarLabelStyle: {
-          fontSize: 11,
-          fontWeight: '600',
-        },
+        tabBarLabelStyle: { fontSize: 11, fontWeight: '600' },
         headerStyle: { backgroundColor: '#71639e' },
         headerTintColor: 'white',
         headerTitleStyle: { fontWeight: '600' },
       }}
     >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarLabel: 'Home',
-          tabBarIcon: ({ focused }) => <TabIcon emoji="🏠" focused={focused} />,
-        }}
-      />
-      <Tabs.Screen
-        name="crm"
-        options={{
-          title: 'CRM',
-          tabBarLabel: 'CRM',
-          tabBarIcon: ({ focused }) => <TabIcon emoji="📈" focused={focused} />,
-        }}
-      />
-      <Tabs.Screen
-        name="contacts"
-        options={{
-          title: 'Contacts',
-          tabBarLabel: 'Contacts',
-          tabBarIcon: ({ focused }) => <TabIcon emoji="👥" focused={focused} />,
-        }}
-      />
-      <Tabs.Screen
-        name="calendar"
-        options={{
-          title: 'Calendar',
-          tabBarLabel: 'Calendar',
-          tabBarIcon: ({ focused }) => <TabIcon emoji="📅" focused={focused} />,
-        }}
-      />
-      <Tabs.Screen
-        name="more"
-        options={{
-          title: 'More',
-          tabBarLabel: 'More',
-          tabBarIcon: ({ focused }) => <TabIcon emoji="⋯" focused={focused} />,
-        }}
-      />
+      <Tabs.Screen name="index" options={{ title: 'Home', tabBarIcon: ({ focused }) => <TabIcon emoji="🏠" focused={focused} /> }} />
+      <Tabs.Screen name="crm" options={{ title: 'CRM', tabBarIcon: ({ focused }) => <TabIcon emoji="📈" focused={focused} /> }} />
+      <Tabs.Screen name="contacts" options={{ title: 'Contacts', tabBarIcon: ({ focused }) => <TabIcon emoji="👥" focused={focused} /> }} />
+      <Tabs.Screen name="messages" options={{ title: 'Messages', tabBarIcon: ({ focused }) => <TabIcon emoji="💬" focused={focused} /> }} />
+      <Tabs.Screen name="more" options={{ title: 'More', tabBarIcon: ({ focused }) => <TabIcon emoji="⋯" focused={focused} /> }} />
+      {/* Hidden from tab bar but accessible as routes */}
+      <Tabs.Screen name="calendar" options={{ href: null, title: 'Calendar' }} />
+      <Tabs.Screen name="activities" options={{ href: null, title: 'Activities' }} />
     </Tabs>
   );
 }

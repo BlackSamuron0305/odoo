@@ -59,6 +59,24 @@ export default function MoreScreen() {
         ))}
       </View>
 
+      {/* Quick links */}
+      <View className="bg-white rounded-xl overflow-hidden mt-2">
+        {[
+          { label: '📅 Calendar',    route: '/(app)/calendar'   },
+          { label: '✅ Activities',  route: '/(app)/activities' },
+          { label: '🛒 POS Sessions', route: '/pos-sessions'    },
+        ].map(({ label, route }) => (
+          <TouchableOpacity
+            key={route}
+            className="flex-row justify-between items-center px-4 py-3 border-b border-odoo-100"
+            onPress={() => router.push(route as never)}
+          >
+            <Text className="text-sm text-odoo-800">{label}</Text>
+            <Text className="text-odoo-400">›</Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+
       {/* Sign out */}
       <TouchableOpacity
         className="bg-status-danger rounded-xl py-4 items-center mt-4"
