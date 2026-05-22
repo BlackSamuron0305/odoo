@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+﻿# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * auth_totp_mail
 #
@@ -192,6 +192,9 @@ msgid ""
 "                            Recommended for extra security.\n"
 "                        </span>"
 msgstr ""
+"<span class=\"text-muted\">\n"
+"                            建議用於額外安全性。\n"
+"                        </span>"
 
 #. module: auth_totp_mail
 #: model_terms:ir.ui.view,arch_db:auth_totp_mail.account_security_alert
@@ -230,7 +233,7 @@ msgstr "未能傳送電子郵件：使用者 %s 沒有電郵地址。"
 #. module: auth_totp_mail
 #: model_terms:ir.ui.view,arch_db:auth_totp_mail.res_users_view_form
 msgid "Click to enable 2FA."
-msgstr ""
+msgstr "點擊啟用雙重驗證。"
 
 #. module: auth_totp_mail
 #: model:ir.model,name:auth_totp_mail.model_res_config_settings

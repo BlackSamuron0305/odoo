@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+﻿# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * auth_totp
 #
@@ -46,6 +46,10 @@ msgid ""
 "                            Enabled\n"
 "                        </span>"
 msgstr ""
+"<i class=\"fa fa-check text-success\"/>\n"
+"                        <span class=\"fw-bold ms-1 me-2\">\n"
+"                            사용\n"
+"                        </span>"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_form
@@ -68,11 +72,14 @@ msgid ""
 "                            Recommended for extra security.\n"
 "                        </span>"
 msgstr ""
+"<span class=\"text-muted\">\n"
+"                            추가 보안을 위해 권장됩니다.\n"
+"                        </span>"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_wizard
 msgid "Add this key in your Authenticator app"
-msgstr ""
+msgstr "인증 앱에 이 키를 추가하세요"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.auth_totp_form
@@ -220,7 +227,7 @@ msgstr "QR 코드"
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_wizard
 msgid "Scan this barcode in your Authenticator app"
-msgstr ""
+msgstr "인증 앱에서 이 바코드를 스캔하세요"
 
 #. module: auth_totp
 #: model:ir.model.fields,field_description:auth_totp.field_auth_totp_device__scope
@@ -358,7 +365,7 @@ msgstr "인증에 실패했습니다. 가장 최근에 수신한 6자리 코드�
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_wizard
 msgid "Write the code given by your app"
-msgstr ""
+msgstr "앱에서 제공하는 코드를 입력하세요"
 
 #. module: auth_totp
 #. odoo-python

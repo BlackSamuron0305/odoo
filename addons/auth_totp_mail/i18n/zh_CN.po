@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+﻿# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * auth_totp_mail
 #
@@ -225,7 +225,7 @@ msgstr "无法发送邮件：用户 %s 邮件地址为空。"
 #. module: auth_totp_mail
 #: model_terms:ir.ui.view,arch_db:auth_totp_mail.res_users_view_form
 msgid "Click to enable 2FA."
-msgstr ""
+msgstr "点击启用双重认证。"
 
 #. module: auth_totp_mail
 #: model:ir.model,name:auth_totp_mail.model_res_config_settings
