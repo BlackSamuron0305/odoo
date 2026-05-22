@@ -47,8 +47,8 @@ class WebManifest(http.Controller):
             'scope': '/odoo',
             'start_url': '/odoo',
             'display': 'standalone',
-            'background_color': '#714B67',
-            'theme_color': '#714B67',
+            'background_color': '#71639e',  # Sprint 5: brand primary
+            'theme_color': '#71639e',        # Sprint 5: brand primary (was #714B67)
             'prefer_related_applications': False,
         }
         icon_sizes = ['192x192', '512x512']

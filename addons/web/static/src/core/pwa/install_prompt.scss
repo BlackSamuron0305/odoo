@@ -8,6 +8,47 @@
     inset: 0 auto auto 0 !important;
     width: fit-content !important;
 
+    // Sprint 5: brand the install prompt modal
+    .modal-header {
+        background: linear-gradient(
+            135deg,
+            var(--o-brand-primary, #71639e) 0%,
+            rgba(113,99,158,0.7) 100%
+        );
+        color: white;
+        border-radius: 20px 20px 0 0;
+
+        .modal-title { color: white; }
+        .btn-close { filter: invert(1); }
+    }
+
+    .o_install_prompt_icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(113,99,158,0.35);
+    }
+
+    .o_install_prompt_benefits {
+        list-style: none;
+        padding: 0;
+        margin: 12px 0;
+
+        li {
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+
+            &::before {
+                content: '✓';
+                color: var(--o-brand-primary, #71639e);
+                font-weight: 700;
+            }
+        }
+    }
+
     &.o_touch_bounce {
         animation: none;
     }

@@ -1,0 +1,84 @@
+// Sprint 5 — PWA Bottom Navigation Bar
+// Only visible on mobile (<md) in PWA standalone mode
+
+.o_bottom_nav {
+    display: none; // hidden by default — shown only by media query below
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(56px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: var(--o-view-background-color, white);
+    border-top: 1px solid var(--o-gray-200, #e9ecef);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    display: none; // overridden below
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.o_bottom_nav_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 4px;
+    color: var(--o-gray-500, #adb5bd);
+    font-size: 10px;
+    font-weight: 500;
+    border-top: 2px solid transparent;
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: color var(--o-transition-fast, 100ms) ease;
+    }
+
+    .fa {
+        font-size: 18px;
+    }
+
+    .o_bottom_nav_app_icon {
+        width: 22px;
+        height: 22px;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+
+    > span {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 60px;
+    }
+
+    &.o_bottom_nav_active {
+        color: var(--o-brand-primary, #71639e);
+        border-top-color: var(--o-brand-primary, #71639e);
+        font-weight: 600;
+    }
+
+    &:hover:not(.o_bottom_nav_active) {
+        color: var(--o-gray-700, #495057);
+    }
+}
+
+// Only show on mobile + PWA standalone
+@media (display-mode: standalone) {
+    @include media-breakpoint-down(md) {
+        .o_bottom_nav {
+            display: flex;
+        }
+
+        // Push content up to avoid overlap
+        .o_web_client .o_main_content,
+        .o_web_client .o_action_manager {
+            padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+        }
+    }
+}

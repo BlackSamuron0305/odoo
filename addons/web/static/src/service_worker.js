@@ -2,8 +2,48 @@
 
 /* eslint-disable no-restricted-globals */
 const cacheName = "odoo-sw-cache";
+// Sprint 5: separate cache buckets
+const STATIC_CACHE = "odoo-static-v1";
+const IMAGE_CACHE  = "odoo-images-v1";
 const homepageURL = "/odoo";
 const offLineURL = `${homepageURL}/offline`;
+
+// Sprint 5: static asset patterns to cache-first (JS, CSS, fonts, icons)
+const STATIC_PATTERNS = [
+    /\/web\/static\/.*\.(js|css|woff2?|ttf|eot|otf|svg|png|ico)(\?|$)/,
+    /\/web\/assets\//,
+];
+// Sprint 5: image patterns — cache-first, long-lived
+const IMAGE_PATTERNS = [
+    /\/web\/image\//,
+    /\/web\/static\/img\//,
+];
+// Sprint 5: API patterns — always network-first
+const API_PATTERNS = [
+    /\/web\/dataset\//,
+    /\/web\/action\//,
+    /\/odoo\/\w+\/\d+/,
+];
+
+// Sprint 5: Cache-first for static assets
+async function cacheFirstStatic(request) {
+    const cache = await caches.open(STATIC_CACHE);
+    const cached = await cache.match(request);
+    if (cached) return cached;
+    const response = await fetch(request);
+    if (response.ok) cache.put(request, response.clone());
+    return response;
+}
+
+// Sprint 5: Cache-first for images (30 day TTL via headers)
+async function cacheFirstImage(request) {
+    const cache = await caches.open(IMAGE_CACHE);
+    const cached = await cache.match(request);
+    if (cached) return cached;
+    const response = await fetch(request);
+    if (response.ok) cache.put(request, response.clone());
+    return response;
+}
 
 let sessionInfo = null;
 
@@ -128,6 +168,21 @@ self.addEventListener("fetch", (event) => {
     ) {
         return serveShareTarget(event);
     }
+
+    const url = event.request.url;
+
+    // Sprint 5: Cache-first for static assets
+    if (STATIC_PATTERNS.some((p) => p.test(url))) {
+        event.respondWith(cacheFirstStatic(event.request));
+        return;
+    }
+
+    // Sprint 5: Cache-first for images
+    if (IMAGE_PATTERNS.some((p) => p.test(url))) {
+        event.respondWith(cacheFirstImage(event.request));
+        return;
+    }
+
     if (
         (event.request.mode === "navigate" && event.request.destination === "document") ||
         // request.mode = navigate isn't supported in all browsers => check for http header accept:text/html

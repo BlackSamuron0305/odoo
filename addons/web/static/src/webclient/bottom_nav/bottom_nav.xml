@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+<!-- Sprint 5 — PWA Bottom Navigation Bar -->
+<t t-name="web.BottomNav">
+    <!-- Only shown on mobile + standalone PWA mode via CSS media queries -->
+    <nav class="o_bottom_nav" t-att-class="{'d-none': state.keyboardVisible}">
+        <!-- Home -->
+        <button class="o_bottom_nav_item" t-att-class="{'o_bottom_nav_active': !currentApp}" t-on-click="goHome">
+            <i class="fa fa-home"/>
+            <span>Home</span>
+        </button>
+        <!-- App shortcuts (up to 3) -->
+        <t t-foreach="apps" t-as="app" t-key="app.id">
+            <button class="o_bottom_nav_item"
+                    t-att-class="{'o_bottom_nav_active': currentApp?.id === app.id}"
+                    t-on-click="() => selectApp(app)">
+                <img t-if="app.webIcon" t-att-src="app.webIcon" class="o_bottom_nav_app_icon"/>
+                <i t-else="" class="fa fa-th-large"/>
+                <span t-esc="app.name"/>
+            </button>
+        </t>
+        <!-- Menu overflow -->
+        <button class="o_bottom_nav_item" t-on-click="() => env.services.home_menu.toggle()">
+            <i class="fa fa-bars"/>
+            <span>Menu</span>
+        </button>
+    </nav>
+</t>
+
+</templates>
