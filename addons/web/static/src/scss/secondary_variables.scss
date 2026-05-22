@@ -44,3 +44,46 @@ $o-caret-down: url("data:image/svg+xml," +
 
 $o-bubble-color-size: $o-font-size-base;
 $o-bubble-color-size-xl: $o-font-size-base * 1.36;
+
+
+// =============================================================================
+// Sprint 0 — Dark Mode Baseline Scaffold
+// The [data-bs-theme="dark"] block is INERT until Sprint 4 enables the toggle.
+// Values here are the target dark palette — they do nothing until the attribute
+// is set on <html> by the user's preference or the dark mode toggle in Sprint 4.
+// =============================================================================
+
+[data-bs-theme="dark"] {
+    // Core backgrounds
+    --o-view-background-color:       #1a1a2e;
+    --o-webclient-background-color:  #0f0f1a;
+
+    // Surface layers (gray scale inverted for dark)
+    --o-gray-100: #1e1e2e;
+    --o-gray-200: #252535;
+    --o-gray-300: #2e2e40;
+    --o-gray-400: #3a3a50;
+    --o-gray-500: #5a5a78;
+    --o-gray-600: #9999bb;
+    --o-gray-700: #bbbbdd;
+    --o-gray-800: #d8d8f0;
+    --o-gray-900: #e8e8f0;
+
+    // Brand colors lightened for dark-bg contrast
+    --o-brand-primary:   #9b8ec4;
+    --o-brand-secondary: #aaaaaa;
+    --o-action-color:    #20b2ba;
+
+    // UI text
+    --o-main-text-color: #e8e8f0;
+    --o-main-link-color: #b8a9e0;
+
+    // Component interaction — adjusted for dark surfaces
+    --o-component-active-bg:     rgba(155, 142, 196, 0.20);
+    --o-component-active-border: #9b8ec4;
+
+    // Elevated shadows are deeper in dark mode
+    --o-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.30);
+    --o-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.40);
+    --o-shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.55);
+}

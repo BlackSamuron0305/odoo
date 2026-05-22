@@ -295,3 +295,96 @@ $o-btns-bs-outline-override: map-merge((
 $o-easing-enter: cubic-bezier(0.05, 0.7, 0.1, 1.0) !default;
 // Exit easing
 $o-easing-exit: cubic-bezier(0.3, 0.0, 0.8, 0.15) !default;
+
+
+// =============================================================================
+// Sprint 0 — CSS Custom Properties Layer
+// Exposes key $o-* SCSS variables as :root CSS custom properties (--o-*)
+// These can be used in vanilla CSS, JS, and are overridden by dark mode.
+// =============================================================================
+
+// Use a mixin so this block runs *after* SCSS variables are resolved.
+@mixin o-declare-root-tokens {
+    :root {
+        // Brand colors
+        --o-brand-primary:      #{$o-brand-primary};
+        --o-brand-secondary:    #{$o-brand-secondary};
+        --o-community-color:    #{$o-community-color};
+        --o-enterprise-color:   #{$o-enterprise-color};
+        --o-action-color:       #{$o-enterprise-action-color};
+
+        // Status colors
+        --o-success:  #{$o-success};
+        --o-info:     #{$o-info};
+        --o-warning:  #{$o-warning};
+        --o-danger:   #{$o-danger};
+
+        // Gray scale
+        --o-gray-100: #{$o-gray-100};
+        --o-gray-200: #{$o-gray-200};
+        --o-gray-300: #{$o-gray-300};
+        --o-gray-400: #{$o-gray-400};
+        --o-gray-500: #{$o-gray-500};
+        --o-gray-600: #{$o-gray-600};
+        --o-gray-700: #{$o-gray-700};
+        --o-gray-800: #{$o-gray-800};
+        --o-gray-900: #{$o-gray-900};
+
+        // UI backgrounds & text
+        --o-view-background-color:       #{$o-view-background-color};
+        --o-webclient-background-color:  #{$o-webclient-background-color};
+        --o-main-text-color:             #{$o-main-text-color};
+        --o-main-link-color:             #{$o-main-link-color};
+        --o-main-favorite-color:         #{$o-main-favorite-color};
+
+        // Component interaction states
+        --o-component-active-bg:     #{$o-component-active-bg};
+        --o-component-active-border: #{$o-component-active-border};
+
+        // Spacing
+        --o-spacer:               #{$o-spacer};
+        --o-form-spacing-unit:    #{$o-form-spacing-unit};
+        --o-horizontal-padding:   #{$o-horizontal-padding};
+        --o-dropdown-hpadding:    #{$o-dropdown-hpadding};
+
+        // Border radius
+        --o-border-radius-sm:   #{$o-border-radius-sm};
+        --o-border-radius:      #{$o-border-radius};
+        --o-border-radius-lg:   #{$o-border-radius-lg};
+        --o-border-radius-xl:   0.5rem;   // 8px — new token for Sprint 1+
+        --o-border-radius-full: 9999px;   // pill shape
+
+        // Elevation / shadow system (new in Sprint 0)
+        --o-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+        --o-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.10);
+        --o-shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.14);
+
+        // Typography
+        --o-font-size-base:         #{$o-font-size-base};
+        --o-font-size-base-touch:   #{$o-font-size-base-touch};
+        --o-font-size-base-small:   #{$o-font-size-base-small};
+        --o-font-size-base-smaller: #{$o-font-size-base-smaller};
+        --o-font-weight-normal:     #{$o-font-weight-normal};
+        --o-font-weight-medium:     #{$o-font-weight-medium};
+        --o-font-weight-bold:       #{$o-font-weight-bold};
+        --o-line-height-base:       #{$o-line-height-base};
+
+        // Navbar
+        --o-navbar-height: #{$o-navbar-height};
+
+        // Transitions (new in Sprint 0)
+        --o-transition-fast:  100ms;
+        --o-transition-base:  150ms;
+        --o-transition-slow:  200ms;
+        --o-easing-enter: #{$o-easing-enter};
+        --o-easing-exit:  #{$o-easing-exit};
+
+        // Z-index scale
+        --o-zindex-navbar:   1000;
+        --o-zindex-sidebar:  1010;
+        --o-zindex-dropdown: 1020;
+        --o-zindex-modal:    1050;
+        --o-zindex-popover:  1070;
+        --o-zindex-tooltip:  1080;
+    }
+}

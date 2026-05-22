@@ -1,3 +1,6 @@
+// Sprint 0: emit all --o-* CSS custom properties declared in primary_variables.scss
+@include o-declare-root-tokens;
+
 :root {
   --o-webclient-color-scheme:#{$o-webclient-color-scheme};
 
