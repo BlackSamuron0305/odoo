@@ -42,6 +42,11 @@ package-lock.json
 package.json
 .husky
 
+# Allow mobile-app config files (excluded by rules above)
+!mobile-app/package.json
+!mobile-app/package-lock.json
+!mobile-app/tsconfig.json
+
 # various virtualenv
 /bin/
 /build/
