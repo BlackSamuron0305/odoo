@@ -98,3 +98,30 @@ html {
         display: none;
     }
 }
+
+
+// =============================================================================
+// Sprint 5b - POS Design Token Integration + Root Modernization
+// =============================================================================
+
+.pos {
+    // Replace hardcoded #f0eeee with design token
+    background-color: var(--o-webclient-background-color, #f5f4f6);
+    color: var(--o-main-text-color, #212529);
+
+    // Increase numpad button height
+    --btn-height-size: 56px;
+
+    // Brand color custom property for POS
+    --pos-brand: var(--o-brand-primary, #71639e);
+    --pos-surface: var(--o-view-background-color, white);
+    --pos-border: var(--o-gray-200, #e9ecef);
+}
+
+// POS dark mode
+[data-bs-theme=dark] .pos {
+    background-color: #0f0f1a;
+    color: #e8e8f0;
+
+    a { color: var(--o-gray-300, #dee2e6); }
+}

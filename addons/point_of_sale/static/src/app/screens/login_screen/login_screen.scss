@@ -17,3 +17,53 @@
         }
     }
 }
+
+
+// Sprint 5b - Login / employee screen modernization
+.pos .login-screen {
+    .employee-list .employee {
+        border-radius: 12px;
+        border: 1px solid var(--pos-border, #e9ecef);
+        background: var(--pos-surface, white);
+        min-height: 80px; // POS tap target
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: box-shadow var(--o-transition-base, 150ms) ease;
+        }
+
+        &:hover, &:active {
+            box-shadow: var(--o-shadow-md, 0 2px 8px rgba(0,0,0,0.1));
+        }
+
+        .employee-name {
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    // PIN dots (circular, iOS-style)
+    .pin-dots {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        padding: 16px;
+
+        .pin-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid var(--pos-brand, #71639e);
+
+            &.filled {
+                background: var(--pos-brand, #71639e);
+            }
+        }
+    }
+}

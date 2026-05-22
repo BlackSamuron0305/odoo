@@ -56,3 +56,43 @@
 .fade-effect {
   animation: fadeInOut 1000ms ease-in-out;
 }
+
+
+// Sprint 5b - Payment screen modernization
+.pos .payment-screen {
+    .payment-method {
+        min-height: 64px; // Required: minimum 64px tap target for payment methods
+        border-radius: 8px;
+        border: 1px solid var(--pos-border, #e9ecef);
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        background: var(--pos-surface, white);
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease;
+        }
+
+        &.selected {
+            background: rgba(113,99,158,0.1);
+            border-color: var(--pos-brand, #71639e);
+            color: var(--pos-brand, #71639e);
+        }
+    }
+
+    .payment-display {
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: monospace;
+    }
+
+    .payment-paid {
+        color: #28a745;
+        font-weight: 700;
+    }
+
+    .payment-change {
+        color: var(--pos-brand, #71639e);
+        font-weight: 700;
+    }
+}

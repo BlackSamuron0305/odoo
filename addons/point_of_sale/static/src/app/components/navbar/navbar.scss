@@ -47,3 +47,18 @@
         min-width: 96px;
     }
 }
+
+
+// Sprint 5b - POS navbar modernization
+.pos .pos-top-header {
+    background: var(--pos-brand, #71639e);
+    color: white;
+    height: 56px;
+    min-height: 56px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+
+    .pos-top-header-title {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
