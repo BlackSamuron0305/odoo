@@ -1154,3 +1154,152 @@
 .o_breadcrumb:not(:has(.breadcrumb)) + .o_form_status_indicator {
     align-self: center !important;
 }
+
+
+// =============================================================================
+// Sprint 2 — Form Views Modernization (SCSS-only, no logic changes)
+// =============================================================================
+
+// ── Form sheet design ─────────────────────────────────────────────────────
+.o_form_view .o_form_sheet {
+    padding: 1.5rem;
+    border-radius: var(--o-border-radius-xl, 0.5rem);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.04);
+
+    @include media-breakpoint-up(lg) {
+        padding: 1.5rem 2rem;
+    }
+}
+
+// ── Input fields — padding and focus ring ─────────────────────────────────
+.o_form_view .o_field_widget .o_input,
+.o_form_view .o_form_editable .o_input {
+    padding: 5px 8px;
+    border-radius: var(--o-border-radius-lg, 6px);
+    border: 1px solid var(--o-gray-300, #dee2e6);
+    background: transparent;
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: border-color var(--o-transition-base, 150ms) ease,
+                    box-shadow var(--o-transition-base, 150ms) ease;
+    }
+
+    &:focus, &:focus-within {
+        border-color: var(--o-brand-primary, #71639e);
+        box-shadow: 0 0 0 3px rgba(113, 99, 158, 0.12);
+        outline: none;
+    }
+}
+
+// ── Required field left-border accent ────────────────────────────────────
+.o_form_view .o_form_editable .o_required_modifier {
+    position: relative;
+
+    > .o_input {
+        border-left: 3px solid var(--o-brand-primary, #71639e);
+        padding-left: 7px; // compensate for the extra border
+    }
+}
+
+// ── Pill statusbar ────────────────────────────────────────────────────────
+.o_form_view .o_statusbar_status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    > .o_arrow_button, > button {
+        border-radius: var(--o-border-radius-full, 9999px) !important;
+        padding: 4px 14px !important;
+        font-size: 12px;
+        font-weight: $o-font-weight-medium;
+        border: none;
+
+        @media (prefers-reduced-motion: no-preference) {
+            transition: background var(--o-transition-fast, 100ms) ease,
+                        color var(--o-transition-fast, 100ms) ease;
+        }
+
+        &:not(.btn-primary):not(.o_arrow_button_current) {
+            background: var(--o-gray-200, #e9ecef);
+            color: var(--o-gray-700, #495057);
+
+            &:hover {
+                background: var(--o-gray-300, #dee2e6);
+                color: var(--o-gray-900, #212529);
+            }
+        }
+
+        &.btn-primary, &.o_arrow_button_current {
+            background: var(--o-brand-primary, #71639e);
+            color: white;
+        }
+
+        // Remove old arrow shapes on pills
+        &::before, &::after {
+            display: none !important;
+        }
+    }
+}
+
+// ── Sticky save/discard action bar ───────────────────────────────────────
+// When the form scrolls, the bottom action bar sticks to the viewport bottom
+.o_form_view .o_form_buttons_view {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    background: var(--o-view-background-color, white);
+    padding: 0.75rem var(--o-horizontal-padding, 1rem);
+    border-top: 1px solid var(--o-gray-200, #e9ecef);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+}
+
+// ── Smart buttons (stat buttons) redesign ────────────────────────────────
+.o_form_view .o_form_buttons_stats .o_stat_button,
+.o_form_view .oe_button_box .o_stat_button {
+    height: 52px; // was 44px — better touch target
+    border-radius: var(--o-border-radius-lg, 6px);
+    border: 1px solid var(--o-gray-200, #e9ecef);
+    box-shadow: var(--o-shadow-sm, 0 1px 2px rgba(0,0,0,0.06));
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: box-shadow var(--o-transition-base, 150ms) ease,
+                    transform var(--o-transition-base, 150ms) ease;
+    }
+
+    &:hover {
+        box-shadow: var(--o-shadow-md, 0 2px 8px rgba(0,0,0,0.10));
+        transform: translateY(-1px);
+        text-decoration: none;
+    }
+}
+
+// ── Field label refinement ────────────────────────────────────────────────
+.o_form_view .o_form_label {
+    font-size: 12px;
+    font-weight: $o-font-weight-medium;
+    color: var(--o-gray-600, #6c757d);
+    letter-spacing: 0.01em;
+}
+
+// Group headers in uppercase with tracking
+.o_form_view .o_inner_group > .o_group_label {
+    font-size: 11px;
+    font-weight: $o-font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--o-gray-500, #adb5bd);
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--o-gray-200, #e9ecef);
+    margin-bottom: 4px;
+}
+
+// ── Empty/placeholder state styling ─────────────────────────────────────
+.o_form_view .o_form_readonly .o_field_empty {
+    font-style: italic;
+    color: var(--o-gray-500, #adb5bd);
+
+    &::before {
+        content: '—';
+        opacity: 0.5;
+    }
+}
