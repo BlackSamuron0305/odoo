@@ -1,6 +1,6 @@
 # PROJECT_BRIEF.md — Odoo UI Upgrade & Mobile App
 
-> Last updated: 2026-05-22 | Sprint 0 | Status: Planning
+> Last updated: 2026-05-22 | Sprint 22 planned | Status: v1 Complete — v2 Planning
 
 ---
 
@@ -169,61 +169,91 @@ Design tokens shared with the web upgrade (same color values, same border-radius
 
 ## 7. Sprint Status
 
+### v1 — Complete ✅
+
 | Sprint | Name | Status | Scope |
 |--------|------|--------|-------|
-| 0 | Design Tokens & Bootstrap 5.3 Upgrade | ⬜ Planned | Shared tokens file, BS 5.3 swap, CSS custom properties baseline |
-| 1 | Navbar & App Switcher Modernization | ⬜ Planned | Slim navbar, icon-rail sidebar, frosted glass, animations |
-| 2 | Form Views Modernization | ⬜ Planned | Floating labels, sticky action bar, sheet redesign |
-| 2b | Global Components: Dialogs, Fields, Chatter, Calendar | ⬜ Planned | All shared UI components across every view |
-| 3 | List & Kanban Modernization | ⬜ Planned | Card elevation, row hover, drag polish, control panel |
-| 4 | Dashboards, Graphs, Dark Mode & Discuss | ⬜ Planned | Dark mode full pass, chart theming, dashboard tiles, Discuss/Inbox |
-| 5 | PWA Enhancement | ⬜ Planned | Offline support, push notifications, bottom nav bar |
-| 5b | Point of Sale App Modernization | ⬜ Planned | POS is a standalone OWL app — separate full SCSS pass |
-| 6 | Mobile App — Foundation | ⬜ Planned | Expo project, auth, JSON-RPC client, navigation shell |
-| 7 | Mobile App — Core Screens | ⬜ Planned | Dashboard, CRM, Contacts, Calendar |
-| 8 | Mobile App — Business Screens | ⬜ Planned | Activities, Messages, POS lite, Settings |
-| 9 | Mobile App — Polish & Accessibility | ⬜ Planned | Animations, dark mode, a11y, offline |
-| 10 | QA, Testing & App Store Deployment | ⬜ Planned | Hoot tests, Maestro E2E, EAS build, store submission |
+| 0 | Design Tokens & Bootstrap 5.3 Upgrade | ✅ Done | Shared tokens file, BS 5.3 swap, CSS custom properties baseline |
+| 1 | Navbar & App Switcher Modernization | ✅ Done | Slim navbar 40px, frosted glass, AppRailSidebar OWL component |
+| 2 | Form Views Modernization | ✅ Done | Sheet styling, focus rings, required accents, sticky action bar, statusbar pills |
+| 2b | Global Components: Dialogs, Fields, Chatter, Calendar | ✅ Done | 18 SCSS files across dialog, fields, mail, calendar, search |
+| 3 | List & Kanban Modernization | ✅ Done | Card elevation, smooth hover, drag ghost, progress bars |
+| 4 | Dashboards, Dark Mode Activation | ✅ Done | Bootstrap 5.3 dark enabled, user menu toggle, Chart.js sync, KPI tiles |
+| 5 | PWA Enhancement | ✅ Done | Service worker cache buckets, bottom nav OWL component |
+| 5b | Point of Sale App Modernization | ✅ Done | 8 POS SCSS files, brand tokens, dark mode, 54px tap targets |
+| 6 | Mobile App — Foundation | ✅ Done | Expo 52, expo-router, Zustand auth, OdooRpcClient, login/setup |
+| 7 | Mobile App — Core Screens | ✅ Done | Home KPIs, CRM pipeline, Contacts, Calendar |
+| 8 | Mobile App — Business Screens | ✅ Done | Activities, Messages inbox/thread, POS lite |
+| 9 | Mobile App — Polish & Accessibility | ✅ Done | Dark mode, biometric, offline banner, push notifications, camera |
+| 10 | QA, Testing & Deployment | ✅ Done | Hoot tests, Maestro E2E, GitHub Actions CI, EAS config, QA signoff |
 
-### Out of Scope (v2)
+### v2 — Web UI (Planned)
+
+| Sprint | Name | Status | Scope |
+|--------|------|--------|-------|
+| 11 | Micro-animations & Motion System | ⬜ Planned | Skeleton loaders, view transitions, hover micro-interactions, `prefers-reduced-motion` |
+| 12 | Typography System & Reading Density | ⬜ Planned | Full type scale CSS custom props, density toggle (compact/comfortable/spacious) |
+| 13 | Discuss App Full Redesign | ⬜ Planned | Message bubbles, channel sidebar, composer toolbar, voice, inbox, call overlay |
+| 14 | Settings & Configuration Pages | ⬜ Planned | General settings cards, toggles, user prefs dialog, technical pages, dev mode |
+| 15 | Data Views: Graph, Pivot, Activity, Cohort | ⬜ Planned | Chart.js brand theming, pivot table, activity timeline, cohort heatmap |
+| 16 | Empty States, Error Pages & Feedback UI | ⬜ Planned | EmptyState component + SVG illustrations, 404/403/500/offline pages, progress modals |
+| 17 | Portal & Customer-Facing Pages | ⬜ Planned | Customer portal home, invoices, orders, payment, sign/accept, login page |
+| 18 | eCommerce Shop Frontend | ⬜ Planned | Product grid, product detail, cart, checkout, category sidebar, order confirmation |
+| 19 | Website Builder Editor Chrome | ⬜ Planned | Toolbar, block library, properties panel, color picker, theme customizer, element selection |
+| 20 | POS Restaurant & Self-Order Kiosk | ⬜ Planned | Table map, kitchen display, self-order menu/cart/status, kiosk mode |
+| 21 | Print Layouts & Email Templates | ⬜ Planned | QWeb reports (invoice, quote, delivery, PO, payslip), email base + transactional templates |
+| 22 | Accessibility Audit, RTL & Final Polish | ⬜ Planned | WCAG 2.1 AA, RTL language support, cross-browser final, typography/spacing sweep |
+
+### Out of Scope (deferred post-v2)
 
 | Area | Reason |
 |------|--------|
-| **Website Builder** (`addons/html_builder/`, `addons/html_editor/`) | Semi-independent product. Full WYSIWYG canvas with its own design system. Requires dedicated multi-sprint effort |
+| **Website Builder** (`addons/html_builder/`) | Editor content blocks (not chrome — chrome is Sprint 19) |
 | **Spreadsheet** (`addons/spreadsheet/`) | Canvas-based renderer, own Odoo-Spreadsheet library. Not a CSS/SCSS problem |
-| **Portal / eCommerce public pages** (`addons/portal/`, `addons/website_sale/`) | Public-facing, different audience, different design system (frontend vs backend) |
+| **Mass Mailing** (`addons/mass_mailing/`) | Marketing email templates — separate from transactional (Sprint 21 covers transactional only) |
 | **Live Chat embed widget** (`addons/im_livechat/`) | Embedded widget with strict CSS isolation requirements |
-| **Self-order / kiosk** (`addons/pos_self_order/`) | Separate POS module — v2 after Sprint 5b |
-| **Restaurant table map** (`addons/pos_restaurant/`) | Specialized POS module — v2 |
+| **Map View** | Separate Leaflet.js mapping library — own sprint scope |
+| **POS Customer Display** | Separate hardware output screen |
 
 ---
 
 ## 8. Current State (rewrite every sprint)
 
-**What works (baseline Odoo 19):**
-- Full ERP functionality across all 300+ modules
-- OWL-based UI: Form, List, Kanban, Calendar, Graph, Pivot views
-- Bootstrap 5 responsive layout with touch device detection
-- Basic PWA support (service worker, install prompt, iOS/Android icons)
-- Bottom sheet component for mobile interactions
-- Navbar with burger menu sidebar for mobile
-- Dark mode infrastructure (color-scheme variable exists)
+**v1 complete — what's live on `origin/19.0`:**
 
-**What doesn't exist yet:**
-- Modern CSS custom properties design token layer
-- Bootstrap 5.3 (currently 5.2.x)
-- Icon-rail sidebar navigation on desktop
-- Dark mode fully implemented across all components
-- Native mobile app
-- Shared design token file (web ↔ mobile)
-- Offline-capable PWA with push notifications
-- Bottom navigation bar for mobile web
+### Web UI (Sprints 0–5b)
+- Design token foundation: `tokens/tokens.json` → `_tokens.scss` + `tokens.ts`, all `--o-*` CSS custom properties live
+- Bootstrap 5.3 enabled with `$enable-dark-mode: true`
+- Navbar: 40px frosted-glass, AppRailSidebar (56px collapsed / 240px expanded)
+- Form views: sheet padding/shadow, focus rings, required field accent, sticky action bar, statusbar pills, smart buttons
+- 18 global component SCSS files: dialogs, fields, chatter, calendar, search, notifications, dropdowns, popovers, notebook
+- List view: no zebra, smooth hover, sticky headers
+- Kanban: card elevation on hover, progress bars, drag ghost
+- Dark mode: user menu toggle, persists to localStorage, Chart.js sync
+- PWA: service worker with STATIC + IMAGE cache buckets, bottom nav component
+- POS: 8 SCSS files modernized with brand tokens, 54px tap targets
 
-**What's next (Sprint 0):**
-- Audit and document all existing `$o-*` SCSS variables
-- Create `tokens/tokens.json` as shared source of truth
-- Upgrade Bootstrap library to 5.3
-- Add CSS custom properties baseline to `primary_variables.scss`
+### Mobile App (Sprints 6–10)
+- Full Expo 52 project in `mobile-app/`
+- All 14 screens implemented
+- Biometric auth, offline banner, push notifications
+- Jest unit tests, 5 Maestro E2E flows, GitHub Actions CI
+- EAS build configuration for App Store + Play Store
+
+**What's next (v2 Sprint 11):**
+- Micro-animations & Motion System — skeleton loaders, view transitions, hover micro-interactions
+
+**v2 surfaces not yet touched:**
+- Discuss app (full standalone app — Sprint 13)
+- Settings pages (Sprint 14)
+- Data views: Graph, Pivot, Activity, Cohort (Sprint 15)
+- Empty states / error pages (Sprint 16)
+- Customer portal (Sprint 17)
+- eCommerce shop (Sprint 18)
+- Website builder chrome (Sprint 19)
+- POS Restaurant + Self-Order kiosk (Sprint 20)
+- Print layouts + email templates (Sprint 21)
+- Accessibility audit + RTL + final polish (Sprint 22)
 
 ---
 
