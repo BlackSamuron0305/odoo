@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+﻿# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * auth_timeout
 #
@@ -336,7 +336,7 @@ msgstr "分钟"
 #. module: auth_timeout
 #: model_terms:ir.ui.view,arch_db:auth_timeout.auth_passkey_groups_form
 msgid "of inactivity"
-msgstr ""
+msgstr "非活动后"
 
 #. module: auth_timeout
 #: model:ir.model,name:auth_timeout.model_ir_websocket

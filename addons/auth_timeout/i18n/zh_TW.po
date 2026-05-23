@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+﻿# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * auth_timeout
 #
@@ -33,13 +33,13 @@ msgstr "認證設備"
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Authentication code"
-msgstr ""
+msgstr "驗證碼"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Authentication code via email"
-msgstr ""
+msgstr "透過電子郵件傳送驗證碼"
 
 #. module: auth_timeout
 #. odoo-javascript
@@ -52,7 +52,7 @@ msgstr "確認"
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 #: model_terms:ir.ui.view,arch_db:auth_timeout.check_identity
 msgid "Confirm access"
-msgstr ""
+msgstr "確認存取"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_auth_totp_device__display_name
@@ -67,18 +67,18 @@ msgstr "顯示名稱"
 #: model:ir.model.fields,help:auth_timeout.field_res_groups__lock_timeout_inactivity_mfa
 msgid ""
 "Enable two-factor authentication when the inactivity timeout is reached."
-msgstr ""
+msgstr "達到閒置逾時時啟用雙重驗證。"
 
 #. module: auth_timeout
 #: model:ir.model.fields,help:auth_timeout.field_res_groups__lock_timeout_mfa
 msgid "Enable two-factor authentication when the session timeout is reached."
-msgstr ""
+msgstr "達到工作階段逾時時啟用雙重驗證。"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Enter below the six-digit authentication code just sent to your email"
-msgstr ""
+msgstr "請在下方輸入剛剛傳送到您電子郵件中的六位數驗證碼"
 
 #. module: auth_timeout
 #. odoo-javascript
@@ -94,18 +94,18 @@ msgstr "HTTP 路由"
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__has_lock_timeout
 msgid "Has Lock Timeout"
-msgstr ""
+msgstr "已設定鎖定逾時"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__has_lock_timeout_inactivity
 msgid "Has Lock Timeout Inactivity"
-msgstr ""
+msgstr "已設定閒置鎖定逾時"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Having problems ?"
-msgstr ""
+msgstr "遇到問題？"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_auth_totp_device__id
@@ -119,42 +119,42 @@ msgstr "識別號"
 #. module: auth_timeout
 #: model_terms:ir.ui.view,arch_db:auth_timeout.auth_passkey_groups_form
 msgid "Inactivity"
-msgstr ""
+msgstr "閒置"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_inactivity
 msgid "Inactivity timeout"
-msgstr ""
+msgstr "閒置逾時"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_2fa_selection
 msgid "Lock Timeout 2Fa Selection"
-msgstr ""
+msgstr "鎖定逾時雙重驗證選擇"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_delay_in_unit
 msgid "Lock Timeout Delay In Unit"
-msgstr ""
+msgstr "鎖定逾時延遲數值"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_delay_unit
 msgid "Lock Timeout Delay Unit"
-msgstr ""
+msgstr "鎖定逾時延遲單位"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_inactivity_2fa_selection
 msgid "Lock Timeout Inactivity 2Fa Selection"
-msgstr ""
+msgstr "閒置鎖定逾時雙重驗證選擇"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_inactivity_delay_in_unit
 msgid "Lock Timeout Inactivity Delay In Unit"
-msgstr ""
+msgstr "閒置鎖定逾時延遲數值"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_inactivity_delay_unit
 msgid "Lock Timeout Inactivity Delay Unit"
-msgstr ""
+msgstr "閒置鎖定逾時延遲單位"
 
 #. module: auth_timeout
 #: model:ir.model.fields.selection,name:auth_timeout.selection__res_groups__lock_timeout_2fa_selection__without_2fa
@@ -164,7 +164,7 @@ msgstr "登出"
 #. module: auth_timeout
 #: model:ir.model.fields.selection,name:auth_timeout.selection__res_groups__lock_timeout_2fa_selection__with_2fa
 msgid "Logout with two-factor authentication"
-msgstr ""
+msgstr "使用雙重驗證登出"
 
 #. module: auth_timeout
 #. odoo-javascript
@@ -172,7 +172,7 @@ msgstr ""
 msgid ""
 "Open your two-factor authenticator (TOTP) app or browser extension to view "
 "your authentication code."
-msgstr ""
+msgstr "開啟您的雙重驗證器（TOTP）應用程式或瀏覽器擴充功能以查看驗證碼。"
 
 #. module: auth_timeout
 #. odoo-javascript
@@ -189,32 +189,32 @@ msgstr "密碼"
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_inactivity_mfa
 msgid "Require MFA on inactivity timeout"
-msgstr ""
+msgstr "閒置逾時後要求多重驗證"
 
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout_mfa
 msgid "Require MFA on session timeout"
-msgstr ""
+msgstr "工作階段逾時後要求多重驗證"
 
 #. module: auth_timeout
 #: model:ir.model.fields,help:auth_timeout.field_res_groups__has_lock_timeout_inactivity
 msgid "Requires re-authentication after a period of user inactivity"
-msgstr ""
+msgstr "使用者閒置一段時間後需要重新驗證"
 
 #. module: auth_timeout
 #: model:ir.model.fields,help:auth_timeout.field_res_groups__has_lock_timeout
 msgid "Requires re-authentication after the user's last connection"
-msgstr ""
+msgstr "使用者上次連線後需要重新驗證"
 
 #. module: auth_timeout
 #: model:ir.model.fields.selection,name:auth_timeout.selection__res_groups__lock_timeout_inactivity_2fa_selection__without_2fa
 msgid "Screen lock"
-msgstr ""
+msgstr "螢幕鎖定"
 
 #. module: auth_timeout
 #: model:ir.model.fields.selection,name:auth_timeout.selection__res_groups__lock_timeout_inactivity_2fa_selection__with_2fa
 msgid "Screen lock with two-factor authentication"
-msgstr ""
+msgstr "使用雙重驗證的螢幕鎖定"
 
 #. module: auth_timeout
 #: model_terms:ir.ui.view,arch_db:auth_timeout.auth_passkey_groups_form
@@ -224,62 +224,62 @@ msgstr "作業階段"
 #. module: auth_timeout
 #: model:ir.model.fields,field_description:auth_timeout.field_res_groups__lock_timeout
 msgid "Session timeout"
-msgstr ""
+msgstr "工作階段逾時"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Signed in as"
-msgstr ""
+msgstr "登入身分為"
 
 #. module: auth_timeout
 #: model:ir.model.fields,help:auth_timeout.field_res_groups__lock_timeout_inactivity
 msgid ""
 "Time (in minutes) of user inactivity after which re-authentication is "
 "required."
-msgstr ""
+msgstr "需要重新驗證的使用者閒置時間（分鐘）。"
 
 #. module: auth_timeout
 #: model:ir.model.fields,help:auth_timeout.field_res_groups__lock_timeout
 msgid ""
 "Time interval (in minutes) after which re-authentication is required, "
 "regardless of inactivity."
-msgstr ""
+msgstr "需要重新驗證的時間間隔（分鐘），無論是否處於閒置狀態。"
 
 #. module: auth_timeout
 #: model_terms:ir.ui.view,arch_db:auth_timeout.auth_passkey_groups_form
 msgid "Timeouts"
-msgstr ""
+msgstr "逾時"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Use an authentication code sent by email"
-msgstr ""
+msgstr "使用透過電子郵件傳送的驗證碼"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Use passkey"
-msgstr ""
+msgstr "使用通行金鑰"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Use your authenticator app"
-msgstr ""
+msgstr "使用您的驗證器應用程式"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Use your passkey"
-msgstr ""
+msgstr "使用您的通行金鑰"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "Use your password"
-msgstr ""
+msgstr "使用您的密碼"
 
 #. module: auth_timeout
 #: model:ir.model,name:auth_timeout.model_res_users
@@ -296,13 +296,13 @@ msgstr "驗證"
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "When you are ready, authenticate using the button below."
-msgstr ""
+msgstr "準備就緒後，請使用下方的按鈕進行身分驗證。"
 
 #. module: auth_timeout
 #. odoo-javascript
 #: code:addons/auth_timeout/static/src/services/check_identity/check_identity.xml:0
 msgid "XXXXXX"
-msgstr ""
+msgstr "XXXXXX"
 
 #. module: auth_timeout
 #: model_terms:ir.ui.view,arch_db:auth_timeout.auth_passkey_groups_form
@@ -335,7 +335,7 @@ msgstr "分鐘"
 #. module: auth_timeout
 #: model_terms:ir.ui.view,arch_db:auth_timeout.auth_passkey_groups_form
 msgid "of inactivity"
-msgstr ""
+msgstr "閒置後"
 
 #. module: auth_timeout
 #: model:ir.model,name:auth_timeout.model_ir_websocket

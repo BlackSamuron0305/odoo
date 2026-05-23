@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+﻿# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * auth_totp
 #
@@ -51,6 +51,10 @@ msgid ""
 "                            Enabled\n"
 "                        </span>"
 msgstr ""
+"<i class=\"fa fa-check text-success\"/>\n"
+"                        <span class=\"fw-bold ms-1 me-2\">\n"
+"                            已啟用\n"
+"                        </span>"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_form
@@ -60,6 +64,10 @@ msgid ""
 "                            Disabled\n"
 "                        </span>"
 msgstr ""
+"<i class=\"fa fa-remove text-danger\"/>\n"
+"                        <span class=\"fw-bold ms-1\">\n"
+"                            已停用\n"
+"                        </span>"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_field
@@ -69,11 +77,14 @@ msgid ""
 "                            Recommended for extra security.\n"
 "                        </span>"
 msgstr ""
+"<span class=\"text-muted\">\n"
+"                            建議用於額外安全性。\n"
+"                        </span>"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_wizard
 msgid "Add this key in your Authenticator app"
-msgstr ""
+msgstr "在您的驗證器應用程式中新增此金鑰"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.auth_totp_form
@@ -221,7 +232,7 @@ msgstr "Qrcode"
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_wizard
 msgid "Scan this barcode in your Authenticator app"
-msgstr ""
+msgstr "在您的驗證器應用程式中掃描此條碼"
 
 #. module: auth_totp
 #: model:ir.model.fields,field_description:auth_totp.field_auth_totp_device__scope
@@ -262,7 +273,7 @@ msgstr ""
 #. module: auth_totp
 #: model:ir.model.fields,field_description:auth_totp.field_res_users__totp_last_counter
 msgid "Totp Last Counter"
-msgstr ""
+msgstr "TOTP 最後計數器"
 
 #. module: auth_totp
 #: model:ir.model.fields,field_description:auth_totp.field_res_users__totp_secret
@@ -341,7 +352,7 @@ msgstr "驗證碼"
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_wizard
 msgid "Verification code"
-msgstr ""
+msgstr "驗證碼"
 
 #. module: auth_totp
 #. odoo-python
@@ -354,12 +365,12 @@ msgstr "驗證失敗，請再檢查 6 位數字驗證碼。"
 #. odoo-python
 #: code:addons/auth_totp/models/res_users.py:0
 msgid "Verification failed, please use the latest 6-digit code"
-msgstr ""
+msgstr "驗證失敗，請使用最新的六位數代碼"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.view_totp_wizard
 msgid "Write the code given by your app"
-msgstr ""
+msgstr "輸入您的應用程式提供的代碼"
 
 #. module: auth_totp
 #. odoo-python
@@ -367,7 +378,7 @@ msgstr ""
 msgid ""
 "You reached the limit of authentication mails sent for your account, please "
 "try again later."
-msgstr ""
+msgstr "您的帳戶已達到傳送驗證郵件的上限，請稍後再試。"
 
 #. module: auth_totp
 #. odoo-python
@@ -375,7 +386,7 @@ msgstr ""
 msgid ""
 "You reached the limit of code verifications for your account, please try "
 "again later."
-msgstr ""
+msgstr "您的帳戶已達到代碼驗證次數的上限，請稍後再試。"
 
 #. module: auth_totp
 #: model_terms:ir.ui.view,arch_db:auth_totp.auth_totp_form
