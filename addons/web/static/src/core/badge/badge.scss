@@ -1,4 +1,9 @@
 .badge {
+    // Sprint 7: pill shape + font weight refinement for all badges
+    border-radius: 100px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+
     @for $size from 1 through length($o-colors) {
         &.o_badge_color_#{$size - 1} {
             background-color: adjust-color(nth($o-colors, $size), $lightness: 25%, $saturation: 15%) !important;

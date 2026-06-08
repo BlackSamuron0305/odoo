@@ -6,6 +6,8 @@
 
         > img {
             background-color: var(--ImageField-background-color, transparent);
+            // Sprint 7: rounded corners for image field
+            border-radius: $border-radius;
         }
     }
 
@@ -35,5 +37,7 @@
     img {
         max-width: 100%;
         max-height: 50vh;
+        // Sprint 7: rounded in zoom too
+        border-radius: $border-radius;
     }
 }

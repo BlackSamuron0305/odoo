@@ -44,6 +44,14 @@
         padding-bottom: 0;
         height: $-stat-button-height;
         min-width: 0;
+        // Sprint 4: hover lift effect on smart buttons
+        transition: transform var(--o-transition-fast), box-shadow var(--o-transition-fast);
+
+        &:hover:not(:disabled) {
+            transform: translateY(-1px);
+            box-shadow: $o-shadow-sm;
+            z-index: 1;
+        }
 
         @include media-breakpoint-up(md) {
             min-width: 7.5em; // Arbitrary

@@ -1,6 +1,7 @@
 // = Search Bar
 // ============================================================================
 
+// Sprint 3: pill-style facet chips
 .o_searchview_facet {
     @keyframes animate {
         from {
@@ -10,6 +11,10 @@
     }
 
     animation: animate .25s ease-out;
+    // Pill appearance for facets
+    border-radius: 100px;
+    font-size: 0.8rem;
+    padding: 1px 2px;
 
     .btn, .btn:focus {
         // Boostrap plays around with the z-index of buttons, but this is not needed here
@@ -46,5 +51,12 @@
                 @include o-position-absolute($left: 0);
             }
         }
+    }
+}
+
+// Sprint 3: search input pill styling
+.o_searchview_input_container {
+    .o_searchview_input {
+        border-radius: 100px;
     }
 }

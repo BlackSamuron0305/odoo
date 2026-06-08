@@ -5,9 +5,31 @@ $o-search-bar-menu-max-width: calc(100vw - #{map-get($spacers, 3) * 2 });
 .o_search_bar_menu {
 
     max-width: $o-search-bar-menu-max-width;
+    // Sprint 3: modern search menu — slight border-radius, shadow
+    border-radius: $border-radius-lg !important;
+    box-shadow: $o-shadow-md !important;
+    padding: map-get($spacers, 1) 0;
+
     .o_dropdown_container {
         border-color: $dropdown-divider-bg !important;
         min-width: 200px;
+    }
+
+    // Sprint 3: section titles inside search dropdown
+    .o_dropdown_container .o_dropdown_title {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: $text-muted;
+        padding: map-get($spacers, 1) map-get($spacers, 3);
+        border-top: 1px solid $border-color;
+        margin-top: map-get($spacers, 1);
+
+        &:first-child {
+            border-top: none;
+            margin-top: 0;
+        }
     }
 
     .o_accordion_values .o_input {

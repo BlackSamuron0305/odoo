@@ -364,3 +364,29 @@ button.o_field_float_toggle {
 select.o_field_widget.o_input {
     padding: 1px;  // Other inputs get a 1px padding automatically added by the browsers but selects do not
 }
+
+// Sprint 7: boolean toggle — modern pill switch style
+.o_field_boolean_toggle {
+    .form-check-input {
+        width: 2.2em;
+        height: 1.2em;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: background-color 0.2s ease, border-color 0.2s ease;
+
+        &:checked {
+            background-color: $o-brand-primary;
+            border-color: $o-brand-primary;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 3px rgba($o-brand-primary, 0.2);
+        }
+    }
+}
+
+// Sprint 7: number fields right-aligned
+.o_field_number, .o_field_integer, .o_field_float {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}

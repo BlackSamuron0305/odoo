@@ -1,6 +1,9 @@
 .o_field_widget {
     .o_signature {
-        outline: 1px solid rgba(map-get($theme-colors, 'secondary'), 0.3);
+        // Sprint 7: refined signature container — border-radius, dashed border
+        outline: none;
+        border: 2px dashed rgba(map-get($theme-colors, 'secondary'), 0.35);
+        border-radius: $border-radius;
         position: relative;
         &.o_signature_empty {
             display: flex;
@@ -10,19 +13,22 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            color: $text-muted;
+            font-size: $font-size-sm;
         }
     }
 }
 
 .o_field_invalid {
     .o_signature {
-        outline: 3px solid map-get($theme-colors, 'danger');
+        border: 2px solid map-get($theme-colors, 'danger');
         cursor: pointer;
     }
 }
 .o_form_editable {
     .o_signature:hover {
-        outline: 3px solid $o-enterprise-action-color;
+        border: 2px solid $o-enterprise-action-color;
+        border-radius: $border-radius;
         cursor: pointer;
     }
 }

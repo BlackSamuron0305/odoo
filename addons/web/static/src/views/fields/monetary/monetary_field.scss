@@ -4,5 +4,16 @@
     }
     input {
         width: 100px;
+        // Sprint 7: right-align monetary input values
+        text-align: right;
+    }
+
+    // Sprint 7: currency symbol muted and slightly smaller
+    .o_field_monetary_currency {
+        color: $text-muted;
+        font-size: 0.9em;
+        font-weight: 400;
+        align-self: center;
+        padding-right: map-get($spacers, 1);
     }
 }

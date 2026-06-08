@@ -4,11 +4,17 @@
     --DateTimePicker__Day-template-rows: 6;
 
     width: $o-datetime-picker-width;
+    // Sprint 8: clean card appearance for the date picker
+    border-radius: $border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
 
     // Day
     .o_selected {
         color: $o-component-active-color;
         background: $o-component-active-bg;
+        border-radius: $border-radius-pill;
+        font-weight: 600;
     }
 
     .o_select_start,
@@ -39,6 +45,18 @@
         aspect-ratio: 1;
         background-color: $o-calendar-today-background-color;
         color: $o-calendar-today-color;
+        border-radius: $border-radius-pill;
+        font-weight: 600;
+    }
+
+    // Sprint 8: navigation buttons refined
+    .o_datetime_picker_header button {
+        border-radius: $border-radius;
+        transition: background-color var(--o-transition-fast);
+
+        &:hover {
+            background-color: map-get($grays, "100");
+        }
     }
 
     // Grids

@@ -383,8 +383,27 @@
     }
 }
 
-// ------- Sample mode -------
-.o_kanban_view .o_view_sample_data {
+// Sprint 6: refined kanban column header — bolder title, record count badge
+.o_kanban_renderer .o_kanban_header_title {
+    .o_column_title {
+        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 0.01em;
+    }
+
+    .o_kanban_counter_progress,
+    .o_kanban_config_buttons {
+        opacity: 0.7;
+        transition: opacity var(--o-transition-fast);
+    }
+
+    &:hover {
+        .o_kanban_counter_progress,
+        .o_kanban_config_buttons {
+            opacity: 1;
+        }
+    }
+}
     // all records
     .o_kanban_record,
     // load more buttons

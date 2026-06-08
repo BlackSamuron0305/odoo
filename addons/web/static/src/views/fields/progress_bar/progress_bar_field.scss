@@ -1,9 +1,19 @@
 .o_progressbar {
     .o_progress {
+        // Sprint 7: modern pill shape, slightly taller, brand color fill
         width: 100px;
-        height: 15px;
-        border: 1px solid $o-gray-300;
-        background-color: $o-view-background-color;
+        height: 8px;
+        border-radius: 100px;
+        border: none;
+        background-color: map-get($grays, "200");
+        overflow: hidden;
+
+        .o_progress_bar {
+            height: 100%;
+            border-radius: 100px;
+            background-color: $o-brand-primary;
+            transition: width 0.3s ease;
+        }
     }
 
     .o_progressbar_value input {

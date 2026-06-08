@@ -8,9 +8,13 @@
         > .o_priority_star {
             display: inline-block;
             font-size: var(--Priority-font-size, 1.35em);
+            // Sprint 7: smooth color transition on priority stars
+            transition: color 0.15s ease, transform 0.15s ease;
+
             &:hover, &:focus {
                 text-decoration: none;
                 outline: none;
+                transform: scale(1.15);
             }
 
             + .o_priority_star {

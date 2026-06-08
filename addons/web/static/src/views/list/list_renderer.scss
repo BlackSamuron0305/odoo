@@ -580,3 +580,41 @@
         margin: auto 0;
     }
 }
+
+// ==========================================================================
+// Sprint 5 — List View Polish
+// ==========================================================================
+
+// Row hover: subtle, non-distracting
+.o_list_renderer .o_data_row:not(.o_selected_row):hover > td {
+    --table-accent-bg: #{rgba($o-brand-primary, 0.04)};
+}
+
+// Open-form-view icon: only visible on row hover
+.o_list_renderer .o_data_row .o_list_record_open_form_view button {
+    opacity: 0;
+    transition: opacity var(--o-transition-fast);
+}
+.o_list_renderer .o_data_row:hover .o_list_record_open_form_view button {
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+// Footer totals row: slightly elevated bg, bold numbers
+.o_list_renderer .o_list_table tfoot > tr > td {
+    font-weight: 600;
+    border-top: 2px solid $border-color;
+}
+
+// Thead column headers: subtle uppercase label style for sortable cols
+.o_list_renderer .o_list_table thead th {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $text-muted;
+    font-weight: 600;
+}
+

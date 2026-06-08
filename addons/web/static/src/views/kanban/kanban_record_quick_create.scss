@@ -9,3 +9,16 @@
         }
     }
 }
+
+// Sprint 6: quick create card — clean inline form card
+.o_kanban_renderer .o_kanban_quick_create {
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+    background-color: $o-view-background-color;
+    box-shadow: $o-shadow-md;
+    padding: map-get($spacers, 3);
+
+    .o_form_view .o_inner_group {
+        margin: 0;
+    }
+}

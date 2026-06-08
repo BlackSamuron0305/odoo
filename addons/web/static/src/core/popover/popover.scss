@@ -1,4 +1,9 @@
 .o_popover {
+    // Sprint 8: clean card shadow + border-radius for popovers
+    border-radius: $border-radius-lg !important;
+    box-shadow: $o-shadow-md !important;
+    border: 1px solid rgba($o-black, 0.06) !important;
+
 	> .popover-arrow {
 		--safety-margin: calc((var(--popover-arrow-width) / 4) - 1px);
 		--position-min: var(--safety-margin);
