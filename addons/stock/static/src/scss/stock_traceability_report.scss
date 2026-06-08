@@ -87,3 +87,31 @@
         }
     }
 }
+
+// ---- Visual Polish: traceability tree node connectors ----
+.o_stock_reports_page {
+    .o_stock_reports_level0 {
+        background-color: rgba(99, 88, 165, 0.04);
+    }
+
+    .o_stock_reports_level1 > td:first-child,
+    .o_stock_reports_level2 > td:first-child,
+    .o_stock_reports_default_style > td:first-child {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: rgba(99, 88, 165, 0.2);
+        }
+    }
+
+    .o_stock_reports_level2 > td:first-child::before,
+    .o_stock_reports_default_style > td:first-child::before {
+        left: 16px;
+    }
+}

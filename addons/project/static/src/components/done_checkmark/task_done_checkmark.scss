@@ -24,3 +24,22 @@ a.o_todo_done_button_mobile {
 .o_task_kanban_card_body {
     padding-left: 9px;
 }
+
+// ---- Visual Polish: smooth checkmark animation ----
+a.o_todo_done_button {
+    transition: color 0.2s ease, transform 0.15s ease;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+
+    &.done_button_enabled {
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+}
+
+a.o_todo_done_button_mobile {
+    transition: color 0.2s ease;
+}

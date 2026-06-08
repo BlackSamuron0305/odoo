@@ -18,3 +18,40 @@
         @include o-kanban-css-filter(success-done, rgba(25, 135, 84, 1));
     }
 }
+
+// ---- Visual Polish: card shadow, priority stars, deadline colors ----
+.o_kanban_project_tasks .o_kanban_renderer {
+    .o_kanban_record {
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+        }
+    }
+
+    .o_priority .o_priority_star {
+        transition: color 0.15s ease, transform 0.15s ease;
+
+        &.fa-star {
+            color: #f4b400;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            color: #f4b400;
+        }
+    }
+
+    .o_field_date.text-warning {
+        color: #e6a817 !important;
+        font-weight: 500;
+    }
+
+    .o_field_date.text-danger {
+        color: #d9534f !important;
+        font-weight: 600;
+    }
+}

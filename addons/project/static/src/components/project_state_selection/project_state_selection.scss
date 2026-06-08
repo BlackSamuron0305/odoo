@@ -1,3 +1,15 @@
 .o_field_status_with_color button.disabled {
     color: black;
 }
+
+// ---- Visual Polish: colored state badges ----
+.o_field_status_with_color {
+    button:not(.disabled) {
+        border-radius: 4px;
+        transition: background-color 0.15s ease, opacity 0.15s ease;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}

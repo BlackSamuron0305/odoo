@@ -1,3 +1,10 @@
 .o_forecast_widget_cell {
   text-align: left !important;
 }
+
+// ---- Visual Polish: forecast widget appearance ----
+.o_forecast_widget_cell {
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+    color: #6358a5;
+}

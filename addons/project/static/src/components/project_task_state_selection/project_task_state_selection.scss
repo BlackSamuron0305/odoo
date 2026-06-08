@@ -65,3 +65,29 @@
         font-size: 1.57em;
     }
 }
+
+// ---- Visual Polish: task state selection ----
+.o_field_project_task_state_selection, .o_field_task_stage_with_state_selection {
+    .o_status {
+        transition: transform 0.15s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    .o_status_changes_requested {
+        font-weight: 600;
+    }
+}
+
+.project_task_state_selection_menu {
+    .o_status {
+        transition: transform 0.1s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

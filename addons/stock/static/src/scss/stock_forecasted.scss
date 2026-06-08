@@ -30,3 +30,25 @@
         vertical-align: middle;
     }
 }
+
+// ---- Visual Polish: forecast page appearance ----
+.o_stock_forecasted_page {
+    .o_priority .o_priority_star {
+        transition: color 0.15s ease, transform 0.15s ease;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    .table {
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+
+        thead tr th {
+            background-color: rgba(99, 88, 165, 0.05);
+            font-weight: 600;
+        }
+    }
+}

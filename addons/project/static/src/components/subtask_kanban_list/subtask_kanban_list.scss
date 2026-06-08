@@ -32,3 +32,15 @@
         }
     }
 }
+
+// ---- Visual Polish: clean subtask list ----
+.subtask_list {
+    .subtask_list_row {
+        border-radius: 4px;
+        transition: background-color 0.15s ease;
+
+        .subtask_name_col {
+            font-size: 0.875rem;
+        }
+    }
+}

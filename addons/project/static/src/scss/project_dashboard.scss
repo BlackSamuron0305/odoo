@@ -70,3 +70,24 @@
         }
     }
 }
+
+// ---- Visual Polish: KPI cards shadow + hover lift ----
+.o_project_kanban .o_kanban_renderer {
+    .o_project_kanban_boxes .o_project_kanban_box {
+        border-radius: 6px;
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0.75rem;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .o_value {
+            font-size: 1.5rem;
+            color: #6358a5;
+        }
+    }
+}

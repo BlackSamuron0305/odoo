@@ -112,3 +112,13 @@ option.css_not_available {
     opacity: 1;
     color: #ccc;
 }
+
+// ---- Visual Polish: pill attribute options ----
+.o_sale_product_configurator_ptav_pills {
+    label.btn {
+        border-radius: 20px;
+        padding: 0.2rem 0.75rem;
+        font-size: 0.85rem;
+        transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+}

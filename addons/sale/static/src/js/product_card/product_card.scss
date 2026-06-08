@@ -15,3 +15,23 @@
 .product-card.selected {
     border-color: $primary
 }
+
+// ---- Visual Polish: shadow + hover lift, price highlight ----
+.product-card {
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+    }
+}
+
+.product-card .product_price,
+.product-card .price,
+.product-card [class*="price"] {
+    font-weight: 600;
+    color: #6358a5;
+}

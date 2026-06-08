@@ -62,3 +62,22 @@
         text-align: center;
     }
 }
+
+// ---- Visual Polish ----
+.o_status_bubble {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.3);
+    }
+}
+
+.o_project_m2m_avatar img {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    transition: transform 0.15s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

@@ -46,3 +46,10 @@
     border-color: map-get($-btn-secondary-design, active-border);
     color: map-get($-btn-secondary-design, active-color);
 }
+
+// ---- Visual Polish: product list row highlight ----
+.table.o_sale_product_configurator_table {
+    tr:hover td {
+        background-color: rgba(99, 88, 165, 0.03);
+    }
+}

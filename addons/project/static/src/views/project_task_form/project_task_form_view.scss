@@ -21,3 +21,15 @@
         margin-bottom: 0;
     }
 }
+
+// ---- Visual Polish: form polish ----
+.o_form_project_tasks .o_form_renderer {
+    div[name="kanban_state"] span.o_status {
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 0 3px rgba(99, 88, 165, 0.2);
+        }
+    }
+}

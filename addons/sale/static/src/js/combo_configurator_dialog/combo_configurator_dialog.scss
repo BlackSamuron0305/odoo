@@ -9,3 +9,11 @@
         border-left: $border-width solid $border-color;
     }
 }
+
+// ---- Visual Polish: dialog polish ----
+.sale-combo-configurator-dialog {
+    .modal-content {
+        border-radius: 10px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    }
+}

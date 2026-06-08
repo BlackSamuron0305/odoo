@@ -6,3 +6,17 @@
 .hover-show:hover .btn-show {
     opacity: 1;
 }
+
+// ---- Visual Polish: availability badge ----
+.hover-show .btn-show {
+    border-radius: 4px;
+    font-size: 0.8rem;
+    padding: 0.15rem 0.5rem;
+    background-color: rgba(99, 88, 165, 0.08);
+    color: #6358a5;
+    transition: opacity 0.1s, background-color 0.15s ease;
+}
+
+.hover-show:hover .btn-show {
+    background-color: rgba(99, 88, 165, 0.15);
+}

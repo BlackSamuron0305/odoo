@@ -9,3 +9,23 @@
   }
 
 }
+
+// ---- Visual Polish: onboarding steps polish ----
+.o_onboarding_order_confirmation {
+    border-radius: 6px;
+    padding: 0.5rem;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    span.o_onboarding_order_confirmation_help {
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}

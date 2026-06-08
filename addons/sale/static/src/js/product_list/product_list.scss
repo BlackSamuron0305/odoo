@@ -5,3 +5,9 @@ table.o_sale_product_configurator_table > tbody > tr > td {
 .o_sale_optional_products {
     background: darken($modal-content-bg, 2%);
 }
+
+// ---- Visual Polish: optional products section ----
+.o_sale_optional_products {
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}

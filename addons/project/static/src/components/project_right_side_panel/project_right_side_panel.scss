@@ -67,3 +67,15 @@
         }
     }
 }
+
+// ---- Visual Polish: panel border/shadow ----
+.o_rightpanel {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.06);
+
+    @include media-breakpoint-down(lg) {
+        border-left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+    }
+}

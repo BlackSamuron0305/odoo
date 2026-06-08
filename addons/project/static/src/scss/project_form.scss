@@ -55,3 +55,23 @@
         margin-top: 10px;
     }
 }
+
+// ---- Visual Polish: card look & brand accent ----
+.o_form_project_tasks .o_form_renderer {
+    .o_form_sheet_bg .o_form_sheet {
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.o_form_project_tasks .oe_title {
+    border-bottom: 2px solid #6358a5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+// Stage progress bar brand primary fill
+.o_form_project_tasks .o_statusbar_status button.o_arrow_button.btn-primary {
+    background-color: #6358a5;
+    border-color: #6358a5;
+}

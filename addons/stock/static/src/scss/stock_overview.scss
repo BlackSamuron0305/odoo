@@ -17,3 +17,17 @@
 .stock-overview-links {
     height: 5.5rem;
 }
+
+// ---- Visual Polish: warehouse card shadow + hover lift ----
+.o_stock_kanban .o_kanban_renderer {
+    .o_kanban_record {
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+        }
+    }
+}

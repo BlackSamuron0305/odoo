@@ -27,3 +27,18 @@
         resize: both;
     }
 }
+
+// ---- Visual Polish: empty state illustration polish ----
+.o_view_nocontent {
+    &_barcode_scanner:before,
+    &_replenishment:before {
+        opacity: 0.85;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+        transition: opacity 0.2s ease, filter 0.2s ease;
+    }
+}
+
+.o_nocontent_help .o_view_nocontent_smiling_face.o_view_nocontent_stock:before {
+    opacity: 0.85;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
