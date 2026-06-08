@@ -1,3 +1,14 @@
 .o_import_action {
     grid-template-rows: auto 1fr;
 }
+
+// === UI Redesign: Import Action Wizard Clean Appearance ===
+.o_import_action {
+    > .o_content {
+        border-radius: $border-radius-lg;
+        overflow: hidden;
+    }
+    .o_control_panel {
+        border-bottom: 1px solid $o-gray-200;
+    }
+}

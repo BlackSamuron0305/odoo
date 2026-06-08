@@ -56,3 +56,22 @@
 .o-dashboard-action > h3 > span > i {
     font-size: 12px;
 }
+
+// === UI Redesign: Dashboard Widget Card Shadow ===
+.o-dashboard-action {
+    border-radius: $border-radius-lg;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.18s ease;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 4px 14px rgba($o-brand-primary, 0.10);
+    }
+
+    > h3 {
+        font-weight: $o-font-weight-semibold;
+        color: $o-brand-primary;
+        border-bottom: 1px solid $o-gray-200;
+        padding: 0.5rem 0.75rem;
+    }
+}

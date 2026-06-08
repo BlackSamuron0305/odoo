@@ -1,10 +1,23 @@
 .account_document_state_popover {
     width: 500px;
+    border-radius: $border-radius-lg;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
 }
 
 .account_document_state_popover_clone {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: $border-radius;
+    padding: 0.15em 0.5em;
+    font-weight: $o-font-weight-semibold;
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    transition: color 0.15s ease, background-color 0.15s ease;
     &:hover {
-        color: $o-enterprise-action-color !important;
+        color: $o-brand-primary !important;
+        background-color: mix($o-brand-primary, white, 6%);
         cursor: pointer;
     }
 }

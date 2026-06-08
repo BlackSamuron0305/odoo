@@ -107,3 +107,38 @@
 .button-on {
     color: $o-success;
 }
+
+// === UI Redesign: HR Employee Visual Polish ===
+
+// Employee kanban cards: card shadow + hover lift
+.o_hr_employee_kanban .o_kanban_renderer {
+    .o_kanban_record:not(.o_kanban_ghost) {
+        border-radius: $border-radius-lg;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+        transition: box-shadow 0.18s ease, transform 0.15s ease;
+        &:hover {
+            box-shadow: 0 4px 14px rgba($o-brand-primary, 0.11);
+            transform: translateY(-2px);
+        }
+    }
+}
+
+// Employee form avatar photo
+.o_hr_employee_form_view .o_employee_avatar .o_field_image img {
+    border-radius: $border-radius-lg;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+// Department kanban: brand accent border
+.o_hr_department_kanban .o_kanban_renderer {
+    .o_kanban_record:not(.o_kanban_ghost) {
+        border-radius: $border-radius-lg;
+        border-left: 3px solid $o-brand-primary;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+        transition: box-shadow 0.18s ease, transform 0.15s ease;
+        &:hover {
+            box-shadow: 0 4px 14px rgba($o-brand-primary, 0.11);
+            transform: translateY(-1px);
+        }
+    }
+}

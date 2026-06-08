@@ -96,3 +96,15 @@
 .hr_recruitment_is_favorite_job .o_favorite a {
     display: flex;
 }
+
+// === UI Redesign: Job Position Kanban Card Polish ===
+.o_hr_recruitment_kanban .o_kanban_renderer {
+    .o_kanban_card_header_title {
+        color: $o-brand-primary;
+        font-weight: $o-font-weight-semibold;
+    }
+    .number {
+        color: $o-brand-primary;
+        font-weight: $o-font-weight-bold;
+    }
+}

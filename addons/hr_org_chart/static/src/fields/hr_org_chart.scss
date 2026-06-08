@@ -112,3 +112,27 @@
         background-position: center center;
     }
 }
+
+// === UI Redesign: Org Chart Node Cards Shadow + Radius ===
+#o_employee_org_chart {
+    .o_org_chart_entry .o_media_object {
+        border-radius: 50%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+        transition: box-shadow 0.18s ease;
+    }
+    .o_org_chart_entry.o_org_chart_entry_self .o_media_object {
+        box-shadow: 0 2px 10px rgba($o-brand-primary, 0.22);
+    }
+    .o_org_chart_entry_self .o_media_object:not(.placeholder) {
+        outline-color: $o-brand-primary;
+    }
+    .o_org_chart_entry .o_employee_redirect:hover .o_media_object {
+        box-shadow: 0 0 0 2px $o-brand-primary, 0 2px 8px rgba($o-brand-primary, 0.20);
+    }
+}
+
+.o_org_chart_popup {
+    border-radius: $border-radius-lg;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+}

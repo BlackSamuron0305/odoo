@@ -137,11 +137,27 @@
 ***************/
 
 .o_expense_button_mail {
-    background-color: #9E588B;
+    background-color: $o-brand-primary;
     margin-top: 10px;
     padding: 10px;
     text-decoration: none;
     color: #fff;
-    border-radius: 5px;
+    border-radius: $border-radius;
     font-size: 16px;
+    font-weight: $o-font-weight-semibold;
+    transition: box-shadow 0.15s ease, opacity 0.15s ease;
+    &:hover {
+        opacity: 0.9;
+        box-shadow: 0 2px 8px rgba($o-brand-primary, 0.30);
+    }
+}
+
+// === UI Redesign: Expense Card / Receipt Area Polish ===
+.hr_expense {
+    .o_view_pink_overlay {
+        transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+        &:hover {
+            box-shadow: 0 4px 16px rgba($o-brand-primary, 0.10);
+        }
+    }
 }

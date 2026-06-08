@@ -5,3 +5,16 @@
         }
     }
 }
+
+// === UI Redesign: Employee Hierarchy Node Card Polish ===
+.o_hierarchy_renderer {
+    .o_hierarchy_node_container {
+        border-radius: $border-radius-lg;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+        transition: box-shadow 0.18s ease, transform 0.15s ease;
+        &:hover {
+            box-shadow: 0 4px 12px rgba($o-brand-primary, 0.11);
+            transform: translateY(-1px);
+        }
+    }
+}

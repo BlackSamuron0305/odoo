@@ -1,7 +1,12 @@
 .o_widget_account_file_uploader {
   button.oe_kanban_action {
+    border-radius: $border-radius;
+    transition: box-shadow 0.15s ease;
     a {
       color: var(--btn-color);
+    }
+    &:hover {
+      box-shadow: 0 2px 6px rgba($o-brand-primary, 0.15);
     }
   }
 

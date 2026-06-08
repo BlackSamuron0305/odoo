@@ -18,9 +18,10 @@
 
             &:before {
                 @include o-position-absolute(0, $left: ($o-hrs-timeline-dot-size * .5 + o-to-rem($o-horizontal-padding) - o-to-rem($border-width)));
-                width: $border-width;
+                width: 2px;
                 height: 100%;
-                background-color: $border-color;
+                background: linear-gradient(to bottom, $o-brand-primary, $o-gray-300);
+                border-radius: $border-radius-pill;
                 content: "";
 
                 @include media-breakpoint-up(lg) {
@@ -44,6 +45,11 @@
 
     .o_resume_line_title, .o_resume_line_dates {
         line-height: 1;
+    }
+
+    .o_resume_line_title {
+        font-weight: $o-font-weight-semibold;
+        color: $o-brand-primary;
     }
 
     .o_resume_group_header + .o_data_row .o_resume_timeline_cell:before {

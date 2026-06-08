@@ -32,3 +32,18 @@
         }   
     }
 }
+
+// === UI Redesign: Holiday Calendar Leave Type Color Chips ===
+.o_timeoff_calendar {
+    .o_calendar_renderer .o_calendar_widget {
+        .fc-bg-event {
+            transition: opacity 0.15s ease;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+        .hr_mandatory_day .fc-daygrid-day-number {
+            font-size: 0.85em;
+        }
+    }
+}

@@ -32,5 +32,25 @@
     }
     &::-webkit-scrollbar-thumb {
         background: lightgray;
+        border-radius: $border-radius-pill;
+    }
+}
+
+// === UI Redesign: Search Panel Brand Active State ===
+.o_search_panel.account_root {
+    .list-group-item.active {
+        background-color: mix($o-brand-primary, white, 8%);
+        border-color: mix($o-brand-primary, white, 20%);
+        color: $o-brand-primary;
+        font-weight: $o-font-weight-semibold;
+        border-radius: $border-radius-sm;
+    }
+    .o_search_panel_category_value > header {
+        border-radius: $border-radius-sm;
+        transition: background-color 0.15s ease, color 0.15s ease;
+        &:hover {
+            background-color: mix($o-brand-primary, white, 5%);
+            color: $o-brand-primary;
+        }
     }
 }

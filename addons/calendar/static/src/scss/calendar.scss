@@ -107,3 +107,19 @@
 .o_text_orange {
     color: orange;
 }
+
+// === UI Redesign: Calendar Event Polish ===
+.o_calendar_renderer .fc-event:not(.o_event_dot) {
+    border-radius: $border-radius;
+    transition: opacity 0.15s ease, box-shadow 0.15s ease;
+    &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        opacity: 0.9;
+    }
+}
+
+.o_cw_popover {
+    border-radius: $border-radius-lg;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+}

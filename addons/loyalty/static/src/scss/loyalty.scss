@@ -49,3 +49,24 @@
         height: fit-content;
     }
 }
+
+// === UI Redesign: Loyalty Program Visual Polish ===
+.loyalty-templates-container {
+    .loyalty-template {
+        border-radius: $border-radius;
+        border: 1px solid transparent;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        &:hover {
+            border-color: $o-brand-primary;
+            box-shadow: 0 2px 8px rgba($o-brand-primary, 0.10);
+        }
+    }
+}
+
+.o_loyalty_kanban_inline .o_kanban_renderer .o_kanban_record:not(.o_kanban_ghost) {
+    border-radius: $border-radius;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: $o-gray-100;
+    }
+}

@@ -7,6 +7,7 @@
             transform: rotate(-90deg);
             transform-origin: 30px 30px;
             stroke: $link-color;
+            transition: stroke 0.2s ease;
             &.o_crm_tooltip_wheel_bg_circle {
                 stroke: #ddd;
             }
@@ -25,9 +26,23 @@
     }
     .o_crm_pls_tooltip_footer {
         font-size: 11px;
+        color: $o-gray-600;
+        border-top: 1px solid $o-gray-200;
+        padding-top: 0.4rem;
+        margin-top: 0.4rem;
     }
 }
 
 .o_crm_pls_tooltip_button img {
     height: 1rem;
+    border-radius: $border-radius-sm;
+    transition: opacity 0.15s ease;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// === UI Redesign: PLS wheel brand accent ===
+.o_crm_pls_tooltip .o_crm_pls_tooltip_wheel circle:not(.o_crm_tooltip_wheel_bg_circle) {
+    stroke: $o-brand-primary;
 }

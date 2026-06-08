@@ -33,3 +33,13 @@
 .o_resume_html .note-editable {
     min-height: 10rem;
 }
+
+// === UI Redesign: HR Skills Employee Form Polish ===
+.o_hr_skill_type_form {
+    thead th {
+        background-color: rgba($o-brand-primary, 0.05);
+        font-weight: $o-font-weight-semibold;
+        color: $o-brand-primary;
+        letter-spacing: 0.02em;
+    }
+}

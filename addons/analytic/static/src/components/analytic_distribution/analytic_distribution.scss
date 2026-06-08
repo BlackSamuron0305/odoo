@@ -82,3 +82,16 @@
         }
     }
 }
+
+// === UI Redesign: Analytic Distribution Pill Tags ===
+.o_field_analytic_distribution {
+    .badge {
+        border-radius: $border-radius-pill;
+        font-weight: $o-font-weight-semibold;
+        letter-spacing: 0.02em;
+        transition: box-shadow 0.15s ease;
+        &:hover {
+            box-shadow: 0 2px 6px rgba($o-brand-primary, 0.15);
+        }
+    }
+}

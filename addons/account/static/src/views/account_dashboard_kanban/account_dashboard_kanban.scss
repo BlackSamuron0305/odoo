@@ -8,3 +8,24 @@
         }
     }
 }
+
+span:where(:has(.file_upload_kanban_action_a)) {
+    @include o-kanban-dashboard-dropdown-link($link-padding-gap: $o-kanban-dashboard-dropdown-complex-gap);
+}
+
+// === UI Redesign: Dashboard Kanban Card Shadow ===
+.o_account_dashboard_kanban_view .o_kanban_renderer {
+    .o_kanban_record:not(.o_kanban_ghost) {
+        border-radius: $border-radius-lg;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+        transition: box-shadow 0.18s ease, transform 0.15s ease;
+        &:hover {
+            box-shadow: 0 4px 14px rgba($o-brand-primary, 0.12);
+            transform: translateY(-2px);
+        }
+    }
+    .o_drop_area {
+        border-radius: $border-radius-lg;
+        transition: background-color 0.2s ease;
+    }
+}

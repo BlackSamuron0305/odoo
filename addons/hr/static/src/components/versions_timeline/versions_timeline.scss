@@ -202,3 +202,13 @@
         }
     }
 }
+
+// === UI Redesign: Statusbar / Version Timeline Visual Polish ===
+.o_field_statusbar > .o_statusbar_status {
+    .o_arrow_button {
+        transition: background-color 0.15s ease;
+    }
+    .o_arrow_button_wrapper .o_purple_line {
+        background-color: $o-brand-primary;
+    }
+}

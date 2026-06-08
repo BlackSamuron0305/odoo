@@ -2,10 +2,12 @@
     min-width: 15rem;
     max-width: 350px;
     overflow-y: auto;
+    border-left: 1px solid $o-gray-200;
 
     .o_import_grid {
         display: grid;
         grid-template-columns: repeat(3, auto);
+        border-radius: $border-radius;
 
         .o_grid_span_2 {
             grid-column: span 2;
@@ -15,9 +17,15 @@
     .o_import_file input {
         display: inline-block;
         width: 6ch;
+        border-radius: $border-radius-sm;
+        transition: border-color 0.15s ease;
 
         &:not(:valid) {
             background-color: $danger-bg-subtle;
+        }
+
+        &:valid {
+            border-color: $o-brand-primary;
         }
     }
 }

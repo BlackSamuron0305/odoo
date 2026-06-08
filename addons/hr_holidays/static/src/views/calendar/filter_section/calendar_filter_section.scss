@@ -23,3 +23,13 @@
     }
 }
 
+// === UI Redesign: Calendar Filter Section Polish ===
+.o_calendar_filter {
+    img:not(.o_avatar) {
+        border-radius: $border-radius-sm;
+        transition: opacity 0.15s ease;
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}

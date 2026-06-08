@@ -3,20 +3,31 @@
     outline: none;
     background: transparent;
     border-bottom: 2px solid var(--primary);
+    border-radius: $border-radius-sm;
+    transition: border-color 0.15s ease;
+    &:focus {
+        border-color: $o-brand-primary;
+        box-shadow: 0 2px 0 0 rgba($o-brand-primary, 0.15);
+    }
 }
 
 .o_selected_section {
     background-color: var(--list-group-active-bg);
+    border-radius: $border-radius;
+    border-left: 3px solid $o-brand-primary;
+    padding-left: 0.4rem;
 
     .o_section_name {
         font-weight: bold;
+        color: $o-brand-primary;
     }
 }
 
 .o_row_handle {
     @include o-grab-cursor;
     color: #adb5bd;
+    transition: color 0.15s ease;
     &:hover {
-        color: #666666;
+        color: $o-brand-primary;
     }
 }

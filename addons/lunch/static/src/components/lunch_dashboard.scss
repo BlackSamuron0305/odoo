@@ -9,9 +9,17 @@
         min-width: 18rem;
     }
 
+    border-radius: $border-radius-lg;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+
     .o_lunch_order_line_quantity {
         input {
             max-width: 3rem;
+        }
+
+        .o_lunch_qty_btn {
+            border-radius: $border-radius;
+            transition: background-color 0.15s ease;
         }
 
         .o_lunch_qty_btn.disabled .oi{

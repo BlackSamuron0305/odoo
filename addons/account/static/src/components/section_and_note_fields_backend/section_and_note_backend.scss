@@ -80,3 +80,15 @@ table.o_section_and_note_list_view {
         white-space: pre-wrap !important;
     }
 }
+
+// === UI Redesign: Section & Note Table Visual Polish ===
+table.o_section_and_note_list_view {
+    tr.o_is_line_section td {
+        background-color: rgba($o-brand-primary, 0.04);
+        color: $o-brand-primary;
+        letter-spacing: 0.02em;
+    }
+    tr.o_is_line_subsection td {
+        background-color: rgba($o-brand-primary, 0.02);
+    }
+}

@@ -1,8 +1,14 @@
 .o_widget_hr_department_chart {
     .o_hr_department_chart {
         .o_hr_department_chart_self {
+            border-radius: $border-radius-lg;
+            box-shadow: 0 2px 8px rgba($o-brand-primary, 0.12);
+            border-left: 3px solid $o-brand-primary;
+            padding: 0.5rem 0.75rem;
             .department_name {
                 font-weight: bold;
+                color: $o-brand-primary;
+                letter-spacing: 0.02em;
             }
         }
 

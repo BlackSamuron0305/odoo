@@ -1,5 +1,20 @@
 .o_lead_opportunity_form {
     .o_lead_opportunity_form_AI_switch_img {
         height: 1rem;
+        border-radius: $border-radius-sm;
+        transition: opacity 0.15s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+// === UI Redesign: CRM Lead Form Clean Look ===
+.o_lead_opportunity_form {
+    .o_field_one2many .o_list_renderer thead th {
+        background-color: rgba($o-brand-primary, 0.05);
+        font-weight: $o-font-weight-semibold;
+        color: $o-brand-primary;
+        letter-spacing: 0.02em;
     }
 }

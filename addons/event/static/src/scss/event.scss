@@ -17,8 +17,30 @@
 .o_event_registration_view_tree {
     .o_list_button > .o_btn_cancel_registration {
         color: $danger;
+        border-radius: $border-radius;
+        transition: color 0.15s ease;
         &:hover {
             color: darken($danger, $link-shade-percentage);
         }
+    }
+}
+
+// === UI Redesign: Event / Ticket Card Clean Styling ===
+.o_kanban_view.o_event_kanban_view .o_kanban_renderer {
+    .o_kanban_record:not(.o_kanban_ghost) {
+        border-radius: $border-radius-lg;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+        transition: box-shadow 0.18s ease, transform 0.15s ease;
+        &:hover {
+            box-shadow: 0 4px 14px rgba($o-brand-primary, 0.10);
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.o_kanban_view.o_event_attendee_kanban_view .o_kanban_renderer {
+    .o_event_registration_kanban_badge {
+        border-radius: $border-radius;
+        font-weight: $o-font-weight-semibold;
     }
 }

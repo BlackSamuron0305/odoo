@@ -1,5 +1,9 @@
 .crm_lead_merge_summary blockquote {
     font-style: normal;
+    border-left: 3px solid $o-brand-primary;
+    padding-left: 0.75rem;
+    border-radius: 0 $border-radius-sm $border-radius-sm 0;
+    background-color: rgba($o-brand-primary, 0.03);
 }
 
 .crm_quick_create_opportunity_form_group {
@@ -9,8 +13,37 @@
     i.fa {
         text-align: center;
         min-width: 2rem;
+        color: $o-brand-primary;
+        transition: color 0.15s ease;
     }
     .crm_revenues .o_row {
         margin-left: 1.75rem;
     }
+}
+
+// === UI Redesign: CRM Pipeline Visual Polish ===
+
+// Pipeline kanban record cards
+.o_crm_kanban .o_kanban_record:not(.o_kanban_ghost) {
+    border-radius: $border-radius-lg;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.18s ease, transform 0.15s ease;
+    &:hover {
+        box-shadow: 0 4px 14px rgba($o-brand-primary, 0.11);
+        transform: translateY(-2px);
+    }
+}
+
+// Lead priority stars
+.o_priority .fa-star,
+.o_priority .fa-star-o {
+    transition: color 0.15s ease, transform 0.1s ease;
+}
+.o_priority .fa-star {
+    color: gold;
+    text-shadow: 0 1px 4px rgba(255, 200, 0, 0.30);
+}
+.o_priority .fa-star-o:hover {
+    transform: scale(1.15);
+    color: gold;
 }

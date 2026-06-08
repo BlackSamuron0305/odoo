@@ -6,5 +6,12 @@
         background: transparent url(/account/static/src/img/multi_ledger.svg) no-repeat center;
         background-size: 300px 230px;
         margin: 0.65rem auto;
+        // === UI Redesign: Multi-Ledger Illustration Polish ===
+        opacity: 0.92;
+        filter: drop-shadow(0 2px 8px rgba($o-brand-primary, 0.10));
+        transition: opacity 0.2s ease;
+        &:hover {
+            opacity: 1;
+        }
     }
 }

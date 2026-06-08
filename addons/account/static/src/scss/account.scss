@@ -2,3 +2,34 @@
     color: $o-gray-600 !important;
     background-color: $o-gray-200 !important;
 }
+
+// === UI Redesign: Account Visual Polish ===
+
+// Invoice / move list table — clean header with brand tint
+.o_move_form_view .o_field_one2many .o_list_renderer thead th,
+.o_account_invoice_form .o_field_one2many .o_list_renderer thead th {
+    background-color: mix($o-brand-primary, white, 5%);
+    font-weight: $o-font-weight-semibold;
+    color: $o-brand-primary;
+    letter-spacing: 0.02em;
+}
+
+// Statusbar action buttons
+.o_account_invoice_form .o_statusbar_buttons .btn {
+    border-radius: $border-radius;
+    font-weight: $o-font-weight-semibold;
+    transition: box-shadow 0.15s ease;
+    &:hover {
+        box-shadow: 0 2px 8px rgba($o-brand-primary, 0.18);
+    }
+}
+
+// Payment / document state badges
+.badge.o_status_paid,
+.badge.o_status_partial,
+.badge.o_status_reversed,
+.badge.o_payment_status_badge {
+    border-radius: $border-radius;
+    font-weight: $o-font-weight-semibold;
+    letter-spacing: 0.03em;
+}

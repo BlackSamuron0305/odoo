@@ -25,3 +25,23 @@
         margin-right: 0px !important;
     }
 }
+
+// === UI Redesign: Applicant Pipeline Stage Styling ===
+.o_form_view.o_applicant_form .o_form_renderer {
+    &.o_form_editable .oe_title {
+        border-bottom: 2px solid rgba($o-brand-primary, 0.12);
+        padding-bottom: 0.5rem;
+    }
+}
+
+.o_hr_recruitment_kanban .o_kanban_renderer {
+    .o_kanban_record:not(.o_kanban_ghost) {
+        border-radius: $border-radius-lg;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+        transition: box-shadow 0.18s ease, transform 0.15s ease;
+        &:hover {
+            box-shadow: 0 4px 12px rgba($o-brand-primary, 0.10);
+            transform: translateY(-1px);
+        }
+    }
+}

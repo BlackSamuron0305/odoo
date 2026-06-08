@@ -4,18 +4,27 @@
     position: absolute;
     background-color: mix($o-brand-primary, $o-view-background-color, 15%);
     border: 3px dashed $o-brand-primary;
+    border-radius: $border-radius-lg;
     z-index: 3;
     left: -1px;
     top: -1px;
+    transition: background-color 0.2s ease;
     i {
       justify-content: center;
       display: flex;
       align-items: center;
       height: 100%;
+      color: $o-brand-primary;
+      font-size: 2rem;
     }
     .upload_badge {
       top: 50% !important;
       left: 50% !important;
       transform: translate(-50%,-50%);
+      border-radius: $border-radius;
+      font-weight: $o-font-weight-semibold;
+      background-color: $o-brand-primary;
+      color: white;
+      padding: 0.35em 0.75em;
     }
 }

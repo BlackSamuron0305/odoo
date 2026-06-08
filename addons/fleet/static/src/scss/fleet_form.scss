@@ -13,9 +13,22 @@
 
     .o_fleet_odometer_value {
         max-width: 6rem;
+        font-weight: $o-font-weight-semibold;
+        color: $o-brand-primary;
     }
 
     .o_fleet_odometer_unit {
         max-width: 3rem;
+    }
+}
+
+// === UI Redesign: Fleet Form Visual Polish ===
+.o_fleet_form_view .o_form_renderer {
+    .oe_stat_button {
+        border-radius: $border-radius;
+        transition: box-shadow 0.15s ease;
+        &:hover {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
     }
 }

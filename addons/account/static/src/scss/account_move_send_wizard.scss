@@ -6,5 +6,26 @@
     --fieldWidget-display: block;
     li {
         max-width: 325px;
+        border-radius: $border-radius;
+        transition: background-color 0.15s ease;
+        &:hover {
+            background-color: $o-gray-100;
+        }
+    }
+}
+
+// === UI Redesign: Send Wizard Visual Polish ===
+.o_account_move_send_wizard {
+    .o_form_sheet {
+        border-radius: $border-radius-lg;
+        overflow: hidden;
+    }
+    .o_statusbar_buttons .btn {
+        border-radius: $border-radius;
+        font-weight: $o-font-weight-semibold;
+        transition: box-shadow 0.15s ease;
+        &:hover {
+            box-shadow: 0 2px 8px rgba($o-brand-primary, 0.15);
+        }
     }
 }

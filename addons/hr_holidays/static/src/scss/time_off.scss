@@ -159,3 +159,29 @@
         }
     }
 }
+
+// === UI Redesign: Time Off Status Colors & Allocation Badge ===
+
+// Kanban leave cards
+.o_kanban_renderer .o_kanban_record.o_hr_holidays_kanban,
+.o_holidays_view_kanban .o_kanban_renderer .o_kanban_record {
+    border-radius: $border-radius-lg;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.18s ease;
+    &:hover {
+        box-shadow: 0 4px 12px rgba($o-brand-primary, 0.10);
+    }
+}
+
+// Leave form title accent
+.o_hr_leave_content {
+    .o_hr_leave_title {
+        color: $o-brand-primary;
+        font-weight: $o-font-weight-semibold;
+    }
+    .col_right .sub_table {
+        border-radius: $border-radius-lg;
+        border: 1px solid $o-gray-200;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    }
+}
