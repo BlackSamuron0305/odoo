@@ -2,4 +2,11 @@
     height: auto;
     resize: none;
     overflow-y: hidden;
+    min-height: 60px;
+    transition: box-shadow var(--o-transition-fast, 0.15s ease), border-color var(--o-transition-fast, 0.15s ease);
+
+    &:focus {
+        border-color: $o-brand-primary;
+        box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.15);
+    }
 }

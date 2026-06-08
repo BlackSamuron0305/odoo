@@ -11,8 +11,9 @@
 
  .o_setting_right_pane {
     margin-left: 24px;
-    border-left: 1px solid $border-color;
+    border-left: 2px solid rgba($o-brand-primary, 0.15);
     padding-left: 12px;
+    transition: border-color var(--o-transition-fast, 0.15s ease);
 
     .o_form_label + .fa, .o_form_label + .o_doc_link {
         margin-left: map-get($spacers, 2);

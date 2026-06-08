@@ -7,10 +7,22 @@
     }
     .o_radio_input {
         outline: none;
+        accent-color: $o-brand-primary;
+        cursor: pointer;
+        transition: box-shadow var(--o-transition-fast, 0.15s ease);
+
+        &:focus-visible {
+            box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.25);
+        }
     }
 
     .o_radio_item {
         flex: 0 0 auto;
+        cursor: pointer;
+
+        label {
+            cursor: pointer;
+        }
     }
 
     .o_horizontal {

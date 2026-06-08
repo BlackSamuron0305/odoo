@@ -1,6 +1,8 @@
 .o_card_property_field {
     max-width: 300px;
     font-size: 0.875rem;
+    border-radius: $border-radius;
+    transition: background-color var(--o-transition-fast, 0.15s ease);
 
     .form-check {
         margin-bottom: 0;

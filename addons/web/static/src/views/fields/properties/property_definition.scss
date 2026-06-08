@@ -1,6 +1,7 @@
 .o_field_property_definition {
     max-height: 70vh;
     overflow-y: auto;
+    border-radius: $border-radius-lg;
 
     .o_modal_container {
         @include media-breakpoint-up(sm) {

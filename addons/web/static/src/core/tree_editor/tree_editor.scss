@@ -1,7 +1,9 @@
 .o_tree_editor {
     .o_tree_editor_node {
         .o_tree_editor_node_control_panel > button {
-            opacity: .2;
+            opacity: .25;
+            border-radius: $border-radius-sm;
+            transition: opacity var(--o-transition-fast, 0.15s ease);
         }
 
         &.o_hovered_button {

@@ -6,6 +6,8 @@
 .o-FileViewer-navigation {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    transition: background-color var(--o-transition-fast, 0.15s ease);
 }
 
 .o-FileViewer-header {
@@ -27,14 +29,21 @@
     padding: ($o-navbar-height * 1.125) 0;
 }
 
-.o-FileViewer-headerButton:hover {
-    background-color: rgba($white, 0.1);
-    color: lighten($gray-400, 15%);
+.o-FileViewer-headerButton {
+    border-radius: $border-radius-sm;
+    transition: background-color var(--o-transition-fast, 0.15s ease), color var(--o-transition-fast, 0.15s ease);
+
+    &:hover {
+        background-color: rgba($white, 0.1);
+        color: lighten($gray-400, 15%);
+    }
 }
 
 .o-FileViewer-toolbarButton {
     background-color: var(--FileViewer-toolbarBgColor, #{$o-gray-800});
     color: #fff;
+    border-radius: $border-radius-sm;
+    transition: filter var(--o-transition-fast, 0.15s ease);
 
     &:hover {
         filter: brightness(1.3);

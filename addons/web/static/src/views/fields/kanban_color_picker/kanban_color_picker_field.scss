@@ -4,8 +4,19 @@
     }
     grid-template-columns: repeat(auto-fit, minmax($o-bubble-color-size-xl, 1fr));
     padding: var(--dropdown-item-padding-y) var(--dropdown-item-padding-x);
+    border-radius: $border-radius;
 
     .o_field_kanban_color_picker:has(> &) {
         width: 100%;
+    }
+
+    .o_colorlist_item_color {
+        border-radius: $border-radius-sm;
+        transition: transform var(--o-transition-fast, 0.15s ease), box-shadow var(--o-transition-fast, 0.15s ease);
+
+        &:hover {
+            transform: scale(1.15);
+            box-shadow: $o-shadow-sm;
+        }
     }
 }

@@ -225,10 +225,19 @@
     }
 }
 
-// =============================================
-// Inner components design
-// =============================================
+// Add drag handle indicator styling
 .o_bottom_sheet .o_bottom_sheet_sheet {
+    &::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: rgba($gray-500, 0.4);
+        margin: 8px auto 0;
+        flex-shrink: 0;
+    }
+}
     --BottomSheet-Entry-paddingX: #{$list-group-item-padding-x};
 
     %BottomSheet-Entry-active {

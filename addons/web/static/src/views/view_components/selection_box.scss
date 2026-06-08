@@ -11,3 +11,10 @@
 .modal-footer .o_selection_box {
     margin-bottom: 0 !important;
 }
+
+.o_selection_box {
+    border-radius: $border-radius;
+    background-color: rgba($o-brand-primary, 0.06);
+    border: 1px solid rgba($o-brand-primary, 0.2);
+    transition: background-color var(--o-transition-fast, 0.15s ease);
+}

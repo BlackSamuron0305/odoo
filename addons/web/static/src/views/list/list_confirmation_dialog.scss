@@ -1,12 +1,18 @@
 .modal.o_technical_modal {
-    .o_modal_changes td {
-        &:first-child {
-            padding-right: 10px;
-            vertical-align: top;
-            white-space: nowrap;
-        }
-        &:not(:first-child) {
-            width: 100%;
+    .o_modal_changes {
+        border-radius: $border-radius;
+
+        td {
+            &:first-child {
+                padding-right: 10px;
+                vertical-align: top;
+                white-space: nowrap;
+                font-weight: $o-font-weight-semibold;
+                color: $body-color;
+            }
+            &:not(:first-child) {
+                width: 100%;
+            }
         }
     }
 }

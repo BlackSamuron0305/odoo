@@ -2,6 +2,8 @@
     .o-autocomplete--dropdown-menu {
         width: 25ch;
         max-height: 350px !important;
+        border-radius: $border-radius;
+        box-shadow: $o-shadow-md;
         .o-autocomplete--dropdown-item a {
             text-overflow: ellipsis;
             width: inherit;

@@ -5,7 +5,10 @@
         display: flex;
         flex-flow: column;
         .o_content {
-            overflow: auto;                                              
+            overflow: auto;
         }
+    }
+    .o_dialog_title {
+        font-weight: $o-font-weight-semibold;
     }
 }

@@ -11,25 +11,26 @@
         --Ribbon-font-size-default: #{$font-size-lg};
         --Ribbon-height-default: calc(var(--Ribbon-font-size, var(--Ribbon-font-size-default)) * 2.5);
         --Ribbon-shadow-distance: .25rem;
-        --Ribbon-shadow-blur: .5rem;
+        --Ribbon-shadow-blur: .75rem;
 
         z-index: var(--Ribbon-z-index);
         position: absolute;
         width: 141.421%; //Square root of 2 to get the diagonal of the parent
         height: var(--Ribbon-height, var(--Ribbon-height-default));
-        box-shadow: 0 var(--Ribbon-shadow-distance) var(--Ribbon-shadow-blur) rgba(0, 0, 0, .1);
+        box-shadow: 0 var(--Ribbon-shadow-distance) var(--Ribbon-shadow-blur) rgba(0, 0, 0, .18);
         color: $white;
         font-size: var(--Ribbon-font-size, var(--Ribbon-font-size-default));
         line-height: var(--Ribbon-height, var(--Ribbon-height-default));
         font-weight: $o-font-weight-bold;
         font-family: 'Lato', sans-serif;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
         text-transform: uppercase;
         text-align: center;
         overflow: hidden;
         user-select: none;
         transform-origin: left bottom;
         pointer-events: none;
+        letter-spacing: 0.03em;
         &.o_small {
             font-size: $font-size-sm
         }

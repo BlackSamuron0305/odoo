@@ -5,6 +5,17 @@
     flex-flow: row wrap;
     margin-top: calc(var(--img-text-gap-v) * -0.5); // using transform conflicts with dropdown position
 
+    .o_avatar img, .o_m2m_avatar {
+        border-radius: 50%;
+        border: 2px solid $white;
+        box-shadow: 0 0 0 1px rgba($o-brand-primary, 0.2);
+        transition: box-shadow var(--o-transition-fast, 0.15s ease);
+
+        &:hover {
+            box-shadow: 0 0 0 2px $o-brand-primary;
+        }
+    }
+
     .o_field_many2many_selection {
         flex: 1 0 50px;
 
@@ -46,6 +57,8 @@
     z-index: $zindex-modal - 1;
     width: 280px;
     font-size: $dropdown-font-size;
+    border-radius: $border-radius-lg;
+    box-shadow: $o-shadow-md;
     .o_input.o_tags_input {
         border: none;
     }

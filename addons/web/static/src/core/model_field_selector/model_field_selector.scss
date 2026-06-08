@@ -19,6 +19,10 @@
             cursor: inherit;
             border: 1px solid darken($o-brand-lightsecondary, 10%);
             background: $o-brand-lightsecondary;
+            border-radius: $border-radius-sm;
+            background-color: rgba($o-brand-primary, 0.08);
+            border-color: rgba($o-brand-primary, 0.25);
+            transition: background-color var(--o-transition-fast, 0.15s ease);
         }
         > i {
             font-size: 10px;

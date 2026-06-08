@@ -3,5 +3,11 @@
         width: 130px;
         height: 130px;
         object-fit: contain;
+        border-radius: $border-radius-lg;
+        transition: box-shadow var(--o-transition-fast, 0.15s ease);
+
+        &:hover {
+            box-shadow: $o-shadow-sm;
+        }
     }
 }

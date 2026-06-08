@@ -29,9 +29,16 @@
 
         > .o_column_progress {
             height: $font-size-sm;
+            border-radius: 50rem;
+            overflow: hidden;
 
             .bg-200 {
                 --background-color: RGBA(#{to-rgb($o-gray-300)}, var(--bg-opacity, 1))
+            }
+
+            .progress-bar {
+                transition: width var(--o-transition-base, 0.3s ease);
+                background-color: $o-brand-primary !important;
             }
         }
     }

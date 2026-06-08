@@ -1,10 +1,17 @@
 // translation dialog
 .o_translation_dialog {
     .o_language_current {
-        font-weight: bold;
+        font-weight: $o-font-weight-semibold;
+        color: $o-brand-primary;
     }
 
     .row {
         margin-bottom: 9px;
+        border-radius: $border-radius-sm;
+        transition: background-color var(--o-transition-fast, 0.15s ease);
+
+        &:hover {
+            background-color: rgba($o-brand-primary, 0.04);
+        }
     }
 }

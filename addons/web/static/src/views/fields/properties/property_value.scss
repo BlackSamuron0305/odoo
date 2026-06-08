@@ -1,6 +1,8 @@
 .o_field_property_dropdown_menu {
     .o-autocomplete--dropdown-menu {
         max-height: 200px!important;
+        border-radius: $border-radius;
+        box-shadow: $o-shadow-md;
     }
 }
 

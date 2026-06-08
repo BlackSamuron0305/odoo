@@ -11,4 +11,6 @@
 
 .o-dropdown--group-config-menu {
     cursor: default;
+    border-radius: $border-radius;
+    box-shadow: $o-shadow-md;
 }

@@ -16,6 +16,7 @@
     height: 100%;
     display: inline-flex;
     visibility: hidden;
+    transition: opacity var(--o-transition-fast, 0.15s ease);
 
     .o_field_char & {
         align-items: center;
@@ -28,6 +29,7 @@
         position: relative;
         right: auto;
         top: auto;
+        border-radius: $border-radius-sm;
 
         &:only-child {
             padding-right: 10px;

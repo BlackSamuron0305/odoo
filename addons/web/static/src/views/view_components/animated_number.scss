@@ -12,6 +12,7 @@
 
 .o_animated_number {
     transform-origin: right center;
+    transition: color var(--o-transition-fast, 0.15s ease);
 
     &.o_animated_grow {
         animation: animated-counter-grow 1s ease 0s 1 normal none running;

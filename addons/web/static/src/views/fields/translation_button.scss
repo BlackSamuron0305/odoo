@@ -6,6 +6,12 @@
     vertical-align: top;
     text-align: right;
     visibility: hidden;
+    border-radius: $border-radius-sm;
+    transition: color var(--o-transition-fast, 0.15s ease), background-color var(--o-transition-fast, 0.15s ease);
+
+    &:hover {
+        color: $o-brand-primary;
+    }
 
     &, .o_web_client.o_touch_device & {
         padding: 0;

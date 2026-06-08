@@ -12,9 +12,10 @@ $o-attachment-margin: 5px;
         overflow: hidden;
         position: relative;
         border-bottom: 1px solid rgba(black, 0.1);
-        border-radius: 2px;
+        border-radius: $border-radius;
         padding: 4px $o-attachment-image-size 0 4px;
         background-color: rgba($o-black, 0.05);
+        transition: box-shadow var(--o-transition-fast, 0.15s ease);
 
         .o_attachment_delete_cross {
             float: right;
@@ -89,5 +90,9 @@ $o-attachment-margin: 5px;
     &:hover .o_attachment_delete {
         transition: all 0.1s ease 0s;
         transform: translateX(0);
+    }
+
+    &:hover .o_attachment_wrap {
+        box-shadow: $o-shadow-sm;
     }
 }

@@ -1,8 +1,12 @@
 .o-Dropzone {
     border: 2px dashed;
     z-index: 1000; // above chat window
+    border-color: $o-brand-primary;
+    border-radius: $border-radius-lg;
+    transition: border-width var(--o-transition-fast, 0.15s ease), background-color var(--o-transition-fast, 0.15s ease);
 
     &.o-dragging-inside {
         border-width: 5px;
+        background-color: rgba($o-brand-primary, 0.06);
     }
 }

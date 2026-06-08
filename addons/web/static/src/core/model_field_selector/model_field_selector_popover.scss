@@ -1,6 +1,8 @@
 .o_model_field_selector_popover {
     width: 17rem;
     max-height: 40vh;
+    border-radius: $border-radius-lg;
+    box-shadow: $o-shadow-md;
 
     .o_model_field_selector_popover_body {
         .o_model_field_selector_popover_page {

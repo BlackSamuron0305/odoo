@@ -2,5 +2,12 @@
     .o_badge_border {
         outline: 2px solid $o-enterprise-action-color;
         outline-offset: -1px;
+        border-radius: 50rem;
+        transition: box-shadow var(--o-transition-fast, 0.15s ease), transform var(--o-transition-fast, 0.15s ease);
+
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: $o-shadow-sm;
+        }
     }
 }

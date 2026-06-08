@@ -1,11 +1,15 @@
 .o_field_percent_pie {
     .o_pie {
-        --PercentPieField-color-active: #{$o-action};
+        --PercentPieField-color-active: #{$o-brand-primary};
         --PercentPieField-color-static: #{rgba(#000, .15)};
 
         height: var(--PercentPieField-size, #{$font-size-lg});
         aspect-ratio: 1;
         margin-right: var(--PercentPieField-gap, #{map-get($spacers, 2) });
+
+        circle {
+            transition: stroke-dashoffset var(--o-transition-base, 0.3s ease), stroke var(--o-transition-fast, 0.15s ease);
+        }
     }
 }
 
