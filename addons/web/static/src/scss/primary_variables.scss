@@ -2,6 +2,40 @@
 /// This file regroups the variables that style odoo components.
 /// They are available in every asset bundle.
 ///
+/// ============================================================
+/// UI REDESIGN — Design Token Reference (Sprint 13 Style Guide)
+/// ============================================================
+///
+/// Brand
+///   $o-brand-primary       #6358a5  — Purple-indigo, all primary CTAs
+///   $o-brand-secondary     #00d09c  — Teal accent
+///
+/// Gray Scale (warm, 8-step)
+///   $o-gray-100  #f5f5f8   background surfaces
+///   $o-gray-200  #eaebef   subtle borders, dividers
+///   $o-gray-300  #d5d7df
+///   $o-gray-400  #adb1bd
+///   $o-gray-500  #8891a2   muted text
+///   $o-gray-600  #6c7589
+///   $o-gray-700  #49505c
+///   $o-gray-800  #2e3440
+///   $o-gray-900  #1a1d23   near-black headings
+///
+/// Shadows  ($o-shadow-xs → $o-shadow-lg)
+/// Border Radius  ($border-radius-sm 4px · $border-radius 6px · $border-radius-lg 10px)
+/// Font Weights  (400 normal · 500 medium · 600 semibold · 700 bold)
+///
+/// CSS Custom Properties (runtime theming):
+///   --o-color-bg          page background
+///   --o-color-surface      card surface
+///   --o-color-border       default border
+///   --o-color-text         body text
+///   --o-color-text-muted   secondary text
+///   --o-color-brand        primary brand
+///   --o-shadow-xs/sm/md/lg  shadow ramp
+///   --o-transition-fast/base/slow  transition ramp
+/// ============================================================
+///
 
 // Contrast ratio
 $o-frontend-min-contrast-ratio: 2.9 !default;

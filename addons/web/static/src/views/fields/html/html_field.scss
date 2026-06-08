@@ -1,3 +1,38 @@
 .o_field_widget.o_field_html {
     display: block;
+
+    // Sprint 7: clean prose styling for read-only HTML content
+    &:not(.o_editable):not(.o_form_editable) .odoo-editor-editable,
+    &.o_readonly .odoo-editor-editable {
+        font-size: $font-size-base;
+        line-height: 1.7;
+        color: $body-color;
+
+        h1, h2, h3, h4, h5, h6 {
+            color: $headings-color;
+            font-weight: 600;
+            margin-top: 1.2em;
+        }
+
+        p {
+            margin-bottom: 0.75em;
+        }
+
+        a {
+            color: $o-brand-primary;
+        }
+
+        blockquote {
+            border-left: 3px solid map-get($grays, "300");
+            padding-left: map-get($spacers, 3);
+            color: $text-muted;
+        }
+
+        code, pre {
+            font-size: 0.875em;
+            background-color: map-get($grays, "100");
+            border-radius: $border-radius-sm;
+            padding: 0.1em 0.35em;
+        }
+    }
 }

@@ -2,4 +2,19 @@
     .o-dropdown {
         min-width: 5px;
     }
+
+    // Sprint 3: cog dropdown toggle — subtle icon-only button
+    > .o-dropdown > .o-dropdown--menu {
+        border-radius: $border-radius-lg !important;
+        box-shadow: $o-shadow-md !important;
+        min-width: 180px;
+        padding: map-get($spacers, 1) 0;
+
+        .dropdown-item {
+            border-radius: $border-radius;
+            margin: 1px map-get($spacers, 1);
+            padding-inline: map-get($spacers, 2);
+            transition: background-color var(--o-transition-fast);
+        }
+    }
 }

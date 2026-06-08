@@ -1,14 +1,18 @@
+// Sprint 10: modern pill-style file upload progress bar
 .o-file-upload-progress-bar-value {
-    transition: width 0.1s;
-    border-right: 1px solid darken($o-brand-primary, 7.5%);
+    transition: width 0.25s ease;
+    border-right: none;
+    border-radius: 100px;
     background-color: $o-brand-primary;
-    opacity: 0.5;
+    opacity: 1;
+    height: 4px;
 }
 
 .o-file-upload-progress-bar-abort {
     padding: 4px;
-    color: #963535;
+    color: map-get($theme-colors, 'danger');
     font-size: 16px;
+    transition: opacity var(--o-transition-fast);
     &:active {
         opacity: 0.7;
     }

@@ -758,3 +758,33 @@
         background-image: repeating-linear-gradient(-45deg, transparent, var(--fc-neutral-bg-color) 25px, transparent 50px);
     }
 }
+
+// Sprint 9: modern calendar event chip styling
+.o_calendar_renderer {
+    // Rounded event chips with crisp borders
+    .fc-event:not(.o_event_dot):not(.fc-dragging) {
+        border-radius: $border-radius !important;
+        border-left-width: 3px;
+        border-top-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        padding-inline: map-get($spacers, 1);
+        font-size: $o-font-size-base-smaller;
+        font-weight: 500;
+        transition: box-shadow var(--o-transition-fast), transform var(--o-transition-fast);
+
+        &:hover {
+            transform: translateY(-1px);
+        }
+    }
+
+    // Today cell: subtle brand tint
+    .fc-day-today {
+        background-color: rgba($o-brand-primary, 0.04) !important;
+    }
+
+    // Current time indicator line: brand color
+    .fc-timegrid-now-indicator-line {
+        border-color: $o-brand-primary;
+    }
+}

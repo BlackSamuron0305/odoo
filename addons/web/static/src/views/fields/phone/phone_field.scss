@@ -16,3 +16,13 @@ body:not(.o_touch_device) .o_field_phone {
         display: none;
     }
 }
+
+// Sprint 7: phone call/SMS action links
+.o_field_phone a {
+    color: $o-brand-primary;
+    transition: color var(--o-transition-fast);
+
+    &:hover {
+        color: darken($o-brand-primary, 10%);
+    }
+}

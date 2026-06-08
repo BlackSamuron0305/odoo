@@ -3,6 +3,15 @@
         grid-template-columns: auto min-content;
         .o_clipboard_button {
             border: none;
+            // Sprint 7: refined copy button
+            opacity: 0.6;
+            transition: opacity var(--o-transition-fast), color var(--o-transition-fast);
+            border-radius: $border-radius-sm;
+
+            &:hover {
+                opacity: 1;
+                color: $o-brand-primary;
+            }
         }
         > span:first-child, a {
             margin-left: 4px;
@@ -18,7 +27,9 @@
 
 .o_field_CopyClipboardURL, .o_field_CopyClipboardChar {
     &.o_readonly_modifier > div {
-        border: 1px solid #e6e6e6;
+        // Sprint 7: softer border using design system tokens
+        border: $border-width solid $border-color;
+        border-radius: $border-radius;
         > span {
             padding-left: 4px;
         }

@@ -5,7 +5,8 @@
     &:not(.o_blockUI_invisible) {
         -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
-        background: rgba(#000, .5);
+        // Sprint 10: slightly lighter overlay, more modern
+        background: rgba(#000, .35);
         color: #fff;
     }
 }

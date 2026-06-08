@@ -2,6 +2,10 @@
 .o_searchable_setting {
     --SearchableSetting__highlight-background: #{tint-color($o-action, 90%)};
     --SearchableSetting__highlight-border: #{$o-action};
+
+    // Sprint 11: smooth transition when highlighted by search
+    transition: background-color var(--o-transition-base), box-shadow var(--o-transition-base);
+    border-radius: $border-radius;
     
     &.o_setting_highlight{
         background-color: var(--SearchableSetting__highlight-background) !important;

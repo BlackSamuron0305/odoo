@@ -4,3 +4,21 @@
         margin: 2px 10px 2px 0;
     }
 }
+
+// Sprint 11: debug mode indicator — subtle amber banner visible in debug mode
+body.o_debug .o_main_navbar::after {
+    content: "DEBUG";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba($o-main-favorite-color, 0.15);
+    color: darken($o-main-favorite-color, 15%);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 1px 8px;
+    border-radius: 0 0 $border-radius $border-radius;
+    pointer-events: none;
+    z-index: 1;
+}

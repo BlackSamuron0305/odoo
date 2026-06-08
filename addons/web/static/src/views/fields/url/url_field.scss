@@ -5,3 +5,15 @@ body:not(.o_touch_device) .o_field_url {
         }
     }
 }
+
+// Sprint 7: URL link — branded color + underline-on-hover
+.o_field_url a {
+    color: $o-brand-primary;
+    text-decoration: none;
+    transition: color var(--o-transition-fast);
+
+    &:hover {
+        color: darken($o-brand-primary, 10%);
+        text-decoration: underline;
+    }
+}

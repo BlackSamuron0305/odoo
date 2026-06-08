@@ -12,9 +12,14 @@
     .o_error_detail {
         > div {
             overflow: auto;
+            // Sprint 8: monospace pre with subtle bg
             pre {
                 border: none;
                 overflow: unset;
+                background-color: map-get($grays, "100");
+                border-radius: $border-radius;
+                padding: map-get($spacers, 2);
+                font-size: 0.8rem;
             }
         }
         button {
@@ -31,8 +36,10 @@
         border: none;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        // Sprint 8: danger color for error dialog title
         .modal-title {
             font-size: 1.625rem;
+            color: map-get($theme-colors, 'danger');
         }
     }
     .modal-body {

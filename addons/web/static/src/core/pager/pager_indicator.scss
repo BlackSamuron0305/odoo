@@ -5,9 +5,13 @@
     > .o_pager_indicator_inner {
         min-width: 13ch;
         padding: $o-touch-btn-padding;
-        border: var(--border-width) solid $o-gray-200;
-        border-radius: var(--border-radius);
-        background-color: $o-gray-200;
+        // Sprint 3: pill pager indicator — brand primary background
+        border: none;
+        border-radius: 100px;
+        background-color: $o-brand-primary;
+        color: $white;
+        font-weight: 600;
+        box-shadow: $o-shadow-sm;
     }
 
     &.o-fade-leave, &.o-fade-enter {

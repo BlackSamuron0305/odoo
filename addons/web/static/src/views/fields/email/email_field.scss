@@ -5,3 +5,13 @@ body:not(.o_touch_device) .o_field_email {
         }
     }
 }
+
+// Sprint 7: email action link — branded color + icon prefix
+.o_field_email a.o_form_uri {
+    color: $o-brand-primary;
+    transition: color var(--o-transition-fast);
+
+    &:hover {
+        color: darken($o-brand-primary, 10%);
+    }
+}
