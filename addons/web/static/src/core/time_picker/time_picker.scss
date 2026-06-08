@@ -1,8 +1,15 @@
 
 .o_time_picker_input {
     transition: all .1s ease-in-out;
-    transition-property: color, background-color, border-bottom-color;
+    transition-property: color, background-color, border-bottom-color, border-color, box-shadow;
     color: $btn-color;
+    border-radius: $border-radius-sm;
+
+    &:focus {
+        border-color: $o-brand-primary;
+        box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.12);
+        outline: none;
+    }
 
     &.o_invalid {
         color: o-text-color('danger');

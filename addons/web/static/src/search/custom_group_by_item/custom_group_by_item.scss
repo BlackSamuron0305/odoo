@@ -1,4 +1,13 @@
 .o_add_custom_group_menu {
     background-position-x: calc(100% - 0.6em);
     border: 0 !important;
+    transition: border-color var(--o-transition-fast, 0.15s ease),
+                box-shadow var(--o-transition-fast, 0.15s ease);
+    border-radius: $border-radius-sm;
+
+    &:focus {
+        border: $border-width solid $o-brand-primary !important;
+        box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.12);
+        outline: none;
+    }
 }

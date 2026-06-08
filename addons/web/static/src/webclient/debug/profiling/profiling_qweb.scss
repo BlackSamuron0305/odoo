@@ -127,10 +127,12 @@
             z-index: 1;
             background: #ffedcb;
             color: orange !important;
-            border: 1px orange solid;
+            border: 1px solid rgba(orange, 0.5);
             padding: 6px;
             white-space: normal;
             text-align: right;
+            border-radius: $border-radius;
+            box-shadow: $o-shadow-sm;
         }
     }
 }

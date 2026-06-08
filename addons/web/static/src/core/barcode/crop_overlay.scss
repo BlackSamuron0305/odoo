@@ -29,7 +29,8 @@
         &::after {
             position: absolute;
             inset: var(--o-crop-y, 0px) var(--o-crop-x, 0px);
-            border: 1px solid black;
+            border: 2px solid $o-brand-primary;
+            border-radius: $border-radius-sm;
         }
     }
 

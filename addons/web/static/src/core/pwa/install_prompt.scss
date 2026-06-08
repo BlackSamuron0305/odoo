@@ -7,9 +7,23 @@
     background: rgba($white, .7);
     inset: 0 auto auto 0 !important;
     width: fit-content !important;
+    box-shadow: $o-shadow-lg;
 
     &.o_touch_bounce {
         animation: none;
+    }
+
+    .btn-primary {
+        background-color: $o-brand-primary;
+        border-color: $o-brand-primary;
+        border-radius: $border-radius;
+        transition: background-color var(--o-transition-fast, 0.15s ease),
+                    box-shadow var(--o-transition-fast, 0.15s ease);
+
+        &:hover {
+            background-color: darken($o-brand-primary, 8%);
+            box-shadow: $o-shadow-sm;
+        }
     }
 
     @media screen and (max-width: 768px) {

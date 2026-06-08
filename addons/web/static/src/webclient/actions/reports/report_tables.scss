@@ -1,3 +1,20 @@
+// ===== Visual polish: interactive row hover =====
+@media screen {
+    .o_table_standard,
+    .o_table_striped,
+    .o_table_bold {
+        table:not(.o_ignore_layout_styling) {
+            tbody tr {
+                transition: background-color var(--o-transition-fast, 0.15s ease);
+
+                &:hover td {
+                    background-color: rgba($o-brand-primary, 0.04);
+                }
+            }
+        }
+    }
+}
+
 // This file regroups the fixes and styling related to table inside reports
 
 table.table {

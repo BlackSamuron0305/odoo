@@ -2,8 +2,28 @@
     min-width: 160px;
     border-radius: $border-radius;
     box-shadow: $o-shadow-sm;
+    border: $border-width solid $border-color;
+    overflow: hidden;
+
+    .dropdown-item {
+        transition: background-color var(--o-transition-fast, 0.15s ease),
+                    color var(--o-transition-fast, 0.15s ease);
+        border-radius: $border-radius-sm;
+
+        &:hover,
+        &:focus {
+            background-color: rgba($o-brand-primary, 0.08);
+            color: $o-brand-primary;
+        }
+
+        &.active {
+            background-color: $o-brand-primary;
+            color: $white;
+        }
+    }
 }
 
 .o_form_view.o_field_highlight .o_select_menu .o_select_menu_caret {
     visibility: visible;
+    transition: transform var(--o-transition-base, 0.2s ease);
 }

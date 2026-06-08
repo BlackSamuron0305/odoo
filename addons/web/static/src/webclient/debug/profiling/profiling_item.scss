@@ -1,5 +1,7 @@
 .o_debug_recording {
     animation: 2s flash infinite;
+    border-radius: $border-radius-sm;
+    padding: 0 0.25rem;
 }
 
 .o-dropdown--menu .o_debug_profiling_item_wrapper.dropdown-item.focus {

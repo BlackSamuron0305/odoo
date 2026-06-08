@@ -10,3 +10,29 @@
         }
     }
 }
+
+// ===== Visual polish =====
+.o_calendar_filter {
+    .o_calendar_filter_item {
+        border-radius: $border-radius-sm;
+        transition: background-color var(--o-transition-fast, 0.15s ease);
+
+        &:hover {
+            background-color: rgba($o-brand-primary, 0.06);
+        }
+
+        button.o_remove {
+            opacity: 0;
+            transition: opacity var(--o-transition-fast, 0.15s ease);
+        }
+
+        &:hover button.o_remove {
+            opacity: 1;
+        }
+
+        .o-checkbox input[type="checkbox"]:checked {
+            background-color: $o-brand-primary;
+            border-color: $o-brand-primary;
+        }
+    }
+}

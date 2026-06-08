@@ -118,3 +118,30 @@ $o-web-calendar-colors: o-build-web-calendar-colors();
         }
     }
 }
+
+// ===== Visual polish =====
+.o_cw_popover {
+    border-radius: $border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+
+    .card-header,
+    .card-header .popover-header {
+        transition: background-color var(--o-transition-fast, 0.15s ease);
+    }
+
+    .o_cw_popover_close {
+        opacity: 0.6;
+        transition: opacity var(--o-transition-fast, 0.15s ease);
+        &:hover { opacity: 1; }
+    }
+
+    .o_cw_popover_fields_secondary {
+        &::-webkit-scrollbar {
+            border-radius: 3px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 3px;
+        }
+    }
+}

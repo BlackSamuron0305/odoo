@@ -1,3 +1,19 @@
+// ===== Visual polish =====
+@include media-breakpoint-down(md) {
+    .o_calendar_container {
+        .o_other_calendar_panel {
+            > .o_filter {
+                border-radius: $border-radius-sm;
+                transition: opacity var(--o-transition-fast, 0.15s ease);
+
+                &:hover {
+                    opacity: 0.85;
+                }
+            }
+        }
+    }
+}
+
 @include media-breakpoint-down(md) {
     .o_calendar_header {
         .o_calendar_button_today {

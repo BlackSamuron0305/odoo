@@ -17,3 +17,9 @@
     opacity: 0;
   }
 }
+
+// Utility: opt-out of all CSS transitions and animations
+.o-transition-none {
+    transition: none !important;
+    animation: none !important;
+}

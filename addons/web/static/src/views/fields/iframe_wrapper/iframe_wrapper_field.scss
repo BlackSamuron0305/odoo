@@ -15,7 +15,9 @@ $preview_scale: 0.50;
   .o_preview_iframe {
     width: $preview_width + 0px;
     height: $preview_height + 0px;
-    border: 2px solid lightgrey;
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
+    transition: border-color var(--o-transition-fast, 0.15s ease);
 
     padding-top: 30px;
     padding-bottom: 30px;

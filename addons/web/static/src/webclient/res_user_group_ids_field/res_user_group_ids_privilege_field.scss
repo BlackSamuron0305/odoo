@@ -16,8 +16,14 @@
         @include o-custom-checkbox($danger);
     }
 
+    .o-checkbox > input {
+        transition: background-color var(--o-transition-fast, 0.15s ease),
+                    border-color var(--o-transition-fast, 0.15s ease);
+    }
+
     .o_group_info_button.fa-info-circle {
         opacity: 0.2;
+        transition: opacity var(--o-transition-fast, 0.15s ease);
         &:hover {
             opacity: 1;
         }

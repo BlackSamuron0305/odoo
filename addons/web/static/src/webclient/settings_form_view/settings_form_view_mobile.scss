@@ -49,12 +49,22 @@
 
                     &.current {
                         font-weight: bold;
+                        opacity: 1;
 
                         // Reset default style for 'selected' tabs
                         box-shadow: none;
                         background: none;
 
                         &:after {
+                            opacity: 1;
+                        }
+                    }
+
+                    &:not(.current) {
+                        opacity: 0.72;
+                        transition: opacity var(--o-transition-fast, 0.15s ease);
+
+                        &:hover {
                             opacity: 1;
                         }
                     }

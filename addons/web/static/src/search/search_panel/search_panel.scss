@@ -1,3 +1,35 @@
+// ===== Visual polish =====
+.o_search_panel {
+    .o_search_panel_section_header {
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-size: 0.72em;
+        color: $text-muted;
+    }
+
+    .o_search_panel_filter_value,
+    .o_search_panel_category_value {
+        border-radius: $border-radius-sm;
+        transition: background-color var(--o-transition-fast, 0.15s ease);
+
+        &.active {
+            background-color: rgba($o-brand-primary, 0.1);
+            color: $o-brand-primary;
+            font-weight: 500;
+        }
+
+        &:hover:not(.active) {
+            background-color: rgba($o-brand-primary, 0.05);
+        }
+
+        .o-checkbox input[type="checkbox"]:checked {
+            background-color: $o-brand-primary;
+            border-color: $o-brand-primary;
+        }
+    }
+}
+
 // ------- View with SearchPanel -------
 
 .o_component_with_search_panel,

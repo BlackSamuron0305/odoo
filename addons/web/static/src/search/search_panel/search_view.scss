@@ -3,10 +3,14 @@
 
     background-color: var(--SearchBar-background-color);
     border: $input-border-width solid $border-color;
+    border-radius: $border-radius;
+    transition: border-color var(--o-transition-fast, 0.15s ease),
+                box-shadow var(--o-transition-fast, 0.15s ease);
 
     &:focus-within {
         border-color: $input-focus-border-color;
         color: $input-focus-color;
+        box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.12);
 
         + .o_searchview_dropdown_toggler {
             border-top-color: $input-focus-border-color;

@@ -1,5 +1,9 @@
 .modal.o_technical_modal {
     .modal-content {
+        border-radius: $border-radius-lg;
+        overflow: hidden;
+        box-shadow: $o-shadow-lg;
+
         .modal-body.o_act_window {
             padding: 0;
 

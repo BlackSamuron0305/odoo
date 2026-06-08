@@ -10,5 +10,15 @@
         border: 1px solid white;
         box-shadow: 0 0 0 1px map-get($grays, '300');
         margin: 2px;
+        border-radius: $border-radius-sm;
+        transition: transform var(--o-transition-fast, 0.15s ease),
+                    box-shadow var(--o-transition-fast, 0.15s ease);
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.18);
+            box-shadow: 0 0 0 2px $o-brand-primary !important;
+            z-index: 1;
+        }
     }
 }

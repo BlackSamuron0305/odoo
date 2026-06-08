@@ -3,7 +3,7 @@
     touch-action: pan-y;
 }
 .o_actionswiper_target_container {
-    transition: transform 0.4s;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .o_actionswiper_swiping {
     transition: none;
@@ -12,9 +12,11 @@
     /*rtl:ignore*/
     transform: translateX(-100%);
     inset: 0 auto auto 0;
+    border-radius: $border-radius;
 }
 .o_actionswiper_left_swipe_area {
     /*rtl:ignore*/
     transform: translateX(100%);
     inset: 0 0 auto auto;
+    border-radius: $border-radius;
 }

@@ -59,6 +59,13 @@ $o-cw-filter-avatar-size: 20px;
     }
 }
 
+// ===== Visual polish =====
+.o_calendar_sidebar_container {
+    .o_calendar_sidebar {
+        border-radius: $border-radius-lg;
+    }
+}
+
 //  Print
 @include media-only(print) {
     html:has(.o_action_manager .o_calendar_view.o_view_controller.o_action) {

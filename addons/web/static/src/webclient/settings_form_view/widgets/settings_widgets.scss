@@ -8,4 +8,12 @@
 .o_doc_link {
     text-decoration: none;
     font-weight: normal;
+    opacity: 0.8;
+    transition: color var(--o-transition-fast, 0.15s ease),
+                opacity var(--o-transition-fast, 0.15s ease);
+
+    &:hover {
+        opacity: 1;
+        color: $o-brand-primary;
+    }
 }

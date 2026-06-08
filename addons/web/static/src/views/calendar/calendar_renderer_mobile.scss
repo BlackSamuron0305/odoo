@@ -29,6 +29,12 @@
         .fc-more-popover .fc-close {
             padding: 5px;
         }
+
+        .fc-more-popover {
+            border-radius: $border-radius-lg;
+            box-shadow: $o-shadow-sm;
+            overflow: hidden;
+        }
     }
 
 }

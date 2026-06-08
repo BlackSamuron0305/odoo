@@ -4,6 +4,18 @@
 }
 
 .o_web_sign_signature_container {
+    border: 2px dashed $border-color;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    transition: border-color var(--o-transition-fast, 0.15s ease),
+                border-style var(--o-transition-fast, 0.15s ease);
+
+    &:focus-within,
+    &:hover {
+        border-color: $o-brand-primary;
+        border-style: solid;
+    }
+
     canvas {
         width: 100%;
         height: auto;
@@ -13,7 +25,7 @@
 
 .o_signature_stroke {
     position: absolute;
-    border-top: #D1D0CE solid 2px;
+    border-top: rgba($o-brand-primary, 0.25) solid 2px;
     bottom: 20%;
     width: 72%;
     left: 14%;

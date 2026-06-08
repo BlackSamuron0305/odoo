@@ -1,3 +1,14 @@
 .o_field_ace, .o_field_code {
     display: block !important;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+    overflow: hidden;
+    min-height: 120px;
+    transition: border-color var(--o-transition-fast, 0.15s ease),
+                box-shadow var(--o-transition-fast, 0.15s ease);
+
+    &:focus-within {
+        border-color: $o-brand-primary;
+        box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.12);
+    }
 }

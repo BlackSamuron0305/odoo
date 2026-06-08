@@ -6,3 +6,34 @@
         width: $h3-font-size;
     }
 }
+
+// ===== Visual polish =====
+.o_form_sheet > .o_field_state_selection {
+    .dropdown-toggle {
+        transition: opacity var(--o-transition-fast, 0.15s ease);
+        border-radius: $border-radius;
+        padding: 0.15rem 0.4rem;
+
+        &:hover {
+            opacity: 0.85;
+        }
+
+        .o_status {
+            border-radius: 50%;
+            transition: box-shadow var(--o-transition-fast, 0.15s ease);
+            box-shadow: 0 0 0 2px rgba(currentColor, 0.15);
+        }
+    }
+}
+
+.o_field_state_selection {
+    .o_status {
+        transition: transform var(--o-transition-fast, 0.15s ease),
+                    box-shadow var(--o-transition-fast, 0.15s ease);
+
+        &:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 0 3px rgba(currentColor, 0.2);
+        }
+    }
+}

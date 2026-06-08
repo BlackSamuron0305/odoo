@@ -3,3 +3,19 @@
     background: red;
     opacity: 0.25;
 }
+
+// ===== Visual polish =====
+.o_field_code_editor,
+.o_code_editor_widget {
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+    overflow: hidden;
+    font-family: $font-family-monospace;
+    transition: border-color var(--o-transition-fast, 0.15s ease),
+                box-shadow var(--o-transition-fast, 0.15s ease);
+
+    &:focus-within {
+        border-color: $o-brand-primary;
+        box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.12);
+    }
+}

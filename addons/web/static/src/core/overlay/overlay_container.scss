@@ -1,4 +1,10 @@
 .o-overlay-item {
     position: fixed;
     z-index: $zindex-modal;
+    animation: o-overlay-fade-in var(--o-transition-fast, 0.15s) ease;
+}
+
+@keyframes o-overlay-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
