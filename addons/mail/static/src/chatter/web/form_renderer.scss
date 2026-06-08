@@ -49,3 +49,19 @@
     padding-bottom: map-get($spacers, 5);
     width: 100%;
 }
+
+// =============================================================
+// Visual Polish — Chatter Panel
+// =============================================================
+
+// Subtle left border + soft shadow for the aside chatter panel
+.o-mail-Form-chatter.o-aside {
+    border-left: 1px solid $o-gray-200;
+    box-shadow: -2px 0 8px rgba($o-brand-primary, 0.04);
+}
+
+// Round the chatter card top corners in non-aside mode
+.o-mail-ChatterContainer:not(.o-aside) {
+    border-radius: $o-border-radius-lg;
+    overflow: hidden;
+}

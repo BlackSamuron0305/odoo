@@ -17,3 +17,26 @@
     width: 32px;
     aspect-ratio: 1;
 }
+
+// =============================================================
+// Visual Polish — Channel Member List
+// =============================================================
+
+// Member row: rounded + smooth hover
+.o-discuss-ChannelMember {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease, opacity 0.12s ease;
+    padding-left: map-get($spacers, 1);
+    padding-right: map-get($spacers, 1);
+}
+
+// Avatar: circular with ring
+.o-discuss-ChannelMember-avatar {
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba($o-brand-primary, 0.12);
+    transition: box-shadow 0.15s ease;
+}
+
+.o-discuss-ChannelMember.cursor-pointer:hover .o-discuss-ChannelMember-avatar {
+    box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.3);
+}

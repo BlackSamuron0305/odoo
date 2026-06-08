@@ -110,4 +110,45 @@
     to {
         transform: translate3d(0, -10px, 0); 
     } 
-} 
+}
+
+// =============================================================
+// Visual Polish — Chat Bubble
+// =============================================================
+
+// Bubble avatar: brand shadow + smooth hover
+.o-mail-ChatBubble-avatar {
+    border-radius: 50%;
+    box-shadow: $o-shadow-md, 0 0 0 2px rgba($o-brand-primary, 0.15);
+    transition: box-shadow 0.2s ease, filter 0.15s ease;
+}
+
+.o-mail-ChatBubble:hover .o-mail-ChatBubble-avatar,
+.o-mail-ChatBubble.o-active .o-mail-ChatBubble-avatar {
+    box-shadow: $o-shadow-lg, 0 0 0 3px rgba($o-brand-primary, 0.3);
+}
+
+// Close button: rounded pill
+.o-mail-ChatBubble-close {
+    border-radius: 50%;
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+// Unread counter badge
+.o-mail-ChatBubble-counter {
+    border-radius: 50%;
+    font-size: 0.65rem;
+    font-weight: $o-font-weight-semibold;
+    box-shadow: $o-shadow-xs;
+}
+
+// Bubble preview card
+.o-mail-ChatBubble-preview {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+}
+
+// Bouncing animation: slightly more polished easing
+.o-mail-ChatBubble.o-bouncing {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

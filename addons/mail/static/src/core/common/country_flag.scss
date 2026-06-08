@@ -3,3 +3,14 @@
     
     aspect-ratio: 3/2;    
 }
+
+// =============================================================
+// Visual Polish — Country Flag
+// =============================================================
+
+// Flag: rounded corners + thin border ring
+.o-mail-CountryFlag {
+    border-radius: $o-border-radius-sm;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}

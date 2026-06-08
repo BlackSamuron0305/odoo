@@ -125,3 +125,24 @@
         }
     }
 }
+
+// =============================================================
+// Visual Polish — Action List
+// =============================================================
+
+// Inline action buttons: smooth hover transitions
+.o-mail-ActionList button.o-inline {
+    transition: opacity 0.12s ease, color 0.12s ease, background-color 0.12s ease;
+    border-radius: $o-border-radius-sm;
+}
+
+// Dropdown action buttons: rounded items
+.o-mail-ActionList button.o-dropdown-item {
+    border-radius: $o-border-radius-sm;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+// HR separator: slightly more visible
+.o-mail-ActionList hr {
+    border-color: $o-gray-200 !important;
+}

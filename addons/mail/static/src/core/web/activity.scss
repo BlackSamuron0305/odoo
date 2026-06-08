@@ -19,3 +19,47 @@
 .o-mail-Activity-avatar {
     --Avatar-size: #{$o-mail-Avatar-size};
 }
+
+// =============================================================
+// Visual Polish — Activity
+// =============================================================
+
+// Activity row: smooth hover + rounded
+.o-mail-Activity {
+    border-radius: $o-border-radius;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba($o-gray-100, 0.8);
+    }
+}
+
+// Activity icon badge: brand-aware ring
+.o-mail-Activity-iconContainer {
+    border-radius: 50%;
+    transition: box-shadow 0.15s ease;
+}
+
+// Activity note text: softer
+.o-mail-Activity-note p {
+    color: $text-muted;
+    font-size: 0.8rem;
+}
+
+// Overdue activity highlight
+.o-mail-Activity.o-overdue {
+    border-left: 2px solid $danger;
+    border-radius: 0 $o-border-radius $o-border-radius 0;
+}
+
+// Today activity highlight
+.o-mail-Activity.o-today {
+    border-left: 2px solid $warning;
+    border-radius: 0 $o-border-radius $o-border-radius 0;
+}
+
+// Planned activity highlight
+.o-mail-Activity.o-planned {
+    border-left: 2px solid $success;
+    border-radius: 0 $o-border-radius $o-border-radius 0;
+}

@@ -5,3 +5,21 @@
 .o-mail-MentionList-suggestionList:has(.o-open) {
     border: $border-width solid $border-color;
 }
+
+// =============================================================
+// Visual Polish — Mention List
+// =============================================================
+
+// Rounded card appearance for mention/command list
+.o-mail-MentionList {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+}
+
+.o-mail-MentionList-suggestionList:has(.o-open) {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+    border-color: $o-gray-200 !important;
+}

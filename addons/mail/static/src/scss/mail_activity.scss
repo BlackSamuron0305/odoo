@@ -138,3 +138,36 @@
         min-height: 6em;
     }
 }
+
+// =============================================================
+// Visual Polish — Mail Activity (legacy views)
+// =============================================================
+
+// Activity button in list view: pill shape
+.o_list_view .o_list_table tbody > tr > td.o_data_cell.o_list_activity_cell .o_mail_activity .o_activity_btn {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+}
+
+// Kanban activity dropdown: rounded card
+.o_kanban_record .o_mail_activity div.o_activity {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+}
+
+// Activity log list items: smooth hover + rounded
+.o_kanban_record .o_mail_activity div.o_activity ul.o_activity_log li {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+
+    &:hover {
+        background-color: rgba($o-gray-100, 0.8);
+    }
+}
+
+// Edit button: smooth transition
+.o_kanban_record .o_mail_activity div.o_activity ul.o_activity_log li .o_edit_button {
+    transition: opacity 0.12s ease;
+    border-radius: $o-border-radius-sm;
+}

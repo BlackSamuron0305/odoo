@@ -15,3 +15,18 @@
         height: 0.65rem;
     }
 }
+
+// =============================================================
+// Visual Polish — IM Status Indicator
+// =============================================================
+
+// Status dot container: smooth color transition
+.o-mail-ImStatus i {
+    transition: color 0.2s ease;
+}
+
+// Status indicator with ring (when embedded in avatar)
+.o-mail-ImStatus.o-withRing i {
+    box-shadow: 0 0 0 1.5px $o-view-background-color;
+    border-radius: 50%;
+}

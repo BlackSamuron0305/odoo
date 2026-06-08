@@ -57,3 +57,46 @@
         }
     }
 }
+
+// =============================================================
+// Visual Polish — Discuss Sidebar
+// =============================================================
+
+// Sidebar root: clean surface + right border separator
+.o-mail-DiscussSidebar {
+    border-right: 1px solid $o-gray-200;
+    background-color: $o-gray-100;
+}
+
+// Active item: brand primary tint + left accent bar
+.o-mail-DiscussSidebar-item.o-active {
+    background-color: rgba($o-brand-primary, 0.08) !important;
+    outline-color: rgba($o-brand-primary, 0.25) !important;
+    border-left: 2px solid $o-brand-primary;
+    border-radius: 0 $o-border-radius $o-border-radius 0;
+    font-weight: $o-font-weight-semibold;
+}
+
+// Hover state: subtle brand tint
+.o-mail-DiscussSidebar-item:not(.o-active):hover {
+    background-color: rgba($o-brand-primary, 0.04) !important;
+}
+
+// Sidebar items: smooth transition
+.o-mail-DiscussSidebar-item {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+    border-left: 2px solid transparent;
+}
+
+// Options button: subtle hover
+.o-mail-DiscussSidebar-optionsBtn {
+    border-radius: $o-border-radius-sm;
+    transition: background-color 0.12s ease;
+}
+
+// Badge polish
+.o-mail-DiscussSidebar-badge {
+    border-radius: $o-border-radius;
+    font-weight: $o-font-weight-semibold;
+}

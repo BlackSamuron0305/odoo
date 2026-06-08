@@ -143,3 +143,43 @@
     border-color: $o-mail-CallMenu-bgColor-lighter;
     color: rgba(white, 0.9);
 }
+
+// =============================================================
+// Visual Polish — Call Participant Card
+// =============================================================
+
+// Participant card: rounded corners + smooth glow when talking
+.o-discuss-CallParticipantCard {
+    border-radius: $o-border-radius-lg;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, outline-color 0.2s ease;
+}
+
+// Context menu: rounded card
+.o-discuss-CallParticipantCard-contextMenu {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+}
+
+// Context button: rounded
+.o-discuss-CallParticipantCard-contextButton {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+}
+
+// Icon black background pill
+.o-discuss-CallParticipantCard-iconBlackBg {
+    border-radius: $o-border-radius-sm;
+}
+
+// Name overlay: slight blur + rounded
+.o-discuss-CallParticipantCard-overlayBottomName {
+    border-radius: $o-border-radius-sm;
+}
+
+// Replay button
+.o-discuss-CallParticipantCard-overlay-replayButton {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+}

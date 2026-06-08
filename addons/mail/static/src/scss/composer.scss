@@ -61,3 +61,28 @@
         padding: 4px;
     }
 }
+
+// =============================================================
+// Visual Polish — Legacy Composer
+// =============================================================
+
+// Legacy composer form border: rounded
+.o_mail_composer_form .o_form_renderer {
+    .oe-bordered-editor[name=body] .o_readonly {
+        border-radius: $o-border-radius;
+    }
+}
+
+// Document viewer arrow buttons: rounded pill
+.o_modal_fullscreen {
+    .arrow {
+        border-radius: $o-border-radius-lg;
+        transition: background-color 0.15s ease, color 0.15s ease;
+    }
+}
+
+// Document viewer toolbar button: smooth hover
+.o_document_viewer_topbar_button {
+    border-radius: $o-border-radius-sm;
+    transition: background-color 0.12s ease;
+}

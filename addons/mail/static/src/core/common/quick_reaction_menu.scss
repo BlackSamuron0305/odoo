@@ -138,3 +138,33 @@ $quick-reaction-menu-picker-grow-duration: 0.25s;
         animation: qrm-pickerGrowAnimation $quick-reaction-menu-picker-grow-duration cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
     }
 }
+
+// =============================================================
+// Visual Polish — Quick Reaction Menu
+// =============================================================
+
+// Main popup container: clean card appearance
+.o-mail-QuickReactionMenu {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    background-color: $o-view-background-color;
+    border: 1px solid $o-gray-200;
+}
+
+// Individual emoji buttons: smooth hover
+.o-mail-QuickReactionMenu-emoji {
+    border-radius: $o-border-radius;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.15);
+        border-radius: $o-border-radius;
+    }
+}
+
+// Emoji picker button: matching radius
+.o-mail-QuickReactionMenu-emojiPicker {
+    border-radius: $o-border-radius;
+    transition: background-color 0.1s ease;
+}

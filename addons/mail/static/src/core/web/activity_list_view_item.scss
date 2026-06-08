@@ -5,3 +5,23 @@
 .o-mail-ActivityListPopover-item:hover .o-mail-ActivityListPopoverItem-edit{
     opacity: 1;
 }
+
+// =============================================================
+// Visual Polish — Activity List View Item
+// =============================================================
+
+// Activity item row: smooth hover
+.o-mail-ActivityListPopover-item {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+
+    &:hover {
+        background-color: rgba($o-gray-100, 0.8);
+    }
+}
+
+// Edit button: smooth transition
+.o-mail-ActivityListPopoverItem-edit {
+    transition: opacity 0.12s ease;
+    border-radius: $o-border-radius-sm;
+}

@@ -14,3 +14,30 @@
 .o-mail-MessageReactions:not(.o-emojiPickerOpen):not(:hover) .o-mail-MessageReactions-add:not(.o-mobile) {
     visibility: hidden;
 }
+
+// =============================================================
+// Visual Polish — Message Reactions
+// =============================================================
+
+// Reaction chip: pill shape + smooth hover
+.o-mail-MessageReaction {
+    border-radius: $o-border-radius-lg;
+    transition: background-color 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+
+    &:not(.o-selfReacted):hover {
+        background-color: rgba($o-brand-primary, 0.06);
+        box-shadow: $o-shadow-xs;
+    }
+
+    &.o-selfReacted {
+        background-color: rgba($o-brand-primary, 0.08);
+        box-shadow: 0 0 0 1px rgba($o-brand-primary, 0.3);
+        font-weight: $o-font-weight-semibold;
+    }
+}
+
+// Add-reaction button: subtle pill
+.o-mail-MessageReactions-add {
+    border-radius: $o-border-radius-lg;
+    transition: opacity 0.12s ease, background-color 0.12s ease;
+}

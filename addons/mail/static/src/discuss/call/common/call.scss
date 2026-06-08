@@ -100,3 +100,44 @@
     border-right: 0px;
     background-color: lighten(black, 10%);
 }
+
+// =============================================================
+// Visual Polish — Video Call View
+// =============================================================
+
+// Call main area: dark glass feel
+.o-discuss-Call.o-selfInCall {
+    border-radius: $o-border-radius-lg;
+    overflow: hidden;
+}
+
+// Call sidebar: smooth scrollbar + darker bg
+.o-discuss-Call-sidebar {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+// Sidebar card: subtle rounded
+.o-discuss-Call-sidebarCard {
+    border-radius: $o-border-radius;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: $o-shadow-sm;
+    }
+}
+
+// Sidebar toggle button: smooth transition
+.o-discuss-Call-sidebarToggler {
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: lighten(black, 20%);
+    }
+}
+
+// Layout action buttons
+.o-discuss-Call-layoutActions button {
+    border-radius: $o-border-radius;
+    transition: opacity 0.12s ease, background-color 0.12s ease;
+}

@@ -75,3 +75,41 @@
         content: "\200b"; /* unicode zero width space character */
     }
 }
+
+// =============================================================
+// Visual Polish — Notification Item
+// =============================================================
+
+// Notification row: smooth hover + rounded
+.o-mail-NotificationItem {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+
+    &:hover,
+    &.o-active {
+        border-radius: $o-border-radius;
+    }
+}
+
+// Avatar container: circular clipping
+.o-mail-NotificationItem-avatarContainer {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: $o-shadow-xs;
+}
+
+// Mark-as-read button: pill shape
+.o-mail-NotificationItem-markAsRead {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease, color 0.12s ease, box-shadow 0.12s ease;
+}
+
+// Name/subject line
+.o-mail-NotificationItem-name {
+    font-weight: $o-font-weight-semibold;
+}
+
+// Unread badge: pill
+.o-mail-NotificationItem-badge {
+    border-radius: $o-border-radius;
+}

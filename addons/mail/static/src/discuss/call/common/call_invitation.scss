@@ -30,3 +30,20 @@ $expand-curve: cubic-bezier(0.22, 1, 0.36, 1);
         max-height: 500px;
     }
 }
+
+// =============================================================
+// Visual Polish — Call Invitation
+// =============================================================
+
+// Invitation card: rounded corners
+.o-discuss-CallInvitation {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-lg;
+    overflow: hidden;
+}
+
+// Avatar with pulse ring
+.o-mail-CallInvitation-avatar {
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba($o-brand-primary, 0.25);
+}

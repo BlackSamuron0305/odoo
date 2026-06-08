@@ -6,3 +6,19 @@
 .o-mail-VoicePlayer-drawer {
     z-index: 1;
 }
+
+// =============================================================
+// Visual Polish — Voice Player
+// =============================================================
+
+// Player wrapper: pill / card shape
+.o-mail-VoicePlayer-wrapper {
+    border-radius: $o-border-radius-lg;
+    overflow: hidden;
+    box-shadow: $o-shadow-xs;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: $o-shadow-sm;
+    }
+}

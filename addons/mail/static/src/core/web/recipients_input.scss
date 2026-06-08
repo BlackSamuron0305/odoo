@@ -16,3 +16,13 @@
         border: none;
     }
 }
+
+// =============================================================
+// Visual Polish — Recipients Input
+// =============================================================
+
+// Recipients input: smooth border transition
+.o-mail-RecipientsInput {
+    transition: border-color 0.15s ease;
+    border-radius: $o-border-radius-sm;
+}

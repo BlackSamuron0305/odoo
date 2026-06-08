@@ -12,3 +12,21 @@
 .o-mail-ActivityMenu-empty {
     min-height: inherit;
 }
+
+// =============================================================
+// Visual Polish — Activity Menu Dropdown
+// =============================================================
+
+// Activity menu: rounded card + shadow
+.o-mail-ActivityMenu {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-lg;
+    overflow: hidden;
+    border: 1px solid $o-gray-200;
+}
+
+// Activity type image badge
+.o-mail-ActivityMenu img {
+    border-radius: 50%;
+    box-shadow: $o-shadow-xs;
+}

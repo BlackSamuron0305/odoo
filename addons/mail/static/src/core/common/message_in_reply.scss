@@ -39,3 +39,20 @@
         margin: 0;
     }
 }
+
+// =============================================================
+// Visual Polish — Message In Reply (quote preview)
+// =============================================================
+
+// Brand-colored left border for reply preview
+.o-mail-MessageInReply-core {
+    border-left-color: $o-brand-primary !important;
+    border-radius: $o-border-radius-sm;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+// Reply author name: brand tint
+.o-mail-MessageInReply-author {
+    color: $o-brand-primary;
+    font-weight: $o-font-weight-semibold;
+}

@@ -109,3 +109,45 @@ $o-mail-LinkPreviewVideo-providerBorderWidth: 4px;
         }
     }
 }
+
+// =============================================================
+// Visual Polish — Link Previews
+// =============================================================
+
+// Link preview card: rounded corners + subtle shadow
+.o-mail-LinkPreviewCard {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-xs;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: $o-shadow-sm;
+    }
+}
+
+// Image link border: rounded
+.o-mail-LinkPreviewCard-imageLinkWrap {
+    border-radius: $o-border-radius-lg 0 0 $o-border-radius-lg;
+    overflow: hidden;
+}
+
+// Video preview card: matching radius
+.o-mail-LinkPreviewVideo {
+    border-radius: $o-border-radius-lg;
+    overflow: hidden;
+    box-shadow: $o-shadow-xs;
+}
+
+// Video play button: rounded
+.o-mail-LinkPreviewVideo-play {
+    border-radius: $o-border-radius;
+    transition: background-color 0.15s ease;
+}
+
+// Standalone image preview
+.o-mail-LinkPreviewImage {
+    border-radius: $o-border-radius-lg;
+    overflow: hidden;
+    box-shadow: $o-shadow-xs;
+}

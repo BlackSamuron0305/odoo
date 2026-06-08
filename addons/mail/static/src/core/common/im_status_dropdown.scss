@@ -4,3 +4,21 @@
     }
 }
 
+// =============================================================
+// Visual Polish — IM Status Dropdown
+// =============================================================
+
+// Dropdown popover: rounded card + shadow
+.o-mail-ImStatusDropdown {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+    border: 1px solid $o-gray-200;
+}
+
+// Status options: smooth hover
+.o-mail-ImStatusDropdown-option {
+    border-radius: $o-border-radius;
+    transition: background-color 0.1s ease;
+}
+

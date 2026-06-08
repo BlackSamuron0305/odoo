@@ -65,3 +65,33 @@
     font-size: $small-font-size * 0.9;
     z-index: $o-mail-NavigableList-zIndex - 2;
 }
+
+// =============================================================
+// Visual Polish — Chat Window
+// =============================================================
+
+// Rounded top corners on the chat window
+.o-mail-ChatWindow:not(.o-mobile) {
+    border-radius: $o-border-radius-lg $o-border-radius-lg 0 0;
+    box-shadow: $o-shadow-lg;
+    overflow: hidden;
+}
+
+// Header: subtle bottom separator + slight tinted background
+.o-mail-ChatWindow-header {
+    border-bottom: 1px solid $o-gray-200;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: background-color 0.15s ease;
+}
+
+// Header action buttons
+.o-mail-ChatWindow-header .o-mail-ActionList-group button {
+    border-radius: $o-border-radius-sm;
+    transition: opacity 0.12s ease, background-color 0.12s ease;
+}
+
+// More-actions button polish
+.o-mail-ChatWindow-moreActions {
+    border-radius: $o-border-radius-sm;
+    transition: color 0.12s ease, background-color 0.12s ease;
+}

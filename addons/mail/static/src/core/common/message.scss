@@ -176,3 +176,44 @@
 .o-mail-Message-translated {
     color: $o-enterprise-action-color;
 }
+
+// =============================================================
+// Visual Polish — Messages
+// =============================================================
+
+// Smooth hover transition on the message row
+.o-mail-Message {
+    transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.2s ease-out, opacity 0.5s ease-out;
+    border-radius: $o-border-radius;
+
+    &:hover {
+        background-color: rgba($o-gray-100, 0.7);
+    }
+}
+
+// Rounded message bubble
+.o-mail-Message-bubble {
+    border-radius: $o-border-radius-lg !important;
+}
+
+// Action buttons: faster, cleaner transition
+.o-mail-Message-actions button {
+    transition: opacity 0.12s ease, color 0.12s ease, background-color 0.12s ease;
+    border-radius: $o-border-radius-sm;
+}
+
+// Own-message subtle tint in chatter (non-chat-window)
+.o-mail-Thread:not(.o-mail-ChatWindow) .o-mail-Message.o-selfAuthored .o-mail-Message-bubble {
+    box-shadow: inset 0 0 0 1px rgba($o-brand-primary, 0.1);
+}
+
+// Quote/reply preview left accent
+.o-mail-Message-coreVisual {
+    border-radius: $o-border-radius;
+}
+
+// Date badge
+.o-mail-Message-date {
+    font-size: 0.75rem;
+    letter-spacing: 0.01em;
+}

@@ -2,3 +2,15 @@
     width: #{"min(95vw, 350px)"};
     max-height: #{"min(95vh, 525px)"};
 }
+
+// =============================================================
+// Visual Polish — Activity List View
+// =============================================================
+
+// Popover container: rounded card + shadow
+.o-mail-ActivityListPopover {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-lg;
+    overflow: hidden;
+    border: 1px solid $o-gray-200;
+}

@@ -4,3 +4,17 @@
         max-width: 325px;
     }
 }
+
+// =============================================================
+// Visual Polish — Mail Composer Attachment List
+// =============================================================
+
+// Attachment list items: pill chips
+.o_field_mail_composer_attachment_list li {
+    border-radius: $o-border-radius-lg;
+    transition: box-shadow 0.12s ease;
+
+    &:hover {
+        box-shadow: $o-shadow-xs;
+    }
+}

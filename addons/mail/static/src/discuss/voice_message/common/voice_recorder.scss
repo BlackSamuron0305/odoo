@@ -17,3 +17,20 @@
         transition: max-width 1s ease-in-out;
     }
 }
+
+// =============================================================
+// Visual Polish — Voice Recorder
+// =============================================================
+
+// Recording container: pill shape
+.o-mail-VoiceRecorder.o-recording {
+    border-radius: $o-border-radius-lg;
+    border: 1px solid rgba($danger, 0.25);
+}
+
+// Recording dot: danger color
+.o-mail-VoiceRecorder-dot {
+    background-color: $danger;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba($danger, 0.2);
+}

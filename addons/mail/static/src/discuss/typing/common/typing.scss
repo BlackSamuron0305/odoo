@@ -42,3 +42,18 @@
     transform: translateY(-85%);
     padding-left: calc(#{$o-mail-Message-sidebarWidth} + #{map-get($spacers, 2)});
 }
+
+// =============================================================
+// Visual Polish — Typing Indicator
+// =============================================================
+
+// Typing dots: brand-tinted color
+.o-discuss-Typing-dot {
+    background-color: $o-brand-primary;
+    border-radius: 50%;
+
+    .o-mail-ImStatus &,
+    .o-mail-ThreadIcon & {
+        background-color: rgba(#fff, 0.85);
+    }
+}

@@ -57,3 +57,36 @@
 .btn.o-mail-Chatter-follow:hover {
     color: $black !important;
 }
+
+// =============================================================
+// Visual Polish — Chatter (web portal)
+// =============================================================
+
+// Chatter top bar: subtle shadow when sticky
+.o-mail-Chatter-top.shadow-sm {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+// Chatter send/log buttons area: rounded
+.o-mail-Chatter-top .o-mail-Composer {
+    border-radius: $o-border-radius-lg;
+}
+
+// Followers button: smooth hover
+.o-mail-Followers-button {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+}
+
+// Followers dropdown: rounded card
+.o-mail-Followers-dropdown {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+}
+
+// Follower row: smooth hover
+.o-mail-Follower {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+}

@@ -35,3 +35,27 @@
 .popover .o-mail-ActionPanel-content {
     max-height: Min(50vh, 530px);
 }
+
+// =============================================================
+// Visual Polish — Action Panel
+// =============================================================
+
+// Panel in popover: rounded + shadow
+.popover:has(.o-mail-ActionPanel-content) {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-lg;
+    overflow: hidden;
+}
+
+// Panel header: subtle bottom separator
+.o-mail-ActionPanel-header {
+    border-bottom: 1px solid $o-gray-200;
+    background-color: $o-gray-100;
+    font-weight: $o-font-weight-semibold;
+}
+
+// Form check input styling
+.o-mail-ActionPanel .form-check-input {
+    border-radius: $o-border-radius-sm;
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+}

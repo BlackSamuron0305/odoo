@@ -45,3 +45,36 @@
 .o-viewable {
     cursor: zoom-in;
 }
+
+// =============================================================
+// Visual Polish — Attachment List
+// =============================================================
+
+// Attachment container: pill/card appearance
+.o-mail-AttachmentContainer {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-xs;
+    transition: box-shadow 0.15s ease, filter 0.15s ease;
+
+    &:hover {
+        box-shadow: $o-shadow-sm;
+    }
+}
+
+// Attachment hover overlay: smooth fade-in
+.o-mail-Attachment-hover {
+    border-radius: $o-border-radius-lg;
+    transition: opacity 0.15s ease;
+}
+
+// File card image icon
+.o-mail-AttachmentCard-image,
+.o-mail-Attachment-hover-image {
+    border-radius: $o-border-radius-sm;
+}
+
+// Attachment action buttons
+.o-mail-AttachmentButtons button {
+    border-radius: $o-border-radius-sm;
+    transition: filter 0.12s ease;
+}

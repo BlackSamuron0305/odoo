@@ -110,3 +110,50 @@
         }
     }
 }
+
+// =============================================================
+// Visual Polish — Chat Hub
+// =============================================================
+
+// Hub bubble button: shadow + smooth hover
+.o-mail-ChatHub-bubbleBtn {
+    box-shadow: $o-shadow-md;
+    transition: box-shadow 0.15s ease, filter 0.15s ease;
+
+    &:hover {
+        box-shadow: $o-shadow-lg;
+        filter: brightness(1.05);
+    }
+}
+
+// Hidden menu container: rounded card
+.o-mail-ChatHub-hiddenMenu {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+}
+
+// Hidden item: smooth hover
+.o-mail-ChatHub-hiddenItem {
+    border-radius: $o-border-radius;
+    transition: background-color 0.12s ease;
+}
+
+// Hidden button icon: brand circle
+.o-mail-ChatHub-hiddenBtnIcon {
+    border-radius: 50%;
+    box-shadow: $o-shadow-sm;
+}
+
+// Options button: rounded
+.o-mail-ChatHub-optionsBtn {
+    border-radius: $o-border-radius-sm;
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+// Counter badge: pill
+.o-mail-ChatHub-hiddenBtnCounter {
+    border-radius: $o-border-radius;
+    font-weight: $o-font-weight-semibold;
+    font-size: 0.65rem;
+}

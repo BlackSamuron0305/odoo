@@ -95,3 +95,33 @@
         width: $spacer * 3;
     }
 }
+
+// =============================================================
+// Visual Polish — Messaging Menu
+// =============================================================
+
+// Panel: rounded card + modern shadow
+.o-mail-MessagingMenu {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-lg;
+    overflow: hidden;
+    border: 1px solid $o-gray-200;
+}
+
+// Tab icons: smooth transition
+.o-mail-MessagingMenu-tabIcon {
+    border-radius: $o-border-radius;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+// Navbar container: subtle bottom divider
+.o-mail-MessagingMenu-navbar {
+    border-bottom: 1px solid $o-gray-200;
+}
+
+// Tab counter badge
+.o-mail-MessagingMenu-tabCounter {
+    border-radius: 50%;
+    font-size: 0.65rem;
+    font-weight: $o-font-weight-semibold;
+}

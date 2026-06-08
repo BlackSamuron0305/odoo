@@ -13,3 +13,30 @@
 .o-mail-NavigableList-floatingLoading {
     right: $border-width; // as to not overlap border
 }
+
+// =============================================================
+// Visual Polish — Navigable List (mention/command dropdown)
+// =============================================================
+
+// List container: card shadow + radius
+.o-mail-NavigableList {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+    border: 1px solid $o-gray-200;
+}
+
+// Active item: brand tint
+.o-mail-NavigableList-active {
+    background-color: rgba($o-brand-primary, 0.08) !important;
+}
+
+// Hover item: softer tint
+.o-mail-NavigableList-item {
+    transition: background-color 0.1s ease;
+    border-radius: 0;
+
+    &:hover {
+        background-color: rgba($o-brand-primary, 0.05) !important;
+    }
+}

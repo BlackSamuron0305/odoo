@@ -133,3 +133,50 @@ $o-mail-DiscussSidebarChannel-borderOpacity: .05;
     left: 22px;
     transform: scaleX(1) #{"/* rtl:scaleX(-1) */"};
 }
+
+// =============================================================
+// Visual Polish — Discuss Sidebar Categories
+// =============================================================
+
+// Category heading: uppercase + tracking
+.o-mail-DiscussSidebarCategory-toggler:not(.o-compact) {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.7rem;
+    font-weight: $o-font-weight-semibold;
+    color: $o-gray-500;
+    transition: color 0.12s ease;
+
+    &:hover {
+        color: $o-brand-primary;
+    }
+}
+
+// Category container: smooth hover
+.o-mail-DiscussSidebarChannel-container {
+    border-radius: $o-border-radius;
+    transition: background-color 0.1s ease;
+}
+
+// Active indicator: brand color
+.o-mail-DiscussSidebar-unreadIndicator {
+    color: $o-brand-primary;
+}
+
+// Category action buttons: subtle radius
+.o-mail-DiscussSidebarCategory-actions button {
+    border-radius: $o-border-radius-sm;
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+// Sub-channel rows
+.o-mail-DiscussSidebarChannel-subChannel {
+    border-radius: $o-border-radius;
+    transition: background-color 0.1s ease;
+}
+
+// Sidebar channel actions buttons polish
+.o-mail-DiscussSidebarChannel-actions button {
+    border-radius: $o-border-radius-sm;
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+}

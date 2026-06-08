@@ -216,3 +216,48 @@
 .o-mail-Composer-suggestionPartner-name.o-has-email {
     max-width: 70%;
 }
+
+// =============================================================
+// Visual Polish — Composer
+// =============================================================
+
+// Input container: rounded, modern border treatment
+.o-mail-Composer-inputContainer {
+    border-radius: $o-border-radius-lg;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:has(textarea:focus),
+    &:has(.o-mail-Composer-html:focus) {
+        box-shadow: 0 0 0 2px rgba($o-brand-primary, 0.12);
+    }
+}
+
+// Rounded send button
+.o-mail-Composer-actions button.o-mail-Composer-send.btn-link:not(:disabled) {
+    border-radius: $o-border-radius !important;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: $o-shadow-sm;
+    }
+}
+
+// Active send button brand color polish
+.o-mail-Composer-actions button.o-sendMessageActive {
+    border-radius: $o-border-radius !important;
+    background-color: rgba($o-brand-primary, 0.15) !important;
+    outline-color: rgba($o-brand-primary, 0.6) !important;
+}
+
+// Composer action buttons subtle hover
+.o-mail-Composer-actions button {
+    border-radius: $o-border-radius-sm;
+    transition: opacity 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+}
+
+// Suggestion list rounded card
+.o-mail-Composer-suggestionList:has(.o-open) {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-md;
+    overflow: hidden;
+}

@@ -74,3 +74,39 @@
 .o-mail-Thread-bannerHover:hover {
     filter: brightness(98%);
 }
+
+// =============================================================
+// Visual Polish — Thread Feed
+// =============================================================
+
+// New-message divider pill
+.o-mail-Thread-newMessage span {
+    border-radius: $o-border-radius;
+    font-size: 0.7rem;
+    font-weight: $o-font-weight-semibold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+// "Jump to present" button polish
+.o-mail-Thread-jumpPresent {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-sm;
+    transition: box-shadow 0.15s ease, filter 0.15s ease;
+
+    &:hover {
+        box-shadow: $o-shadow-md;
+        filter: brightness(1.04);
+    }
+}
+
+// New-message line accent
+.o-mail-Thread-newMessageLine {
+    border-color: rgba($o-brand-primary, 0.35) !important;
+}
+
+// Notification messages
+.o_mail_notification {
+    color: $text-muted;
+    font-size: 0.8rem;
+}

@@ -26,3 +26,27 @@
 .o_popover:has(.o_card_avatar) {
     --popover-border-color: #{$secondary};
 }
+
+// =============================================================
+// Visual Polish — Avatar Card Popover
+// =============================================================
+
+// Popover card: modern radius + shadow
+.o_avatar_card {
+    border-radius: $o-border-radius-lg;
+    box-shadow: $o-shadow-lg;
+    overflow: hidden;
+}
+
+// Avatar image: circular with shadow
+.o_card_avatar img {
+    border-radius: 50%;
+    box-shadow: $o-shadow-md;
+    border: 2px solid $o-gray-200;
+    transition: border-color 0.15s ease;
+}
+
+// IM status badge: clean pill
+.o_card_avatar_im_status {
+    box-shadow: 0 0 0 2px $o-view-background-color;
+}
