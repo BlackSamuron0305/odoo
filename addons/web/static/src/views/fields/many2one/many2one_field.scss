@@ -11,3 +11,16 @@
         }
     }
 }
+
+// Sprint 7: refine many2one external-link and caret buttons
+.o_field_many2one_selection {
+    .o_external_button {
+        padding: 2px 6px;
+        opacity: 0.65;
+        transition: opacity 0.15s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

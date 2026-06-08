@@ -5,6 +5,11 @@
     --#{$variable-prefix}tooltip-color: #{$tooltip-color};
     --#{$variable-prefix}tooltip-bg: #{$tooltip-bg};
     --#{$variable-prefix}tooltip-border-radius: #{$tooltip-border-radius};
+    // Sprint 8: modern dark pill tooltip
+    border-radius: 6px;
+    font-size: 0.8rem;
+    letter-spacing: 0.01em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
     @include reset-text();
     @include font-size($tooltip-font-size);

@@ -520,3 +520,44 @@ img, .media_iframe_video, .o_image {
         }
     }
 }
+
+// ==========================================================================
+// Sprint 12 — Portal Visual Refinements
+// ==========================================================================
+
+// Portal document tables: cleaner headers with subtle bg
+.o_portal_wrap .o_portal_my_doc_table {
+    thead th {
+        background-color: $gray-100;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: $gray-600;
+        border-bottom: 2px solid $border-color;
+    }
+
+    tbody tr {
+        transition: background-color 0.12s ease;
+
+        &:hover {
+            background-color: $gray-100;
+        }
+    }
+}
+
+// Portal chatter: refined message card
+.o_portal_chatter .o_portal_chatter_messages .o_portal_chatter_message {
+    border-radius: $border-radius;
+    padding: map-get($spacers, 2) map-get($spacers, 3);
+    background-color: $gray-100;
+    margin-bottom: map-get($spacers, 2);
+}
+
+// Portal page header: cleaner divider
+.o_page_header {
+    border-bottom-color: $border-color;
+    padding-bottom: $headings-margin-bottom * 1.5;
+    margin-bottom: $headings-margin-bottom * 2;
+}
+

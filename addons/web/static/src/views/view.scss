@@ -19,8 +19,18 @@
     align-items: center;
     justify-content: center;
 
+    // Sprint 10: slightly improved empty-state container
     .o_nocontent_help {
         @include o-nocontent-empty;
+        text-align: center;
+        padding: map-get($spacers, 5) map-get($spacers, 4);
+
+        p {
+            max-width: 360px;
+            margin-inline: auto;
+            color: map-get($grays, "600");
+            line-height: 1.6;
+        }
 
         .o_view_nocontent_smiling_face:before {
             @extend %o-nocontent-init-image;

@@ -5,9 +5,13 @@ img.o_avatar {
     height: var(--Avatar-size, #{$o-avatar-size});
     aspect-ratio: 1;
     object-fit: cover;
+    // Sprint 7: rounded avatar with subtle ring
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba($o-white, 0.9), 0 0 0 3px rgba($o-black, 0.08);
 }
 
 .o_avatar_empty {
     background: $o-black;
     opacity: .1;
+    border-radius: 50%;
 }

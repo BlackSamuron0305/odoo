@@ -44,10 +44,11 @@ body:not(.o_touch_device) .o_settings_container .o_field_selection {
 
 // BASE SETTINGS LAYOUT
 .o_base_settings_view .o_form_renderer {
-   --settings__tab-bg: #{map-get($grays, '100')};
-   --settings__tab-bg--active: #{$o-component-active-bg};
+   // Sprint 11: softer tab colors
+   --settings__tab-bg: #{mix($o-white, map-get($grays, '100'), 30%)};
+   --settings__tab-bg--active: #{mix($o-brand-primary, $o-white, 10%)};
    --settings__tab-color: #{$body-color};
-   --settings__title-bg: #{map-get($grays, '200')};
+   --settings__title-bg: #{map-get($grays, '100')};
 
    height: 100%;
 
@@ -81,7 +82,9 @@ body:not(.o_touch_device) .o_settings_container .o_field_selection {
 
            .selected {
                background-color: var(--settings__tab-bg--active, #{$o-component-active-bg});
-               box-shadow: inset 2px 0 0 $o-component-active-border;
+               // Sprint 11: brand accent left border on active tab
+               box-shadow: inset 3px 0 0 $o-brand-primary;
+               font-weight: 500;
            }
 
            .tab {
@@ -93,6 +96,8 @@ body:not(.o_touch_device) .o_settings_container .o_field_selection {
                line-height: 40px;
                cursor: pointer;
                white-space: nowrap;
+               // Sprint 11: smooth hover
+               transition: background-color 0.15s ease, color 0.15s ease;
 
                .icon {
                    width: 23px;
@@ -102,6 +107,10 @@ body:not(.o_touch_device) .o_settings_container .o_field_selection {
 
                &:hover, &.selected {
                    color: $black;
+               }
+
+               &:hover:not(.selected) {
+                   background-color: rgba($o-black, 0.04);
                }
            }
        }
@@ -116,8 +125,11 @@ body:not(.o_touch_device) .o_settings_container .o_field_selection {
                h2 {
                    margin: 0 0 !important;
                    @include o-base-settings-horizontal-padding(.7rem);
+                   // Sprint 11: slightly heavier section title with more contrast
                    background-color: var(--settings__title-bg);
                    font-size: 15px;
+                   font-weight: 600;
+                   letter-spacing: 0.01em;
 
                    &.o_invisible_modifier + .o_settings_container {
                        display: none;

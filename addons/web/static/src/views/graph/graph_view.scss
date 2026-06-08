@@ -9,6 +9,13 @@
     :not(.o-dashboard-action) > & .o_graph_canvas_container {
         min-height: 50vh;
     }
+
+    // Sprint 9: subtle container card for graph
+    .o_graph_canvas_container {
+        background: $o-view-background-color;
+        border-radius: $border-radius;
+        padding: map-get($spacers, 3);
+    }
 }
 
 // ------- Sample mode -------

@@ -19,6 +19,20 @@
         }
     }
 
+    // Sprint 9: refined header cells — semibold, light bg
+    .o_pivot_header_cell_closed,
+    .o_pivot_header_cell_opened {
+        font-weight: 500;
+        background-color: map-get($grays, "100");
+    }
+
+    // Sprint 9: totals row — distinct bg and bold text
+    tr:last-child .o_pivot_cell_value,
+    .o_pivot_origin_row.o_pivot_cell_value {
+        font-weight: 600;
+        background-color: mix($o-white, map-get($grays, "200"), 50%);
+    }
+
     .o_pivot_cell_value.o_cell_hover {
         background-color: $table-hover-bg;
     }

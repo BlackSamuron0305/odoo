@@ -7,6 +7,20 @@
     line-height: $o-line-height-base;
 }
 
+// Sprint 7: pill badge refinement — softer appearance, smaller font, gap between tags
+.o_field_widget.o_field_many2many_tags .badge {
+    font-size: 0.75em;
+    font-weight: 500;
+    border-radius: 20px;
+    letter-spacing: 0.01em;
+    gap: map-get($spacers, 1);
+    transition: opacity 0.15s ease;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
 .o_field_widget.o_field_many2many_tags {
     flex-flow: row wrap;
     margin: var(--Tags-margin, 0);
