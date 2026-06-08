@@ -15,6 +15,15 @@
   --o-transition-base: 200ms ease;
   --o-transition-slow: 300ms ease;
 
+  // Sprint 13: dark-mode preparation — expose palette tokens as CSS vars
+  // These can be overridden in a @media (prefers-color-scheme: dark) block
+  --o-color-bg: #{$o-webclient-background-color};
+  --o-color-surface: #{$o-white};
+  --o-color-border: #{$border-color};
+  --o-color-text: #{$body-color};
+  --o-color-text-muted: #{$text-muted};
+  --o-color-brand: #{$o-brand-primary};
+
   font-size: $o-root-font-size;
 }
 
@@ -312,5 +321,13 @@ select {
   html, body {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+  }
+
+  // Sprint 13: strip decorative shadows and transitions for print
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
   }
 }
