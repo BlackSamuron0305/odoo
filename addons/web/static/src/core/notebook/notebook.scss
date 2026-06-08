@@ -3,8 +3,9 @@
     --Notebook-padding-x: 0;
     --Notebook__link-border-color: transparent;
     --Notebook__link-border-color--active: #{$border-color};
-    --Notebook__link-border-color--hover: #{$gray-200};
-    --Notebook__link-border-top-color--active: #{$border-color};
+    --Notebook__link-border-color--hover: #{$o-gray-200};
+    --Notebook__link-border-top-color--active: #{$o-brand-primary};
+    --Notebook__link-color--active: #{$o-brand-primary};
 
     .o_notebook_headers {
         margin: 0 var(--Notebook-margin-x, 0);
@@ -37,8 +38,13 @@
 
     .nav-link {
         border-color: var(--Notebook__link-border-color, transparent);
+        font-weight: $o-font-weight-medium;
+        transition: color var(--o-transition-fast), border-color var(--o-transition-fast);
 
         &.active {
+            color: var(--Notebook__link-color--active, #{$o-brand-primary});
+            font-weight: $o-font-weight-semibold;
+
             &, &:hover, &:focus, &:active {
                 border-color: var(--Notebook__link-border-color--active);
                 border-top-color: var(--Notebook__link-border-top-color--active, var(--Notebook__link-border-color--active));

@@ -261,7 +261,8 @@
             --formView-sheet-padding-y: var(--formView-sheet-padding-y-md, #{map-get($spacers, 3)});
             --formView-sheet-margin-x: var(--formView-sheet-margin-x-md, 0);
             --formView-sheet-border-width: var(--formView-sheet-border-width-md, #{$border-width});
-            --formView-sheet-border-radius: var(--formView-sheet-border-radius-md, #{$border-radius});
+            --formView-sheet-border-radius: var(--formView-sheet-border-radius-md, #{$border-radius-lg});
+            box-shadow: $o-shadow-sm;
         }
 
         @include media-breakpoint-up(lg) {
@@ -437,7 +438,7 @@
             --inner-group-row-gap: 0;
         }
         gap: var(--inner-group-row-gap, map-get($spacers, 2)) $o-horizontal-padding;
-        margin-bottom: map-get($spacers, 2);
+        margin-bottom: map-get($spacers, 3);
 
         span, .o_field_boolean, .oe_avatar, .o_form_uri {
             &.o_field_widget {
@@ -597,14 +598,14 @@
     .o_form_label {
         font-size: $font-size-base; // The label muse have the same size whatever their position
         line-height: $line-height-base;
-        font-weight: $font-weight-bold;
+        font-weight: $o-font-weight-semibold;
 
         @include media-breakpoint-down(md) {
             font-size: $o-font-size-base-touch;
         }
 
         &.o_form_label_empty, &.o_form_label_false, &.o_form_label_readonly {
-            opacity: 0.66;
+            opacity: 0.55;
             font-weight: $font-weight-normal;
         }
     }

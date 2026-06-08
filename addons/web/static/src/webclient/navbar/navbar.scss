@@ -11,6 +11,7 @@
     padding-top: $o-navbar-padding-v;
     padding-bottom: $o-navbar-padding-v;
     border-bottom: $o-navbar-border-bottom;
+    box-shadow: $o-navbar-box-shadow;
     background: $o-navbar-background;
     font-size: $o-navbar-font-size;
 
@@ -154,6 +155,8 @@
         .o_nav_entry, .dropdown-toggle {
             background: var(--NavBar-entry-backgroundColor, #{$o-navbar-background});
             border: $border-width solid transparent;
+            border-radius: $o-navbar-entry-border-radius;
+            margin-inline: 2px;
 
             &:hover {
                 background: var(--NavBar-entry-backgroundColor--hover, #{$o-navbar-entry-bg--hover});

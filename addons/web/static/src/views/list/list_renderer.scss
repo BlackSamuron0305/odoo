@@ -7,7 +7,6 @@
     --ListRenderer-tfoot-bg-color: #{$o-list-footer-bg-color};
     --sticky-header-zindex: 1;
     --o-view-nocontent-zindex: calc(var(--sticky-header-zindex) + 1);
-
     margin-left: var(--ListRenderer-margin-x, unset);
     margin-right: var(--ListRenderer-margin-x, unset);
 
@@ -266,6 +265,9 @@
 
         // Grouped list views
         tbody > tr.o_group_header {
+            background-color: $o-gray-100;
+            border-top: 1px solid $o-gray-200;
+
             &:hover .o_group_config {
                 visibility: visible;
             }

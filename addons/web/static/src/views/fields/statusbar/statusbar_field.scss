@@ -9,10 +9,10 @@
         align-self: stretch;
         align-items: stretch;
 
-        --o-statusbar-radius: 0.1rem;
+        --o-statusbar-radius: 0.15rem;
         --o-statusbar-border: #{$o-view-background-color};
-        --o-statusbar-background-active: #{map-get($-btn-secondary-design, active-background)};
-        --o-statusbar-border-active: #{map-get($-btn-secondary-design, active-border)};
+        --o-statusbar-background-active: #{mix($o-brand-primary, $o-white, 15%)};
+        --o-statusbar-border-active: #{$o-brand-primary};
         --o-statusbar-background-hover: #{map-get($-btn-secondary-design, hover-background)};
         --o-statusbar-caret-width: #{$o-statusbar-arrow-width};
         --o-statusbar-border-width: #{$btn-border-width};

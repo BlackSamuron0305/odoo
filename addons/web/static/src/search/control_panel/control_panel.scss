@@ -1,6 +1,7 @@
 .o_control_panel {
     border-bottom: var(--ControlPanel-border-bottom, #{$o-control-panel-border-bottom});
     background-color: $o-control-panel-background-color;
+    box-shadow: var(--ControlPanel-box-shadow, 0 1px 0 #{$o-gray-200});
     @include media-only(screen) {
         .o_control_panel_breadcrumbs {
             --#{$variable-prefix}breadcrumb-font-size: #{$small-font-size};

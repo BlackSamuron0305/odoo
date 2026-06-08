@@ -41,6 +41,7 @@ $o-system-fonts: (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvet
 
 $o-font-weight-normal: 400 !default;
 $o-font-weight-medium: 500 !default;
+$o-font-weight-semibold: 600 !default;
 $o-font-weight-bold: 700 !default;
 
 // Colors
@@ -48,15 +49,16 @@ $o-font-weight-bold: 700 !default;
 $o-white: #FFFFFF !default;
 $o-black: #000000 !default;
 
-$o-gray-100: #f8f9fa !default;
-$o-gray-200: #e9ecef !default;
-$o-gray-300: #dee2e6 !default;
-$o-gray-400: #ced4da !default;
-$o-gray-500: #adb5bd !default;
-$o-gray-600: #6c757d !default;
-$o-gray-700: #495057 !default;
-$o-gray-800: #343a40 !default;
-$o-gray-900: #212529 !default;
+// Redesigned gray scale — warmer, slightly blue-tinted for a modern feel
+$o-gray-100: #f7f7f9 !default;
+$o-gray-200: #ebebee !default;
+$o-gray-300: #d8d8de !default;
+$o-gray-400: #c2c2cb !default;
+$o-gray-500: #9898a6 !default;
+$o-gray-600: #606070 !default;
+$o-gray-700: #3e3e52 !default;
+$o-gray-800: #252535 !default;
+$o-gray-900: #14141f !default;
 
 $o-grays: (
     100: $o-gray-100,
@@ -70,7 +72,7 @@ $o-grays: (
     900: $o-gray-900,
 ) !default;
 
-$o-community-color: #71639e !default;
+$o-community-color: #6358a5 !default;
 $o-enterprise-color: #714B67 !default;
 $o-enterprise-action-color: #017e84 !default;
 
@@ -213,11 +215,10 @@ $o-base-settings-mobile-tabs-height: 40px !default;
 
 $o-card-body-bg-opacity: 0.9 !default;
 
-// Border-radius
-
-$o-border-radius: o-to-rem(4px) !default;
-$o-border-radius-sm: o-to-rem(3px) !default;
-$o-border-radius-lg: o-to-rem(6px) !default;
+// Border-radius — more generous, modern rounded feel
+$o-border-radius: o-to-rem(6px) !default;
+$o-border-radius-sm: o-to-rem(4px) !default;
+$o-border-radius-lg: o-to-rem(10px) !default;
 
 // touch
 $o-touch-btn-padding: 7px 14px !default;
@@ -235,22 +236,22 @@ $o-btns-bs-override: map-merge((
         border: $o-brand-primary,
         color: $o-white,
 
-        hover-background: darken($o-brand-primary, 10%),
-        hover-border: darken($o-brand-primary, 20%),
+        hover-background: darken($o-brand-primary, 8%),
+        hover-border: darken($o-brand-primary, 12%),
         hover-color: $o-white,
 
-        active-background: mix($o-brand-primary, $o-white, 10%),
+        active-background: mix($o-brand-primary, $o-white, 15%),
         active-border: $o-brand-primary,
         active-color: darken($o-brand-primary, 20%),
     ),
     "secondary": (
-        background: $o-gray-300,
-        border: $o-gray-300,
-        color: $o-gray-900,
+        background: $o-gray-200,
+        border: $o-gray-200,
+        color: $o-gray-800,
 
-        hover-background: $o-gray-400,
-        hover-border: $o-gray-400,
-        hover-color: $o-black,
+        hover-background: $o-gray-300,
+        hover-border: $o-gray-300,
+        hover-color: $o-gray-900,
 
         active-background: $o-component-active-bg,
         active-border:  $o-component-active-border,
@@ -258,12 +259,12 @@ $o-btns-bs-override: map-merge((
     ),
     "light": (
         background: $o-white,
-        border: $o-white,
-        color: $o-gray-900,
+        border: $o-gray-200,
+        color: $o-gray-800,
 
-        hover-background: $o-gray-200,
-        hover-border: $o-gray-200,
-        hover-color: $o-black,
+        hover-background: $o-gray-100,
+        hover-border: $o-gray-300,
+        hover-color: $o-gray-900,
 
         active-background: $o-component-active-bg,
         active-border:  $o-component-active-border,
@@ -276,11 +277,11 @@ $o-btns-bs-outline-override: map-merge((
     "secondary": (
         background: transparent,
         border: $o-gray-300,
-        color: $o-gray-900,
+        color: $o-gray-700,
 
-        hover-background: $o-gray-200,
-        hover-border: $o-gray-300,
-        hover-color: $o-black,
+        hover-background: $o-gray-100,
+        hover-border: $o-gray-400,
+        hover-color: $o-gray-900,
 
         active-background: $o-component-active-bg,
         active-border:  $o-component-active-border,
@@ -295,3 +296,10 @@ $o-btns-bs-outline-override: map-merge((
 $o-easing-enter: cubic-bezier(0.05, 0.7, 0.1, 1.0) !default;
 // Exit easing
 $o-easing-exit: cubic-bezier(0.3, 0.0, 0.8, 0.15) !default;
+
+// == Shadows
+// Layered shadow system for depth perception
+$o-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04) !default;
+$o-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04) !default;
+$o-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.06) !default;
+$o-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.07), 0 4px 6px rgba(0, 0, 0, 0.05) !default;

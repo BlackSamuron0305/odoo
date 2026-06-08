@@ -71,6 +71,7 @@
     font-size: $dropdown-font-size;
     margin-top: var(--Dropdown_menu-margin-y, #{map-get($spacers, 1)});
     margin-bottom: var(--Dropdown_menu-margin-y, #{map-get($spacers, 1)});
+    box-shadow: $o-shadow-md;
 
     .dropdown-toggle:focus,
     .dropdown-item:focus {

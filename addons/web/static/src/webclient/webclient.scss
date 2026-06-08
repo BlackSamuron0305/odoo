@@ -1,6 +1,20 @@
 :root {
   --o-webclient-color-scheme:#{$o-webclient-color-scheme};
 
+  // Design system tokens exposed as CSS custom properties
+  --o-border-radius: #{$o-border-radius};
+  --o-border-radius-sm: #{$o-border-radius-sm};
+  --o-border-radius-lg: #{$o-border-radius-lg};
+
+  --o-shadow-xs: #{$o-shadow-xs};
+  --o-shadow-sm: #{$o-shadow-sm};
+  --o-shadow-md: #{$o-shadow-md};
+  --o-shadow-lg: #{$o-shadow-lg};
+
+  --o-transition-fast: 120ms ease;
+  --o-transition-base: 200ms ease;
+  --o-transition-slow: 300ms ease;
+
   font-size: $o-root-font-size;
 }
 
@@ -262,6 +276,21 @@ select {
 // Disable unnecessary box-shadows on mouse hover
 .btn:focus:hover {
   box-shadow: none;
+}
+
+// Smooth transitions for all interactive elements
+.btn, .form-control, .form-select, .o_input,
+.dropdown-item, .nav-link, .o_nav_entry {
+  transition: background-color var(--o-transition-fast),
+              border-color var(--o-transition-fast),
+              color var(--o-transition-fast),
+              box-shadow var(--o-transition-fast);
+}
+
+// Modern focus ring using brand color
+:focus-visible {
+  outline: 2px solid $o-brand-primary;
+  outline-offset: 2px;
 }
 
 //== Navbar

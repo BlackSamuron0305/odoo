@@ -140,8 +140,8 @@ $headings-color: $o-main-headings-color !default;
 
 $table-bg: transparent !default;
 $table-striped-color: inherit !default;
-$table-striped-bg-factor: 0.01 !default;
-$table-hover-bg-factor: .055 !default;
+$table-striped-bg-factor: 0.018 !default;
+$table-hover-bg-factor: .04 !default;
 $table-border-color: $border-color !default;
 $table-group-separator-color: $gray-200 !default;
 $table-cell-padding-x: .75rem !default;
@@ -158,14 +158,14 @@ $table-th-font-weight: $headings-font-weight !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y: o-to-rem(5) !default;
-$input-btn-padding-x: o-to-rem(10) !default;
+$input-btn-padding-y: o-to-rem(6) !default;
+$input-btn-padding-x: o-to-rem(12) !default;
 
 $input-btn-padding-y-sm: o-to-rem(3) !default;
 $input-btn-padding-x-sm: o-to-rem(8) !default;
 
-$input-btn-padding-y-lg: o-to-rem(6) !default;
-$input-btn-padding-x-lg: o-to-rem(12) !default;
+$input-btn-padding-y-lg: o-to-rem(8) !default;
+$input-btn-padding-x-lg: o-to-rem(16) !default;
 
 // Buttons
 //
@@ -182,15 +182,15 @@ $btn-border-radius-lg: $border-radius !default;
 $dropdown-border-color: $border-color !default;
 
 $dropdown-link-color: $o-main-text-color !default;
-$dropdown-link-hover-color: $black !default;
-$dropdown-link-hover-bg: rgba($black, 0.08) !default;
+$dropdown-link-hover-color: $o-gray-900 !default;
+$dropdown-link-hover-bg: rgba($o-gray-700, 0.07) !default;
 
-$dropdown-link-active-color: $black !default;
+$dropdown-link-active-color: $o-gray-900 !default;
 $dropdown-link-active-bg: transparent !default;
 
 $dropdown-link-disabled-color: $o-main-color-muted !default;
 
-$dropdown-item-padding-y: $o-dropdown-vpadding !default;
+$dropdown-item-padding-y: $o-dropdown-vpadding * 1.5 !default;
 $dropdown-item-padding-x: $o-dropdown-hpadding !default;
 
 // List group
@@ -262,7 +262,7 @@ $modal-footer-margin-between: 1px !default;
 $modal-lg: $o-modal-lg !default;
 $modal-md: $o-modal-md !default;
 
-$modal-content-border-radius: $border-radius !default;
+$modal-content-border-radius: $border-radius-lg !default;
 $modal-content-bg: $o-view-background-color !default;
 
 $modal-scale-transform: none !default;

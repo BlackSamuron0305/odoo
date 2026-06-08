@@ -1,14 +1,23 @@
 .modal.o_technical_modal {
     .modal-content {
-        .modal-header .modal-title {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+        box-shadow: $o-shadow-lg;
+
+        .modal-header {
+            border-bottom-color: $o-gray-200;
+
+            .modal-title {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-size: $h5-font-size;
+                font-weight: $o-font-weight-semibold;
+            }
         }
     }
 
     .modal-footer {
         text-align: left;
+        border-top-color: $o-gray-200;
 
         button {
             margin: 0; // Reset boostrap.

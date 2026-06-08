@@ -2,6 +2,8 @@
     --NavBar-entry-padding-right: #{$o-horizontal-padding};
 
     .o_user_avatar {
-        height: calc(var(--o-navbar-height) - 20px);
+        height: calc(var(--o-navbar-height) - 18px);
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px rgba($o-white, 0.3);
     }
 }
