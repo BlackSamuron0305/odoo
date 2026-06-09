@@ -14,6 +14,8 @@
 
         .o-color-palette-pill {
             height: 30px;
+            border-radius: 6px;
+            transition: box-shadow 0.15s ease;
         }
 
         &:is(.focus, .active) .o-color-palette-pill {

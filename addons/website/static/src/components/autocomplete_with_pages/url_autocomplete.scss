@@ -9,4 +9,8 @@
         @include border-radius($dropdown-border-radius);
         @include box-shadow($dropdown-box-shadow);
     }
+    .dropdown-item {
+        transition: background-color 0.15s ease, color 0.15s ease;
+        border-radius: 4px;
+    }
 }

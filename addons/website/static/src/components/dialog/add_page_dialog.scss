@@ -13,6 +13,10 @@
             min-width: 200px;
             max-width: 250px;
         }
+
+        .list-group-item {
+            transition: background-color 0.15s ease, color 0.15s ease;
+        }
     }
 
     .o_website_page_templates_pane.active {
@@ -28,6 +32,8 @@
         $-preview-width-lg: 408; // Empirically obtained
         width: #{$-preview-width}px;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        transition: box-shadow 0.15s ease;
 
         @include media-breakpoint-down(xl) {
             width: #{$-preview-width-xl}px;

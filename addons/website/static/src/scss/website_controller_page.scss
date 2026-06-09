@@ -1,5 +1,7 @@
 .o_website_tag {
     vertical-align: middle;
+    border-radius: 50px;
+    transition: background-color 0.15s ease, color 0.15s ease;
     @for $size from 1 through length($o-colors) {
         &.o_tag_color_#{$size - 1} {
             $background-color: white;
@@ -29,6 +31,7 @@
 
 .o_website_record {
     transition: box-shadow ease-in 0.1s;
+    border-radius: 10px;
 
     &:hover {
         box-shadow: 0 5px 25px -10px black;

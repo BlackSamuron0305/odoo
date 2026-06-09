@@ -299,6 +299,8 @@ body.editor_enable {
     .o_edit_menu_popover {
         background-color: $o-we-popover-bg;
         font-family: $o-we-font-family;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
 
         a {
             color: $o-brand-primary;

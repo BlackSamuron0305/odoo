@@ -6,6 +6,8 @@ $o-we-ace-color: #2F3129 !default;
     display: flex;
     flex-flow: column nowrap;
     opacity: 0.97;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
     .o_resource_editor_title {
         flex: 0 0 auto;
@@ -13,9 +15,14 @@ $o-we-ace-color: #2F3129 !default;
         align-items: center;
         padding: $grid-gutter-width/4;
 
-        > .o_resource_editor_type_switcher > button::after {
-            @include o-caret-down;
-            margin-left: 4px;
+        > .o_resource_editor_type_switcher > button {
+            transition: background-color 0.15s ease, color 0.15s ease;
+            border-radius: 6px;
+
+            &::after {
+                @include o-caret-down;
+                margin-left: 4px;
+            }
         }
 
         > * {

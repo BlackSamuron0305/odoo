@@ -1,5 +1,8 @@
 .s_map {
     iframe {
         pointer-events: none;
+        opacity: 0.85;
+        transition: opacity 0.15s ease;
+        border-radius: 6px;
     }
 }

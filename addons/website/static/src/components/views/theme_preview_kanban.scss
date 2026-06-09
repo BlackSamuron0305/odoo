@@ -59,6 +59,8 @@
             transform: scale(1.01);
             transform-origin: center;
             box-shadow: $box-shadow;
+            border-radius: 10px;
+            transition: box-shadow 0.15s ease, transform 0.15s ease;
 
             .o_theme_screenshot {
                 animation: o_theme_screenshot_scroll 4s linear infinite alternate;

@@ -9,9 +9,11 @@
         li.o_dragged {
             opacity: 1 !important;
             box-shadow: 5px 5px 5px -5px rgba(0,0,0,0.2);
+            border-radius: 6px;
         }
         .o_nested_sortable_placeholder_realsize {
             outline: 1px dashed $o-gray-400;
+            background-color: rgba(99, 88, 165, 0.04);
             @include border-radius($input-border-radius);
         }
     }

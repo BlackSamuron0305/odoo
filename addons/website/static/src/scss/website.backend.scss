@@ -61,6 +61,8 @@
             background-size: 100% !important;
             background: var(--Dashboard__demoBackground, url("/website/static/src/img/website_dashboard_visit_demo.png")) no-repeat;
             position: relative;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 
             .o_buttons {
                 position: relative;

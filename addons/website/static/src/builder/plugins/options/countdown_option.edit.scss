@@ -1,6 +1,9 @@
 // s_countdown preview classes
 .o_editable .s_countdown {
     &.s_countdown_enable_preview {
+        outline: 1px dashed rgba(99, 88, 165, 0.35);
+        border-radius: 6px;
+
         &.hide-countdown .s_countdown_canvas_wrapper {
             display: none !important;
         }

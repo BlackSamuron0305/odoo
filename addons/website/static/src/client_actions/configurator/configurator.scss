@@ -239,6 +239,8 @@
             .palette_card {
                 cursor: pointer;
                 box-shadow: 0 0 0 1px map-get($grays, '200');
+                border-radius: 10px;
+                transition: box-shadow 0.15s ease;
 
                 .color_sample {
                     padding-top: 20%;
@@ -293,10 +295,17 @@
 
             .card {
                 cursor: pointer;
+                border-radius: 10px;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+                transition: box-shadow 0.15s ease;
 
                 &.card_installed {
                     cursor: default;
                     opacity: 0.75;
+                }
+
+                &:hover:not(.card_installed) {
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
                 }
             }
             .o_configurator_feature_status {

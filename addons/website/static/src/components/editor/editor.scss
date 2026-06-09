@@ -25,6 +25,8 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 line-height: 20px;
+                border-radius: 4px;
+                transition: background-color 0.15s ease;
                 &.ui-state-active {
                     border: $o-we-sidebar-content-field-dropdown-border-width solid transparent;
                     background-color: $o-we-sidebar-content-field-dropdown-item-bg-hover;

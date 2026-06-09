@@ -37,6 +37,8 @@ $-mini-nav-size: 40px;
             min-width: $-mini-nav-size;
             height: $-mini-nav-size;
             color: #FFFFFF;
+            transition: background-color 0.15s ease;
+            border-radius: 6px;
         }
     }
 
@@ -60,6 +62,7 @@ $-mini-nav-size: 40px;
         height: 1.8em;
         margin-right: 0.5em;
         border-radius: 0.25rem;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     }
 
     &:hover, &:focus-within {

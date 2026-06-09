@@ -2,6 +2,12 @@
     .o_empty_gallery_alert {
         .o_add_images {
             cursor: pointer;
+            color: #6358a5;
+            transition: color 0.15s ease, opacity 0.15s ease;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 }

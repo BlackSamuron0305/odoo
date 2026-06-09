@@ -11,6 +11,8 @@
     .js_follow_btn, .js_unfollow_btn, .follow_btn {
         animation: js_follow_fade 1s ease forwards;
         opacity: 0;
+        border-radius: 50px;
+        transition: transform 0.15s ease;
 
         small {
             opacity: 0;

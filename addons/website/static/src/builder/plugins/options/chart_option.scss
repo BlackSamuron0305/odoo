@@ -1,6 +1,8 @@
 table.o_builder_matrix {
     table-layout: fixed;
     max-width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
 
     td, th {
         text-align: center;

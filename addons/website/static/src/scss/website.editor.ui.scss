@@ -21,6 +21,7 @@ $o-we-switch-inactive-color: rgba($text-muted, 0.4) !default;
             line-height: $o-we-switch-size;
             color: $o-we-switch-inactive-color;
             transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 
             &:after {
                 content: "\f057"; // fa-times-circle
@@ -32,6 +33,7 @@ $o-we-switch-inactive-color: rgba($text-muted, 0.4) !default;
 
         &:checked + span {
             background: $o-brand-primary;
+            box-shadow: 0 1px 3px rgba(99, 88, 165, 0.3);
 
             &:after {
                 content: "\f058"; // fa-check-circle

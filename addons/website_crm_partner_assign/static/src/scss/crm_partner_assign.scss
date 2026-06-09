@@ -3,5 +3,8 @@
         min-height: 0.8em;
         min-width: 8px;
         display: inline-block;
+        border-radius: 4px;
+        outline: 2px dashed rgba(99, 88, 165, 0.4);
+        outline-offset: 2px;
     }
 }

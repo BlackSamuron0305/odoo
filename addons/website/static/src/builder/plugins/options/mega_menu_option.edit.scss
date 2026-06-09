@@ -1,5 +1,7 @@
 body.editor_enable {
     .hidden_mega_menu_li {
         display: block !important;
+        outline: 1px dashed rgba(99, 88, 165, 0.4);
+        border-radius: 6px;
     }
 }

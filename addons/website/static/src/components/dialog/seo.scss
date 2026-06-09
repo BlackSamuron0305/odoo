@@ -20,12 +20,14 @@
             transition: border-color 200ms;
             display: inline-block;
             border: 2px solid map-get($grays, '400');
+            border-radius: 6px;
 
             > img {
                 width: 70px;
                 height: 70px;
                 object-fit: cover;
                 cursor: pointer;
+                border-radius: 4px;
             }
 
             &:hover, &:focus-visible {
@@ -67,6 +69,7 @@
             display: inline-block;
             padding: 23px 27px;
             border: 3px dashed lighten(map-get($grays, '700'), 30%);
+            border-radius: 6px;
             vertical-align: top;
             color: lighten(map-get($grays, '600'), 30%);
 
@@ -134,6 +137,8 @@
 
     td.o_seo_keyword_suggestion span.o_seo_suggestion.badge {
         cursor: pointer;
+        border-radius: 50px;
+        transition: background-color 0.15s ease, color 0.15s ease;
     }
 
     .o_seo_images_check {
@@ -151,6 +156,7 @@
     }
     .o_seo_keyword_row {
         border-bottom: 1px dotted map-get($grays, '300');
+        transition: background-color 0.15s ease;
     }
     .o-img-thumbnail {
         width: 70px;

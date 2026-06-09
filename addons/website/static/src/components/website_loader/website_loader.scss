@@ -13,6 +13,8 @@
     .o_website_loader_container_content {
         color: var(--website-loader-color);
         background-color: $gray-100;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         width: 100%;
 
         @include media-breakpoint-up(lg) {
@@ -34,6 +36,7 @@
     }
     .o_website_loader_progress {
         --progress-height: 0.5rem;
+        --bs-progress-bar-bg: #6358a5;
     }
     .o_website_loader_check {
         @keyframes loaderCheck {

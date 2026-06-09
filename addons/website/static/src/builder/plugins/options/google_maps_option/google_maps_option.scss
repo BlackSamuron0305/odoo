@@ -26,6 +26,7 @@
         background-color: $o-we-sidebar-content-field-clickable-bg;
         color: $o-we-sidebar-content-field-clickable-color;
         font-size: $o-we-sidebar-font-size;
+        transition: background-color 0.15s ease, color 0.15s ease;
 
         &:hover, &:focus, &.pac-item-selected {
             background-color: $o-we-sidebar-content-field-dropdown-item-bg-hover;

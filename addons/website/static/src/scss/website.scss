@@ -3278,3 +3278,23 @@ input[value*="data-oe-translation-source-sha"] {
       width: 100%;
     }
 }
+
+
+// UI Redesign: frontend website visual polish
+.o_wblog_social_links > a {
+    transition: opacity 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+        opacity: 0.85;
+        transform: translateY(-1px);
+    }
+}
+
+// Smooth transition on publish/unpublish button state change
+.js_publish_management > .js_publish_btn {
+    transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+}

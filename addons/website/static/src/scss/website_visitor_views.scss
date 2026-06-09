@@ -4,6 +4,8 @@
         .o_kanban_record {
             width: 100%;
             margin: 0px;
+            border-radius: 6px;
+            transition: box-shadow 0.15s ease;
         }
     }
     &.o_kanban_grouped {
@@ -28,6 +30,8 @@
 
 .w_visitor_kanban_actions .btn {
     margin: inherit;
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
     &:not(:last-child){
         margin-right: 0.25rem;
     }

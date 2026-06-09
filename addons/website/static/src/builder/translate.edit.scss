@@ -10,6 +10,8 @@ html[lang] > body.editor_enable [data-oe-translation-state] {
 
     &, .o_translation_select_option, .oe_translated, &[data-oe-field="mega_menu_content"] *, .o_translation_state_inner_span {
         background-color: var(--text-translate-highlight-color) !important;
+        transition: background-color 0.2s ease;
+        border-radius: 3px;
     }
 }
 
