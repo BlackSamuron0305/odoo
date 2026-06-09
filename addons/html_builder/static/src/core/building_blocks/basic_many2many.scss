@@ -1,3 +1,9 @@
 .o-hb-m2m-table:not(:empty) {
     margin-bottom: $o-hb-row-spacing;
 }
+
+// Visual polish: pill tag appearance for many2many items
+.o-hb-m2m-table .badge {
+    border-radius: 20px;
+    padding: 2px 8px;
+}

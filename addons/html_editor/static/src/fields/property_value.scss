@@ -22,3 +22,8 @@
         font-size: 0.6rem;
     }
 }
+
+// Visual polish: clean wysiwyg container
+.o_property_field_value .o-wysiwyg {
+    border-radius: 6px;
+}

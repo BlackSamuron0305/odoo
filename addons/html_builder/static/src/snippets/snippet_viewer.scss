@@ -186,3 +186,9 @@
         }
     }
 }
+
+// Visual polish: rounded preview cards + hover shadow
+.o_add_snippets_preview .o_snippet_preview_wrap {
+    border-radius: 6px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}

@@ -30,3 +30,10 @@
         }
     }
 }
+
+// Visual polish: subtle brand tint on background position overlay
+.o_we_background_position_overlay {
+    .o_we_overlay_mask {
+        border: 2px dashed rgba(99, 88, 165, 0.25);
+    }
+}

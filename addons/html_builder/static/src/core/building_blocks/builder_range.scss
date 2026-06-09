@@ -1,4 +1,7 @@
+// Visual polish: brand primary thumb color
 .o-hb-range {
+    --o-hb-range-thumb-color: #6358a5;
+
     .popover & {
         --o-hb-range-thumb-color: var(--o-hb-range-thumb-color-popover, #{$o-we-bg-darkest});
     }

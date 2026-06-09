@@ -2,8 +2,10 @@
 // HTML Builder Common
 //------------------------------------------------------------------------------
 
-// Base snippet rules
-%o-we-background-layer-parent {
+// Visual polish: smooth background transitions
+.o_we_bg_filter {
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
     &, & > * {
         // Allow background layers to be placed accordingly and snippet content
         // to be displayed on top. Note: we cannot just position the layers

@@ -1,3 +1,13 @@
 .oe-language-icon {
     fill: #000;
 }
+
+// Visual polish: smooth icon transition + dropdown shadow
+.oe-language-icon {
+    transition: fill 0.15s ease;
+}
+
+.o-language-selector {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}

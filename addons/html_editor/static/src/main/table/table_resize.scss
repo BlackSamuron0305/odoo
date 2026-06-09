@@ -6,3 +6,11 @@
         cursor: row-resize;
     }
 }
+
+// Visual polish: brand color resize handle hint
+.odoo-editor-editable {
+    &.o_col_resize td:hover,
+    &.o_row_resize td:hover {
+        box-shadow: inset 0 0 0 2px rgba(99, 88, 165, 0.3);
+    }
+}

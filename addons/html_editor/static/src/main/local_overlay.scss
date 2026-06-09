@@ -5,3 +5,13 @@
     width: 0;
     z-index: 1;
 }
+
+// Visual polish: brand accent drop hint
+.oe-current-drop-hint {
+    background: rgba(99, 88, 165, 0.45);
+    border-radius: 2px;
+}
+
+[data-oe-local-overlay-id=oe-dropzone-hint-container] {
+    transition: opacity 0.15s ease;
+}

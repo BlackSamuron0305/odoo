@@ -5,3 +5,9 @@
 .o_we_background_positioning>*:not(.s_parallax_bg) {
     visibility: hidden;
 }
+
+// Visual polish: crosshair indicator for background position editing
+.o_we_background_positioning {
+    outline: 2px dashed rgba(99, 88, 165, 0.4);
+    outline-offset: -2px;
+}

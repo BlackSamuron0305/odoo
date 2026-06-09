@@ -14,9 +14,12 @@
     cursor: grab;
     right: 5px;
     top: 0px;
+    border: 1px solid rgba(99, 88, 165, 0.25);
+    transition: opacity 0.15s ease, border-color 0.15s ease;
 }
 .oe-sidewidget-move:hover {
     opacity: 1;
+    border-color: #6358a5;
 }
 
 /* Element widget drag & drop zone */

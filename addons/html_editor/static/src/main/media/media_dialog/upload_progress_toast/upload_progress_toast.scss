@@ -24,3 +24,12 @@ $button-width: 3rem;
         width: $o-notification-max-width-sm;
     }
 }
+
+// Visual polish: pill shape + brand progress
+.editor_notification_body {
+    border-radius: 10px;
+}
+
+.o_upload_progress_toast .progress-bar {
+    background-color: #6358a5;
+}

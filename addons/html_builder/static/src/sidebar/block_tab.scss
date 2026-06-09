@@ -192,3 +192,12 @@ $o-we-zindex: $o-we-overlay-zindex + 1 !default;
         z-index: 1056;
     }
 }
+
+// Visual polish: brand active snippet hover
+.o_block_tab {
+    .o_snippet:hover:not(.o_disabled):not(.o_to_install) {
+        outline: 2px solid rgba(99, 88, 165, 0.5);
+        outline-offset: -1px;
+        border-radius: 4px;
+    }
+}

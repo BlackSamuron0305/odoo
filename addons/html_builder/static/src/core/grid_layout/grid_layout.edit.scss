@@ -65,3 +65,9 @@
         pointer-events: none;
     }
 }
+
+// Visual polish: grid cell hover highlight
+.o_we_background_grid:hover .o_we_cell {
+    fill-opacity: 0.18;
+    transition: fill-opacity 0.2s ease;
+}

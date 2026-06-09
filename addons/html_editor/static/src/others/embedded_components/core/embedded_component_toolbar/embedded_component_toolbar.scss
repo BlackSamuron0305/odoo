@@ -1,7 +1,12 @@
 .o_embedded_toolbar {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
     button {
         font-family: $font-family-base !important;
         font-weight: $font-weight-bold;
+        border-radius: 4px;
+        transition: background-color 0.15s ease;
         @media screen and (max-width: 1024px) {
             .o_embedded_toolbar_button_text {
                 display: none;

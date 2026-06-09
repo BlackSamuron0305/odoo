@@ -59,3 +59,8 @@
 body.oe_dropzone_active .note-editable {
     overflow: hidden;
 }
+
+// Visual polish: brand primary drop zone indicator
+.oe_drop_zone.oe_insert {
+    outline-color: rgba(99, 88, 165, 0.7);
+}

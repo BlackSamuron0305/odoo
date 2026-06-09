@@ -16,3 +16,18 @@
         }
     }
 }
+
+// Visual polish: rounded button group
+.o-hb-button-group.btn-group {
+    border-radius: 6px;
+
+    > .o-hb-btn:first-child:not(.dropdown-toggle) {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    > .o-hb-btn:last-child:not(.dropdown-toggle) {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}

@@ -15,3 +15,13 @@ div.o_field_html {
         padding-right: 40px;
     }
 }
+
+// Visual polish: editor area border + focus ring
+.o_field_html .note-editable {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:focus {
+        box-shadow: 0 0 0 3px rgba(99, 88, 165, 0.12), 0 0 0 1px rgba(99, 88, 165, 0.3);
+    }
+}

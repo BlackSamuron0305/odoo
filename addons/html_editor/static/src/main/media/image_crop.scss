@@ -73,3 +73,15 @@
         }
     }
 }
+
+// Visual polish: brand crop handle + active state
+.o_we_crop_widget .o_we_crop_buttons {
+    label.active {
+        background-color: #6358a5;
+        color: white;
+    }
+
+    button:focus-visible, label:focus-within {
+        outline-color: #6358a5;
+    }
+}

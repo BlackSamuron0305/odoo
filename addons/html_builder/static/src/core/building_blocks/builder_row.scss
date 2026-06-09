@@ -167,3 +167,8 @@
         transition: height 0.35s ease;
     }
 }
+
+// Visual polish: subtle row separator
+.hb-row + .hb-row:not(.hb-row-sublevel) {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}

@@ -21,3 +21,10 @@
     font-weight: bold;
     --bg-opacity: 0.25;
 }
+
+// Visual polish: brand primary color for ChatGPT content highlight
+.o-chatgpt-content {
+    outline-color: #6358a5;
+    background: rgba(99, 88, 165, 0.1);
+    border-radius: 6px;
+}

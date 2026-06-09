@@ -103,3 +103,15 @@
         line-height: 1.7;
     }
 }
+
+// Visual polish: rounded dropdown + shadow
+.o-hb-selectMany2X-dropdown {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+// Visual polish: pill-style selected tags
+.o-hb-selectMany2X-wrapper .o_tag {
+    border-radius: 20px;
+    padding: 1px 8px;
+}

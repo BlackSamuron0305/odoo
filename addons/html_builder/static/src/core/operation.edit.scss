@@ -15,3 +15,8 @@
         color: $o-we-fg-lighter;
     }
 }
+
+// Visual polish: smooth transition for loading screen
+.o_loading_screen {
+    transition: opacity 0.2s ease;
+}

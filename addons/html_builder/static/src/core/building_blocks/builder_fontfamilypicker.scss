@@ -6,3 +6,9 @@
 [data-action-param="font"] .o_we_delete_font_btn:hover {
     color: mix($o-danger, $o-white, 80%),
 }
+
+// Visual polish: dropdown shadow
+[data-action-param="font"] .o-hb-select-dropdown {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}

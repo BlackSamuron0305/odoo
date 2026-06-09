@@ -206,3 +206,13 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
+
+// Visual polish: sidebar panel shadow
+.o-snippets-menu {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+// Visual polish: smooth tab transitions
+.o-snippets-tabs .nav-link {
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}

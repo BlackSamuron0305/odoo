@@ -10,3 +10,12 @@
         margin-right: $o-we-sidebar-content-field-clickable-spacing * 0.5;
     }
 }
+
+// Visual polish: rounded + brand focus ring
+.o-hb-input-field-text {
+    border-radius: 6px;
+
+    &:focus-within {
+        box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.3);
+    }
+}

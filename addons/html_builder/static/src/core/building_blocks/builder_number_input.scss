@@ -23,3 +23,12 @@
         font-size: $o-we-font-size-xs;
     }
 }
+
+// Visual polish: rounded + brand focus ring
+.o-hb-input-field-number {
+    border-radius: 6px;
+
+    &:focus-within {
+        box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.3);
+    }
+}

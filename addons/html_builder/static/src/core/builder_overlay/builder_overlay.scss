@@ -276,3 +276,15 @@ div[data-oe-local-overlay-id="builder-overlay-container"] {
 .o_resizing {
     pointer-events: none;
 }
+
+// Visual polish: brand dashed border on active overlay
+div[data-oe-local-overlay-id="builder-overlay-container"] {
+    .oe_overlay.o_we_overlay_preview {
+        outline: 2px dashed rgba(99, 88, 165, 0.5);
+        outline-offset: 2px;
+    }
+
+    .oe_overlay.oe_active {
+        border-color: #6358a5;
+    }
+}

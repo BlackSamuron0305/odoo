@@ -1,7 +1,11 @@
 figcaption {
     color: #9e9d9a;
+    font-style: italic;
+    font-size: 0.875em;
+    letter-spacing: 0.01em;
 
     input {
         background-color: transparent;
+        border-radius: 4px;
     }
 }

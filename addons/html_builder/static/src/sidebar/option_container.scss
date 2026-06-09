@@ -56,3 +56,14 @@
         content: image-set(var(--animate-src));
     }
 }
+
+// Visual polish: clean dividers between option containers
+.options-container {
+    .options-container-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    & + .options-container {
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}

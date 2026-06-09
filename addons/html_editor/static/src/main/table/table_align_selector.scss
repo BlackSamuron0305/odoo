@@ -1,3 +1,10 @@
 .oe-vertical-align-icon {
     fill: #000;
+    transition: fill 0.15s ease;
+}
+
+// Visual polish: brand active alignment state
+.oe_dropdown_item_menu_selected .oe-vertical-align-icon,
+.oe_dropdown_item_menu:hover .oe-vertical-align-icon {
+    fill: #6358a5;
 }

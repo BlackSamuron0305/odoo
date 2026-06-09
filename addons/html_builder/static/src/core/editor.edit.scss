@@ -122,3 +122,12 @@ $-editor-messages-margin-x: 2%;
 .o_editable .media_iframe_video .css_editable_mode_display {
     display: block !important;
 }
+
+// Visual polish: subtle edit mode hover indicator
+.editor_enable .o_editable {
+    &:hover:not(:focus-within) {
+        outline: 1px solid rgba(99, 88, 165, 0.15);
+        outline-offset: 2px;
+        border-radius: 2px;
+    }
+}

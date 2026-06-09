@@ -35,3 +35,9 @@
 .o_conditional_hidden {
     display: none !important;
 }
+
+// Visual polish: dashed outline for invisible elements
+.o_snippet_override_invisible {
+    outline: 1px dashed rgba(99, 88, 165, 0.45);
+    outline-offset: 2px;
+}

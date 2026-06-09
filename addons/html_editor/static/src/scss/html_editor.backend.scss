@@ -70,3 +70,13 @@
         z-index: $zindex-modal + 1 !important;
     }
 }
+
+// Visual polish: clean editor container border
+.o_field_html {
+    border-radius: 6px;
+
+    iframe:not(.o_readonly) {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 6px;
+    }
+}

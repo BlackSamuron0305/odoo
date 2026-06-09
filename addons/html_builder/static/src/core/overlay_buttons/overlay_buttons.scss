@@ -54,3 +54,19 @@
         background-image: url('/html_builder/static/img/options/bring-forward.svg');
     }
 }
+
+// Visual polish: rounded overlay buttons + shadow + brand hover
+.o_overlay_options {
+    .btn {
+        border-radius: 6px;
+        transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        &.active {
+            color: #6358a5;
+        }
+    }
+}

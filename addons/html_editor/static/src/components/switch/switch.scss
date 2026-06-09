@@ -56,3 +56,9 @@ $o-we-switch-inactive-color: rgba($text-muted, 0.4) !default;
         }
     }
 }
+
+// Visual polish: brand primary checked state with subtle glow
+.o_switch > input:checked + span {
+    background: #6358a5;
+    box-shadow: 0 0 0 1px rgba(99, 88, 165, 0.35);
+}

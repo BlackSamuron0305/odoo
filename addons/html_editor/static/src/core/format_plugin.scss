@@ -5,3 +5,11 @@
 .o_default_font_size {
     font-size: $font-size-base;
 }
+
+// Visual polish: inline format visual feedback
+.odoo-editor-editable {
+    mark {
+        border-radius: 3px;
+        padding: 0 0.2em;
+    }
+}

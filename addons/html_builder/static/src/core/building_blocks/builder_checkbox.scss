@@ -33,3 +33,8 @@
             0 0 0 #{$o-we-border-width * 2} var(--o-hb-form-switch-color-active, #{$o-hb-form-check-input-checked-border-color});
     }
 }
+
+// Visual polish: brand primary accent for toggle
+.o-hb-checkbox.form-switch {
+    --o-hb-form-switch-color-active: #6358a5;
+}

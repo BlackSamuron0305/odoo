@@ -4,6 +4,9 @@
     margin: 0 0 16px;
     tab-size: 4;
     font: 13px / 19.5px SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 
     pre, textarea.o_prism_source {
         margin: 0;

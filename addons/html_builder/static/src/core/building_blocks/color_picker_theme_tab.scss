@@ -52,3 +52,14 @@
         }
     }
 }
+
+// Visual polish: clean color theme tab appearance
+.o_cc_preview_wrapper {
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}
