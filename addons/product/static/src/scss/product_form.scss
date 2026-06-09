@@ -1,3 +1,24 @@
 .oe_title .o_favorite i.fa {
     font-size: inherit;
 }
+
+// Visual polish: product form
+.o_form_view .oe_title {
+    .o_favorite i.fa {
+        transition: color 0.15s ease, transform 0.15s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.o_product_document_kanban .o_kanban_record,
+.o_form_view .o_kanban_view .o_kanban_record {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}

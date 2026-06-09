@@ -1,3 +1,14 @@
 .o_kanban_previewer:hover {
     cursor: pointer;
 }
+
+// Visual polish: document kanban card
+.o_kanban_previewer {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transform: translateY(-1px);
+    }
+}

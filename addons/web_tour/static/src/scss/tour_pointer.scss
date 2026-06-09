@@ -221,3 +221,13 @@
         display: none !important;
     }
 }
+
+// Visual polish: tour pointer info bubble
+.o_tour_pointer.o_open {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.o_tour_pointer .o_tour_pointer_content {
+    border-radius: 6px;
+}

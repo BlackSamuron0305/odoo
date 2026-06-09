@@ -47,3 +47,28 @@
 .o_mg_message {
     min-width: 250px;
 }
+
+// Visual polish: mail group portal
+.o_mg_subscribe_btn {
+    border-radius: 6px;
+    transition: all 0.15s ease;
+}
+
+.o_mg_attachment {
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.o_mg_message {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+}

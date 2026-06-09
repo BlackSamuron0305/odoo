@@ -3,3 +3,13 @@
         cursor: help;
     }
 }
+
+// Visual polish: work entry warning indicator
+.o_form_view .o_work_entry_source_warning {
+    border-radius: 4px;
+    transition: color 0.15s ease;
+
+    &:hover {
+        color: #6358a5;
+    }
+}

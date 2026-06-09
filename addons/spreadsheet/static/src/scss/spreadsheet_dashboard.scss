@@ -1,3 +1,15 @@
 .o-sample-dashboard .o-figure {
     opacity: 0.4;
 }
+
+// Visual polish: spreadsheet dashboard figures
+.o-spreadsheet-dashboard .o-figure {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}

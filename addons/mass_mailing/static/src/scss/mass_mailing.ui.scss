@@ -27,3 +27,13 @@ body.editor_enable.o_basic_theme.o_in_iframe {
 :root {
     font-size: 14px;
 }
+
+// Visual polish: mass mailing UI
+.o_mail_template_preview {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}

@@ -98,3 +98,39 @@ html {
         display: none;
     }
 }
+
+// Visual polish
+.pos .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.pos .btn {
+    border-radius: 6px;
+    transition: all 0.15s ease;
+}
+
+.pos .btn-primary {
+    background-color: #6358a5;
+    border-color: #6358a5;
+
+    &:hover {
+        background-color: darken(#6358a5, 8%);
+        border-color: darken(#6358a5, 8%);
+    }
+
+    &:active {
+        background-color: darken(#6358a5, 14%);
+    }
+}
+
+.pos input.form-control,
+.pos select.form-control {
+    border-radius: 6px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:focus {
+        border-color: #6358a5;
+        box-shadow: 0 0 0 0.2rem rgba(99, 88, 165, 0.2);
+    }
+}

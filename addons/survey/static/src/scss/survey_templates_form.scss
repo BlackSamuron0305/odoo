@@ -573,3 +573,31 @@ _::-webkit-full-page-media, _:future, :root .o_survey_wrap {
         overflow: auto !important;
     }
  }
+
+// Visual polish: survey form
+.o_survey_form,
+.o_survey_print {
+    .o_survey_question_text_box,
+    .o_survey_question_date,
+    .o_survey_question_datetime,
+    .o_survey_question_numerical_box {
+        border-radius: 0;
+        transition: border-color 0.15s ease;
+    }
+
+    .o_survey_choice_btn {
+        transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+
+        &:hover {
+            transform: translateX(2px);
+        }
+    }
+}
+
+.o_survey_session_manage .o_survey_session_navigation.o_survey_session_navigation_next {
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(99, 88, 165, 0.2);
+    }
+}

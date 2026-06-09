@@ -49,3 +49,18 @@
         background-color: $dropdown-bg;
     }
 }
+
+// Visual polish: base automation kanban
+.o_base_automation_kanban_view .o_kanban_ungrouped .o_kanban_record {
+    border-radius: 6px;
+    transition: background-color 0.12s ease, box-shadow 0.12s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.03);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+}
+
+.o_base_automation_error pre {
+    border-radius: 6px;
+}

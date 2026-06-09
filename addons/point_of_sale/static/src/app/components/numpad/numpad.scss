@@ -67,3 +67,18 @@
 .numpad-3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
+
+// Visual polish: border-radius on keys, press state
+.numpad-button {
+    border-radius: 6px;
+    transition: background-color 0.1s ease, box-shadow 0.1s ease, transform 0.1s ease;
+
+    &:hover:where(:not(.active)) {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: scale(0.96);
+        box-shadow: none;
+    }
+}

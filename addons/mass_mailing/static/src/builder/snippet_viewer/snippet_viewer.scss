@@ -20,3 +20,14 @@
         }
     }
 }
+
+// Visual polish: snippet preview hover
+.o_snippet_preview_wrap {
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}

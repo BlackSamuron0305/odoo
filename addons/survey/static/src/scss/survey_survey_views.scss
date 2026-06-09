@@ -148,3 +148,27 @@
 .o_nocontent_help:has(.o_survey_load_sample) {
     max-width: unset !important;
 }
+
+// Visual polish: survey kanban cards
+.o_survey_view_kanban_view .o_kanban_renderer .o_kanban_record {
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+}
+
+// Sample card brand accent
+.o_survey_sample_card {
+    border: 1px solid transparent;
+    transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        border-color: rgba(99, 88, 165, 0.2);
+    }
+}
+
+// Section rows: subtle accent
+.o_survey_form table.o_section_list_view tr.o_data_row.o_is_section {
+    border-left: 3px solid rgba(99, 88, 165, 0.4);
+}

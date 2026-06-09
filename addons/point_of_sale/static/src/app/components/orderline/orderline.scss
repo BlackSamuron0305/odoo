@@ -50,3 +50,21 @@
         border-radius: 3px;
     }
 }
+
+// Visual polish: hover highlight + clean separator
+.orderline {
+    border-radius: 6px;
+    transition: background-color 0.12s ease, box-shadow 0.12s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    &.selected {
+        box-shadow: 0 1px 4px rgba(99, 88, 165, 0.15);
+    }
+
+    & + .orderline {
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+}

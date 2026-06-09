@@ -3,3 +3,14 @@
         width: 350px;
     }
 }
+
+// Visual polish: rating kanban cards
+.o_rating_rating_kanban .o_kanban_renderer .o_kanban_record {
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}

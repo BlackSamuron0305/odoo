@@ -84,12 +84,6 @@ div.o_mrp_routing_form div.o_field_integer.o_small_integer {
         left: 180px;
         top: 60px;
     }
-    // div.separator {
-    //     left: 490px;
-    //     top: 40px;
-    //     height: 250px;
-    //     width: 2px;
-    // }
     .o_annotation_1 {
         left: 323px;
     }
@@ -149,5 +143,16 @@ div.o_mrp_routing_form div.o_field_integer.o_small_integer {
         left: 15%;
         top: 55%;
         right: 25%;
+    }
+}
+
+// Visual polish: MRP routing input
+div.o_mrp_routing_form div.o_field_integer.o_small_integer input {
+    border-radius: 4px;
+    transition: border-color 0.15s ease;
+
+    &:focus {
+        border-color: #6358a5;
+        box-shadow: 0 0 0 0.15rem rgba(99, 88, 165, 0.15);
     }
 }

@@ -3,3 +3,9 @@
     /* However, the combined spacing is too much for either scenario, so one is removed depending on context. */
     margin: 0 !important;
 }
+
+// Visual polish: skills header
+.o_applicant_skills .skills_header {
+    border-bottom: 1px solid rgba(99, 88, 165, 0.15);
+    padding-bottom: 4px;
+}

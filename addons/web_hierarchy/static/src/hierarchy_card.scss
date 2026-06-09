@@ -75,3 +75,15 @@
         grid-template-columns: 50px 1fr 50px;
     }
 }
+
+// Visual polish: hierarchy card
+.o_hierarchy_node_container .o_hierarchy_node {
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transform: translateY(-1px);
+    }
+}

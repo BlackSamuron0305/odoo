@@ -152,3 +152,16 @@
         }
     }
 }
+
+// Visual polish: theme selector thumbnails
+.o_mail_theme_selector .dropdown-item .o_thumb {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.o_mail_theme_selector .dropdown-item.selected .o_thumb {
+    box-shadow: 0 0 0 2px #6358a5;
+}

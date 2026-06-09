@@ -18,3 +18,11 @@
         color: #f0ad4e;
     }
 }
+
+// Visual polish: payment provider form
+.o_form_view .o_payment_provider_desc {
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: rgba(99, 88, 165, 0.03);
+    border: 1px solid rgba(99, 88, 165, 0.1);
+}

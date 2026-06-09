@@ -31,3 +31,12 @@
         }
     }
 }
+
+// Visual polish: question preview
+.o_survey_question_view_form .o_form_renderer .o_preview_questions {
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(99, 88, 165, 0.12);
+    }
+}

@@ -119,3 +119,17 @@
         }
     }
 }
+
+// Visual polish: dashboard search panel items
+.o_spreadsheet_dashboard_search_panel {
+    li {
+        border-radius: 6px;
+        transition: background-color 0.12s ease;
+    }
+}
+
+// Dashboard action border
+.o_spreadsheet_dashboard_action .o_renderer {
+    border-radius: 6px;
+    overflow: hidden;
+}

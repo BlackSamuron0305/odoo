@@ -22,3 +22,22 @@
         max-width: 75px;
     }
 }
+
+// Visual polish: MRP BOM overview
+.o_mrp_overview {
+    .input-group {
+        transition: box-shadow 0.15s ease;
+
+        &:focus-within {
+            box-shadow: 0 0 0 0.15rem rgba(99, 88, 165, 0.2);
+        }
+    }
+
+    .o_list_table tr.o_data_row {
+        transition: background-color 0.1s ease;
+
+        &:hover td {
+            background-color: rgba(99, 88, 165, 0.04);
+        }
+    }
+}

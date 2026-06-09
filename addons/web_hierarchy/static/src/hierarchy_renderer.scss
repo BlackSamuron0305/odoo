@@ -72,3 +72,9 @@ $o-chart-line-color: #ababb1;
         }
     }
 }
+
+// Visual polish: hierarchy renderer row
+.o_hierarchy_renderer .o_hierarchy_container .o_hierarchy_row {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+}

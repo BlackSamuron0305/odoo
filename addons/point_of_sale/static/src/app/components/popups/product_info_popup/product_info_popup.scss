@@ -6,3 +6,25 @@
     border: none !important;
     padding-bottom: 0 !important;
 }
+
+// Visual polish: popup modal
+.product-info-popup {
+    .modal-content {
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .modal-header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .section-financials > div,
+    .section-order > div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        transition: background-color 0.1s ease;
+
+        &:hover {
+            background-color: rgba(99, 88, 165, 0.04);
+        }
+    }
+}

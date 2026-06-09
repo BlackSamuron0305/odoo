@@ -14,3 +14,21 @@
         font-size: 90%;
     }
 }
+
+// Visual polish: mailing portal buttons
+.o_mailing_portal_body {
+    .btn {
+        border-radius: 6px;
+        transition: all 0.15s ease;
+    }
+
+    .btn-primary {
+        background-color: #6358a5;
+        border-color: #6358a5;
+
+        &:hover {
+            background-color: darken(#6358a5, 8%);
+            border-color: darken(#6358a5, 8%);
+        }
+    }
+}

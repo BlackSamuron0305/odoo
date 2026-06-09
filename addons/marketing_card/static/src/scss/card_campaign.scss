@@ -17,3 +17,29 @@
         }
     }
 }
+
+// Visual polish: marketing card campaign kanban
+.o_kanban_view .o_marketing_card_campaign_kanban {
+    .o_kanban_record {
+        border-radius: 6px;
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    .badge {
+        border-radius: 4px;
+        transition: background-color 0.15s ease, color 0.15s ease;
+    }
+}
+
+.o_marketing_card_image_preview img {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}

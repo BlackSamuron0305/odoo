@@ -47,3 +47,19 @@
         min-width: 96px;
     }
 }
+
+// Visual polish: POS top bar
+.pos .navbar-menu > button {
+    border-radius: 6px;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.pos .dropdown-menu {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}

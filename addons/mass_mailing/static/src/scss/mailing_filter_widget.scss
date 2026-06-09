@@ -3,3 +3,15 @@
         cursor: pointer;
     }
 }
+
+// Visual polish: filter widget buttons
+.o_mass_mailing_add_filter,
+.o_mass_mailing_remove_filter {
+    border-radius: 6px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.08);
+        color: #6358a5;
+    }
+}

@@ -184,3 +184,18 @@ body.editor_has_snippets .o_field_mass_mailing_html div.d-flex:has(iframe) {
         position: static !important;
     }
 }
+
+// Visual polish: mass mailing kanban cards
+.o_kanban_renderer .oe_kanban_mass_mailing {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.o_kanban_mailing_list article > div .o_mailing_list_kanban_stats > a {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+}

@@ -33,3 +33,17 @@
     border-radius: 0.5rem !important;
     width: 18rem;
 }
+
+// Visual polish: gamification badges
+.user-badge {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.grant_badge_btn {
+    transition: all 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(99, 88, 165, 0.2);
+    }
+}

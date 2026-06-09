@@ -4,3 +4,17 @@
         vertical-align: middle;
     }
 }
+
+// Visual polish: resume line
+.o_resume_line {
+    border-radius: 4px;
+    transition: background-color 0.12s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.04);
+    }
+
+    .o_resume_line_icon.icon_circle {
+        transition: color 0.15s ease;
+    }
+}

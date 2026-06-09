@@ -2,3 +2,13 @@
     /* To prevent the icons from being cropped when there is not enough available space */
     min-width: fit-content;
 }
+
+// Visual polish: IAP mail enrichment
+.o_partner_autocomplete_enrich_info {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.05);
+    }
+}

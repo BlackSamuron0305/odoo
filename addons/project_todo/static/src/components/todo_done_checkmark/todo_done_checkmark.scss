@@ -6,3 +6,18 @@
         opacity: 0.8;
     }
 }
+
+// Visual polish: checkmark cell
+.o_todo_done_checkmark_cell {
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.08);
+        opacity: 1;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}

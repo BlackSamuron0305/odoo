@@ -18,3 +18,30 @@
     }
 
 }
+
+// Visual polish: payment form
+.o_payment_form {
+    .o_outline {
+        border-radius: 6px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .o_payment_provider_logo {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .list-group-item {
+        transition: background-color 0.15s ease;
+
+        &:first-child {
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    }
+}

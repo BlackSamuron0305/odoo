@@ -108,3 +108,13 @@
         transform: translate(24px, 0);
     }
 }
+
+// Visual polish: loader button
+.pos-loader .button {
+    border-radius: 6px;
+    transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(255, 255, 255, 0.2);
+    }
+}

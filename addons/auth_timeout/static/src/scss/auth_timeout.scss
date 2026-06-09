@@ -3,3 +3,25 @@
     position: relative;
     margin: 50px auto;
 }
+
+// Visual polish: auth timeout identity form
+.oe_check_identity_form {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding: 24px;
+
+    .btn {
+        border-radius: 6px;
+        transition: all 0.15s ease;
+    }
+
+    input.form-control {
+        border-radius: 6px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+        &:focus {
+            border-color: #6358a5;
+            box-shadow: 0 0 0 0.15rem rgba(99, 88, 165, 0.2);
+        }
+    }
+}

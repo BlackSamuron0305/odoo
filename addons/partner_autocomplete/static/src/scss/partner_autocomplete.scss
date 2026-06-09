@@ -2,3 +2,18 @@
 .o_form_view .o_form_editable .oe_title .o_field_field_partner_autocomplete {
 	width: 100%;
 }
+
+// Visual polish: partner autocomplete dropdown
+.o_field_field_partner_autocomplete .o-autocomplete--dropdown-menu {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+
+    .o-autocomplete--dropdown-item {
+        transition: background-color 0.1s ease;
+
+        &:hover {
+            background-color: rgba(99, 88, 165, 0.06);
+        }
+    }
+}

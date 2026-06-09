@@ -3,3 +3,11 @@
     grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
     gap: 1em;
 }
+
+// Visual polish: UOM field
+.uom_autocomplete_grid {
+    .o_field_widget {
+        border-radius: 6px;
+        transition: border-color 0.15s ease;
+    }
+}

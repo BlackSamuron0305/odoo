@@ -34,3 +34,13 @@
         }
     }
 }
+
+// Visual polish: rating submit labels
+.o_rating_page_submit .o_rating_label {
+    border-radius: 6px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+}

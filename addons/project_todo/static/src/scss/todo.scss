@@ -31,3 +31,17 @@
 .o_todo_hide_avatar .o_avatar {
     display: none;
 }
+
+// Visual polish: todo form
+.o_todo_form_view .o_form_sheet_bg .o_form_sheet {
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.o_todo_form_view .btn {
+    border-radius: 6px;
+    transition: all 0.15s ease;
+}

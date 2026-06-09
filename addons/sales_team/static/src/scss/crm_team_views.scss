@@ -21,3 +21,14 @@
         --Ribbon-wrapper-width: 6rem;
     }
 }
+
+// Visual polish: CRM team kanban cards
+.o_crm_team_kanban .o_kanban_record,
+.o_crm_team_member_kanban .o_kanban_record {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}

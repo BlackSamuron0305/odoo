@@ -6,3 +6,13 @@ table.o_section_list_view tr.o_data_row.o_is_line_section {
     border-top: 1px solid #BBB;
     border-bottom: 1px solid #BBB;
 }
+
+// Visual polish: section rows
+table.o_section_list_view tr.o_data_row.o_is_line_section {
+    border-left: 3px solid #6358a5;
+    transition: background-color 0.1s ease;
+
+    &:hover {
+        background-color: #D5D3D3;
+    }
+}

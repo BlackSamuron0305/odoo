@@ -71,3 +71,13 @@
         }
     }
 }
+
+// Visual polish: work location button
+.o_worklocation_btn {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.05);
+    }
+}

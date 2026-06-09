@@ -3,3 +3,11 @@
         min-width: 100px;
     }
 }
+
+// Visual polish: mail group backend form
+.o_mail_group_message_form {
+    .o_group tr td {
+        border-radius: 4px;
+        transition: background-color 0.1s ease;
+    }
+}
