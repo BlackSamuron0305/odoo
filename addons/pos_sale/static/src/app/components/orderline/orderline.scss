@@ -2,3 +2,13 @@
     padding: 2px 8px;
     white-space: normal;
 }
+
+// Sprint: clean sale-order-info row styling in POS
+.sale-order-info {
+    border-radius: 4px;
+    overflow: hidden;
+
+    tr:hover td {
+        background-color: rgba(99, 88, 165, 0.06);
+    }
+}

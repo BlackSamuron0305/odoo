@@ -2,13 +2,23 @@
     .card-header {
         a {
             text-decoration: none;
+            transition: color 0.15s ease;
+
+            &:hover {
+                color: #6358a5;
+            }
+
             &:after {
                 content: "\f0d7";
                 font-family: 'FontAwesome';
+                margin-left: 0.4em;
+                transition: transform 0.15s ease;
+                display: inline-block;
             }
             &.collapsed:after {
-                content: "\f0da";
+                content: "\f0d7";
                 font-family: 'FontAwesome';
+                transform: rotate(-90deg);
             }
         }
     }

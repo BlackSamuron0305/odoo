@@ -5,4 +5,14 @@ body:not(.o_touch_device) .o_field_so_line_create_button {
         }
     }
     word-break: keep-all !important;
+
+    // Sprint: smooth visibility transition on action link
+    a {
+        transition: opacity 0.15s ease, color 0.15s ease;
+        color: $o-brand-primary;
+
+        &:hover {
+            color: darken($o-brand-primary, 10%);
+        }
+    }
 }

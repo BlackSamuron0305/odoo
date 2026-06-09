@@ -201,3 +201,18 @@ span.o_force_ltr {
     font-family: inherit;
     font-size: 100%;
 }
+
+// Sprint: smooth disabled state
+.o_disabled {
+    transition: opacity 0.2s ease;
+}
+
+// Sprint: thin styled scrollbars for all dropdown menus
+.dropdown-menu {
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+// Sprint: tree entry connector lines use brand tint
+.o_treeEntry {
+    --treeEntry--beforeAfter-color: #{rgba(#6358a5, 0.25)};
+}

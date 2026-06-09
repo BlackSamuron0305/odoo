@@ -77,3 +77,19 @@ $o-w-rating-star-color: #FACC2E;
         margin-right: 10px;
     }
 }
+
+// Visual polish: star rating hover scale
+.o-mail-Composer-stars i,
+.o_website_rating_static i {
+    transition: transform 0.1s ease, color 0.1s ease;
+}
+.o_rating_clickable i:hover {
+    transform: scale(1.2);
+}
+
+// Progress bars: pill shape
+.o_website_rating_table_progress > .progress {
+    border-radius: 100px;
+    overflow: hidden;
+    height: 6px;
+}

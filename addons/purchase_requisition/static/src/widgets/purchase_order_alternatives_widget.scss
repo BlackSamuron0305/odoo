@@ -1,3 +1,10 @@
 .o_field_many2many_alt_pos {
     width: 100%;
+    transition: opacity 0.15s ease;
+
+    // Clean tag pills for alternative PO field
+    .o_tag {
+        border-radius: 100px;
+        font-size: 0.8rem;
+    }
 }

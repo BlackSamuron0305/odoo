@@ -16,6 +16,16 @@
         &[type=number] {
             -moz-appearance: textfield;
         }
+        // Sprint: clean input focus style
+        border-radius: 4px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        text-align: center;
+
+        &:focus {
+            border-color: $o-brand-primary;
+            box-shadow: 0 0 0 0.15rem rgba($o-brand-primary, 0.2);
+            outline: none;
+        }
     }
     .o_matrix_input_td {
         border: none;
@@ -31,5 +41,14 @@
         top: 0;
         z-index: 10; // Ensure it stays on top of other content
         background-color: $o-view-background-color; // Background for visibility
+
+        // Sprint: semibold thead labels
+        th {
+            font-weight: 600;
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $text-muted;
+        }
     }
 }
