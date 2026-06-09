@@ -6,6 +6,17 @@
 
 .mail-composer-template-dropdown {
     max-width: 250px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+    overflow: hidden;
+
+    .dropdown-item {
+        border-radius: 4px;
+        transition: background-color 0.15s ease;
+        margin: 1px 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 
     @include media-breakpoint-up(sm) {
         max-width: 400px !important;

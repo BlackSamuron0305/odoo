@@ -1,7 +1,11 @@
 .o-discuss-CallInvitations {
     z-index: $zindex-modal;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .o-discuss-CallInvitation-avatar {
     aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $white, 0 1px 4px rgba(0, 0, 0, 0.1);
 }

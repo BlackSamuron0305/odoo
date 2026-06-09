@@ -2,12 +2,17 @@
 
     .o-mail-NotificationSettings-submenu {
         max-width: 250px !important;
+        border-radius: 10px !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
     }
     .o-discuss-NotificationSettings-separator {
         min-width: 20px;
     }
 
     button {
+        border-radius: 4px;
+        transition: background-color 0.15s ease;
+
         &:hover, &.show {
             background-color: var(--mail-NotificationSettings-btnHoverBg, $gray-200);
         }

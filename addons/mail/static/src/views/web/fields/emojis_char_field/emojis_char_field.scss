@@ -1,5 +1,7 @@
 .o_field_char_emojis input.o_field_placeholder {
     padding-right: 50px;
+    border-radius: $border-radius;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .o_field_char_emojis input.o_field_placeholder.o_field_translate {

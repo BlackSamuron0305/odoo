@@ -1,11 +1,15 @@
 .o-mail-MessageReactionMenu-avatar {
     width: $o-mail-Avatar-size;
     height: $o-mail-Avatar-size;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $white, 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .o-mail-MessageReactionMenu {
     > .modal-body {
         padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
     }
 }
 
@@ -15,8 +19,10 @@
     }
     &:hover button.fa-trash {
         opacity: 100;
+        transition: opacity 0.15s ease, background-color 0.15s ease;
         &:hover {
             background-color: $gray-100;
+            border-radius: 4px;
         }
     }
 }

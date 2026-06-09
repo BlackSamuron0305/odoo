@@ -1,9 +1,13 @@
 .o_property_field_value {
     .o_field_property_many2one_value img[comodel="res.users"],
     .o_m2m_avatar[comodel="res.users"] {
+        border-radius: 50%;
+        transition: outline 0.15s ease, box-shadow 0.15s ease;
+
         &:hover {
             cursor: context-menu;
             outline: $border-width solid $o-action;
+            box-shadow: 0 0 0 3px rgba($o-action, 0.15);
         }
     }
 }

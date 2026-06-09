@@ -1,6 +1,11 @@
 $meeting-view-bg: #111827;
 .o-mail-Meeting {
     background-color: $meeting-view-bg;
+
+    .o-mail-Meeting-card {
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .o-overlay-item:has(.o-mail-Meeting) {

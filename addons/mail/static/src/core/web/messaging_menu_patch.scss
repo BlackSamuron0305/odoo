@@ -1,5 +1,7 @@
 .o-mail-MessagingMenu-headerFilter {
     border: 1px solid transparent;
+    border-radius: 6px;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
 
     &.o-active {
         background-color: rgba($o-action, .075);

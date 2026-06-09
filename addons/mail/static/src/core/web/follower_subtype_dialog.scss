@@ -1,3 +1,8 @@
-.o-mail-FollowerSubtypeDialog-subtype label:hover {
-    background-color: $gray-200;
+.o-mail-FollowerSubtypeDialog-subtype label {
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: $gray-200;
+    }
 }

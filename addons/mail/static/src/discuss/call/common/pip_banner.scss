@@ -1,13 +1,18 @@
 .o-discuss-PipBanner {
     background-color: $o-mail-CallMenu-bgColor-darker;
     color: rgba(white, 0.8) !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 
     .o-discuss-PipBannerButton {
-      border: 1px solid black;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
       background-color: $o-mail-CallMenu-bgColor;
       color: rgba(white, 0.8) !important;
+      transition: background-color 0.15s ease, box-shadow 0.15s ease;
         &:hover {
             background-color: $o-mail-CallMenu-bgColor-lighter;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
         }
     }
 }

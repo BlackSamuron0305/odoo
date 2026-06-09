@@ -3,6 +3,9 @@
 }
 
 .o-discuss-ChannelInvitation-selectable {
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+
     &.o-odd {
         background-color: $gray-100 !important;;
     }
@@ -34,6 +37,8 @@
 .o-discuss-ChannelInvitation-avatar {
     width: 32px;
     aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $white;
 }
 
 .o-discuss-ChannelInvitation-invitationBox {

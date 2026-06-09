@@ -1,3 +1,14 @@
 .o_field_statusbar_duration, .o_field_rotting_statusbar_duration {
     @extend .o_field_statusbar;
+
+    .o_statusbar_status button.btn-secondary {
+        border-radius: 100px;
+        transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+        &.o_arrow_button_current {
+            background-color: rgba($o-brand-primary, 0.12);
+            border-color: rgba($o-brand-primary, 0.3);
+            color: $o-brand-primary;
+        }
+    }
 }

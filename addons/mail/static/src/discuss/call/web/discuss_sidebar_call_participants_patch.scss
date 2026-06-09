@@ -1,3 +1,8 @@
-.o-mail-DiscussSidebarCallParticipants-participant.o-active:hover {
-    background-color: $gray-200;
+.o-mail-DiscussSidebarCallParticipants-participant.o-active {
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: $gray-200;
+    }
 }

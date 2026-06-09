@@ -10,11 +10,14 @@
     // to ensure enough space for the drag&drop feature of the editor.
     $movenode-horizontal-padding: 25px;
     .modal-content:has(.o_mail_composer_form_view) {
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
         .modal-header {
             padding-left: $movenode-horizontal-padding;
             padding-right: $movenode-horizontal-padding;
         }
-    } 
+    }
     .o_mail_composer_form_view {
         .o_form_renderer.o_form_nosheet.o_form_editable {
             padding-left: $movenode-horizontal-padding;

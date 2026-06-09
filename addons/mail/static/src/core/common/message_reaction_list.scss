@@ -1,5 +1,17 @@
-.o-mail-MessageReactionList-preview:hover {
-    background-color: $o-gray-100 !important;
+.o-mail-MessageReactionList-preview {
+    border-radius: 100px;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        background-color: $o-gray-100 !important;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &.o-active {
+        background-color: rgba($o-brand-primary, 0.12) !important;
+        box-shadow: 0 0 0 1px rgba($o-brand-primary, 0.3);
+        color: $o-brand-primary;
+    }
 }
 
 .o-mail-MessageReactionList-previewText {

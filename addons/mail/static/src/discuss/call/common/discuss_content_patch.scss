@@ -8,7 +8,9 @@
         &:hover {
             &:has(.fa-phone), &:has(.fa-video-camera) {
                 background-color: $gray-100 !important;
+                border-radius: 6px;
                 outline: 1px solid rgba($success, .25);
+                transition: background-color 0.15s ease, outline 0.15s ease;
                 i {
                     color: lighten($success, 5%) !important;
                 }

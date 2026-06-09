@@ -1,4 +1,7 @@
 .o-web-UserMenu-imStatus {
     bottom: -2px;
     right: -2px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $white;
+    transition: box-shadow 0.15s ease;
 }

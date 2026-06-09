@@ -1,3 +1,5 @@
 .o_mail_extra_comments .note-editable {
     min-height: 80px;
+    border-radius: 6px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }

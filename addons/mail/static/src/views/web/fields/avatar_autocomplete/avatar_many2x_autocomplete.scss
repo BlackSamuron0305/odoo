@@ -1,9 +1,14 @@
 .o_field_many2one_avatar_leader_user {
     .dropdown-item {
         text-indent: 0 !important;
+        border-radius: 4px;
+        transition: background-color 0.15s ease;
+
         .o_icon {
             height: var(--Avatar-size, #{$o-avatar-size});
             aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px $white;
         }
     }
 }

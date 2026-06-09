@@ -17,6 +17,13 @@
 
 .o-discuss-GifPickerCategory-img {
     object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .o-discuss-GifPicker-noFavoritesIcon {
@@ -24,12 +31,21 @@
 }
 
 .o-discuss-Gif {
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
     .o-starred {
         color: $o-main-favorite-color !important;
     }
 
-    &:hover i {
-        opacity: 1 !important;
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transform: scale(1.02);
+
+        i {
+            opacity: 1 !important;
+        }
     }
 }
 

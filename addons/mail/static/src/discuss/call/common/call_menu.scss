@@ -24,6 +24,9 @@
 }
 
 .o-discuss-CallMenu-dropdownMore, .o-discuss-CallMenu-channelInfo {
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+
     &:hover {
         background-color: mix($gray-200, $gray-300) !important;
     }

@@ -54,6 +54,8 @@ $o-discuss-talkingColor: lighten($success, 10%);
 
 .o-discuss-dropdownMenu {
     --Dropdown_menu-margin-y: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 
     &.o-simulateDarkTheme {
         background-color: $gray-800;
@@ -362,6 +364,7 @@ a.o_mail_redirect, a.o_channel_redirect, a.o-discuss-mention, a.o_message_redire
     outline-offset: -1px;
     font-weight: $font-weight-bold;
     display: inline-block;
+    transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 a.o_mail_redirect, a.o_channel_redirect, a.o_message_redirect_transformed {

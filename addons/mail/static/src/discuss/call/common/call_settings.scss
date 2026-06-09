@@ -1,4 +1,10 @@
 .o-Discuss-CallSettings-thresholdInput {
+    &::-moz-range-thumb {
+        transition: box-shadow 0.15s ease;
+    }
+    &:hover::-moz-range-thumb {
+        box-shadow: 0 0 0 3px rgba($o-success, 0.2);
+    }
     &::-moz-range-track {
         background: linear-gradient(
             to right,
