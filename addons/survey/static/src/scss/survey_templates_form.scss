@@ -132,9 +132,10 @@ _::-webkit-full-page-media, _:future, :root .o_survey_wrap {
     }
 
     .o_survey_choice_btn {
-        transition: background-color 0.3s ease;
+        transition: background-color 0.15s ease, box-shadow 0.15s ease;
         flex: 1 0 300px;
         color: $primary;
+        border-radius: 6px;
 
         span {
             line-height: 25px;
@@ -234,9 +235,11 @@ _::-webkit-full-page-media, _:future, :root .o_survey_wrap {
         cursor: pointer;
         background-color: rgba($primary, 0.1);
         box-shadow: $primary 0px 0px 0px 1px;
+        border-radius: 6px;
 
         &.o_survey_selected {
             box-shadow: $primary 0px 0px 0px 2px;
+            background-color: rgba($primary, 0.18);
         }
 
         &:hover {
@@ -336,11 +339,11 @@ _::-webkit-full-page-media, _:future, :root .o_survey_wrap {
 
         &.o_survey_session_navigation_next {
             right: 1rem;
-            border: 2px solid #35979c;
-            border-radius: 5px;
+            border: 2px solid #6358a5;
+            border-radius: 6px;
 
             &:hover {
-                border-color: #2a797c;
+                border-color: darken(#6358a5, 10%);
             }
         }
 

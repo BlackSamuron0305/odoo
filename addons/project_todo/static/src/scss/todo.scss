@@ -1,6 +1,9 @@
 .o_todo_form_view {
     .o_form_sheet_bg {
         .o_form_sheet {
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
             .oe_title {
                 max-width: initial;
             }

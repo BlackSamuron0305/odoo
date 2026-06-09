@@ -9,6 +9,52 @@
     }
 }
 
+// Checklist
+ul.o_checklist {
+    > li {
+        list-style: none;
+        position: relative;
+
+        &:not(.oe-nested):before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            display: block;
+            height: 14px;
+            width: 14px;
+            top: 1px;
+            border: 1px solid #6358a5;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
+        &.o_checked {
+            &::before {
+                content: "✓";
+                transition: opacity .5s;
+                position: absolute;
+                left: -18px;
+                top: -1px;
+                opacity: 1;
+                color: #6358a5;
+            }
+
+            &:has(ul, ol)::before {
+                opacity: 0.5;
+            }
+
+            &:not(:has(ul, ol)) {
+                text-decoration: line-through;
+                opacity: 0.5;
+            }
+            &:has(ul, ol) > :not(ul, ol) {
+                text-decoration: line-through;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
 .odoo-editor-editable {
     li {
         &[style*="color"],

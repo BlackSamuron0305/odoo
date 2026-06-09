@@ -1,3 +1,8 @@
 .o_todo_done_checkmark_cell {
     width: 40px;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }

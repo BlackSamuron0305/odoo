@@ -2,6 +2,8 @@
     border: $border-width solid rgba($color: $o-brand-odoo, $alpha: 1.0);
     color: #fff;
     background-color: rgba($color: $o-brand-odoo, $alpha: 0.7);
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 
     &.oi-ellipsis-v {
         width: 17px;

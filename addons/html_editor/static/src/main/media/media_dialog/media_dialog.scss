@@ -15,6 +15,16 @@
             flex-basis: $min-row-height + px;
         }
 
+        .o_existing_attachment_cell {
+            border-radius: 6px;
+            overflow: hidden;
+            transition: box-shadow 0.15s ease;
+
+            &:hover {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            }
+        }
+
         .o_existing_attachment_cell.o_we_image {
             transition: opacity 0.5s ease 0.5s;
 
@@ -34,6 +44,7 @@
 
     .o_we_attachment_selected {
         @include o-we-active-wrapper($top: 5px, $left: 5px);
+        box-shadow: 0 0 0 2px #6358a5;
     }
 
     .o_we_load_more {

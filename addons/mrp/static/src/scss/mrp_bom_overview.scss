@@ -11,6 +11,9 @@
     }
     .input-group {
         max-width: 250px;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     }
     input.o_input.o-autocomplete--input {
         max-width: 150px;

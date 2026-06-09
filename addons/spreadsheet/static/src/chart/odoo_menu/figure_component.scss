@@ -1,6 +1,15 @@
 .o-figure-menu {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+
     .o-figure-menu-item {
         padding-left: 7px;
+        transition: background-color 0.15s ease;
+
+        &:hover {
+            background-color: rgba(99, 88, 165, 0.08);
+        }
     }
 
     .o-chart-external-link {

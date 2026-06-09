@@ -7,11 +7,14 @@
         width: 1.5rem; // Equivalent to ps-4
         aspect-ratio: 1 / 1;
         background-color: transparent;
+        border-radius: 4px;
+        transition: background-color 0.15s ease;
         &:hover {
             background-color: rgba($o-gray-300, 0.5);
         }
         &:active {
-            background-color: rgba($o-gray-300, 0.2);
+            background-color: rgba(99, 88, 165, 0.15);
+            color: #6358a5;
         }
     }
 }

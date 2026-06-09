@@ -1,5 +1,7 @@
 .o-we-tablepicker {
-    box-shadow: $box-shadow;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    padding: 4px;
 
     .o-we-row {
         line-height: 0;
@@ -12,8 +14,10 @@
         margin-right: 3px;
         margin-bottom: 3px;
         background-color: $o-gray-200;
+        border-radius: 2px;
+        transition: background-color 0.15s ease;
         &.active {
-            background-color: #71639e;
+            background-color: #6358a5;
         }
     }
 }

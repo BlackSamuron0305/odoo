@@ -67,6 +67,7 @@
         // Dropdown adapted from event templates to get a coherent styling
         .dropdown-toggle {
             text-align: left;
+            border-radius: 6px;
             &:hover, &:focus {
                 text-decoration: none;
             }
@@ -83,8 +84,11 @@
             min-width: 12rem;
             max-height: 250px;
             overflow-y: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
         }
         .dropdown-item {
+            transition: background-color 0.15s ease;
             &.active .badge { // Invert badge display when the item is active
                 background-color: color-contrast(map-get($theme-colors, 'primary'));
                 color: map-get($theme-colors, 'primary');
@@ -97,6 +101,8 @@
             background-color: transparent;
             white-space: normal;
             text-align: left;
+            border-radius: 6px;
+            transition: background-color 0.15s ease;
             i.fa-times {
                 cursor: pointer;
             }
@@ -112,6 +118,9 @@
 }
 
 .o_survey_results_question {
+    border-radius: 6px;
+    overflow: hidden;
+
     .o_survey_results_question_header {
         .nav .btn:active {
             box-shadow: none;

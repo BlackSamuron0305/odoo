@@ -1,16 +1,27 @@
 .o-we-powerbox {
-    box-shadow: $box-shadow;
-
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .o-we-category {
     font-size: 11px;
     color: $o-gray-600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .o-we-command {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+
     &.active {
-        background: rgba($o-component-active-bg, .65);
+        background: rgba(99, 88, 165, 0.12);
+        color: #6358a5;
+
+        .o-we-command-name {
+            color: #6358a5;
+        }
     }
 }
 
@@ -18,9 +29,12 @@
     height: 35px;
     width: 35px;
     background-color: $o-gray-100;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 .o-we-command-name {
     font-size: 13px;
+    font-weight: 500;
 }
 
 .o-we-command-description {

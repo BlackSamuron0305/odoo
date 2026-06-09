@@ -2,4 +2,13 @@
     &.o-mobile {
         font-size: 16px;
     }
+
+    border-radius: 20px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:focus {
+        border-color: #6358a5;
+        box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.15);
+        outline: none;
+    }
 }

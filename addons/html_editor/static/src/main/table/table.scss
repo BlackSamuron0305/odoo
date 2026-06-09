@@ -4,6 +4,9 @@ th.o_table_header {
 }
 
 .o_table {
+    border-radius: 6px;
+    overflow: hidden;
+
     th, td {
         > *:last-child {
             margin-bottom: 0;

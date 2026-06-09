@@ -3,10 +3,14 @@
     height: $o-mail-ChatBubble-sizeBig;
     font-size: 14px;
     z-index: 5;
-    transition: filter 0.3s;
+    transition: filter 0.3s, transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
 
     &:hover {
         filter: brightness(90%);
+        transform: scale(1.05);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     }
 }
 

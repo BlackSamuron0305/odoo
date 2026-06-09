@@ -1,21 +1,31 @@
 .o-spreadsheet {
     .o-scorecard, .o-gauge-chart {
         border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     }
 
     .o-sp-badge {
         background-color: #374151C2;
         color: #fff;
+        border-radius: 4px;
     }
 }
 
 .o-sidePanel {
     --o-spreadsheet-input-border-color: #D8DADD;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
     .o_input {
         color: #111827;
         border-color: var(--o-spreadsheet-input-border-color);
+        border-radius: 4px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
         &::placeholder {
             opacity: 0.5;
+        }
+        &:focus {
+            border-color: #6358a5;
+            box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.15);
         }
     }
 

@@ -1,7 +1,8 @@
 .odoo-editor-editable a.o_link_in_selection:not(.btn) {
-    background-color: #a6e3e2;
-    color: black !important;
-    border: 1px dashed #008f8c;
+    background-color: rgba(99, 88, 165, 0.12);
+    color: #6358a5 !important;
+    border: 1px dashed rgba(99, 88, 165, 0.5);
+    border-radius: 2px;
     margin: -1px;
 }
 

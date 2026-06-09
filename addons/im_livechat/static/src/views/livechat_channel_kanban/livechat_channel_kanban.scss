@@ -1,6 +1,8 @@
 .o-livechat-ChannelKanban-highlighted {
     background-color: $o-component-active-bg !important;
     color: $o-component-active-color;
+    box-shadow: 0 4px 12px rgba(99, 88, 165, 0.25);
+    border-radius: 6px;
 
     &::before {
         background-color: $o-component-active-bg !important;
