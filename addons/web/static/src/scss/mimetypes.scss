@@ -71,3 +71,13 @@
         background-image: url('/web/static/img/mimetypes/vector.svg');
     }
 }
+
+// === Visual Redesign ===
+.o_image {
+    border-radius: 4px;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}

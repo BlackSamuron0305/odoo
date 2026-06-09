@@ -11,3 +11,12 @@
 .o_kanban_view .o_material_resource {
     margin-right: 0px !important;
 }
+
+// === Visual Redesign ===
+.o_field_many2many_avatar_resource {
+    .o_avatar.o_avatar_many2x_autocomplete > i.o_material_resource {
+        border-radius: 50%;
+        overflow: hidden;
+        transition: box-shadow 0.15s ease;
+    }
+}

@@ -1,3 +1,15 @@
 .o_auth_2fa_btn {
     font-size: 1.5em;
 }
+
+// === Visual Redesign ===
+.o_auth_2fa_btn {
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(99, 88, 165, 0.25);
+    }
+}

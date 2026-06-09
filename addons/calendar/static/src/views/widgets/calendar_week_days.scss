@@ -8,3 +8,20 @@
     cursor: pointer;
     align-items: center;
 }
+
+// === Visual Redesign ===
+.o_calendar_week_days_rounded {
+    font-weight: 500;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.1);
+        color: #6358a5;
+    }
+
+    &.active,
+    &.selected {
+        background-color: #6358a5;
+        color: #fff;
+    }
+}

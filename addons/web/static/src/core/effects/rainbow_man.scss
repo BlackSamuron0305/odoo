@@ -144,3 +144,10 @@
         transform: scale(.5) rotate(-30deg);
     }
 }
+
+// === Visual Redesign ===
+.o_reward {
+    .o_reward_msg_container {
+        filter: drop-shadow(0 4px 12px rgba(99, 88, 165, 0.25));
+    }
+}

@@ -13,3 +13,17 @@
         margin: 0 5px 0 0;
     }
 }
+
+// === Visual Redesign ===
+.o_form_view .o_group {
+    .o_im_livechat_field_widget_color {
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+    }
+}

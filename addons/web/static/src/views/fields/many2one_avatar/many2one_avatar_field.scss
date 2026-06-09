@@ -36,3 +36,15 @@
         }
     }
 }
+
+// === Visual Redesign ===
+.o_field_many2one_avatar {
+    img {
+        border-radius: 50%;
+        transition: box-shadow 0.15s ease, outline 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

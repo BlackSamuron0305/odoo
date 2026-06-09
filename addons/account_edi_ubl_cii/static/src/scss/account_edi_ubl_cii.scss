@@ -5,3 +5,9 @@
 .o_field_peppol_eas_selection {
   min-width: 200px;
 }
+
+// === Visual Redesign ===
+.o_field_peppol_eas_selection > select {
+    border-radius: 4px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}

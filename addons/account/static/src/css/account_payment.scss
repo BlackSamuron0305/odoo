@@ -11,3 +11,16 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+
+// === Visual Redesign ===
+.o_popover_header {
+    border-radius: 6px 6px 0 0;
+    font-weight: 600;
+    color: #6358a5;
+    letter-spacing: 0.01em;
+}
+
+.o_memo_content {
+    font-size: 0.85em;
+    border-radius: 4px;
+}

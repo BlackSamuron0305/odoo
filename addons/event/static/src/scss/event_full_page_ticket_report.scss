@@ -82,3 +82,11 @@
         transform: rotate(90deg);
     }
 }
+
+// === Visual Redesign ===
+.o_event_full_page_ticket_container {
+    .o_event_full_page_ticket_details {
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}

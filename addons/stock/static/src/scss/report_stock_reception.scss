@@ -56,3 +56,11 @@
         font-weight: bold;
     }
 }
+
+// === Visual Redesign ===
+.o_report_reception {
+    & thead th {
+        border-bottom-width: 2px;
+        border-bottom-color: rgba(99, 88, 165, 0.3);
+    }
+}

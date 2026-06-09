@@ -13,3 +13,16 @@
     }
 
 }
+
+// === Visual Redesign ===
+.o_form_view {
+    .o_iban_fail {
+        color: #dc3545;
+        transition: opacity 0.15s ease;
+    }
+
+    input.o_input.o_iban_input_with_validator {
+        border-radius: 4px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+}

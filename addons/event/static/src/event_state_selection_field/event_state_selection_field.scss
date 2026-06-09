@@ -38,3 +38,10 @@
     }
 }
 
+// === Visual Redesign ===
+.o_field_event_state_selection {
+    .o_status {
+        border-radius: 50%;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+}

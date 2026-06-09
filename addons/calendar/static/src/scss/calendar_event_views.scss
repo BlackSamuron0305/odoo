@@ -32,3 +32,18 @@
         min-width: 2rem;
     }
 }
+
+// === Visual Redesign ===
+.o_calendar_event_form_view {
+    .o_calendar_form_status_selection_badge {
+        .o_selection_badge {
+            border-radius: 6px;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
+    }
+}
+
+.o_calendar_event_form_quick_create {
+    border-radius: 10px;
+    overflow: hidden;
+}

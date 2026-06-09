@@ -12,3 +12,16 @@
         height: auto !important;
     }
 }
+
+// === Visual Redesign ===
+.o_field_product_label_section_and_note_cell {
+    textarea {
+        border-radius: 4px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    div.o_input {
+        border-radius: 4px;
+        letter-spacing: 0.01em;
+    }
+}

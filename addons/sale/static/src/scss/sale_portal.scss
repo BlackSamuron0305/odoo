@@ -44,3 +44,9 @@
 .o_sale_payment_terms p{
     margin: 0;
 }
+
+// === Visual Redesign ===
+.sale_tbody input.js_quantity {
+    border-radius: 4px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}

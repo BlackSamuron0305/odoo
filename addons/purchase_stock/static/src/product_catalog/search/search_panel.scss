@@ -26,3 +26,16 @@
         width: 2rem;
     }
 }
+
+// === Visual Redesign ===
+.o_purchase_product_kanban_catalog_view .o_suggest_feature {
+    .o_select_menu,
+    .o_input_dropdown,
+    .o_PurchaseSuggestInput {
+        transition: border-color 0.15s ease;
+
+        &:focus-within {
+            border-bottom-color: #6358a5 !important;
+        }
+    }
+}

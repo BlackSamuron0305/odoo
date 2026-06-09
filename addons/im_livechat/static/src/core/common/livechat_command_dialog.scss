@@ -2,3 +2,13 @@
     border-color: $input-focus-border-color;
     color: $input-focus-color;
 }
+
+// === Visual Redesign ===
+.o-livechat-LivechatCommandDialog-form {
+    border-radius: 6px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:focus-within {
+        box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.15);
+    }
+}

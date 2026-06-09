@@ -7,3 +7,9 @@ div[name="o_payment_status_alert"] div > p {
         border-left: $border-width solid $border-color;
     }
 }
+
+// === Visual Redesign ===
+div[name="o_payment_status_alert"] {
+    border-radius: 6px;
+    overflow: hidden;
+}

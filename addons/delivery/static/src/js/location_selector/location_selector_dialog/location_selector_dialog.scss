@@ -43,3 +43,11 @@
         gap: 0 map-get($spacers, 3);
     }
 }
+
+// === Visual Redesign ===
+.o_location_selector {
+    .o_location_selector_mobile_tab {
+        border-radius: 6px;
+        transition: color 0.15s ease, border-color 0.15s ease;
+    }
+}

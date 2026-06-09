@@ -140,3 +140,12 @@
     width: 180mm;
     margin-left: -1rem;
 }
+
+// === Visual Redesign ===
+.din_page {
+    table.o_main_table {
+        tr.o_line_section td {
+            border-top: 2px solid rgba(99, 88, 165, 0.15);
+        }
+    }
+}

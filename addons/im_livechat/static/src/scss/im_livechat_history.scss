@@ -29,3 +29,21 @@
         }
     }
 }
+
+// === Visual Redesign ===
+.o_history_container {
+    .o_history_kanban_container {
+        .o_history_kanban_sub_container {
+            .o_kanban_ungrouped {
+                .o_kanban_record {
+                    border-radius: 6px;
+                    transition: box-shadow 0.15s ease;
+
+                    &:hover {
+                        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -132,3 +132,11 @@
         transform: scaleX(-1);
     }
 }
+
+// === Visual Redesign ===
+.o_report_stock_rule {
+    .o_report_stock_rule_location_header > a:hover,
+    .o_report_stock_rule_rule_cell > a:hover {
+        border-radius: 4px;
+    }
+}

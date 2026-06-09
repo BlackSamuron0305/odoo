@@ -14,3 +14,14 @@
         font-weight: 400;
     }
 }
+
+// === Visual Redesign ===
+.o-filter-values {
+    border-radius: 6px;
+    overflow: hidden;
+
+    .o-filter-clear {
+        border-radius: 4px;
+        transition: opacity 0.15s ease;
+    }
+}

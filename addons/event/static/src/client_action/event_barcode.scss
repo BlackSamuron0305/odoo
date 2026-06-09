@@ -65,3 +65,15 @@
         background-color: #5BC236;
     }
 }
+
+// === Visual Redesign ===
+.o_event_barcode_main {
+    @include media-breakpoint-up(md) {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    }
+}
+
+.o_notification_manager .o_event_success {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(91, 194, 54, 0.25);
+}

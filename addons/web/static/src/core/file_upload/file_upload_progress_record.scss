@@ -18,3 +18,10 @@
         font-weight: 500;
     }
 }
+
+// === Visual Redesign ===
+.o_data_row.o_list_progress_card {
+    border-radius: 4px;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
+}

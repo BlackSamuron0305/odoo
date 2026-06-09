@@ -25,3 +25,11 @@
         }
     }
 }
+
+// === Visual Redesign ===
+.o-filter-value {
+    .o_datepicker_input {
+        border-radius: 4px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+}

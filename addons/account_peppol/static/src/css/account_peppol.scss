@@ -10,3 +10,15 @@
         border-color: #FF4612;
     }
 }
+
+// === Visual Redesign ===
+.itsme_button {
+    border-radius: 6px;
+    font-weight: 600;
+    transition: opacity 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(255, 70, 18, 0.3);
+        opacity: 0.92;
+    }
+}

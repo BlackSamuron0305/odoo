@@ -44,3 +44,22 @@
         transform: translateX(-50%);
     }
 }
+
+// === Visual Redesign ===
+.o_portal_project_rating {
+    .thumbnail {
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .o_top_partner_image {
+        border-radius: 50%;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .o_rating_progress {
+        border-radius: 9999px;
+        overflow: hidden;
+    }
+}

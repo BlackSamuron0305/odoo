@@ -10,3 +10,9 @@
         transform: translate(-0.6em, 0.8em) /*rtl:translate(0.6em, 0.8em) scaleX(-1)*/;
     }
 }
+
+// === Visual Redesign ===
+.o_accordion_toggle {
+    border-radius: 4px;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
