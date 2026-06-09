@@ -180,3 +180,14 @@
         pointer-events: none;
     }
 }
+
+// === Visual Redesign (conservative — kiosk themed) ===
+.o_hr_attendance_kiosk_card {
+    border-radius: 10px;
+    transition: box-shadow 0.15s ease;
+}
+
+.o_hr_kiosk_manual_selection .btn {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease, background-color 0.15s ease;
+}

@@ -41,3 +41,9 @@
   }
 
 }
+
+// === Visual Redesign ===
+.self_order_combo_stepper_container .stepper_list .btn {
+    border-radius: 50rem;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}

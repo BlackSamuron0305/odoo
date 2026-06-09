@@ -37,3 +37,14 @@
     overflow-y: auto;
   }
 }
+
+// === Visual Redesign ===
+.pos-scenario-card {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease, transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transform: translateY(-2px);
+    }
+}

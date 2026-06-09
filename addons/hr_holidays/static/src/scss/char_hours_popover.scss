@@ -1,5 +1,7 @@
 .o_hour_selection {
     background: none;
+    border-radius: 4px;
+    transition: border-color 0.15s ease;
 
     &:focus,
     &:hover {

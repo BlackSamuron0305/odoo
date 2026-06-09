@@ -1,3 +1,9 @@
 .loyalty-points span.value {
     width: 80px;
 }
+
+// === Visual Redesign ===
+.loyalty-points {
+    font-weight: 600;
+    color: $o-brand-primary;
+}

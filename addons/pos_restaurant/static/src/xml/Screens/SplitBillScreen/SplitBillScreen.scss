@@ -5,3 +5,9 @@
 .splitbill-screen .order .orderline.partially.selected{
     background: rgb(136, 214, 176);
 }
+
+// === Visual Redesign ===
+.splitbill-screen .order .orderline {
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+}

@@ -1,4 +1,13 @@
 .pos .lot-container {
     max-height: 15rem;
     overflow-y: auto;
+    border-radius: 6px;
+
+    > * {
+        transition: background-color 0.15s ease;
+
+        &:hover {
+            background-color: rgba(99, 88, 165, 0.06);
+        }
+    }
 }

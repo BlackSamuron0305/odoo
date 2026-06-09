@@ -27,3 +27,14 @@
     text-align: center;
     padding: map-get($spacers, 3);
 }
+
+// === Visual Redesign ===
+.paymentline {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+}
+
+.paymentlines .electronic_payment {
+    border-radius: 6px;
+    overflow: hidden;
+}

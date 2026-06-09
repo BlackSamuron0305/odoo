@@ -125,4 +125,14 @@
   }
 }
 
+// === Visual Redesign ===
+.o_accrual_level .content {
+    border-radius: 6px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.o_accrual_level .circle {
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
 

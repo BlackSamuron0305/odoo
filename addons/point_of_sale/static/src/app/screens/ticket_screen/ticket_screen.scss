@@ -69,3 +69,14 @@
     }
 }
 
+// === Visual Redesign ===
+.order-row {
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.04);
+    }
+}
+

@@ -1,3 +1,9 @@
 div.o_field_timesheet_uom > button.o_field_float_toggle {
     width: 50px !important;
+    border-radius: 50rem;
+    font-weight: 600;
+    background-color: rgba(99, 88, 165, 0.08);
+    color: #6358a5;
+    border: 1px solid rgba(99, 88, 165, 0.2);
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
 }

@@ -13,3 +13,9 @@
       opacity: 1;
     }
   }
+
+// === Visual Redesign ===
+.self_order_popup_table,
+.select_popup_preset_info {
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
+}

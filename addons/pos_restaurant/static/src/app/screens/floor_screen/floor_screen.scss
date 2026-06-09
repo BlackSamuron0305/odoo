@@ -57,3 +57,13 @@
 .floor-screen:where(:has(.table-selector-small)) .floor-kanban {
     padding-bottom: 80px !important;
 }
+
+// === Visual Redesign ===
+.floor-map .table-handle {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.floor-kanban .btn {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease, background-color 0.15s ease;
+}

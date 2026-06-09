@@ -55,3 +55,11 @@
         }
     }
 }
+
+// === Visual Redesign ===
+.o_widget_internal_resume_lines .o_data_row td.o_resume_timeline_cell {
+    div {
+        background-color: $o-brand-primary;
+        border-radius: 50%;
+    }
+}

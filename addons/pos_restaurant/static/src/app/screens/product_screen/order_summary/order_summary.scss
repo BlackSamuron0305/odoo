@@ -1,3 +1,9 @@
 .h-unset {
     height: unset !important;
 }
+
+// === Visual Redesign ===
+.order-summary-container {
+    border-radius: 6px;
+    overflow: hidden;
+}

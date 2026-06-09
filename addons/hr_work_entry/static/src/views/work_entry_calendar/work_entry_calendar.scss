@@ -17,3 +17,9 @@
 		}
 	}
 }
+
+// === Visual Redesign ===
+.o_calendar_header [class*="o_gantt_color_"] {
+    border-radius: 4px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}

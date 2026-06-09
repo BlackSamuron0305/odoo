@@ -2,5 +2,12 @@
     .o_contact_image_large img {
         width: 155px;
         height: 155px;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 4px 16px rgba(99, 88, 165, 0.25);
+        }
     }
 }

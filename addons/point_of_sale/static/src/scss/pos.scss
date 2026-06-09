@@ -223,3 +223,17 @@ body.modal-open {
 .pos .internal-note-container span > div {
     white-space: normal;
 }
+
+// === Visual Redesign: transitions & accents ===
+.pos .navbar {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pos .numpad button {
+    border-radius: 6px;
+}
+
+.order-widget .orderline {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+}

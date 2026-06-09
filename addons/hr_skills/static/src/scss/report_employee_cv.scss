@@ -238,9 +238,18 @@ div.o_employee_cv {
         .o_main_panel_skill_progress_bar {
             height: 12px;
             background: $progess-bar-background;
-            border-radius: 2px;
+            border-radius: 6px;
             background-clip: padding-box;
+            overflow: hidden;
         }
+    }
+}
+
+// === Visual Redesign ===
+div.o_employee_cv {
+    .o_main_panel_title {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+        padding-bottom: 8px;
     }
 }
 

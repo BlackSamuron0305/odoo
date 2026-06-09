@@ -30,3 +30,9 @@ option.ptav-not-available {
 .price-extra-cell {
     width: max-content;
 }
+
+// === Visual Redesign ===
+.configurator_color {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+}

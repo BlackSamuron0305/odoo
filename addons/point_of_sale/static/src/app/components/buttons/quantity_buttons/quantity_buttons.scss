@@ -25,3 +25,11 @@ input[name="pos_quantity"] {
   padding-right: 0.75rem !important;
   padding-left: 0.75rem !important;
 }
+
+// === Visual Redesign ===
+.quantity-buttons {
+    .btn {
+        border-radius: 6px;
+        transition: background-color 0.15s ease, color 0.15s ease;
+    }
+}

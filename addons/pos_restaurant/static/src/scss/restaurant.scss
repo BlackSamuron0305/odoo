@@ -65,4 +65,11 @@
 
 .submit-order, .set-table, .new-tab, .assign-button, .plan-button {
     min-height: 70px;
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+}
+
+// === Visual Redesign ===
+.tip-cell input:focus {
+    border-color: #6358a5;
 }

@@ -34,3 +34,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+// === Visual Redesign ===
+.actionpad .btn {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease, background-color 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+}

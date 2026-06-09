@@ -10,3 +10,14 @@
         }
     }
 }
+
+// === Visual Redesign ===
+.combo-configurator-popup {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.combo-item {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+}

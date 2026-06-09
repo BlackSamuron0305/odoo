@@ -1,3 +1,10 @@
 .o_field_many2one_tags_skills a.o_delete {
   color: inherit;
 }
+
+// === Visual Redesign ===
+.o_field_many2one_tags_skills .badge {
+    border-radius: 50rem;
+    font-weight: 500;
+    transition: box-shadow 0.15s ease;
+}

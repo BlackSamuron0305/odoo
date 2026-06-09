@@ -136,3 +136,15 @@
 
    }
  }
+
+// === Visual Redesign ===
+.o_self_product_list_page {
+    .o_self_product_box {
+        transition: box-shadow 0.15s ease;
+    }
+
+    .category_btn {
+        border-radius: 50rem;
+        transition: background-color 0.15s ease, box-shadow 0.15s ease;
+    }
+}

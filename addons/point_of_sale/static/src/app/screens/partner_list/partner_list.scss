@@ -35,3 +35,12 @@
         }
     }
 }
+
+// === Visual Redesign ===
+.partner-list tr {
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.04);
+    }
+}

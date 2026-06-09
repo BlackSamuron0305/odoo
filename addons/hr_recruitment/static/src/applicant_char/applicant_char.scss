@@ -1,5 +1,7 @@
 .o_field_applicant_char {
     color: $link-color;
+    font-weight: 600;
+    transition: color 0.15s ease;
 
     &:hover {
         color: $link-hover-color;

@@ -1,3 +1,9 @@
 input#hr_presence_control_email_amount {
     max-width: 5rem;
 }
+
+// === Visual Redesign ===
+.o_settings_container .o_setting_box_title,
+.o_form_label.o_setting_box_title {
+    font-weight: 600;
+}

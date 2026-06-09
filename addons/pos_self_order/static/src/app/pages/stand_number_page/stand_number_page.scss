@@ -3,11 +3,13 @@
 .numpad-so {
     background-color: $o-white;
     border-radius: $border-radius-xl;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 
     & button {
         background-color: $o-white;
         min-height: 5vh;
         font-size: 1.8rem !important;
+        transition: background-color 0.15s ease;
 
         &::after {
             border: $border-width solid $o-gray-200;

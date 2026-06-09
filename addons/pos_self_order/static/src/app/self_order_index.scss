@@ -223,3 +223,8 @@ $shadow-sizes: sm, md, lg, xl;
 .border-light{
    border-color: var(--border-light-color) !important;
 }
+
+// === Visual Redesign ===
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(99, 88, 165, 0.2);
+}

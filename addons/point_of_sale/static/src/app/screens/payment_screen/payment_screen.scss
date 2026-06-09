@@ -56,3 +56,17 @@
 .fade-effect {
   animation: fadeInOut 1000ms ease-in-out;
 }
+
+// === Visual Redesign ===
+.paymentmethod {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease, background-color 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.paymentline.selected {
+    border-radius: 6px;
+}

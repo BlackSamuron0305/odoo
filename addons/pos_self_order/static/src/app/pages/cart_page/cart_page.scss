@@ -39,3 +39,8 @@
       }
    }
 }
+
+// === Visual Redesign ===
+.o_self_cart_page .order_box {
+    transition: box-shadow 0.15s ease;
+}

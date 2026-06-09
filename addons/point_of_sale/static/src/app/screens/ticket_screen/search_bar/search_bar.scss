@@ -32,3 +32,19 @@
         padding-left: 10px;
     }
 }
+
+// === Visual Redesign ===
+.search input {
+    border-radius: 50rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:focus {
+        border-color: $o-brand-primary;
+        box-shadow: 0 0 0 0.2rem rgba(99, 88, 165, 0.2);
+    }
+}
+
+.fields {
+    border-radius: 6px;
+    overflow: hidden;
+}

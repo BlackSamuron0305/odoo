@@ -41,3 +41,13 @@
 
     @include hide-scrollbar;
 }
+
+// === Visual Redesign ===
+.accordion-header {
+    transition: color 0.15s ease;
+    cursor: pointer;
+
+    &.open {
+        color: $o-brand-primary;
+    }
+}

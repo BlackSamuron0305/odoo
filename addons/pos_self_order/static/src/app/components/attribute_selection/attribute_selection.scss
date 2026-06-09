@@ -8,3 +8,9 @@
     }
 
 }
+
+// === Visual Redesign ===
+.self_order_attribute_selection .btn {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease, background-color 0.15s ease;
+}
