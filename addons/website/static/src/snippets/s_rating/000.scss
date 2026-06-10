@@ -53,4 +53,9 @@
     > .s_rating_1x { .fa { @include font-size(1em); }; }
     > .s_rating_2x { .fa { @include font-size(2em); }; }
     > .s_rating_3x { .fa { @include font-size(3em); }; }
+
+    // Visual polish: smooth transition on rating icons
+    .fa {
+        transition: color 0.15s ease, transform 0.15s ease;
+    }
 }

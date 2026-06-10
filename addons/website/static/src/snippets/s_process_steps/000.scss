@@ -50,4 +50,10 @@
             }
         }
     }
+
+    // Visual polish: brand color accent on step icon
+    .s_process_step_icon .fa {
+        transition: color 0.15s ease;
+        color: #6358a5;
+    }
 }

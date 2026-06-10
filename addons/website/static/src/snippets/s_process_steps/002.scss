@@ -56,4 +56,18 @@
             display: none;
         }
     }
+
+    // Visual polish: brand color on step connector and number border
+    .s_process_step_connector path {
+        stroke: rgba(99, 88, 165, 0.4);
+    }
+
+    .s_process_step_number {
+        border-color: rgba(99, 88, 165, 0.3);
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 0 0 3px rgba(99, 88, 165, 0.15);
+        }
+    }
 }

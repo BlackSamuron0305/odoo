@@ -2,8 +2,8 @@
     .modal-content {
         min-height: $font-size-lg * 2;
         border: 0;
-        border-radius: 0;
-        box-shadow: $modal-content-box-shadow-sm-up;
+        border-radius: 10px; // Visual polish: rounded popup corners
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
     }
 
     // Close icon

@@ -9,6 +9,8 @@
             padding-left: 2.25em;
             border-radius: 0;
             outline: none;
+            // Visual polish: smooth hover transition
+            transition: background-color 0.15s ease, color 0.15s ease;
             &:before {
                 content: '\f056';
                 font-family: 'FontAwesome';

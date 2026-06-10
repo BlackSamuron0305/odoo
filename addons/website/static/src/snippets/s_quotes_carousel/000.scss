@@ -21,4 +21,16 @@
             }
         }
     }
+
+    // Visual polish: brand left-border and hover shadow on blockquote
+    blockquote {
+        border-left: 3px solid #6358a5;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+    }
 }

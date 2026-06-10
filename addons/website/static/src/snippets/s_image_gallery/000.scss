@@ -149,6 +149,18 @@
     .carousel-inner .item img {
         max-width: none;
     }
+
+    // Visual polish: image hover scale effect in grid/masonry
+    &:not(.o_slideshow) {
+        img {
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+            &:hover {
+                transform: scale(1.03);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
 }
 
 // Note: the s_gallery_lightbox is always using the right dom and classes of the

@@ -11,4 +11,13 @@
             flex-grow: 1;
         }
     }
+
+    // Visual polish: hover background on menu items
+    .nav-link {
+        transition: background-color 0.15s ease;
+
+        &:hover, &:focus {
+            background: rgba(0, 0, 0, .04);
+        }
+    }
 }

@@ -1,5 +1,11 @@
 // Tabs
 .s_tabs[data-vcss="001"] {
+    // Visual polish: brand color on active tab indicator
+    .nav-tabs .nav-link.active,
+    .nav-underline .nav-link.active {
+        border-bottom-color: #6358a5;
+    }
+
     .s_tabs_content {
         &.s_tabs_slide_up, &.s_tabs_slide_down, &.s_tabs_slide_left, &.s_tabs_slide_right {
             > .tab-pane.fade {

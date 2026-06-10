@@ -5,4 +5,25 @@
             height: 8rem;
         }
     }
+
+    // Visual polish: avatar circle, name semibold, card hover
+    img.o_editable_media, img.rounded-circle {
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    h4, h5, .s_company_team_name {
+        font-weight: 600;
+    }
+
+    [class*="col-"] {
+        transition: transform 0.15s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
 }

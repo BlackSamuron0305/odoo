@@ -36,6 +36,13 @@
     }
     [data-url] {
         cursor: pointer;
+
+        // Visual polish: smooth hover transition for clickable entries
+        transition: opacity 0.15s ease;
+
+        &:hover {
+            opacity: 0.85;
+        }
     }
     img {
         object-fit: scale-down;

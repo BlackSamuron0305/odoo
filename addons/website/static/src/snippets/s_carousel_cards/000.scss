@@ -42,6 +42,15 @@
             padding: 0 var(--CardBody-padding);
         }
 
+        // Visual polish: hover shadow on cards within carousel
+        .s_card {
+            transition: box-shadow 0.15s ease;
+
+            &:hover {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            }
+        }
+
         @include media-breakpoint-up(lg) {
             &.s_carousel_cards_with_img {
 

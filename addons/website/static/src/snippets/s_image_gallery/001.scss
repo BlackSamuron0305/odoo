@@ -82,6 +82,14 @@
     &:not(.o_slideshow) {
         img {
             cursor: pointer;
+
+            // Visual polish: smooth hover effect
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+            &:hover {
+                transform: scale(1.03);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            }
         }
     }
     &.o_slideshow {

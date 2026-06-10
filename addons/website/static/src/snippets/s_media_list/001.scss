@@ -8,4 +8,14 @@
     .s_media_list_img {
         object-fit: cover;
     }
+
+    // Visual polish: hover shadow on list items
+    .s_media_list_item {
+        border-radius: 6px;
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+    }
 }

@@ -63,4 +63,11 @@
         flex: 0 0 auto;
         margin: var(--spacing);
     }
+
+    // Visual polish: brand color on timeline vertical line
+    .s_timeline_line {
+        &:before {
+            border-color: #6358a5 !important;
+        }
+    }
 }

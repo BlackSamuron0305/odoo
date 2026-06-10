@@ -26,6 +26,15 @@
             margin: .2rem;
         }
     }
+    // Visual polish: smooth transition on social icons
+    a {
+        transition: opacity 0.15s ease, transform 0.15s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
     &:not(.no_icon_color) {
         .s_social_media_facebook {
             &, &:hover, &:focus {

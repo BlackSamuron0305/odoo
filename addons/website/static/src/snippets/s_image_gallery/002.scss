@@ -86,6 +86,30 @@
     &:not(.o_slideshow) {
         img {
             cursor: pointer;
+
+            // Visual polish: smooth hover scale for gallery images
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+            &:hover {
+                transform: scale(1.03);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+
+    // Visual polish: brand color on active carousel indicator dot
+    &.o_slideshow {
+        .carousel-indicators > button {
+            transition: opacity 0.15s ease, transform 0.15s ease;
+
+            &.active {
+                background-color: #6358a5;
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            transition: background-color 0.15s ease, opacity 0.15s ease;
         }
     }
 

@@ -3298,3 +3298,25 @@ input[value*="data-oe-translation-source-sha"] {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     }
 }
+
+// Visual polish: dropdown menu shadow and radius
+.dropdown-menu {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+// Visual polish: dropdown item hover transition
+.dropdown-item {
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+// Visual polish: carousel control hover transition
+.carousel-control-prev,
+.carousel-control-next {
+    transition: opacity 0.15s ease;
+}
+
+.carousel-indicators > button,
+.carousel-indicators > li {
+    transition: opacity 0.15s ease, background-color 0.15s ease;
+}

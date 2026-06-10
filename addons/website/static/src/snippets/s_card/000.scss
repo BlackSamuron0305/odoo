@@ -12,6 +12,14 @@
     min-width: MIN(18rem, 100%);
     margin: $grid-gutter-width/2 0;
 
+    // Visual polish: hover shadow and smooth transition
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
     .o_card_img {
         width: 100%;
         object-fit: cover;

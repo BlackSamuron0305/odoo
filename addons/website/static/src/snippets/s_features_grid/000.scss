@@ -9,5 +9,21 @@
     .s_features_grid_icon {
         float: left;
         margin-right: $grid-gutter-width/2;
+
+        // Visual polish: hover accent color on icon
+        transition: color 0.15s ease;
+    }
+
+    // Visual polish: hover lift on feature items
+    .row > [class*="col-"] {
+        transition: transform 0.15s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+        &:hover .s_features_grid_icon {
+            color: #6358a5;
+        }
     }
 }

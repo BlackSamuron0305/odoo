@@ -2,6 +2,11 @@
     --tabs-bg-color: #{$gray-100};
     --tabs-link-color: #{$body-color};
 
+    // Visual polish: brand color on active underline/nav tab
+    .nav-underline .nav-link.active {
+        border-bottom-color: #6358a5;
+    }
+
     .nav-link:focus-visible {
         // Replace "focus-visible" shadow with an inner shadow so that it's visible with container
         // that use "overflow: hidden".
