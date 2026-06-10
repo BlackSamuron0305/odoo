@@ -18,5 +18,15 @@
         @include o-bg-color(color-contrast(o-color('primary')), o-color('primary'), $with-extras: false);
         box-shadow: $box-shadow-sm;
         opacity: 1;
+        border-radius: 0 10px 0 6px;
+    }
+}
+
+// --- Visual polish (redesign) ---
+.o_newsletter_modal {
+    .modal-content {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
 }

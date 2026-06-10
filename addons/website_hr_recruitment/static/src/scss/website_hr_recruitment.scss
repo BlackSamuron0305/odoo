@@ -59,6 +59,16 @@
     color: #35979c;
 }
 
+// --- Visual polish (redesign) ---
+.o_website_hr_recruitment_jobs_list {
+    #jobs_grid {
+        .card {
+            border-radius: 6px;
+            overflow: hidden;
+        }
+    }
+}
+
 .o_resume_input {
     border-color: #35979c;
 }

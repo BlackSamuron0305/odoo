@@ -4,4 +4,10 @@
     // LivechatButton size + margin + arbitrary gap.
     inset-inline-end: calc(56px + #{$-o-livechat-button-margin} + 1rem);
     inset-block-end: var(--cookies-bar-toggle-inset-block-end, #{$-o-livechat-button-margin});
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
 }

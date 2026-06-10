@@ -1,6 +1,14 @@
 // Quest - Course Card
 .o_wprofile_slides_course_card_body {
     cursor: pointer;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    border-radius: 6px;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        transform: translateY(-2px);
+    }
 
     .o_wslides_background_image {
         background-size: cover;
@@ -10,5 +18,6 @@
          width: 100px;
          height: 100px;
          object-fit: cover;
+         border-radius: 50%;
     }
 }

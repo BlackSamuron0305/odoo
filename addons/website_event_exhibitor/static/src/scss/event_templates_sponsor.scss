@@ -53,6 +53,8 @@
     background-color: $white;
     margin: 0 -1px -1px 0;
     cursor: pointer;
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
 
     &:before {
         content: "";
@@ -65,5 +67,9 @@
 
     &:hover:before {
         opacity:.1;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
 }

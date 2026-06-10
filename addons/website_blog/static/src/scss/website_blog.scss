@@ -332,3 +332,17 @@ $o-wblog-loader-size: 50px;
         background-color: rgba(black, 0.7);
     }
 }
+
+// --- Visual polish (redesign) ---
+.website_blog {
+    .o_wblog_post_list_author {
+        .o_wblog_post_list_author_img {
+            border-radius: 50%;
+            transition: transform 0.15s ease;
+
+            &:hover {
+                transform: scale(1.08);
+            }
+        }
+    }
+}

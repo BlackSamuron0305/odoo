@@ -81,3 +81,10 @@ body {
     // rtlcss for right-to-left text direction.
     direction: ltr;
 }
+
+// --- Visual polish (redesign) ---
+html:has(.o_layout) {
+    .editor_enable .o_mail_wrapper_td.oe_empty:empty:not(:focus) {
+        border-radius: 6px;
+    }
+}

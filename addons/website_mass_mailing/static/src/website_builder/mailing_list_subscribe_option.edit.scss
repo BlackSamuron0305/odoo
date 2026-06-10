@@ -7,3 +7,11 @@
         display: none !important;
     }
 }
+
+// --- Visual polish (redesign) ---
+.s_newsletter_subscribe_form {
+    .o_enable_preview {
+        border-radius: 6px;
+        transition: opacity 0.15s ease;
+    }
+}

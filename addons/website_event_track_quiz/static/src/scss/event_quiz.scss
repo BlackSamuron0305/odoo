@@ -32,6 +32,12 @@ $o-wslides-fs-side-width: 300px;
     .o_quiz_js_quiz_question {
         .list-group-item  {
             @include font-size(1rem);
+            transition: background-color 0.15s ease;
+            border-radius: 6px;
+
+            &:hover:not(.active) {
+                background-color: rgba(99, 88, 165, 0.05);
+            }
 
             input:checked + i.fa-circle {
                 color: $primary !important;

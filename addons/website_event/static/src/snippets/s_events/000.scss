@@ -65,3 +65,19 @@
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.s_dynamic {
+    &.s_event_event_card {
+        .card {
+            transition: box-shadow 0.15s ease, transform 0.15s ease;
+            border-radius: 6px;
+            overflow: hidden;
+
+            &:hover {
+                box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+                transform: translateY(-2px);
+            }
+        }
+    }
+}

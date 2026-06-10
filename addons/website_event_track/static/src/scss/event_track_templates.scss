@@ -194,3 +194,22 @@
         border-bottom-color: transparent !important;
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_we_online_agenda {
+    table {
+        td.event_track {
+            transition: box-shadow 0.15s ease;
+
+            &:hover > div {
+                background-color: rgba(99, 88, 165, 0.05);
+            }
+        }
+    }
+}
+
+.o_weagenda_index {
+    .o_we_track_day_header {
+        border-radius: 6px 6px 0 0;
+    }
+}

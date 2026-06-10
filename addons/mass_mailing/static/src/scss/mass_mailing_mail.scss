@@ -65,3 +65,8 @@ body:has(.o_layout) {
 :root {
     --o-border-color: #{o-color('300')};
 }
+
+// --- Visual polish (redesign) ---
+.o_layout .badge {
+    border-radius: 10px;
+}

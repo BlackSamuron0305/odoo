@@ -66,3 +66,16 @@
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.s_dynamic_snippet_category {
+    .s_dynamic_category_item,
+    .s_dynamic_category_wrapper_demo {
+        transition: box-shadow 0.15s ease;
+        border-radius: 6px;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+    }
+}

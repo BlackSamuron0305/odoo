@@ -26,6 +26,13 @@ body.editor_enable {
 // Preview Components (/shop)
 // ==========================
 body.editor_enable:has(.o_wsale_edit_preview_enabled) {
+    // Visual polish: rounded offcanvas preview
+    .o_wsale_previewing_offcanvas {
+        #o_wsale_offcanvas {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}
     // Hide default handles when other elements are highlighted
     &:has(.o_wsale_previewing_sidebar),
     &:has(.o_wsale_previewing_filmstrip),

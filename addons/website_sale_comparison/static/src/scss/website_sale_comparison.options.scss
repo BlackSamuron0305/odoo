@@ -7,6 +7,7 @@
     .o_add_compare, .o_add_to_compare {
         display: var(--o-wsale-comparison-btn-display, none);
         order: var(--o-wsale-comparison-btn-order);
+        transition: opacity 0.15s ease;
     }
 
     .o_add_compare_placeholder, .o_add_to_compare_placeholder {

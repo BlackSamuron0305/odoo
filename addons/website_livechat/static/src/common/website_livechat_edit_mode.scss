@@ -8,3 +8,10 @@ body.editor_enable .o-livechat-root {
 body.o_website_o_website_preview:not(.o_builder_open) .o-mail-ChatHub {
     visibility: hidden;
 }
+
+// --- Visual polish (redesign) ---
+body:not(.editor_enable) .o-livechat-root {
+    &::part(openChatButton) {
+        transition: box-shadow 0.15s ease;
+    }
+}

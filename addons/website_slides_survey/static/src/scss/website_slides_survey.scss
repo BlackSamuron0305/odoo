@@ -29,3 +29,15 @@ $o_wss_color_2 : #485761;
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_wss_certification_icon {
+    border-radius: 50%;
+}
+
+#wrap.o_wss_certification_channel {
+    .o_wslides_nav_tabs .nav-link {
+        transition: border-color 0.15s ease, color 0.15s ease;
+        border-radius: 6px 6px 0 0;
+    }
+}

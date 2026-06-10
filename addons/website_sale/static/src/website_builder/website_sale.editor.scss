@@ -72,3 +72,12 @@
     vertical-align: middle;
     border-radius: 50%;
 }
+
+// --- Visual polish (redesign) ---
+.o_wsale_color_preview {
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 0 0 2px #6358a5;
+    }
+}

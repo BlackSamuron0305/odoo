@@ -1366,3 +1366,17 @@ $_wsale_products_roundness_map: (
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.oe_product_cart {
+    .oe_product_image {
+        border-radius: 6px;
+        overflow: hidden;
+        transition: transform 0.15s ease;
+    }
+
+    &:hover .oe_product_image,
+    &:has(:focus-visible) .oe_product_image {
+        transform: scale(1.03);
+    }
+}

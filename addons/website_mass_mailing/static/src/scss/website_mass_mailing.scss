@@ -5,3 +5,25 @@
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.s_newsletter_subscribe_form {
+    .form-control {
+        border-radius: 6px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+        &:focus {
+            border-color: #6358a5;
+            box-shadow: 0 0 0 0.2rem rgba(99, 88, 165, 0.15);
+        }
+    }
+
+    .btn {
+        border-radius: 6px;
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+    }
+}

@@ -24,3 +24,17 @@ table.o_section_list_view tr.o_data_row.o_is_section {
     border-top: 1px solid #BBB;
     border-bottom: 1px solid #BBB;
 }
+
+// --- Visual polish (redesign) ---
+.o_kanban_view.o_slide_kanban .o_kanban_renderer {
+    .o_kanban_record {
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+        border-radius: 6px;
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+        }
+    }
+}

@@ -21,3 +21,15 @@
         color: inherit !important;
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_sale_product_configurator_dialog {
+    .modal-content {
+        border-radius: 10px;
+    }
+
+    .o_sale_product_configurator_img {
+        border-radius: 6px;
+        overflow: hidden;
+    }
+}

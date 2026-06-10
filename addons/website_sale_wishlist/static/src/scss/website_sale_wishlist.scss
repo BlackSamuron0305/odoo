@@ -254,3 +254,12 @@
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_wish_rm {
+    transition: opacity 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

@@ -19,3 +19,17 @@
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_configurator_container .o_wsale_configurator_screen.o_configurator_screen {
+    .theme_preview {
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+    }
+}

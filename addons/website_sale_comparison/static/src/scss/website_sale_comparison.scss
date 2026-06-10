@@ -144,3 +144,18 @@
         bottom: calc(var(--_container-gap) + var(--o-wsale-comparison-bottom-bar-height)) !important;
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_wsale_comparison_page {
+    .o_wsale_compare_table_column img {
+        border-radius: 6px;
+    }
+
+    #o_comparelist_table th {
+        background-color: rgba(99, 88, 165, 0.04);
+    }
+}
+
+#product_full_spec th {
+    background-color: rgba(99, 88, 165, 0.04);
+}

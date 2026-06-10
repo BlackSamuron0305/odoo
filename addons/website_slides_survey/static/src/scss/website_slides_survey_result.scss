@@ -13,3 +13,9 @@ so it won't affect the rest of the website pages.
 #wrapwrap .modal {
     top: 0;
 }
+
+// --- Visual polish (redesign) ---
+#wrapwrap .modal .modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}

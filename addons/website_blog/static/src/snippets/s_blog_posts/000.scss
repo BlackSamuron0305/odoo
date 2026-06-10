@@ -225,3 +225,17 @@
         box-shadow: $box-shadow-sm;
     }
 }
+
+// --- Visual polish (redesign) ---
+.s_dynamic.s_blog_post_card:not([class*="s_blog_posts_effect"]) {
+    .s_blog_posts_post {
+        border-radius: 6px;
+        overflow: hidden;
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+        }
+    }
+}

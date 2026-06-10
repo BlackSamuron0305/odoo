@@ -772,3 +772,21 @@ li.o_wslides_fs_sidebar_list_item.active {
 .oe_show_footer {
     z-index: $MAX-Z-INDEX; // Looks terrible but seems necessary due to fullscreen & canvas in PDFSlidesViewer
 }
+
+// --- Visual polish (redesign) ---
+.o_wslides_body {
+    .o_wslides_lesson_card {
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+        border-radius: 6px;
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.o_wslides_course_pict {
+    border-radius: 6px 6px 0 0;
+}

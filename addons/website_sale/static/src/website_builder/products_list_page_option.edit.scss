@@ -165,6 +165,14 @@ body.editor_enable:has(.o_wsale_edit_preview_enabled) {
         opacity: 1;
       }
   }
+
+// --- Visual polish (redesign) ---
+.o_wsale_products_list_page_options {
+    .o_wsale_option_preview {
+        border-radius: 6px;
+        overflow: hidden;
+    }
+}
   .o_wsale_floating_bar_preview {
     transform: translateY(100%);
     opacity: 0;

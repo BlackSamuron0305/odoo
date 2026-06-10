@@ -5,3 +5,10 @@
         width: 100% !important;
     }
 }
+
+// --- Visual polish (redesign) ---
+@include media-breakpoint-down(md) {
+    .o_mailing_filter_container {
+        border-radius: 6px;
+    }
+}

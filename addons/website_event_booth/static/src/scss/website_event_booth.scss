@@ -69,3 +69,15 @@ label.o_wbooth_category_unavailable {
 .o_wevent_booth_category {
     background-color: $o-wevent-bg-color-light;
 }
+
+// --- Visual polish (redesign) ---
+.o_wbooth_registration_form label:not(.o_wbooth_category_unavailable) > input + div {
+    transition: box-shadow 0.15s ease, opacity 0.15s ease;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.o_wbooth_booths .form-check > input + label {
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    border-radius: 6px;
+}

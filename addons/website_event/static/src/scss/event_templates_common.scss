@@ -97,3 +97,20 @@ $o-wevent-color: $body-color;
         z-index: $zindex-dropdown - 1;
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_wevent_index, .o_wevent_event {
+    .o_wesession_list_item {
+        transition: background-color 0.15s ease, box-shadow 0.15s ease;
+        border-radius: 0 6px 6px 0;
+    }
+
+    a.o_wesession_list_item:hover {
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .event_track > div {
+        border-radius: 6px;
+        transition: box-shadow 0.15s ease;
+    }
+}

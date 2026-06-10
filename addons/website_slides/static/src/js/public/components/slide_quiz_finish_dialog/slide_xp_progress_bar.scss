@@ -1,4 +1,19 @@
 .o_wlides_xp_progressbar_tooltip {
     top: -14px;
     max-width: 3rem;
+    color: #6358a5;
+    font-weight: bold;
+}
+
+// --- Visual polish (redesign) ---
+.o_wslides_xp_progressbar {
+    .progress {
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        background-color: #6358a5;
+        transition: width 0.3s ease;
+    }
 }

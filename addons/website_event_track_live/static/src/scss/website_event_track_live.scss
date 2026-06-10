@@ -39,6 +39,7 @@
         .owevent_track_suggestion_next {
             background-color: rgba(0,0,0,.5);
             transition: background-color .3s linear;
+            border-radius: 6px;
             &:hover {
                 cursor: pointer;
                 background-color: rgba(0,0,0,.9);
@@ -50,4 +51,10 @@
             }
         }
     }
+}
+
+// --- Visual polish (redesign) ---
+#o_wevent_youtube_iframe_container {
+    border-radius: 6px;
+    overflow: hidden;
 }

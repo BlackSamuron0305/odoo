@@ -10,6 +10,7 @@
         background: var(--badge-bg, var(--background-color)) !important;
         color: var(--badge-color, var(--color)) !important;
         border: $border-width solid var(--badge-border-color) !important;
+        border-radius: 10px;
 
         @each $-color, $-value in $theme-colors {
             &.text-bg-#{$-color} {

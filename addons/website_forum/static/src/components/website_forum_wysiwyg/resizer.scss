@@ -7,6 +7,12 @@
     border-right: $o-we-border-width solid $o-we-fg-light;
     cursor: row-resize;
     padding-top: 1px;
+    border-radius: 0 0 6px 6px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.08);
+    }
 }
 .o_wysiwyg_resizer_hook {
     width: 20px;

@@ -22,6 +22,7 @@
         box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075);
         @include font-size(1rem);
         z-index: $zindex-tooltip;
+        border-radius: 6px 6px 0 0;
 
         .o_btn_close {
             margin-left: 0;
@@ -30,6 +31,11 @@
 
         .o_btn_install {
             margin-left: auto;
+            transition: box-shadow 0.15s ease;
+
+            &:hover {
+                box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            }
         }
     }
 }

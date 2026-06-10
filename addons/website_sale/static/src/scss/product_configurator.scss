@@ -189,6 +189,23 @@ select.form-select.css_attribute_select {
     }
 }
 
+// --- Visual polish (redesign) ---
+.variant_attribute {
+    .o_variant_pills {
+        transition: border-color 0.15s ease, background-color 0.15s ease;
+        border-radius: 6px;
+
+        &:not(.css_not_available):hover {
+            border-color: #6358a5;
+        }
+
+        &.active {
+            border-color: #6358a5;
+            background-color: rgba(99, 88, 165, 0.08);
+        }
+    }
+}
+
 label.css_attribute_color.css_not_available {
     &:after {
         content: "";

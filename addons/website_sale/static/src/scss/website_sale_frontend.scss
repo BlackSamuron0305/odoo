@@ -52,3 +52,13 @@
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_wsale_image_viewer {
+    .o_wsale_image_viewer_carousel {
+        ol li > div img.o_wsale_image_viewer_thumbnail {
+            border-radius: 6px;
+            transition: border-color 0.15s ease, opacity 0.15s ease;
+        }
+    }
+}

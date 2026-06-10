@@ -8,3 +8,11 @@ body.editor_enable {
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+body.editor_enable {
+    .s_newsletter_subscribe_form .o_enable_preview {
+        border-radius: 6px;
+        transition: opacity 0.15s ease;
+    }
+}

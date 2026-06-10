@@ -2064,3 +2064,18 @@ div[name="order_confirmation"] {
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+:where(#o_wsale_container) {
+    #products_grid_before {
+        .nav-link,
+        .list-group-item {
+            transition: color 0.15s ease, background-color 0.15s ease;
+            border-radius: 6px;
+
+            &:hover {
+                color: #6358a5;
+            }
+        }
+    }
+}

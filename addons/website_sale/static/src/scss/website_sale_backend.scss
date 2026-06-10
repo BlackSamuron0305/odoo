@@ -79,3 +79,21 @@
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_website_sale_image_list .o_kanban_view.o_kanban_ungrouped {
+    .o_kanban_record {
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        border-radius: 6px;
+        overflow: hidden;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+    }
+}
+
+.o_website_sale_image_modal .o_website_sale_image_modal_container .o_field_image > img {
+    border-radius: 6px;
+}

@@ -10,5 +10,6 @@ section[data-filter-domain]:not([data-filter-domain="[]"]) {
         content: "\f070";
         font-size: xx-large;
         color: $o-we-color-accent;
+        transition: opacity 0.15s ease;
     }
 }

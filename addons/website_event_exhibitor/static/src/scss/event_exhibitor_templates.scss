@@ -121,3 +121,24 @@
         }
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_wesponsor_index {
+    .o_wesponsor_card {
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+        border-radius: 6px;
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+        }
+    }
+
+    .o_wevent_online_page_container .o_wesponsor_exhibitor_aside {
+        .o_wesponsor_aside_logo {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}

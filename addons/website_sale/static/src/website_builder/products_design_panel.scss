@@ -37,3 +37,14 @@
         display: none;
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_wsale_editor_overlay {
+    .o_wsale_design_panel {
+        .o_wsale_design_panel_section_title {
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            font-size: 0.75em;
+        }
+    }
+}

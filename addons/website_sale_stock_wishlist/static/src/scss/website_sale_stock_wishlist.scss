@@ -21,3 +21,9 @@
         margin-top: var(--o-wsale-card-info-description-margin-bottom, #{map-get($spacers, 2)});
     }
 }
+
+// --- Visual polish (redesign) ---
+.o_wsale_stock_badge {
+    border-radius: 6px;
+    transition: opacity 0.15s ease;
+}
