@@ -1,3 +1,7 @@
+// Masonry block 001 — card border polish
+.o_mail_snippet_general.s_masonry_block[data-vcss='001'] .row > div > * {
+    border-radius: 6px;
+}
 .o_mail_snippet_general.s_masonry_block[data-vcss='001'] {
     .row > div {
         display: flex;

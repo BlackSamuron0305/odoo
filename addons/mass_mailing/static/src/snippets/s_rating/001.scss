@@ -3,6 +3,10 @@
     padding-right: 0!important;
 }
 
+// Rating variant 001 — star icon brand color
+.s_rating[data-vcss="001"] .s_rating_icons .fa {
+    color: #6358a5;
+}
 .s_rating[data-vcss="001"] {
     &.s_rating_inline {
         display: flex;

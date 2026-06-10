@@ -1,5 +1,10 @@
 .o_form_view {
 
+  .o_address_format .o_address_building_number,
+  .o_address_format .o_address_plot_identification {
+    border-radius: 4px;
+  }
+
   .o_address_format {
     .o_address_building_number,
     .o_address_plot_identification {
