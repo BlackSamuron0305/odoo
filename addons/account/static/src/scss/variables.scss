@@ -10,3 +10,9 @@
 .animate {
     animation: animate-red 1s ease;
 }
+
+// Visual polish: smooth fade-in for animated fields
+.o_field_widget .animate {
+    animation: animate-red 1s ease;
+    border-radius: 4px;
+}

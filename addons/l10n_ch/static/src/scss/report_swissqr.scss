@@ -146,11 +146,12 @@ body.l10n_ch_qr{
             .swissqr_section_title{
                 height: 7mm * $l10n-ch-qr-ratio;
             }
-            .swissqr {
+    .swissqr {
                 margin-top: 5mm * $l10n-ch-qr-ratio;
                 margin-bottom: 5mm * $l10n-ch-qr-ratio;
                 height: 46mm * $l10n-ch-qr-ratio;
                 width: 46mm * $l10n-ch-qr-ratio;
+                border-radius: 4px;
             }
             .amount_zone {
                 width: $left_col_width;
