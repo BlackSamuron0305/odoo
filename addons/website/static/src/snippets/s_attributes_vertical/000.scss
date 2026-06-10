@@ -6,5 +6,10 @@
         &.float-end {
             margin-inline-start: var(--s_attributes_vertical_margin, #{map-get($spacers, 3)}) !important;
         }
+        transition: transform 0.15s ease, opacity 0.15s ease;
+        &:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
     }
 }

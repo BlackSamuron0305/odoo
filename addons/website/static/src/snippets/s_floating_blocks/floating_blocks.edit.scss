@@ -10,6 +10,12 @@
             // Ensure that grid items cannot be moved outside their cards.
             overflow: hidden;
         }
+        outline: 1px dashed rgba(99, 88, 165, 0.2);
+        transition: outline-color 0.15s ease;
+
+        &:hover {
+            outline-color: rgba(99, 88, 165, 0.4);
+        }
     }
     .s_floating_blocks_alert_empty {
         cursor: pointer;

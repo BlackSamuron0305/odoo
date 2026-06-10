@@ -9,4 +9,12 @@
             display: none;
         }
     }
+
+    .row > div {
+        transition: transform 0.15s ease;
+
+        &:hover {
+            transform: translateY(-1px);
+        }
+    }
 }

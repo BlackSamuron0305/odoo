@@ -4,5 +4,10 @@
         // are images an not Font Awesome icons). Because the default
         // value of "align-self" is "strech".
         align-self: flex-start;
+        transition: transform 0.15s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 }

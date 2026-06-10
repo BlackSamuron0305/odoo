@@ -1,5 +1,15 @@
 .s_three_columns:not([data-vcss]) {
     .align-items-stretch > .card {
         height: 100%;
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+    }
+
+    [class*="col-"] {
+        transition: transform 0.15s ease;
     }
 }

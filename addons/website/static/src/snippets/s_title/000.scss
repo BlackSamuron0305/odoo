@@ -23,6 +23,11 @@
     }
     .s_title_underlined {
         @extend %o-page-header;
+        transition: opacity 0.15s ease;
+
+        &:hover {
+            opacity: 0.85;
+        }
     }
     .s_title_small_caps {
         font-variant: small-caps;
@@ -32,5 +37,9 @@
     }
     .s_title_thin {
         font-weight: 300;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        transition: opacity 0.15s ease;
     }
 }

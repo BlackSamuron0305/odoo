@@ -6,6 +6,9 @@
     }
 
     .nav-link {
+        border-radius: 6px;
+        transition: background-color 0.15s ease;
+
         &:hover, &:focus {
             background: rgba(0, 0, 0, .05);
         }

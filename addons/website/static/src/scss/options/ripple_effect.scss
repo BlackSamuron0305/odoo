@@ -14,6 +14,7 @@
     background: currentColor;
     pointer-events: none;
     transform: scale(0);
+    will-change: opacity, transform;
 }
 
 .o_js_ripple_effect {
@@ -23,6 +24,8 @@
 
     .o_ripple_item {
         display: block;
-        animation: o-btn-ripple ease-in;
+        animation: o-btn-ripple ease-out;
+        animation-duration: 0.45s;
+        animation-fill-mode: forwards;
     }
 }

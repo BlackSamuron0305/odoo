@@ -1,7 +1,13 @@
 .s_text_highlight {
     padding: 1.5rem;
     border-radius: $border-radius;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
     :last-child {
         margin-bottom: 0;
+    }
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     }
 }

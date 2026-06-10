@@ -18,4 +18,17 @@
             display: none;
         }
     }
+
+    .carousel-indicators [data-bs-target] {
+        transition: background-color 0.15s ease, transform 0.15s ease;
+
+        &.active {
+            background-color: #6358a5;
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transition: opacity 0.15s ease;
+    }
 }

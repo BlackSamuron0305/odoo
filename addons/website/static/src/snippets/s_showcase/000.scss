@@ -45,6 +45,20 @@
         margin-top: 0.6em;
         clear: both;
     }
+
+    .btn {
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            transform: translateY(-1px);
+        }
+    }
+
+    img {
+        transition: transform 0.15s ease;
+        border-radius: 6px;
+    }
 }
 
 @include media-breakpoint-down(lg) {

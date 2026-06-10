@@ -11,4 +11,18 @@
             margin-right: 0 !important;
         }
     }
+
+    .o_dot_line {
+        background-color: #6358a5;
+        opacity: 0.3;
+    }
+
+    .o_dot {
+        border-color: #6358a5;
+        transition: transform 0.15s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }

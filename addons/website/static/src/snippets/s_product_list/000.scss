@@ -11,6 +11,13 @@
         margin-bottom: 20px; // without this style the columns go directly to the top of the bellow ones.
 
         text-align: center;
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+        border-radius: 6px;
+
+        &:hover {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
 
         a {
             display: block;
@@ -19,7 +26,12 @@
         img {
             margin: auto;
             max-height: 130px;
+            transition: transform 0.15s ease;
             @include s-product-list-img-hook;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
 
         .s_product_list_item_link {

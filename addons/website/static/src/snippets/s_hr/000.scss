@@ -8,6 +8,7 @@
         // Bootstrap sets an "opacity" on hr elements, it is removed here to let
         // users set the color as they want with the editor.
         opacity: 1;
+        transition: border-color 0.15s ease;
     }
 }
 

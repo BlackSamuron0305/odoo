@@ -2,3 +2,13 @@
 .s_references .img-thumbnail {
     border: none;
 }
+
+.s_references img {
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    opacity: 0.85;
+
+    &:hover {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}

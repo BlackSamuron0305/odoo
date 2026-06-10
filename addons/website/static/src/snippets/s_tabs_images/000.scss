@@ -15,4 +15,8 @@
         background: var(--#{$prefix}nav-pills-link-active-bg) !important;
         color: var(--#{$prefix}nav-pills-link-active-color) !important;
     }
+
+    .nav-link {
+        transition: background-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+    }
 }

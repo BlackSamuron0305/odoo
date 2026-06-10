@@ -5,6 +5,7 @@
     .s_announcement_scroll_marquee_item {
         white-space: preserve nowrap;
         caret-color: transparent; // o_not_editable doesn't hide the caret on Firefox
+        will-change: transform;
 
         @media (prefers-reduced-motion: reduce) {
             & {

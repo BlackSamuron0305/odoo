@@ -2,6 +2,9 @@
 // ======================
 .o_snippet_preview_wrap {
     .s_color_blocks_2 {
+        border-radius: 6px;
+        overflow: hidden;
+
         > .container, > .container-fluid, > .o_container_small {
             > .row > [class*="col-lg-"] {
                 // Force interpretation of vw units.

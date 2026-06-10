@@ -1,3 +1,14 @@
 .s_social_media:has(a) .o_empty_social_media_alert {
     display: none !important;
 }
+
+// Edit mode brand overlay hint
+.s_social_media {
+    outline: 1px dashed rgba(99, 88, 165, 0.2);
+    border-radius: 6px;
+    transition: outline-color 0.15s ease;
+
+    &:hover {
+        outline-color: rgba(99, 88, 165, 0.4);
+    }
+}

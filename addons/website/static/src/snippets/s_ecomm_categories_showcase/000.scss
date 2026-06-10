@@ -18,6 +18,11 @@
         width: var(--ecomm-categories-showcase-width);
         overflow: hidden;
         min-height: 45vh;
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
 
         .s_ecomm_categories_showcase_row {
             height: var(--ecomm-categories-showcase-row-height);

@@ -8,3 +8,12 @@
         --grid-item-padding-x: 0px;
     }
 }
+
+.s_masonry_block[data-vcss='001'] img {
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        transform: scale(1.01);
+    }
+}

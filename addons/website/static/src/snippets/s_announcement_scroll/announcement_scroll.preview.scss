@@ -10,3 +10,9 @@
         animation: o-marquee-scroll-left linear infinite 10s;
     }
 }
+
+// Preview container polish
+.o_snippet_preview_wrap [data-snippet="s_announcement_scroll"] {
+    border-radius: 6px;
+    overflow: hidden;
+}
