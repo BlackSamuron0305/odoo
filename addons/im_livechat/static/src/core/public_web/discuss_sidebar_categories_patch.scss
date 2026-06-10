@@ -2,3 +2,14 @@
     right: 11px;
     bottom: 1px;
 }
+
+.o-mail-DiscussSidebarCategory.o-livechat {
+    .o-mail-DiscussSidebarCategory-header {
+        border-radius: 6px;
+        transition: background-color 0.15s ease;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+}

@@ -3,3 +3,23 @@
         display: inline !important,
     }
 }
+
+.MRW-RelayPoint {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.MRW-Container .MRW-PR-Selected,
+.MRW-Container .MRW-PR-Item {
+    border-radius: 6px;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        background-color: rgba(99, 88, 165, 0.04);
+    }
+}

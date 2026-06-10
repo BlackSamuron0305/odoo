@@ -1,3 +1,12 @@
 .o-mail-DiscussSidebarChannel-container.o-bordered.o-selfInCall {
     @include o-mail-call-bordered(var(--o-mail-DiscussSidebarChannel-inCallBorderOpacity, .15));
 }
+
+.o-mail-DiscussSidebarChannel-container {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}

@@ -5,4 +5,9 @@
             display: none !important;
         }
     }
+
+    .o_spreadsheet_dashboard_action table thead th {
+        border-bottom: 2px solid #dee2e6;
+        font-weight: 600;
+    }
 }

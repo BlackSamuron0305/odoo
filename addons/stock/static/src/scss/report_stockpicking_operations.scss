@@ -17,6 +17,9 @@
     flex-direction: row;
     -webkit-flex-direction: row;
     -ms-flex-wrap: wrap;
+    border-bottom: 2px solid #6358a5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
     > div {
         flex: 1;
         -webkit-flex: 1;

@@ -13,4 +13,10 @@
         -moz-appearance: textfield;
     }
 
+    input,
+    select,
+    textarea {
+        border-radius: 6px;
+    }
+
 }

@@ -1,3 +1,11 @@
 .o_field_widget.o_embed_url_viewer iframe {
     aspect-ratio: 3/2;
 }
+
+.o_mrp_field_badge .badge,
+.o_mrp_workorder_lot .badge {
+    border-radius: 10px;
+    padding: 0.25em 0.6em;
+    background-color: rgba(99, 88, 165, 0.1);
+    color: #6358a5;
+}

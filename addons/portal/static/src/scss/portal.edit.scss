@@ -1,3 +1,15 @@
 #discussion {
     pointer-events: none;
 }
+
+// Edit mode indicator styling
+.o_portal_edit_mode {
+    outline: 2px solid #6358a5;
+    outline-offset: -2px;
+    border-radius: 6px;
+}
+
+.o_portal_wrap.o_has_editable_form .o_portal_sidebar,
+.o_portal_wrap.o_has_editable_form .o_portal_main {
+    transition: opacity 0.15s ease;
+}

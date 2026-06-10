@@ -52,4 +52,11 @@
     > .s_rating_1x { .fa { font-size: 1em; }; }
     > .s_rating_2x { .fa { font-size: 2em; }; }
     > .s_rating_3x { .fa { font-size: 3em; }; }
+
+    > .s_rating_stars,
+    > .s_rating_hearts {
+        .fa {
+            color: #6358a5;
+        }
+    }
 }

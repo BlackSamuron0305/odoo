@@ -1,3 +1,9 @@
 .o-livechat-NoPinMenu [data-oe-type="pin-menu"] {
     display: none;
 }
+
+.o-mail-Thread.o-livechat {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    overflow: hidden;
+}

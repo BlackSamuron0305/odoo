@@ -206,3 +206,12 @@ $utilities: map-merge(
 .smaller {
     font-size: $o-font-size-base-smaller;
 }
+
+// Design system utilities
+.o-shadow-sm {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.o-transition {
+    transition: 0.15s ease;
+}

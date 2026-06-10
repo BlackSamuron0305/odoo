@@ -135,6 +135,11 @@
         }
     }
 
+// Accent the certification number with brand color
+#o_survey_certification.certification-wrapper .certification-number {
+    color: #6358a5;
+}
+
 // Classic Template
     &.classic {
 

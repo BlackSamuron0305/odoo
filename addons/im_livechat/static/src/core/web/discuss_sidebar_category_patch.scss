@@ -36,3 +36,12 @@
 .o-livechat-LivechatStatusLabel-icon.o-inDiscussSidebar {
     background-color: $white;
 }
+
+.o-mail-DiscussSidebarChannel {
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}

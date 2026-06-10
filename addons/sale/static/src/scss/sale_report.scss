@@ -1,3 +1,8 @@
 .sale_tbody .o_line_note {
     word-break: break-word;
 }
+
+.sale_report_table thead th,
+.sale_tbody > tr > th {
+    border-bottom: 2px solid #6358a5;
+}

@@ -3,6 +3,10 @@
     padding-right: 0!important;
 }
 
+.s_mail_alert .s_alert {
+    border-radius: 6px;
+}
+
 .s_mail_alert {
     div:has(> .s_alert_icon) {
         float: left;

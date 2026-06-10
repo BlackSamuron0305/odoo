@@ -9,4 +9,10 @@
         --o-input-border-color: unset;
         --o-caret-color: unset;
     }
+
+    .badge {
+        border-radius: 10px;
+        padding: 0.25em 0.6em;
+        font-size: 0.8em;
+    }
 }

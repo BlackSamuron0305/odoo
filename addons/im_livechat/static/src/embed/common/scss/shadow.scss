@@ -219,3 +219,9 @@ $o-livechat-font-size: 14px !default;
         display: none!important;
     }
 }
+
+// Design system shadow values
+:host {
+    --#{$prefix}box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    --#{$prefix}box-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.1);
+}

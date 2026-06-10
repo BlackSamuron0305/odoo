@@ -95,3 +95,14 @@ li {
         border-radius: $border-radius-lg !important;
     }
 }
+
+// Clean screen styling
+.o_customer_display {
+    background-color: #f8f9fa;
+}
+
+.o_customer_display_main {
+    background-color: #ffffff;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}

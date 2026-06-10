@@ -99,3 +99,11 @@
     width:24px;
     height: 16px;
 }
+
+.o-livechat-LivechatStatusSelection .list-group-item:not(.active) {
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.05);
+    }
+}

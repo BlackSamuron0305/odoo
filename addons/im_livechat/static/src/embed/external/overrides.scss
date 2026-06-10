@@ -1,3 +1,19 @@
 .o-main-components-container, .o_notification_manager {
     position: fixed !important;
 }
+
+// Brand primary button for livechat widget
+.o-livechat-LivechatButton {
+    background-color: #6358a5;
+    border-color: #6358a5;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.15s ease, background-color 0.15s ease;
+
+    &:hover,
+    &:focus {
+        background-color: #574d92;
+        border-color: #574d92;
+        box-shadow: 0 2px 8px rgba(99, 88, 165, 0.35);
+    }
+}
