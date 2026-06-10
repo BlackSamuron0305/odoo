@@ -1,3 +1,13 @@
 .o-EmojiPicker {
     font-size: 1.2em;
+
+    // Redesign: rounded cells + scale on hover
+    .o-Emoji {
+        border-radius: 6px;
+        transition: transform 0.15s ease, background-color 0.15s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }

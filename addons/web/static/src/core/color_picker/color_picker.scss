@@ -24,10 +24,13 @@ $o-we-color-success: #00ff9e !default;
     height: 22px;
     box-shadow: inset 0 0 0 1px rgba(var(--border-rgb), .5);
     margin: 0.5px;
+    border-radius: 4px;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
 
     &:focus,
     &:hover {
         transform: scale(1.1);
+        box-shadow: inset 0 0 0 1px rgba(var(--border-rgb), .5), 0 0 0 2px #6358a5;
     }
 }
 

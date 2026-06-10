@@ -6,6 +6,8 @@
  * @date 2026-06-06T09:38:36.799Z
  * @hash 41aace0a41
  */
+// Redesign: rounded corners + subtle shadow on spreadsheet toolbar
+
 /* Originates from src/components/top_bar/top_bar.scss */
 .o-spreadsheet {
   @media (max-width: 1200px) {
@@ -25,6 +27,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  // Redesign: rounded toolbar buttons
+  .o-tool {
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+  }
+
+  // Redesign: active tab brand accent
+  .o-spreadsheet-bottom-bar .o-sheet.active {
+    color: #6358a5;
+    border-top: 2px solid #6358a5;
   }
 }
 

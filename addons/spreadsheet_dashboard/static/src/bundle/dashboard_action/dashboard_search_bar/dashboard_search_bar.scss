@@ -3,6 +3,8 @@
 
     .o_sp_date_filter_button {
         height: fit-content;
+        border-radius: 6px;
+        transition: background-color 0.15s ease;
     }
 
     @media (min-width: 768px){

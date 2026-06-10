@@ -31,6 +31,8 @@ $filter-panel-width: 300px;
 .o-public-spreadsheet-filter-button {
   z-index: 100;
   cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
 
   &:hover {
     background-color: #E7E9ED;

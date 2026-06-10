@@ -1,5 +1,7 @@
 .o-mobile-figure.o-figure {
     padding: 4px;
+    border-radius: 6px;
+    overflow: hidden;
 
     .o-dashboard-chart-select {
         visibility: visible !important;

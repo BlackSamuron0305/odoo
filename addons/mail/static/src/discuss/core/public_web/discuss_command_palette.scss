@@ -10,6 +10,8 @@
 .o-mail-DiscussCommand {
     padding-top: map-get($spacers, 1);
     padding-bottom: map-get($spacers, 1);
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
 
     &.o-uiSmall {
         padding-top: map-get($spacers, 2);

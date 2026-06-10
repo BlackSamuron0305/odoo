@@ -12,6 +12,7 @@
 
 .o_draggable {
     -webkit-touch-callout: none; // for iOS
+    cursor: url(/web/static/img/openhand.cur), grab;
 }
 
 .o_dragged {

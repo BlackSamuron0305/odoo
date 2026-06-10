@@ -4,6 +4,13 @@
 }
 
 .o-mail-DiscussSearch-inputContainer {
+    border-radius: 6px;
+    transition: box-shadow 0.15s ease;
+
+    &:focus-within {
+        box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.2);
+    }
+
     &, & input {
         background-color: $o-view-background-color !important;
     }

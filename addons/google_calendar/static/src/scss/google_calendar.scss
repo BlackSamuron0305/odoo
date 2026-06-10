@@ -7,4 +7,6 @@
     &:not(:hover) #google_stop {
         display: none;
     }
+
+    transition: opacity 0.15s ease;
 }

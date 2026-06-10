@@ -8,5 +8,11 @@
     height: 100%;
     padding: 4px 40px 4px 4px;
     min-height: 10px;
-    border-radius: 3px;
+    border-radius: 6px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:focus-within {
+        border-color: #6358a5;
+        box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.15);
+    }
 }

@@ -9,6 +9,17 @@ li.oe-nested {
     }
 }
 
+// Redesign: clean prose blockquote + code background
+blockquote {
+    border-left-color: #6358a5;
+}
+
+code, kbd, pre, samp {
+    background-color: rgba(99, 88, 165, 0.08);
+    border-radius: 3px;
+    padding: 1px 4px;
+}
+
 .table-bordered {
     > :not(caption) > * {
         border-width: 1px 0;

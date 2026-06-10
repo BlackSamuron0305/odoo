@@ -1,3 +1,12 @@
 .o_livechat_emoji_rating {
     width: 1.5rem;
 }
+
+// Redesign: hover highlight on livechat channel info list items
+.o-livechat-LivechatStatusSelection .list-group-item {
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(99, 88, 165, 0.06);
+    }
+}

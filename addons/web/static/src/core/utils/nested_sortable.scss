@@ -1,11 +1,11 @@
 .o_nested_sortable_placeholder {
     background-clip: content-box;
-    background-color: deepskyblue;
+    background-color: #6358a5;
     height: 5px;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 .o_nested_sortable_placeholder_realsize {
-    outline: 1px dashed $o-gray-600;
-    background-color: $o-gray-100;
+    outline: 1px dashed #6358a5;
+    background-color: rgba(99, 88, 165, 0.06);
 }

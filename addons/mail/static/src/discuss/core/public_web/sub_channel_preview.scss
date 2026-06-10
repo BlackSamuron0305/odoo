@@ -1,5 +1,8 @@
 .o-mail-SubChannelPreview {
     background-color: mix($gray-100, $gray-200);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: background-color 0.15s ease;
 
     &:hover {
         background-color: $gray-100 !important;

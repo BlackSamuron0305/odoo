@@ -1,4 +1,11 @@
 .o_record_selector, .o_multi_record_selector {
+    border-radius: 6px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:focus-within {
+        box-shadow: 0 0 0 2px rgba(99, 88, 165, 0.2);
+    }
+
     &:hover, &:focus-within {
         .o_dropdown_button:after {
             @include o-caret-down;

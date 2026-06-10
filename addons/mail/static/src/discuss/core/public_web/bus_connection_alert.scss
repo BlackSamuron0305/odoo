@@ -4,6 +4,7 @@ $o-bus-ConnectionAlert-color: mix($white, $warning, 60%);
     z-index: 1056;
     animation: o-bus-ConnectionAlert-borderAnimation ease-in-out .5s forwards;
     border: 2px solid $o-bus-ConnectionAlert-color;
+    border-radius: 6px;
 }
 
 .o-bus-ConnectionAlert-failure {

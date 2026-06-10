@@ -57,6 +57,8 @@
 
     > button {
         aspect-ratio: 1;
+        cursor: pointer;
+        transition: opacity 0.15s ease, transform 0.15s ease;
 
         // No Color
         &.o_colorlist_item_color_0 {

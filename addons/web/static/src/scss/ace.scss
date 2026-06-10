@@ -10,3 +10,10 @@
 .ace_editor.ace-monokai .ace_code {
     color: #c94bc9 !important;
 }
+
+// Redesign: rounded corners + subtle border on the editor container
+.ace_editor {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}

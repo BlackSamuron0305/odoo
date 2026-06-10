@@ -110,6 +110,8 @@ li.oe-nested {
 .o_company_logo {
     max-height: 6rem;
     max-width: 12rem;
+    border-radius: 4px;
+    object-fit: contain;
 
     &_small {
         max-height: 4rem;
@@ -296,4 +298,9 @@ hr {
             color: o-color($-name);
         }
     }
+}
+
+// Redesign: brand-tinted table header background for reports
+table thead th {
+    background-color: #f8f7fe;
 }
