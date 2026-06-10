@@ -1,7 +1,7 @@
 // ===== Visual polish =====
 .o_cw_popover_link {
     transition: opacity var(--o-transition-fast, 0.15s ease),
-                box-shadow var(--o-transition-fast, 0.15s ease);
+        box-shadow var(--o-transition-fast, 0.15s ease);
 
     &[class*="o_calendar_color_"] {
         box-shadow: $o-shadow-sm;

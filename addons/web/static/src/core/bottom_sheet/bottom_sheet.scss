@@ -238,6 +238,8 @@
         flex-shrink: 0;
     }
 }
+
+.o_bottom_sheet {
     --BottomSheet-Entry-paddingX: #{$list-group-item-padding-x};
 
     %BottomSheet-Entry-active {

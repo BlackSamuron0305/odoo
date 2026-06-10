@@ -47,12 +47,12 @@
             border-color: rgba($o-action, .5);
 
             .fc-bg {
-                background-color: rgba($o-action, var(--o-bg-opacity));
+                    background-color: RGBA(to-rgb($o-action), var(--o-bg-opacity));
             }
         }
 
         &.fc-event-mirror {
-            background-color: rgba($o-action, var(--o-bg-opacity));
+                background-color: RGBA(to-rgb($o-action), var(--o-bg-opacity));
         }
 
         &.o_past_event::after {
@@ -60,7 +60,7 @@
             @include o-position-absolute(0, 0, 0, 0);
             display: block;
             z-index: 3;
-            background-color: rgba($o-view-background-color, var(--o-overlay-opacity));
+                background-color: RGBA(to-rgb($o-view-background-color), var(--o-overlay-opacity));
         }
 
         &:not(.o_event_dot):not(.fc-dragging).o_cw_custom_highlight {
@@ -724,10 +724,11 @@
             }
 
             &.o_event_dot {
-                background-color: rgba(var(--o-event-bg--subtle-rgb), var(--o-bg-opacity));
+                background-color: RGBA(var(--o-event-bg--subtle-rgb), var(--o-bg-opacity));
 
                 &:before {
                     color: var(--o-event-bg, #{$info});
+                    background-color: RGBA(var(--o-event-bg--subtle-rgb), var(--o-bg-opacity));
                 }
             }
         }

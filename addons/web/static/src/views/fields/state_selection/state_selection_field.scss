@@ -21,7 +21,7 @@
         .o_status {
             border-radius: 50%;
             transition: box-shadow var(--o-transition-fast, 0.15s ease);
-            box-shadow: 0 0 0 2px rgba(currentColor, 0.15);
+            box-shadow: 0 0 0 2px color-mix(in srgb, currentColor 15%, transparent);
         }
     }
 }
@@ -33,7 +33,7 @@
 
         &:hover {
             transform: scale(1.15);
-            box-shadow: 0 0 0 3px rgba(currentColor, 0.2);
+            box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 20%, transparent);
         }
     }
 }

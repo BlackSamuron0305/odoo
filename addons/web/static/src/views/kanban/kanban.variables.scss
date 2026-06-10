@@ -1,5 +1,5 @@
-// Kanban background uses the warmer page background
-$o-kanban-background: $o-webclient-background-color !default;
+// Use a frontend-safe default that is available early in asset ordering.
+$o-kanban-background: $o-view-background-color !default;
 $o-kanban-default-record-width: 320px !default;
 $o-kanban-small-record-width: 300px !default;
 $o-kanban-image-width: 64px !default;
