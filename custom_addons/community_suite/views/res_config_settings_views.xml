@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_stock_barcode" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.community.suite.stock</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="stock.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='module_stock_barcode']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+            <xpath expr="//field[@name='module_quality_control']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+            <xpath expr="//field[@name='module_quality_control_worksheet']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_config_settings_view_form_account" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.community.suite.account</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='module_account_reports']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+            <xpath expr="//field[@name='module_account_budget']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+            <xpath expr="//field[@name='module_currency_rate_live']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+            <xpath expr="//field[@name='module_account_extract']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_config_settings_view_form_base_setup" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.community.suite.base</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='module_account_inter_company_rules']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_config_settings_view_form_mrp_mps" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.community.suite.mrp</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="mrp.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='module_mrp_mps']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_config_settings_view_form_maintenance" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.community.suite.maintenance</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="maintenance.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='module_maintenance_worksheet']" position="attributes">
+                <attribute name="widget">boolean</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

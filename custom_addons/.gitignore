@@ -1,0 +1,4 @@
+# OCA repositories — clone with scripts/clone_oca.ps1 (not committed)
+oca/**/*
+!oca/.gitkeep
+!oca/README.md

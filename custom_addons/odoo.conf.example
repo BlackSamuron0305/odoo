@@ -1,0 +1,15 @@
+[options]
+addons_path =
+    d:\odoo\odoo\addons,
+    d:\odoo\addons,
+    d:\odoo\custom_addons,
+    d:\odoo\custom_addons\oca\account-financial-reporting,
+    d:\odoo\custom_addons\oca\helpdesk,
+    d:\odoo\custom_addons\oca\multi-company,
+    d:\odoo\custom_addons\oca\server-ux,
+    d:\odoo\custom_addons\oca\reporting-engine,
+    d:\odoo\custom_addons\oca\sign
+
+db_host = localhost
+db_user = odoo
+db_password = False

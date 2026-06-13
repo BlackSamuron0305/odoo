@@ -1,0 +1,4 @@
+# OCA repositories are cloned locally (not committed). Run:
+#   powershell -File custom_addons/scripts/clone_oca.ps1
+oca/*
+!oca/.gitkeep

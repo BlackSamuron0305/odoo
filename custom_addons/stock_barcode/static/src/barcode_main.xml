@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t t-name="stock_barcode.Main">
+        <div class="o_stock_barcode o_action o_view_controller o_web_client">
+            <div class="o_content p-3">
+                <t t-if="!state.activePicking">
+                    <h2 class="mb-3">Barcode</h2>
+                    <p class="text-muted">Select a transfer to scan products and validate.</p>
+                    <t t-if="state.loading">
+                        <div class="text-center p-5 text-muted">Loading…</div>
+                    </t>
+                    <t t-else="">
+                        <div class="list-group">
+                            <t t-foreach="state.pickings" t-as="picking" t-key="picking.id">
+                                <button type="button"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                                    t-on-click="() => this.selectPicking(picking)">
+                                    <div>
+                                        <strong t-esc="picking.name"/>
+                                        <div class="text-muted small" t-esc="picking.type"/>
+                                        <div class="text-muted small" t-if="picking.partner" t-esc="picking.partner"/>
+                                    </div>
+                                    <span class="badge text-bg-secondary" t-esc="picking.state"/>
+                                </button>
+                            </t>
+                            <t t-if="!state.pickings.length">
+                                <div class="text-muted p-4 text-center">No pending transfers.</div>
+                            </t>
+                        </div>
+                    </t>
+                </t>
+                <t t-else="">
+                    <div class="d-flex align-items-center mb-3 gap-2">
+                        <button type="button" class="btn btn-secondary" t-on-click="backToList">Back</button>
+                        <h2 class="mb-0" t-esc="state.activePicking.name"/>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body text-center">
+                            <BarcodeScanner onBarcodeScanned.bind="onBarcodeScanned"/>
+                            <p class="text-muted mt-2 mb-0">Scan product, location, or use a hardware scanner.</p>
+                        </div>
+                    </div>
+                    <t t-if="state.lastScan">
+                        <div class="alert alert-info">
+                            <strong t-esc="state.lastScan.action"/>:
+                            <span t-esc="state.lastScan.name"/>
+                            <t t-if="state.lastScan.quantity !== undefined">
+                                — <t t-esc="state.lastScan.quantity"/> / <t t-esc="state.lastScan.demand"/>
+                            </t>
+                        </div>
+                    </t>
+                    <button type="button" class="btn btn-primary btn-lg w-100" t-on-click="validatePicking">
+                        Validate Transfer
+                    </button>
+                </t>
+            </div>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_community_budget_user,community.budget user,model_community_budget,account.group_account_user,1,1,1,0
+access_community_budget_manager,community.budget manager,model_community_budget,account.group_account_manager,1,1,1,1
+access_community_budget_line_user,community.budget.line user,model_community_budget_line,account.group_account_user,1,1,1,0
+access_community_budget_line_manager,community.budget.line manager,model_community_budget_line,account.group_account_manager,1,1,1,1
