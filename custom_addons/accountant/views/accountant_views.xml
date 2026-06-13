@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_accountant_root" name="Accounting" web_icon="base,static/img/icons/account_accountant.png" sequence="30"/>
+    <menuitem id="menu_accountant_dashboard" name="Dashboard" parent="menu_accountant_root" action="account.open_account_journal_dashboard_kanban" sequence="1"/>
+    <menuitem id="menu_accountant_reports" name="Reports" parent="menu_accountant_root" action="account_financial_report.action_general_ledger_wizard" sequence="10"/>
+    <menuitem id="menu_accountant_invoices" name="Invoices" parent="menu_accountant_root" action="account.action_move_out_invoice" sequence="20"/>
+</odoo>

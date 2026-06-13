@@ -2,3 +2,5 @@
 oca/**/*
 !oca/.gitkeep
 !oca/README.md
+odoo.conf
+scripts/oca/

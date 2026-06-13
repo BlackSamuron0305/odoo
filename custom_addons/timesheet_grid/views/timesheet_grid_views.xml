@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_timesheet_grid_root" name="Timesheets" web_icon="base,static/img/icons/timesheet_grid.png" sequence="65"/>
+    <menuitem id="menu_timesheet_grid_all" name="All Timesheets" parent="menu_timesheet_grid_root" action="hr_timesheet.timesheet_action_all" sequence="10"/>
+    <menuitem id="menu_timesheet_grid_report" name="Reporting" parent="menu_timesheet_grid_root" action="hr_timesheet.act_hr_timesheet_report" sequence="20"/>
+</odoo>

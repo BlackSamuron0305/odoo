@@ -2,28 +2,17 @@
 
 {
     "name": "Community Suite",
-    "summary": "Install free replacements for Enterprise apps (OCA + custom, same icons)",
-    "version": "19.0.1.0.0",
+    "summary": "App Store catalog for Enterprise replacements and Community apps (no auto-install)",
+    "version": "19.0.3.0.0",
     "category": "Hidden",
     "license": "LGPL-3",
     "author": "Community",
-    "depends": [
-        "helpdesk",
-        "account_reports",
-        "stock_barcode",
-        "account_extract",
-        "sign",
-        "quality_control",
-        "account_inter_company_rules",
-        "currency_rate_live",
-        "account_budget",
-        "maintenance_worksheet",
-        "mrp_mps",
-    ],
+    "depends": ["base"],
     "data": [
-        "views/res_config_settings_views.xml",
+        "data/community_suite_data.xml",
     ],
     "post_init_hook": "post_init_hook",
     "installable": True,
     "application": False,
+    "auto_install": True,
 }

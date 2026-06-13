@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_mrp_eco_tree" model="ir.ui.view">
+        <field name="name">mrp.eco.list</field>
+        <field name="model">mrp.eco</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="product_tmpl_id"/>
+                <field name="eco_type"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_mrp_eco_form" model="ir.ui.view">
+        <field name="name">mrp.eco.form</field>
+        <field name="model">mrp.eco</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm" invisible="state != 'draft'"/>
+                    <button name="action_done" type="object" string="Apply" class="btn-primary" invisible="state != 'confirmed'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="product_tmpl_id"/>
+                        <field name="eco_type"/>
+                    </group>
+                    <field name="note"/>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_mrp_eco" model="ir.actions.act_window">
+        <field name="name">Engineering Changes</field>
+        <field name="res_model">mrp.eco</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_mrp_plm_root" name="PLM" web_icon="base,static/img/icons/mrp_plm.png" sequence="155"/>
+    <menuitem id="menu_mrp_plm_eco" name="ECOs" parent="menu_mrp_plm_root" action="action_mrp_eco" sequence="10"/>
+</odoo>

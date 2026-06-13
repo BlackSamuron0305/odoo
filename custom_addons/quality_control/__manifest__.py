@@ -11,6 +11,7 @@
     "data": [
         "security/ir.model.access.csv",
         "views/quality_views.xml",
+        "views/res_config_settings_views.xml",
     ],
     "icon": "/base/static/img/icons/quality_control.png",
     "application": True,

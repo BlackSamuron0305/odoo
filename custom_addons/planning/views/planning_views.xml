@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_planning_slot_tree" model="ir.ui.view">
+        <field name="name">planning.slot.list</field>
+        <field name="model">planning.slot</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="project_id"/>
+                <field name="start_datetime"/>
+                <field name="end_datetime"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_planning_slot_form" model="ir.ui.view">
+        <field name="name">planning.slot.form</field>
+        <field name="model">planning.slot</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_publish" type="object" string="Publish" class="btn-primary" invisible="state != 'draft'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="employee_id"/>
+                        <field name="project_id"/>
+                        <field name="role"/>
+                        <field name="start_datetime"/>
+                        <field name="end_datetime"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_planning_slot_calendar" model="ir.ui.view">
+        <field name="name">planning.slot.calendar</field>
+        <field name="model">planning.slot</field>
+        <field name="arch" type="xml">
+            <calendar string="Planning" date_start="start_datetime" date_stop="end_datetime" color="employee_id" mode="week">
+                <field name="name"/>
+                <field name="employee_id"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="action_planning_slot" model="ir.actions.act_window">
+        <field name="name">Planning</field>
+        <field name="res_model">planning.slot</field>
+        <field name="view_mode">calendar,list,form</field>
+    </record>
+
+    <menuitem id="menu_planning_root" name="Planning" web_icon="base,static/img/icons/planning.png" sequence="130"/>
+    <menuitem id="menu_planning_slots" name="Schedule" parent="menu_planning_root" action="action_planning_slot" sequence="10"/>
+</odoo>

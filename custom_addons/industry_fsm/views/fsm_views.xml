@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fsm_order_tree" model="ir.ui.view">
+        <field name="name">fsm.order.list</field>
+        <field name="model">fsm.order</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="user_id"/>
+                <field name="scheduled_date"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_fsm_order_form" model="ir.ui.view">
+        <field name="name">fsm.order.form</field>
+        <field name="model">fsm.order</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_schedule" type="object" string="Schedule" invisible="state != 'draft'"/>
+                    <button name="action_start" type="object" string="Start" invisible="state not in ('draft', 'scheduled')"/>
+                    <button name="action_done" type="object" string="Done" class="btn-primary" invisible="state != 'in_progress'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="partner_id"/>
+                        <field name="project_id"/>
+                        <field name="task_id"/>
+                        <field name="user_id"/>
+                        <field name="scheduled_date"/>
+                    </group>
+                    <field name="description"/>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_fsm_order" model="ir.actions.act_window">
+        <field name="name">Field Service Orders</field>
+        <field name="res_model">fsm.order</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_industry_fsm_root" name="Field Service" web_icon="base,static/img/icons/industry_fsm.png" sequence="90"/>
+    <menuitem id="menu_industry_fsm_orders" name="Orders" parent="menu_industry_fsm_root" action="action_fsm_order" sequence="10"/>
+</odoo>

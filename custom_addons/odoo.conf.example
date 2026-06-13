@@ -12,4 +12,4 @@ addons_path =
 
 db_host = localhost
 db_user = odoo
-db_password = False
+db_password = odoo

@@ -1,0 +1,18 @@
+# License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0)
+
+{
+    "name": "Social Marketing",
+    "version": "19.0.1.0.0",
+    "category": "Marketing",
+    "summary": "Manage your social media and website visitors",
+    "license": "LGPL-3",
+    "author": "Community",
+    "depends": ["mass_mailing", "utm"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/social_views.xml",
+    ],
+    "icon": "/base/static/img/icons/social.png",
+    "application": True,
+    "installable": True,
+}

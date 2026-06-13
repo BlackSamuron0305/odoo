@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_marketing_campaign_tree" model="ir.ui.view">
+        <field name="name">marketing.campaign.list</field>
+        <field name="model">marketing.campaign</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="mailing_list_id"/>
+                <field name="participant_count"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_marketing_campaign_form" model="ir.ui.view">
+        <field name="name">marketing.campaign.form</field>
+        <field name="model">marketing.campaign</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_start" type="object" string="Start" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_done" type="object" string="Done" invisible="state != 'running'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="mailing_list_id"/>
+                        <field name="mail_template_id"/>
+                        <field name="participant_count"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_marketing_campaign" model="ir.actions.act_window">
+        <field name="name">Campaigns</field>
+        <field name="res_model">marketing.campaign</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_marketing_automation_root" name="Marketing Automation" web_icon="base,static/img/icons/marketing_automation.png" sequence="195"/>
+    <menuitem id="menu_marketing_automation_campaigns" name="Campaigns" parent="menu_marketing_automation_root" action="action_marketing_campaign" sequence="10"/>
+    <menuitem id="menu_marketing_automation_mailings" name="Email Marketings" parent="menu_marketing_automation_root" action="mass_mailing.mailing_mailing_action_mail" sequence="20"/>
+</odoo>

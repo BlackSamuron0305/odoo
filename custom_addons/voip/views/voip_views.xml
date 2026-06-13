@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_voip_call_tree" model="ir.ui.view">
+        <field name="name">voip.call.list</field>
+        <field name="model">voip.call</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="phone"/>
+                <field name="direction"/>
+                <field name="duration"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_voip_call_form" model="ir.ui.view">
+        <field name="name">voip.call.form</field>
+        <field name="model">voip.call</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_done" type="object" string="Mark Done" class="btn-primary" invisible="state == 'done'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="partner_id"/>
+                        <field name="phone" widget="phone"/>
+                        <field name="direction"/>
+                        <field name="duration"/>
+                    </group>
+                    <field name="note"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_voip_call" model="ir.actions.act_window">
+        <field name="name">Calls</field>
+        <field name="res_model">voip.call</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_voip_root" name="Phone" web_icon="base,static/img/icons/voip.png" sequence="280"/>
+    <menuitem id="menu_voip_calls" name="Calls" parent="menu_voip_root" action="action_voip_call" sequence="10"/>
+</odoo>

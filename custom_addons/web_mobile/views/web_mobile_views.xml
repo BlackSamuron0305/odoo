@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_web_mobile_info" model="ir.actions.act_window">
+        <field name="name">Mobile App</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+        <field name="context">{'module': 'web_mobile'}</field>
+    </record>
+
+    <menuitem id="menu_web_mobile_root" name="Mobile" web_icon="base,static/img/icons/web_mobile.png" sequence="220"/>
+    <menuitem id="menu_web_mobile_settings" name="Mobile Configuration" parent="menu_web_mobile_root" action="action_web_mobile_info" sequence="10"/>
+</odoo>

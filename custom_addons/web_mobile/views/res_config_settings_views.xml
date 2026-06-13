@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_web_mobile" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.web.mobile</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app string="Mobile" name="web_mobile">
+                    <block title="Mobile API">
+                        <setting string="Enable Mobile API" help="Expose JSON endpoints for the Flutter mobile app.">
+                            <field name="mobile_api_enabled"/>
+                        </setting>
+                        <setting string="API Base URL">
+                            <field name="mobile_api_url" placeholder="https://your-server.example.com"/>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

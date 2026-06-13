@@ -10,6 +10,7 @@
     "depends": ["stock", "barcodes", "web"],
     "data": [
         "views/stock_barcode_views.xml",
+        "views/res_config_settings_views.xml",
     ],
     "assets": {
         "web.assets_backend": [

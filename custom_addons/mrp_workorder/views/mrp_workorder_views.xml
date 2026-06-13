@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_mrp_workorder_root" name="MRP II" web_icon="base,static/img/icons/mrp_workorder.png" sequence="16"/>
+    <menuitem id="menu_mrp_workorder_production" name="Work Orders" parent="menu_mrp_workorder_root" action="mrp.action_mrp_workorder_production" sequence="10"/>
+    <menuitem id="menu_mrp_workorder_workcenter" name="Work Centers" parent="menu_mrp_workorder_root" action="mrp.action_mrp_workorder_workcenter" sequence="20"/>
+    <menuitem id="menu_mrp_workorder_routing" name="Routings" parent="menu_mrp_workorder_root" action="mrp.action_mrp_routing_time" sequence="30"/>
+</odoo>
