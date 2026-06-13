@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="app_learn_page" name="App Learn More">
+        <t t-call="web.layout">
+            <t t-set="head">
+                <link rel="stylesheet" href="/base/static/src/css/description.css"/>
+                <link rel="stylesheet" href="/community_suite/static/src/css/app_learn.css"/>
+            </t>
+            <div class="o_app_learn_page container py-4">
+                <nav class="mb-3">
+                    <a href="/odoo/apps" class="btn btn-link ps-0">&#8592; Back to Apps</a>
+                </nav>
+                <header class="o_app_learn_header d-flex gap-3 mb-4">
+                    <img t-att-src="module.icon or ('/web/image/ir.module.module/' + str(module.id) + '/icon_image')"
+                         t-att-alt="module.shortdesc"
+                         class="o_app_learn_icon"/>
+                    <div>
+                        <h1 class="mb-1" t-esc="module.shortdesc"/>
+                        <p class="text-muted mb-2" t-if="module.summary" t-esc="module.summary"/>
+                        <p class="text-muted small mb-0" t-if="module.author">
+                            By <span t-esc="module.author"/>
+                        </p>
+                    </div>
+                </header>
+                <section t-if="module.description_html" class="o_app_learn_body oe_styling_v8">
+                    <t t-out="module.description_html"/>
+                </section>
+                <section t-else="" class="o_app_learn_body text-muted">
+                    <p>No description is available for this app yet.</p>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="documentation_page" name="Local Documentation">
+        <t t-call="web.layout">
+            <t t-set="head">
+                <link rel="stylesheet" href="/community_suite/static/src/css/app_learn.css"/>
+            </t>
+            <div class="o_app_learn_page container py-4">
+                <nav class="mb-3">
+                    <a href="/odoo/apps" class="btn btn-link ps-0">&#8592; Back to Apps</a>
+                </nav>
+                <h1>Documentation</h1>
+                <p class="text-muted">
+                    Local documentation mirror for:
+                    <code t-esc="doc_path"/>
+                </p>
+                <p>
+                    Documentation is served locally on this instance. Open the related app
+                    from the Apps menu and use in-app help where available.
+                </p>
+            </div>
+        </t>
+    </template>
+
+</odoo>

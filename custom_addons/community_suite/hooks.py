@@ -40,6 +40,34 @@ STORE_APPS = frozenset({
 
 # Nice Community apps to highlight in the App Store (not installed by us).
 RECOMMENDED_COMMUNITY = {
+    "crm": {
+        "shortdesc": "CRM",
+        "summary": "Track leads and close opportunities",
+    },
+    "account": {
+        "shortdesc": "Invoicing",
+        "summary": "Invoices, payments, and accounting",
+    },
+    "website": {
+        "shortdesc": "Website",
+        "summary": "Website builder and online presence",
+    },
+    "purchase": {
+        "shortdesc": "Purchase",
+        "summary": "Purchase orders and vendor management",
+    },
+    "stock": {
+        "shortdesc": "Inventory",
+        "summary": "Manage stock and logistics",
+    },
+    "maintenance": {
+        "shortdesc": "Maintenance",
+        "summary": "Equipment maintenance and requests",
+    },
+    "spreadsheet_dashboard": {
+        "shortdesc": "Dashboards",
+        "summary": "Spreadsheet dashboards and analytics",
+    },
     "project": {
         "shortdesc": "Project",
         "summary": "Plan and track projects and tasks",
@@ -243,6 +271,16 @@ def _brand_module(mod, branding):
     mod.write(values)
 
 
+def _sanitize_external_links(env):
+    """Clear module website fields that point to odoo.com or apps.odoo.com."""
+    Module = env["ir.module.module"].sudo()
+    odoo_markers = ("odoo.com", "odoo.de", "apps.odoo.com")
+    for mod in Module.search([("website", "!=", False)]):
+        website = (mod.website or "").lower()
+        if any(marker in website for marker in odoo_markers):
+            mod.write({"website": False})
+
+
 def apply_community_suite(env):
     """Brand App Store apps, promote Community picks, hide Enterprise placeholders."""
     Module = env["ir.module.module"].sudo()
@@ -280,6 +318,8 @@ def apply_community_suite(env):
             "Community Suite: hid %s Enterprise placeholder apps",
             len(ghosts),
         )
+
+    _sanitize_external_links(env)
 
 
 def post_init_hook(env):

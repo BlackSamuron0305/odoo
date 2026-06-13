@@ -1,0 +1,24 @@
+.o_kanban_renderer.o_modules_kanban .o_kanban_record {
+    position: relative;
+}
+
+.o_kanban_renderer.o_modules_kanban .o_kanban_record.o_module_installing {
+    pointer-events: none;
+}
+
+.o_kanban_renderer.o_modules_kanban .o_kanban_record .o_module_install_overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: inherit;
+    text-align: center;
+}
+
+.o_kanban_renderer.o_modules_kanban .o_module_activate_btn:active {
+    transform: scale(0.97);
+}

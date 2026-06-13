@@ -1,0 +1,18 @@
+.o_app_learn_page {
+    max-width: 960px;
+}
+
+.o_app_learn_icon {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.o_app_learn_header h1 {
+    font-size: 2rem;
+}
+
+.o_app_learn_body {
+    border-top: 1px solid var(--border-color, #dee2e6);
+    padding-top: 1.5rem;
+}

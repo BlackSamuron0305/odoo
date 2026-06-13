@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Apps kanban: local Learn More, install animation, no external links -->
+    <record id="module_view_kanban_local" model="ir.ui.view">
+        <field name="name">ir.module.module.kanban.local</field>
+        <field name="model">ir.module.module</field>
+        <field name="inherit_id" ref="base.module_view_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-name='menu']/a[@role='menuitem' and hasclass('o-hidden-ios')]" position="replace">
+                <a role="menuitem" class="dropdown-item o-hidden-ios" t-attf-href="/web/apps/learn/{{ record.name.raw_value }}">Learn More</a>
+            </xpath>
+            <xpath expr="//t[@t-name='card']" position="attributes">
+                <attribute name="class">flex-row align-items-center o_module_card</attribute>
+            </xpath>
+            <xpath expr="//footer/a[@role='button' and hasclass('o-hidden-ios')]" position="replace">
+                <a t-attf-href="/web/apps/learn/{{ record.name.raw_value }}" class="btn btn-sm btn-secondary float-end o-hidden-ios" role="button">Learn More</a>
+            </xpath>
+            <xpath expr="//footer/a[@id='module_info']" position="replace"/>
+            <xpath expr="//footer/a[contains(@href, 'odoo.com/pricing')]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[@name='button_immediate_install']" position="attributes">
+                <attribute name="class" add="o_module_activate_btn"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Module form: hide external website and Upgrade pricing link -->
+    <record id="module_form_local" model="ir.ui.view">
+        <field name="name">ir.module.module.form.local</field>
+        <field name="model">ir.module.module</field>
+        <field name="inherit_id" ref="base.module_form"/>
+        <field name="arch" type="xml">
+            <field name="website" position="replace">
+                <field name="local_learn_url" widget="url" string="Learn More"/>
+            </field>
+            <xpath expr="//a[contains(@href, 'odoo.com/pricing')]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Hide Third-Party Apps and Theme Store menus -->
+    <record model="ir.ui.menu" id="base.menu_third_party">
+        <field name="active" eval="False"/>
+    </record>
+    <record model="ir.ui.menu" id="base.menu_theme_store">
+        <field name="active" eval="False"/>
+    </record>
+    <record model="ir.ui.menu" id="base.theme_store">
+        <field name="active" eval="False"/>
+    </record>
+
+</odoo>

@@ -30,6 +30,12 @@ $paths = @(
 $python = "C:\Users\laith\miniconda3\python.exe"
 if (-not (Test-Path $python)) { $python = "python" }
 
+& $python -c "import sass" 2>$null
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Installing libsass (required for SCSS asset compilation)..."
+    & $python -m pip install "libsass==0.22.0"
+}
+
 $odooBin = Join-Path $root "odoo-bin"
 $baseArgs = @(
     $odooBin,
@@ -53,7 +59,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Ensuring store apps are not pre-installed..."
-& (Join-Path $PSScriptRoot "reset_store_apps.ps1") -Database $Database -DbUser $DbUser -DbHost $DbHost -DbPassword $DbPassword
+& (Join-Path $PSScriptRoot "uninstall_non_default.ps1") -Database $Database
 
 if ($NoServer) {
     Write-Host "Done (server not started)."

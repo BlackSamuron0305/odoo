@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Remove "Powered by Odoo" login footer link -->
+    <template id="web_login_layout_local" inherit_id="web.login_layout" name="Login Layout Local">
+        <xpath expr="//a[contains(@href, 'odoo.com')]" position="replace"/>
+    </template>
+
+    <!-- Remove external brand promotion on portal/frontend pages -->
+    <template id="brand_promotion_message_local" inherit_id="web.brand_promotion_message" name="Brand Promotion Local">
+        <xpath expr="//a[hasclass('badge')]" position="replace"/>
+    </template>
+
+</odoo>

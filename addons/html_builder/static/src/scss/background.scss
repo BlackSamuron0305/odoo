@@ -6,6 +6,8 @@
 .o_we_bg_filter {
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
+
+%o-we-background-layer-parent {
     &, & > * {
         // Allow background layers to be placed accordingly and snippet content
         // to be displayed on top. Note: we cannot just position the layers

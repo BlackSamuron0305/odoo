@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="res_config_edition" t-inherit="web.res_config_edition" t-inherit-mode="extension">
+        <xpath expr="//a[contains(@href, 'odoo.com')]" position="replace">
+            <span>Odoo S.A.</span>
+        </xpath>
+    </t>
+
+    <t t-name="web.DocumentationLink" t-inherit="web.DocumentationLink" t-inherit-mode="extension">
+        <xpath expr="//a" position="attributes">
+            <attribute name="target">_self</attribute>
+        </xpath>
+    </t>
+
+</templates>
